@@ -14,3 +14,10 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+*.swp
+.gitkeep
+.rvmrc
+.powrc
+.DS_Store
+config/mailer.yml
+config/database.yml
