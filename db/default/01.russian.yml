@@ -1,0 +1,11 @@
+- { content: 'Я буду любить?', language_id: 1, template: '1:0:0:0' }
+- { content: 'Я буду любить', language_id: 1, template: '1:0:1:0' }
+- { content: 'Я не буду любить', language_id: 1, template: '1:0:2:0' }
+
+- { content: 'Я люблю?', language_id: 1, template: '1:1:0:0' }
+- { content: 'Я люблю', language_id: 1, template: '1:1:1:0' }
+- { content: 'Я не люблю', language_id: 1, template: '1:1:2:0' }
+
+- { content: 'Я любил?', language_id: 1, template: '1:2:0:0' }
+- { content: 'Я любил', language_id: 1, template: '1:2:1:0' }
+- { content: 'Я не любил', language_id: 1, template: '1:2:2:0' }

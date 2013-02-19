@@ -8,11 +8,22 @@
 # Environment variables (ENV['...']) are set in the file config/application.yml.
 # See http://railsapps.github.com/rails-environment-variables.html
 puts 'ROLES'
-YAML.load(ENV['ROLES']).each do |role|
-  Role.find_or_create_by_name({ :name => role }, :without_protection => true)
-  puts 'role: ' << role
+
+[:admin, :member].each do |name|
+  puts name
+  Role.find_or_create_by_name(name: name)
 end
-puts 'DEFAULT USERS'
-user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
-puts 'user: ' << user.name
-user.add_role :admin
+
+require 'yaml'
+
+files = Dir[File.join(Rails.root, "db", "default", "*.yml")]
+files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
+  puts "Loading data from #{File.basename(file)}"
+  sentences = YAML::load(File.open(file, 'r'))
+  sentences.each do |sentence|
+    Sentence.find_or_create_by_language_id_and_content( content: sentence['content'],
+                                                        language_id: sentence['language_id'],
+                                                        template: sentence['template'] )
+  end
+  puts "Loaded sentences: #{sentences.count}"
+end

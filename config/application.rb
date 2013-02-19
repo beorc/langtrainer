@@ -20,11 +20,11 @@ module Rails3BootstrapDeviseCancan
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
-      
+
       g.test_framework :rspec, fixture: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
-      
-      
+
+
       g.view_specs false
       g.helper_specs false
     end
@@ -51,7 +51,7 @@ module Rails3BootstrapDeviseCancan
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ru
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

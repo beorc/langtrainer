@@ -1,0 +1,12 @@
+- { content: 'Will I love?', language_id: 0, template: '1:0:0:0' }
+- { content: 'I will love', language_id: 0, template: '1:0:1:0' }
+- { content: 'I will not love', language_id: 0, template: '1:0:2:0' }
+
+- { content: 'Do I love?', language_id: 0, template: '1:1:0:0' }
+- { content: 'I love', language_id: 0, template: '1:1:1:0' }
+- { content: 'I do not love', language_id: 0, template: '1:1:2:0' }
+
+- { content: 'Did I love?', language_id: 0, template: '1:2:0:0' }
+- { content: 'I loved', language_id: 0, template: '1:2:1:0' }
+- { content: 'I did not love', language_id: 0, template: '1:2:2:0' }
+

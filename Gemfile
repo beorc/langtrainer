@@ -29,7 +29,6 @@ end
 group :test do
   gem "database_cleaner", ">= 0.9.1"
   gem "email_spec", ">= 1.4.0"
-  gem "cucumber-rails", ">= 1.3.0"
   gem "launchy", ">= 2.1.2"
   gem "capybara", ">= 2.0.2"
 end

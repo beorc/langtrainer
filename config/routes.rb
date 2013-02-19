@@ -2,9 +2,7 @@ Rails3BootstrapDeviseCancan::Application.routes.draw do
   root :to => 'users#index'
 
   resources :users do
-    member do
-      get :activate
-    end
+    get :activate, on: :member
   end
 
   resources :user_sessions
@@ -18,4 +16,10 @@ Rails3BootstrapDeviseCancan::Application.routes.draw do
     get :callback
   end
   match 'oauth/:provider' => 'oauths#oauth', :as => :auth_at_provider
+
+  namespace :admin do
+    resources :sentences
+  end
+
+  resources :exercises, only: :show
 end
