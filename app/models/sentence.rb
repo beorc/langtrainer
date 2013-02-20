@@ -4,8 +4,8 @@ class Sentence < ActiveRecord::Base
 
   validates :content, :template, :language_id, presence: true
 
-  scope :by_exercise, ->(exercise) { where('template LIKE "?:%"', exercise) }
-  scope :by_language, ->(language) { where(language_id: language) }
+  scope :for_exercise, ->(exercise) { where('template LIKE "?:%"', exercise) }
+  scope :with_language, ->(language) { where(language_id: language) }
 
   def self.random_one
     if (c = count) != 0

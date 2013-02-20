@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails3 Bootstrap Devise Cancan" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails3 Bootstrap Devise Cancan" %>">
+    <title><%= content_for?(:title) ? yield(:title) : t(:app_name) %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : t(:app_name) %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+    <%= yield :load_controller_javascript %>
+    <%= include_gon %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>

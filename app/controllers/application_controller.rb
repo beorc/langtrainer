@@ -5,4 +5,14 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, :alert => exception.message
   end
 
+  private
+
+  def current_user
+    super || User.default
+  end
+
+  def logged_in?
+    return false if current_user.id == User.default.id
+    super
+  end
 end

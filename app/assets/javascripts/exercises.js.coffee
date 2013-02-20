@@ -1,0 +1,1 @@
+initNamespace('LANGTRAINER.exercises').init = () ->

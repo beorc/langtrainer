@@ -14,6 +14,16 @@ puts 'ROLES'
   Role.find_or_create_by_name(name: name)
 end
 
+puts 'DEFAULT USERS'
+
+user = User.find_or_create_by_email :email => ENV['MEMBER_EMAIL'].dup, :password => ENV['MEMBER_PASSWORD'].dup, :password_confirmation => ENV['MEMBER_PASSWORD'].dup
+puts 'user: ' << user.email
+user.add_role :member
+
+user = User.find_or_create_by_email :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
+puts 'user: ' << user.email
+user.add_role :admin
+
 require 'yaml'
 
 files = Dir[File.join(Rails.root, "db", "default", "*.yml")]

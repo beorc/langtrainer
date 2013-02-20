@@ -1,1 +1,16 @@
-= debug @sentence
+- load_controller_script
+.sentence = @sentence.content
+
+= text_field_tag :answer, nil, class: :answer
+
+= link_to '#', class: 'send btn' do
+  i.icon-ok
+  '&nbsp
+  = t('.send')
+
+'&nbsp
+
+= link_to '#', class: 'look btn' do
+  i.icon-eye-open
+  '&nbsp
+  = t('.look')

@@ -1,5 +1,5 @@
 ru:
-  app_name: Тренажер иностранных языков
+  app_name: Langtrainer
 
   time:
     formats:
@@ -26,6 +26,11 @@ ru:
   language:
     english: Английский
     russian: Русский
+
+  exercises:
+    show:
+      send: Проверить
+      look: Узнать правильный ответ
 
   views:
     pagination:
