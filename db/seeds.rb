@@ -21,7 +21,7 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   puts "Loading data from #{File.basename(file)}"
   sentences = YAML::load(File.open(file, 'r'))
   sentences.each do |sentence|
-    Sentence.find_or_create_by_language_id_and_content( content: sentence['content'],
+    Sentence.find_or_create_by_content( content: sentence['content'],
                                                         language_id: sentence['language_id'],
                                                         template: sentence['template'] )
   end
