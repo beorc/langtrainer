@@ -5,11 +5,10 @@ class Sentence < ActiveRecord::Base
   validates :content, :template, :language_id, presence: true
 
   scope :for_exercise, ->(exercise) { where('template LIKE "?:%"', exercise) }
-  scope :with_language, ->(language) { where(language_id: language) }
+  scope :with_language, ->(language) { where(language_id: language.id) }
+  scope :with_template, ->(template) { where(template: template) }
 
-  def self.random_one
-    if (c = count) != 0
-      find(:first, offset: rand(c))
-    end
+  def translation_to(language)
+    Sentence.with_language(language).with_template(template).first
   end
 end

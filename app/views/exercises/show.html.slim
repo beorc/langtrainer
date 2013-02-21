@@ -1,16 +1,24 @@
 - load_controller_script
-.sentence = @sentence.content
 
-= text_field_tag :answer, nil, class: :answer
+.workspace
+  .question = render @sentences.first
+  .sentences.hide = render @sentences
 
-= link_to '#', class: 'send btn' do
-  i.icon-ok
-  '&nbsp
-  = t('.send')
+  .form-horizontal.control-group.string
+    label.string.control-label for='answer'
+      = t('.answer')
+    .controls
+      = text_field_tag :answer, nil, class: :answer, id: :answer
 
-'&nbsp
+  .actions
+    = link_to '#', class: 'next btn' do
+      i.icon-refresh
+      '&nbsp
+      = t('.next')
 
-= link_to '#', class: 'look btn' do
-  i.icon-eye-open
-  '&nbsp
-  = t('.look')
+    '&nbsp
+
+    = link_to '#', class: 'look btn' do
+      i.icon-eye-open
+      '&nbsp
+      = t('.look')

@@ -1,5 +1,5 @@
 Rails3BootstrapDeviseCancan::Application.routes.draw do
-  root :to => 'users#index'
+  root :to => 'exercises#index'
 
   resources :users do
     get :activate, on: :member

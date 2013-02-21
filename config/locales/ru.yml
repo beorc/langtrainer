@@ -29,8 +29,9 @@ ru:
 
   exercises:
     show:
-      send: Проверить
+      next: Дальше
       look: Узнать правильный ответ
+      answer: 'Введите перевод:'
 
   views:
     pagination:
