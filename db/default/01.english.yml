@@ -10,3 +10,62 @@
 - { content: 'I loved', language_id: 0, template: '1:2:1:0' }
 - { content: 'I did not love', language_id: 0, template: '1:2:2:0' }
 
+- { content: 'Will you love?', language_id: 0, template: '1:0:0:1' }
+- { content: 'You will love', language_id: 0, template: '1:0:1:1' }
+- { content: 'You will not love', language_id: 0, template: '1:0:2:1' }
+
+- { content: 'Do you love?', language_id: 0, template: '1:1:0:1' }
+- { content: 'You love', language_id: 0, template: '1:1:1:1' }
+- { content: 'You do not love', language_id: 0, template: '1:1:2:1' }
+
+- { content: 'Did you love?', language_id: 0, template: '1:2:0:1' }
+- { content: 'You loved', language_id: 0, template: '1:2:1:1' }
+- { content: 'You did not love', language_id: 0, template: '1:2:2:1' }
+
+- { content: 'Will we love?', language_id: 0, template: '1:0:0:2' }
+- { content: 'We will love', language_id: 0, template: '1:0:1:2' }
+- { content: 'We will not love', language_id: 0, template: '1:0:2:2' }
+
+- { content: 'Do we love?', language_id: 0, template: '1:1:0:2' }
+- { content: 'We love', language_id: 0, template: '1:1:1:2' }
+- { content: 'We do not love', language_id: 0, template: '1:1:2:2' }
+
+- { content: 'Did we love?', language_id: 0, template: '1:2:0:2' }
+- { content: 'We loved', language_id: 0, template: '1:2:1:2' }
+- { content: 'We did not love', language_id: 0, template: '1:2:2:2' }
+
+- { content: 'Will they love?', language_id: 0, template: '1:0:0:3' }
+- { content: 'They will love', language_id: 0, template: '1:0:1:3' }
+- { content: 'They will not love', language_id: 0, template: '1:0:2:3' }
+
+- { content: 'Do they love?', language_id: 0, template: '1:1:0:3' }
+- { content: 'They love', language_id: 0, template: '1:1:1:3' }
+- { content: 'They do not love', language_id: 0, template: '1:1:2:3' }
+
+- { content: 'Did they love?', language_id: 0, template: '1:2:0:3' }
+- { content: 'They loved', language_id: 0, template: '1:2:1:3' }
+- { content: 'They did not love', language_id: 0, template: '1:2:2:3' }
+
+- { content: 'Will he love?', language_id: 0, template: '1:0:0:4' }
+- { content: 'He will love', language_id: 0, template: '1:0:1:4' }
+- { content: 'He will not love', language_id: 0, template: '1:0:2:4' }
+
+- { content: 'Does he love?', language_id: 0, template: '1:1:0:4' }
+- { content: 'He loves', language_id: 0, template: '1:1:1:4' }
+- { content: 'He does not love', language_id: 0, template: '1:1:2:4' }
+
+- { content: 'Did he love?', language_id: 0, template: '1:2:0:4' }
+- { content: 'He loved', language_id: 0, template: '1:2:1:4' }
+- { content: 'He did not love', language_id: 0, template: '1:2:2:4' }
+
+- { content: 'Will she love?', language_id: 0, template: '1:0:0:5' }
+- { content: 'She will love', language_id: 0, template: '1:0:1:5' }
+- { content: 'She will not love', language_id: 0, template: '1:0:2:5' }
+
+- { content: 'Does she love?', language_id: 0, template: '1:1:0:5' }
+- { content: 'She loves', language_id: 0, template: '1:1:1:5' }
+- { content: 'She does not love', language_id: 0, template: '1:1:2:5' }
+
+- { content: 'Did she love?', language_id: 0, template: '1:2:0:5' }
+- { content: 'She loved', language_id: 0, template: '1:2:1:5' }
+- { content: 'She did not love', language_id: 0, template: '1:2:2:5' }

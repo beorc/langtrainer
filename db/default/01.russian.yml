@@ -9,3 +9,63 @@
 - { content: 'Я любил?', language_id: 1, template: '1:2:0:0' }
 - { content: 'Я любил', language_id: 1, template: '1:2:1:0' }
 - { content: 'Я не любил', language_id: 1, template: '1:2:2:0' }
+
+- { content: 'Ты будешь любить?', language_id: 1, template: '1:0:0:1' }
+- { content: 'Ты будешь любить', language_id: 1, template: '1:0:1:1' }
+- { content: 'Ты не будешь любить', language_id: 1, template: '1:0:2:1' }
+
+- { content: 'Ты любишь?', language_id: 1, template: '1:1:0:1' }
+- { content: 'Ты любишь', language_id: 1, template: '1:1:1:1' }
+- { content: 'Ты не любишь', language_id: 1, template: '1:1:2:1' }
+
+- { content: 'Ты любил?', language_id: 1, template: '1:2:0:1' }
+- { content: 'Ты любил', language_id: 1, template: '1:2:1:1' }
+- { content: 'Ты не любил', language_id: 1, template: '1:2:2:1' }
+
+- { content: 'Мы полюбим?', language_id: 1, template: '1:0:0:2' }
+- { content: 'Мы полюбим', language_id: 1, template: '1:0:1:2' }
+- { content: 'Мы не полюбим', language_id: 1, template: '1:0:2:2' }
+
+- { content: 'Мы любим?', language_id: 1, template: '1:1:0:2' }
+- { content: 'Мы любим', language_id: 1, template: '1:1:1:2' }
+- { content: 'Мы не любим', language_id: 1, template: '1:1:2:2' }
+
+- { content: 'Мы любили?', language_id: 1, template: '1:2:0:2' }
+- { content: 'Мы любили', language_id: 1, template: '1:2:1:2' }
+- { content: 'Мы не любили', language_id: 1, template: '1:2:2:2' }
+
+- { content: 'Они полюбят?', language_id: 1, template: '1:0:0:3' }
+- { content: 'Они полюбят', language_id: 1, template: '1:0:1:3' }
+- { content: 'Они не полюбят', language_id: 1, template: '1:0:2:3' }
+
+- { content: 'Они любят?', language_id: 1, template: '1:1:0:3' }
+- { content: 'Они любят', language_id: 1, template: '1:1:1:3' }
+- { content: 'Они не любят', language_id: 1, template: '1:1:2:3' }
+
+- { content: 'Они любили?', language_id: 1, template: '1:2:0:3' }
+- { content: 'Они любили', language_id: 1, template: '1:2:1:3' }
+- { content: 'Они не любили', language_id: 1, template: '1:2:2:3' }
+
+- { content: 'Он полюбит?', language_id: 1, template: '1:0:0:4' }
+- { content: 'Он полюбит', language_id: 1, template: '1:0:1:4' }
+- { content: 'Он не полюбит', language_id: 1, template: '1:0:2:4' }
+
+- { content: 'Он любит?', language_id: 1, template: '1:1:0:4' }
+- { content: 'Он любит', language_id: 1, template: '1:1:1:4' }
+- { content: 'Он не любит', language_id: 1, template: '1:1:2:4' }
+
+- { content: 'Он любил?', language_id: 1, template: '1:2:0:4' }
+- { content: 'Он любил', language_id: 1, template: '1:2:1:4' }
+- { content: 'Он не любил', language_id: 1, template: '1:2:2:4' }
+
+- { content: 'Она полюбит?', language_id: 1, template: '1:0:0:5' }
+- { content: 'Она полюбит', language_id: 1, template: '1:0:1:5' }
+- { content: 'Она не полюбит', language_id: 1, template: '1:0:2:5' }
+
+- { content: 'Она любит?', language_id: 1, template: '1:1:0:5' }
+- { content: 'Она любит', language_id: 1, template: '1:1:1:5' }
+- { content: 'Она не любит', language_id: 1, template: '1:1:2:5' }
+
+- { content: 'Она любила?', language_id: 1, template: '1:2:0:5' }
+- { content: 'Она любила', language_id: 1, template: '1:2:1:5' }
+- { content: 'Она не любила', language_id: 1, template: '1:2:2:5' }

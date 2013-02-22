@@ -33,3 +33,8 @@ ns.init = () ->
     else
       input.css color:'red'
     true
+
+  $('.look').click () ->
+    rightAnswer = ns.currentSentence.data('translation')
+    $('.answer').val(rightAnswer)
+
