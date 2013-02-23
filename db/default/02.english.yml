@@ -1,0 +1,51 @@
+# === see
+
+- { content: 'Will I see you?', language_id: 0, template: '2:0:0:0' }
+- { content: 'I will see you', language_id: 0, template: '2:0:1:0' }
+- { content: 'I will not see you', language_id: 0, template: '2:0:2:0' }
+
+- { content: 'Do you see me?', language_id: 0, template: '2:1:0:1' }
+- { content: 'You see me', language_id: 0, template: '2:1:1:1' }
+- { content: 'You do not see me', language_id: 0, template: '2:1:2:1' }
+
+- { content: 'Did we see them?', language_id: 0, template: '2:2:0:2' }
+- { content: 'We saw them', language_id: 0, template: '2:2:1:2' }
+- { content: 'We did not see them', language_id: 0, template: '2:2:2:2' }
+
+- { content: 'Will they see us?', language_id: 0, template: '2:0:0:3' }
+- { content: 'They will see us', language_id: 0, template: '2:0:1:3' }
+- { content: 'They will not see us', language_id: 0, template: '2:0:2:3' }
+
+- { content: 'Does he see her?', language_id: 0, template: '2:1:0:4' }
+- { content: 'He sees her', language_id: 0, template: '2:1:1:4' }
+- { content: 'He does not see her', language_id: 0, template: '2:1:2:4' }
+
+- { content: 'Did she see him?', language_id: 0, template: '2:2:0:5' }
+- { content: 'She saw him', language_id: 0, template: '2:2:1:5' }
+- { content: 'She did not see him', language_id: 0, template: '2:2:2:5' }
+
+# === know
+
+- { content: 'Will I know you?', language_id: 0, template: '2:0:0:0' }
+- { content: 'I will know you', language_id: 0, template: '2:0:1:0' }
+- { content: 'I will not know you', language_id: 0, template: '2:0:2:0' }
+
+- { content: 'Do you know me?', language_id: 0, template: '2:1:0:1' }
+- { content: 'You know me', language_id: 0, template: '2:1:1:1' }
+- { content: 'You do not know me', language_id: 0, template: '2:1:2:1' }
+
+- { content: 'Did we know them?', language_id: 0, template: '2:2:0:2' }
+- { content: 'We knew them', language_id: 0, template: '2:2:1:2' }
+- { content: 'We did not know them', language_id: 0, template: '2:2:2:2' }
+
+- { content: 'Will they know us?', language_id: 0, template: '2:0:0:3' }
+- { content: 'They will know us', language_id: 0, template: '2:0:1:3' }
+- { content: 'They will not know us', language_id: 0, template: '2:0:2:3' }
+
+- { content: 'Does he know her?', language_id: 0, template: '2:1:0:4' }
+- { content: 'He knows her', language_id: 0, template: '2:1:1:4' }
+- { content: 'He does not know her', language_id: 0, template: '2:1:2:4' }
+
+- { content: 'Did she know him?', language_id: 0, template: '2:2:0:5' }
+- { content: 'She knew him', language_id: 0, template: '2:2:1:5' }
+- { content: 'She did not know him', language_id: 0, template: '2:2:2:5' }

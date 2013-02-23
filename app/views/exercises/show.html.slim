@@ -5,20 +5,25 @@
   .sentences.hide = render @sentences
 
   .form-horizontal.control-group.string
-    label.string.control-label for='answer'
-      = t('.answer')
     .controls
-      = text_field_tag :answer, nil, class: :answer, id: :answer
+      = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
 
-  .actions
-    = link_to '#', class: 'next btn' do
-      i.icon-refresh
       '&nbsp
-      = t('.next')
 
-    '&nbsp
+      span.actions
+        = link_to '#', class: 'next', 'data-toggle' => 'tooltip', title: t('.next') do
+          i.icon-refresh
 
-    = link_to '#', class: 'look btn' do
-      i.icon-eye-open
-      '&nbsp
-      = t('.look')
+        '&nbsp
+
+        = link_to '#', class: 'look', 'data-toggle' => 'tooltip', title: t('.look') do
+          i.icon-eye-open
+
+        '&nbsp
+
+        = link_to '#', class: 'show-hint', 'data-toggle' => 'tooltip', title: t('.hint')  do
+          i.icon-question-sign
+
+  ul.hints.hide
+    - @hints.each do |hint|
+      li = image_tag hint

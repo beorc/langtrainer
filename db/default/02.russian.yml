@@ -1,0 +1,51 @@
+# === see
+
+- { content: 'Я увижу тебя?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Я увижу тебя', language_id: 1, template: '2:0:1:0' }
+- { content: 'Я не увижу тебя', language_id: 1, template: '2:0:2:0' }
+
+- { content: 'Ты видишь меня?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Ты видишь меня', language_id: 1, template: '2:1:1:1' }
+- { content: 'Ты не видишь меня', language_id: 1, template: '2:1:2:1' }
+
+- { content: 'Вы видели их?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Мы видели их', language_id: 1, template: '2:2:1:2' }
+- { content: 'Мы не видели их', language_id: 1, template: '2:2:2:2' }
+
+- { content: 'Они увидят нас?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Они увидят нас', language_id: 1, template: '2:0:1:3' }
+- { content: 'Они не увидят нас', language_id: 1, template: '2:0:2:3' }
+
+- { content: 'Он видел ее?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Он видел ее', language_id: 1, template: '2:1:1:4' }
+- { content: 'Он не видел ее', language_id: 1, template: '2:1:2:4' }
+
+- { content: 'Она видела его?', language_id: 1, template: '2:2:0:5' }
+- { content: 'Она видела его', language_id: 1, template: '2:2:1:5' }
+- { content: 'Она не видела его', language_id: 1, template: '2:2:2:5' }
+
+# === know
+
+- { content: 'Я узнаю тебя?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Я узнаю тебя', language_id: 1, template: '2:0:1:0' }
+- { content: 'Я не узнаю тебя', language_id: 1, template: '2:0:2:0' }
+
+- { content: 'Ты знаешь меня?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Ты знаешь меня', language_id: 1, template: '2:1:1:1' }
+- { content: 'Ты не знаешь меня', language_id: 1, template: '2:1:2:1' }
+
+- { content: 'Вы знали их?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Мы знали их', language_id: 1, template: '2:2:1:2' }
+- { content: 'Мы не знали их', language_id: 1, template: '2:2:2:2' }
+
+- { content: 'Они узнают нас?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Они узнают нас', language_id: 1, template: '2:0:1:3' }
+- { content: 'Они не узнают нас', language_id: 1, template: '2:0:2:3' }
+
+- { content: 'Он знал ее?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Он знал ее', language_id: 1, template: '2:1:1:4' }
+- { content: 'Он не знал ее', language_id: 1, template: '2:1:2:4' }
+
+- { content: 'Она знала его?', language_id: 1, template: '2:2:0:5' }
+- { content: 'Она знала его', language_id: 1, template: '2:2:1:5' }
+- { content: 'Она не знала его', language_id: 1, template: '2:2:2:5' }

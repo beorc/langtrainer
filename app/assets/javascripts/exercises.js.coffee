@@ -38,3 +38,15 @@ ns.init = () ->
     rightAnswer = ns.currentSentence.data('translation')
     $('.answer').val(rightAnswer)
 
+  $('.show-hint').click () ->
+    hints = $('.hints')
+    if hints.hasClass('hide')
+      hints.removeClass('hide')
+    else
+      hints.addClass('hide')
+
+    false
+
+  $('.actions a').tooltip(placement: 'bottom')
+
+

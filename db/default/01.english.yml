@@ -69,3 +69,130 @@
 - { content: 'Did she love?', language_id: 0, template: '1:2:0:5' }
 - { content: 'She loved', language_id: 0, template: '1:2:1:5' }
 - { content: 'She did not love', language_id: 0, template: '1:2:2:5' }
+
+# === speak
+
+- { content: 'Will I speak?', language_id: 0, template: '1:0:0:0' }
+- { content: 'I will speak', language_id: 0, template: '1:0:1:0' }
+- { content: 'I will not speak', language_id: 0, template: '1:0:2:0' }
+
+- { content: 'Do I speak?', language_id: 0, template: '1:1:0:0' }
+- { content: 'I speak', language_id: 0, template: '1:1:1:0' }
+- { content: 'I do not speak', language_id: 0, template: '1:1:2:0' }
+
+- { content: 'Did I speak?', language_id: 0, template: '1:2:0:0' }
+- { content: 'I spoke', language_id: 0, template: '1:2:1:0' }
+- { content: 'I did not speak', language_id: 0, template: '1:2:2:0' }
+
+- { content: 'Will you speak?', language_id: 0, template: '1:0:0:1' }
+- { content: 'You will speak', language_id: 0, template: '1:0:1:1' }
+- { content: 'You will not speak', language_id: 0, template: '1:0:2:1' }
+
+- { content: 'Do you speak?', language_id: 0, template: '1:1:0:1' }
+- { content: 'You speak', language_id: 0, template: '1:1:1:1' }
+- { content: 'You do not speak', language_id: 0, template: '1:1:2:1' }
+
+- { content: 'Did you speak?', language_id: 0, template: '1:2:0:1' }
+- { content: 'You spoke', language_id: 0, template: '1:2:1:1' }
+- { content: 'You did not speak', language_id: 0, template: '1:2:2:1' }
+
+- { content: 'Will we speak?', language_id: 0, template: '1:0:0:2' }
+- { content: 'We will speak', language_id: 0, template: '1:0:1:2' }
+- { content: 'We will not speak', language_id: 0, template: '1:0:2:2' }
+
+- { content: 'Do we speak?', language_id: 0, template: '1:1:0:2' }
+- { content: 'We speak', language_id: 0, template: '1:1:1:2' }
+- { content: 'We do not speak', language_id: 0, template: '1:1:2:2' }
+
+- { content: 'Did we speak?', language_id: 0, template: '1:2:0:2' }
+- { content: 'We spoke', language_id: 0, template: '1:2:1:2' }
+- { content: 'We did not speak', language_id: 0, template: '1:2:2:2' }
+
+- { content: 'Will they speak?', language_id: 0, template: '1:0:0:3' }
+- { content: 'They will speak', language_id: 0, template: '1:0:1:3' }
+- { content: 'They will not speak', language_id: 0, template: '1:0:2:3' }
+
+- { content: 'Do they speak?', language_id: 0, template: '1:1:0:3' }
+- { content: 'They speak', language_id: 0, template: '1:1:1:3' }
+- { content: 'They do not speak', language_id: 0, template: '1:1:2:3' }
+
+- { content: 'Did they speak?', language_id: 0, template: '1:2:0:3' }
+- { content: 'They spoke', language_id: 0, template: '1:2:1:3' }
+- { content: 'They did not speak', language_id: 0, template: '1:2:2:3' }
+
+- { content: 'Will he speak?', language_id: 0, template: '1:0:0:4' }
+- { content: 'He will speak', language_id: 0, template: '1:0:1:4' }
+- { content: 'He will not speak', language_id: 0, template: '1:0:2:4' }
+
+- { content: 'Does he speak?', language_id: 0, template: '1:1:0:4' }
+- { content: 'He speaks', language_id: 0, template: '1:1:1:4' }
+- { content: 'He does not speak', language_id: 0, template: '1:1:2:4' }
+
+- { content: 'Did he speak?', language_id: 0, template: '1:2:0:4' }
+- { content: 'He spoke', language_id: 0, template: '1:2:1:4' }
+- { content: 'He did not speak', language_id: 0, template: '1:2:2:4' }
+
+- { content: 'Will she speak?', language_id: 0, template: '1:0:0:5' }
+- { content: 'She will speak', language_id: 0, template: '1:0:1:5' }
+- { content: 'She will not speak', language_id: 0, template: '1:0:2:5' }
+
+- { content: 'Does she speak?', language_id: 0, template: '1:1:0:5' }
+- { content: 'She speaks', language_id: 0, template: '1:1:1:5' }
+- { content: 'She does not speak', language_id: 0, template: '1:1:2:5' }
+
+- { content: 'Did she speak?', language_id: 0, template: '1:2:0:5' }
+- { content: 'She spoke', language_id: 0, template: '1:2:1:5' }
+- { content: 'She did not speak', language_id: 0, template: '1:2:2:5' }
+
+# === think
+
+- { content: 'Will I think?', language_id: 0, template: '1:0:0:0' }
+- { content: 'I will think', language_id: 0, template: '1:0:1:0' }
+- { content: 'I will not think', language_id: 0, template: '1:0:2:0' }
+
+- { content: 'Do you think?', language_id: 0, template: '1:1:0:1' }
+- { content: 'You think', language_id: 0, template: '1:1:1:1' }
+- { content: 'You do not think', language_id: 0, template: '1:1:2:1' }
+
+- { content: 'Did we think?', language_id: 0, template: '1:2:0:2' }
+- { content: 'We came', language_id: 0, template: '1:2:1:2' }
+- { content: 'We did not think', language_id: 0, template: '1:2:2:2' }
+
+- { content: 'Will they think?', language_id: 0, template: '1:0:0:3' }
+- { content: 'They will think', language_id: 0, template: '1:0:1:3' }
+- { content: 'They will not think', language_id: 0, template: '1:0:2:3' }
+
+- { content: 'Does he think?', language_id: 0, template: '1:1:0:4' }
+- { content: 'He thinks', language_id: 0, template: '1:1:1:4' }
+- { content: 'He does not thinks', language_id: 0, template: '1:1:2:4' }
+
+- { content: 'Did she think?', language_id: 0, template: '1:2:0:5' }
+- { content: 'She thought', language_id: 0, template: '1:2:1:5' }
+- { content: 'She did not think', language_id: 0, template: '1:2:2:5' }
+
+# === come
+
+- { content: 'Will I come?', language_id: 0, template: '1:0:0:0' }
+- { content: 'I will come', language_id: 0, template: '1:0:1:0' }
+- { content: 'I will not come', language_id: 0, template: '1:0:2:0' }
+
+- { content: 'Do you come?', language_id: 0, template: '1:1:0:1' }
+- { content: 'You come', language_id: 0, template: '1:1:1:1' }
+- { content: 'You do not come', language_id: 0, template: '1:1:2:1' }
+
+- { content: 'Did we come?', language_id: 0, template: '1:2:0:2' }
+- { content: 'We came', language_id: 0, template: '1:2:1:2' }
+- { content: 'We did not come', language_id: 0, template: '1:2:2:2' }
+
+- { content: 'Will they come?', language_id: 0, template: '1:0:0:3' }
+- { content: 'They will come', language_id: 0, template: '1:0:1:3' }
+- { content: 'They will not come', language_id: 0, template: '1:0:2:3' }
+
+- { content: 'Does he come?', language_id: 0, template: '1:1:0:4' }
+- { content: 'He comes', language_id: 0, template: '1:1:1:4' }
+- { content: 'He does not come', language_id: 0, template: '1:1:2:4' }
+
+- { content: 'Did she come?', language_id: 0, template: '1:2:0:5' }
+- { content: 'She came', language_id: 0, template: '1:2:1:5' }
+- { content: 'She did not come', language_id: 0, template: '1:2:2:5' }
+
