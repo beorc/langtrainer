@@ -49,3 +49,40 @@
 - { content: 'Did she know him?', language_id: 0, template: '2:2:0:5' }
 - { content: 'She knew him', language_id: 0, template: '2:2:1:5' }
 - { content: 'She did not know him', language_id: 0, template: '2:2:2:5' }
+
+# === how work
+
+- { content: 'How will I work?', language_id: 0, template: '2:0:0:0' }
+- { content: 'How do you work?', language_id: 0, template: '2:1:0:1' }
+- { content: 'How did we work?', language_id: 0, template: '2:2:0:2' }
+- { content: 'How will they work?', language_id: 0, template: '2:0:0:3' }
+- { content: 'How does he work?', language_id: 0, template: '2:1:0:4' }
+- { content: 'How did she work?', language_id: 0, template: '2:2:0:5' }
+
+# === where travel
+
+- { content: 'Where will I travel?', language_id: 0, template: '2:0:0:0' }
+- { content: 'Where do you travel?', language_id: 0, template: '2:1:0:1' }
+- { content: 'Where did we travel?', language_id: 0, template: '2:2:0:2' }
+- { content: 'Where will they travel?', language_id: 0, template: '2:0:0:3' }
+- { content: 'Where does he travel?', language_id: 0, template: '2:1:0:4' }
+- { content: 'Where did she travel?', language_id: 0, template: '2:2:0:5' }
+
+# === when go
+
+- { content: 'When will I go to London?', language_id: 0, template: '2:0:0:0' }
+- { content: 'When do you go to London?', language_id: 0, template: '2:1:0:1' }
+- { content: 'When did we go to London?', language_id: 0, template: '2:2:0:2' }
+- { content: 'When will they go to London?', language_id: 0, template: '2:0:0:3' }
+- { content: 'When does he go to London?', language_id: 0, template: '2:1:0:4' }
+- { content: 'When did she go to London?', language_id: 0, template: '2:2:0:5' }
+
+# === what from
+
+- { content: 'What will I bring you from London?', language_id: 0, template: '2:0:0:0' }
+- { content: 'What do you bring me from London?', language_id: 0, template: '2:1:0:1' }
+- { content: 'What did we bring them from London?', language_id: 0, template: '2:2:0:2' }
+- { content: 'What will they bring us from London?', language_id: 0, template: '2:0:0:3' }
+- { content: 'What does he bring her from London?', language_id: 0, template: '2:1:0:4' }
+- { content: 'What did she bring him from London?', language_id: 0, template: '2:2:0:5' }
+

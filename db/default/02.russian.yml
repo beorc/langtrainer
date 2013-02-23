@@ -49,3 +49,39 @@
 - { content: 'Она знала его?', language_id: 1, template: '2:2:0:5' }
 - { content: 'Она знала его', language_id: 1, template: '2:2:1:5' }
 - { content: 'Она не знала его', language_id: 1, template: '2:2:2:5' }
+
+# === how work
+
+- { content: 'Как я буду работать?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Как ты работаешь?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Как мы работали?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Как они будут работать?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Как он работает?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Как она работала?', language_id: 1, template: '2:2:0:5' }
+
+# === where travel
+
+- { content: 'Где я буду путешествовать?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Где ты путешествуешь?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Где мы путешествовали?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Где они будут путешествовать?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Где он путешествует?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Где она путешествовала?', language_id: 1, template: '2:2:0:5' }
+
+# === when go to
+
+- { content: 'Когда я поеду в Лондон?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Когда ты едешь в Лондон?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Когда мы ездили в Лондон?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Когда они поедут в Лондон?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Когда он едет в Лондон?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Когда она ездила в Лондон?', language_id: 1, template: '2:2:0:5' }
+
+# === what from
+
+- { content: 'Что я привезу тебе из Лондона?', language_id: 1, template: '2:0:0:0' }
+- { content: 'Что ты везешь мне из Лондона?', language_id: 1, template: '2:1:0:1' }
+- { content: 'Что мы везли им из Лондона?', language_id: 1, template: '2:2:0:2' }
+- { content: 'Что они привезут нам из Лондона?', language_id: 1, template: '2:0:0:3' }
+- { content: 'Что он везет ей из Лондона?', language_id: 1, template: '2:1:0:4' }
+- { content: 'Что она везла ему из Лондона?', language_id: 1, template: '2:2:0:5' }
