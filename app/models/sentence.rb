@@ -3,6 +3,7 @@ class Sentence < ActiveRecord::Base
   attr_accessible :content, :template, :language_id
 
   validates :content, :template, :language_id, presence: true
+  validates :content, uniqueness: { scope: [:language_id, :template] }
 
   scope :for_exercise, ->(exercise) { where('template LIKE "?:%"', exercise) }
   scope :with_language, ->(language) { where(language_id: language.id) }
