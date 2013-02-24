@@ -9,6 +9,6 @@ class CreateSentences < ActiveRecord::Migration
     end
     add_index :sentences, :language_id
     add_index :sentences, :template
-    add_index :sentences, [:content, :language_id, :template], unique: true
+    add_index :sentences, [:content, :language_id], unique: true
   end
 end

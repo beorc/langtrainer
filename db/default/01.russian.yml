@@ -1,8 +1,8 @@
 # === love
 #
-- { content: 'Я полюблю?', language_id: 1, template: '1:0:0:0:1' }
-- { content: 'Я полюблю', language_id: 1, template: '1:0:1:0:1' }
-- { content: 'Я не полюблю', language_id: 1, template: '1:0:2:0:1' }
+- { content: 'Я буду любить?', language_id: 1, template: '1:0:0:0:1' }
+- { content: 'Я буду любить', language_id: 1, template: '1:0:1:0:1' }
+- { content: 'Я не буду любить', language_id: 1, template: '1:0:2:0:1' }
 
 - { content: 'Ты любишь?', language_id: 1, template: '1:1:0:1:1' }
 - { content: 'Ты любишь', language_id: 1, template: '1:1:1:1:1' }
@@ -12,9 +12,9 @@
 - { content: 'Мы любили', language_id: 1, template: '1:2:1:2:1' }
 - { content: 'Мы не любили', language_id: 1, template: '1:2:2:2:1' }
 
-- { content: 'Они полюбят?', language_id: 1, template: '1:0:0:3:1' }
-- { content: 'Они полюбят', language_id: 1, template: '1:0:1:3:1' }
-- { content: 'Они не полюбят', language_id: 1, template: '1:0:2:3:1' }
+- { content: 'Они будут любить?', language_id: 1, template: '1:0:0:3:1' }
+- { content: 'Они будут любить', language_id: 1, template: '1:0:1:3:1' }
+- { content: 'Они не будут любить', language_id: 1, template: '1:0:2:3:1' }
 
 - { content: 'Он любит?', language_id: 1, template: '1:1:0:4:1' }
 - { content: 'Он любит', language_id: 1, template: '1:1:1:4:1' }
@@ -52,20 +52,20 @@
 
 # === think
 
-- { content: 'Я подумаю?', language_id: 1, template: '1:0:0:0:3' }
-- { content: 'Я подумаю', language_id: 1, template: '1:0:1:0:3' }
+- { content: 'Я буду думать?', language_id: 1, template: '1:0:0:0:3' }
+- { content: 'Я буду думать', language_id: 1, template: '1:0:1:0:3' }
 - { content: 'Я не буду думать', language_id: 1, template: '1:0:2:0:3' }
 
-- { content: 'Ты подумаешь?', language_id: 1, template: '1:1:0:1:3' }
-- { content: 'Ты подумаешь', language_id: 1, template: '1:1:1:1:3' }
+- { content: 'Ты будешь думать?', language_id: 1, template: '1:1:0:1:3' }
+- { content: 'Ты будешь думать', language_id: 1, template: '1:1:1:1:3' }
 - { content: 'Ты не будешь думать', language_id: 1, template: '1:1:2:1:3' }
 
 - { content: 'Мы думаем?', language_id: 1, template: '1:2:0:2:3' }
 - { content: 'Мы думаем', language_id: 1, template: '1:2:1:2:3' }
 - { content: 'Мы не думаем', language_id: 1, template: '1:2:2:2:3' }
 
-- { content: 'Они подумают?', language_id: 1, template: '1:0:0:3:3' }
-- { content: 'Они подумают', language_id: 1, template: '1:0:1:3:3' }
+- { content: 'Они будут думать?', language_id: 1, template: '1:0:0:3:3' }
+- { content: 'Они будут думать', language_id: 1, template: '1:0:1:3:3' }
 - { content: 'Они не будут думать', language_id: 1, template: '1:0:2:3:3' }
 
 - { content: 'Он думает?', language_id: 1, template: '1:1:0:4:3' }

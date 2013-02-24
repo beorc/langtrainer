@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20130218190234) do
     t.datetime "updated_at",  :null => false
   end
 
-  add_index "sentences", ["content", "language_id", "template"], :name => "index_sentences_on_content_and_language_id_and_template", :unique => true
+  add_index "sentences", ["content", "language_id"], :name => "index_sentences_on_content_and_language_id", :unique => true
   add_index "sentences", ["language_id"], :name => "index_sentences_on_language_id"
   add_index "sentences", ["template"], :name => "index_sentences_on_template"
 
