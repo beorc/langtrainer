@@ -1,1 +1,3 @@
-= link_to 'Lesson 1', exercise_path(1)
+ul
+- (1..16).each do |i|
+  li = link_to "Exercise #{i}", exercise_path(i)

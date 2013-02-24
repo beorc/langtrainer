@@ -71,10 +71,8 @@
 # === when go
 
 - { content: 'When will I go to London?', language_id: 0, template: '2:0:0:0:5' }
-- { content: 'When do you go to London?', language_id: 0, template: '2:1:0:1:5' }
 - { content: 'When did we go to London?', language_id: 0, template: '2:2:0:2:5' }
 - { content: 'When will they go to London?', language_id: 0, template: '2:0:0:3:5' }
-- { content: 'When does he go to London?', language_id: 0, template: '2:1:0:4:5' }
 - { content: 'When did she go to London?', language_id: 0, template: '2:2:0:5:5' }
 
 # === what from
@@ -86,3 +84,5 @@
 - { content: 'What does he bring her from London?', language_id: 0, template: '2:1:0:4:6' }
 - { content: 'What did she bring him from London?', language_id: 0, template: '2:2:0:5:6' }
 
+# === leave
+# === hear

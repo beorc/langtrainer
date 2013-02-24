@@ -71,10 +71,8 @@
 # === when go to
 
 - { content: 'Когда я поеду в Лондон?', language_id: 1, template: '2:0:0:0:5' }
-- { content: 'Когда ты едешь в Лондон?', language_id: 1, template: '2:1:0:1:5' }
 - { content: 'Когда мы ездили в Лондон?', language_id: 1, template: '2:2:0:2:5' }
 - { content: 'Когда они поедут в Лондон?', language_id: 1, template: '2:0:0:3:5' }
-- { content: 'Когда он едет в Лондон?', language_id: 1, template: '2:1:0:4:5' }
 - { content: 'Когда она ездила в Лондон?', language_id: 1, template: '2:2:0:5:5' }
 
 # === what from
@@ -85,3 +83,4 @@
 - { content: 'Что они привезут нам из Лондона?', language_id: 1, template: '2:0:0:3:6' }
 - { content: 'Что он везет ей из Лондона?', language_id: 1, template: '2:1:0:4:6' }
 - { content: 'Что она везла ему из Лондона?', language_id: 1, template: '2:2:0:5:6' }
+

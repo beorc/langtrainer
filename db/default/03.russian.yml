@@ -1,0 +1,150 @@
+# === take
+
+- { content: 'Я буду брать твою машину?', language_id: 1, template: '3:0:0:0:1' }
+- { content: 'Я буду брать твою машину', language_id: 1, template: '3:0:1:0:1' }
+- { content: 'Я буду не брать твою машину', language_id: 1, template: '3:0:2:0:1' }
+
+- { content: 'Ты берешь мою машину?', language_id: 1, template: '3:1:0:1:1' }
+- { content: 'Ты берешь мою машину', language_id: 1, template: '3:1:1:1:1' }
+- { content: 'Ты не берешь мою машину', language_id: 1, template: '3:1:2:1:1' }
+
+- { content: 'Мы брали их машину?', language_id: 1, template: '3:2:0:2:1' }
+- { content: 'Мы брали их машину', language_id: 1, template: '3:2:1:2:1' }
+- { content: 'Мы не брали их машину', language_id: 1, template: '3:2:2:2:1' }
+
+- { content: 'Они будут брать нашу машину?', language_id: 1, template: '3:0:0:3:1' }
+- { content: 'Они будут брать нашу машину', language_id: 1, template: '3:0:1:3:1' }
+- { content: 'Они не будут брать нашу машину', language_id: 1, template: '3:0:2:3:1' }
+
+- { content: 'Он берет ее машину?', language_id: 1, template: '3:1:0:4:1' }
+- { content: 'Он берет ее машину', language_id: 1, template: '3:1:1:4:1' }
+- { content: 'Он не берет ее машину', language_id: 1, template: '3:1:2:4:1' }
+
+- { content: 'Она брала его машину?', language_id: 1, template: '3:2:0:5:1' }
+- { content: 'Она брала его машину', language_id: 1, template: '3:2:1:5:1' }
+- { content: 'Она не брала его машину', language_id: 1, template: '3:2:2:5:1' }
+
+# === want to be friend
+
+- { content: 'Я буду твоим другом?', language_id: 1, template: '3:0:0:0:2' }
+- { content: 'Я буду твоим другом', language_id: 1, template: '3:0:1:0:2' }
+- { content: 'Ты не будешь моим другом', language_id: 1, template: '3:0:2:0:2' }
+
+- { content: 'Ты мой друг?', language_id: 1, template: '3:1:0:1:2' }
+- { content: 'Ты мой друг', language_id: 1, template: '3:1:1:1:2' }
+- { content: 'Ты не мой друг', language_id: 1, template: '3:1:2:1:2' }
+
+- { content: 'Мы были их друзьями?', language_id: 1, template: '3:2:0:2:2' }
+- { content: 'Мы были их друзьями', language_id: 1, template: '3:2:1:2:2' }
+- { content: 'Мы не были их друзьями', language_id: 1, template: '3:2:2:2:2' }
+
+- { content: 'Они будут нашими друзьями?', language_id: 1, template: '3:0:0:3:2' }
+- { content: 'Они будут нашими друзьями', language_id: 1, template: '3:0:1:3:2' }
+- { content: 'Они не будут нашими друзьями', language_id: 1, template: '3:0:2:3:2' }
+
+- { content: 'Он ее друг?', language_id: 1, template: '3:1:0:4:2' }
+- { content: 'Он ее друг', language_id: 1, template: '3:1:1:4:2' }
+- { content: 'Он не ее друг', language_id: 1, template: '3:1:2:4:2' }
+
+- { content: 'Она была его подругой?', language_id: 1, template: '3:2:0:5:2' }
+- { content: 'Она была его подругой', language_id: 1, template: '3:2:1:5:2' }
+- { content: 'Она не была его подругой', language_id: 1, template: '3:2:2:5:2' }
+
+# === I am ing
+
+- { content: 'Я буду говорить днем?', language_id: 1, template: '3:0:0:0:3' }
+- { content: 'Я буду говорить днем', language_id: 1, template: '3:0:1:0:3' }
+- { content: 'Я не буду говорить днем', language_id: 1, template: '3:0:2:0:3' }
+
+- { content: 'Ты говоришь сейчас?', language_id: 1, template: '3:1:0:1:3' }
+- { content: 'Ты говоришь сейчас', language_id: 1, template: '3:1:1:1:3' }
+- { content: 'Ты не говоришь сейчас', language_id: 1, template: '3:1:2:1:3' }
+
+- { content: 'Мы говорили этим утром?', language_id: 1, template: '3:2:0:2:3' }
+- { content: 'Мы говорили этим утром', language_id: 1, template: '3:2:1:2:3' }
+- { content: 'Мы не говорили этим утром', language_id: 1, template: '3:2:2:2:3' }
+
+- { content: 'Они будут говорить после обеда?', language_id: 1, template: '3:0:0:3:3' }
+- { content: 'Они будут говорить после обеда', language_id: 1, template: '3:0:1:3:3' }
+- { content: 'Они не будут говорить после обеда', language_id: 1, template: '3:0:2:3:3' }
+
+- { content: 'Он говорит сейчас?', language_id: 1, template: '3:1:0:4:3' }
+- { content: 'Он говорит сейчас', language_id: 1, template: '3:1:1:4:3' }
+- { content: 'Он не говорит сейчас', language_id: 1, template: '3:1:2:4:3' }
+
+- { content: 'Она говорила на собрании?', language_id: 1, template: '3:2:0:5:3' }
+- { content: 'Она говорила на собрании', language_id: 1, template: '3:2:1:5:3' }
+- { content: 'Она не говорила на собрании', language_id: 1, template: '3:2:2:5:3' }
+
+# === to be here there
+
+- { content: 'Я буду здесь завтра?', language_id: 1, template: '3:0:0:0:4' }
+- { content: 'Я буду здесь завтра', language_id: 1, template: '3:0:1:0:4' }
+- { content: 'Я не буду здесь завтра', language_id: 1, template: '3:0:2:0:4' }
+
+- { content: 'Ты там?', language_id: 1, template: '3:1:0:1:4' }
+- { content: 'Ты там', language_id: 1, template: '3:1:1:1:4' }
+- { content: 'Ты не там', language_id: 1, template: '3:1:2:1:4' }
+
+- { content: 'Мы были здесь вчера?', language_id: 1, template: '3:2:0:2:4' }
+- { content: 'Мы были здесь вчера', language_id: 1, template: '3:2:1:2:4' }
+- { content: 'Мы не были здесь вчера', language_id: 1, template: '3:2:2:2:4' }
+
+- { content: 'Они будут там?', language_id: 1, template: '3:0:0:3:4' }
+- { content: 'Они будут там', language_id: 1, template: '3:0:1:3:4' }
+- { content: 'Они не будут там', language_id: 1, template: '3:0:2:3:4' }
+
+- { content: 'Он здесь?', language_id: 1, template: '3:1:0:4:4' }
+- { content: 'Он здесь', language_id: 1, template: '3:1:1:4:4' }
+- { content: 'Он не здесь', language_id: 1, template: '3:1:2:4:4' }
+
+- { content: 'Она была там?', language_id: 1, template: '3:2:0:5:4' }
+- { content: 'Она была там', language_id: 1, template: '3:2:1:5:4' }
+- { content: 'Она там не была', language_id: 1, template: '3:2:2:5:4' }
+
+# === to be
+
+- { content: 'Где я захочу находиться?', language_id: 1, template: '2:0:0:0:5' }
+- { content: 'Почему ты не хочешь быть здесь?', language_id: 1, template: '2:1:0:1:5' }
+- { content: 'Где мы хотели быть?', language_id: 1, template: '2:2:0:2:5' }
+- { content: 'Почему их там не будет завтра?', language_id: 1, template: '2:0:0:3:5' }
+- { content: 'Где он?', language_id: 1, template: '2:1:0:4:5' }
+- { content: 'Почему она была там?', language_id: 1, template: '2:2:0:5:5' }
+
+# === when go there here
+
+- { content: 'Когда я пойду туда?', language_id: 1, template: '2:0:0:0:6' }
+- { content: 'Когда мы ходили сюда?', language_id: 1, template: '2:2:0:2:6' }
+- { content: 'Когда они пойдут туда?', language_id: 1, template: '2:0:0:3:6' }
+- { content: 'Когда она ходила сюда?', language_id: 1, template: '2:2:0:5:6' }
+
+# === want/like to dance to sleep
+
+- { content: 'Тебе нравится танцевать?', language_id: 1, template: '2:1:0:1:7' }
+- { content: 'Тебе нравится танцевать', language_id: 1, template: '2:1:1:1:7' }
+- { content: 'Тебе не нравится танцевать', language_id: 1, template: '2:1:2:1:7' }
+
+- { content: 'Нам нравилось танцевать?', language_id: 1, template: '2:2:0:2:7' }
+- { content: 'Нам нравилось танцевать', language_id: 1, template: '2:2:1:2:7' }
+- { content: 'Нам не нравилось танцевать', language_id: 1, template: '2:2:2:2:7' }
+
+- { content: 'Они будут хотеть спать?', language_id: 1, template: '2:0:0:3:7' }
+- { content: 'Они будут хотеть спать', language_id: 1, template: '2:0:1:3:7' }
+- { content: 'Они не будут хотеть спать', language_id: 1, template: '2:0:2:3:7' }
+
+- { content: 'Ему нравится танцевать?', language_id: 1, template: '2:1:0:4:7' }
+- { content: 'Ему нравится танцевать', language_id: 1, template: '2:1:1:4:7' }
+- { content: 'Ему не нравится танцевать', language_id: 1, template: '2:1:2:4:7' }
+
+- { content: 'Она хотела спать?', language_id: 1, template: '2:2:0:5:7' }
+- { content: 'Она хотела спать', language_id: 1, template: '2:2:1:5:7' }
+- { content: 'Она не хотела спать', language_id: 1, template: '2:2:2:5:7' }
+
+# === it is their/our/her/his/your/my children
+
+- { content: 'Это мой ребенок', language_id: 1, template: '2:1:1:4:8' }
+- { content: 'Это твоя проблема', language_id: 1, template: '2:1:1:4:9' }
+- { content: 'Это его решение', language_id: 1, template: '2:1:1:4:10' }
+- { content: 'Это ее желание', language_id: 1, template: '2:1:1:4:11' }
+- { content: 'Это наш дом', language_id: 1, template: '2:1:1:4:12' }
+- { content: 'Это их страна', language_id: 1, template: '2:1:1:4:13' }
