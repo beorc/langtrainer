@@ -104,48 +104,48 @@
 
 # === to be
 
-- { content: 'Where will I want to be?', language_id: 0, template: '2:0:0:0:5' }
-- { content: 'Why you do not want to be here?', language_id: 0, template: '2:1:0:1:5' }
-- { content: 'Where did we wanted to be?', language_id: 0, template: '2:2:0:2:5' }
-- { content: 'Why they will not be there tomorrow?', language_id: 0, template: '2:0:0:3:5' }
-- { content: 'Where he is?', language_id: 0, template: '2:1:0:4:5' }
-- { content: 'Why she was there?', language_id: 0, template: '2:2:0:5:5' }
+- { content: 'Where will I want to be?', language_id: 0, template: '3:0:0:0:5' }
+- { content: 'Why you do not want to be here?', language_id: 0, template: '3:1:0:1:5' }
+- { content: 'Where did we wanted to be?', language_id: 0, template: '3:2:0:2:5' }
+- { content: 'Why they will not be there tomorrow?', language_id: 0, template: '3:0:0:3:5' }
+- { content: 'Where he is?', language_id: 0, template: '3:1:0:4:5' }
+- { content: 'Why she was there?', language_id: 0, template: '3:2:0:5:5' }
 
 # === when go there here
 
-- { content: 'When will I go there?', language_id: 0, template: '2:0:0:0:6' }
-- { content: 'When was we go here?', language_id: 0, template: '2:2:0:2:6' }
-- { content: 'When will they go there?', language_id: 0, template: '2:0:0:3:6' }
-- { content: 'When was she go here?', language_id: 0, template: '2:2:0:5:6' }
+- { content: 'When will I go there?', language_id: 0, template: '3:0:0:0:6' }
+- { content: 'When was we go here?', language_id: 0, template: '3:2:0:2:6' }
+- { content: 'When will they go there?', language_id: 0, template: '3:0:0:3:6' }
+- { content: 'When was she go here?', language_id: 0, template: '3:2:0:5:6' }
 
 # === want/like to dance to sleep
 
-- { content: 'Do you like to dance?', language_id: 0, template: '2:1:0:1:7' }
-- { content: 'You like to dance', language_id: 0, template: '2:1:1:1:7' }
-- { content: 'You do not like to dance', language_id: 0, template: '2:1:2:1:7' }
+- { content: 'Do you like to dance?', language_id: 0, template: '3:1:0:1:7' }
+- { content: 'You like to dance', language_id: 0, template: '3:1:1:1:7' }
+- { content: 'You do not like to dance', language_id: 0, template: '3:1:2:1:7' }
 
-- { content: 'Did we like to dance?', language_id: 0, template: '2:2:0:2:7' }
-- { content: 'We liked to dance', language_id: 0, template: '2:2:1:2:7' }
-- { content: 'We did not like to dance', language_id: 0, template: '2:2:2:2:7' }
+- { content: 'Did we like to dance?', language_id: 0, template: '3:2:0:2:7' }
+- { content: 'We liked to dance', language_id: 0, template: '3:2:1:2:7' }
+- { content: 'We did not like to dance', language_id: 0, template: '3:2:2:2:7' }
 
-- { content: 'Will they want to sleep?', language_id: 0, template: '2:0:0:3:7' }
-- { content: 'They will want to sleep', language_id: 0, template: '2:0:1:3:7' }
-- { content: 'They will not want to sleep', language_id: 0, template: '2:0:2:3:7' }
+- { content: 'Will they want to sleep?', language_id: 0, template: '3:0:0:3:7' }
+- { content: 'They will want to sleep', language_id: 0, template: '3:0:1:3:7' }
+- { content: 'They will not want to sleep', language_id: 0, template: '3:0:2:3:7' }
 
-- { content: 'Does he like to dance?', language_id: 0, template: '2:1:0:4:7' }
-- { content: 'He likes to dance', language_id: 0, template: '2:1:1:4:7' }
-- { content: 'He does not like to dance', language_id: 0, template: '2:1:2:4:7' }
+- { content: 'Does he like to dance?', language_id: 0, template: '3:1:0:4:7' }
+- { content: 'He likes to dance', language_id: 0, template: '3:1:1:4:7' }
+- { content: 'He does not like to dance', language_id: 0, template: '3:1:2:4:7' }
 
-- { content: 'Did she want to sleep?', language_id: 0, template: '2:2:0:5:7' }
-- { content: 'She wanted to sleep', language_id: 0, template: '2:2:1:5:7' }
-- { content: 'She did not want to sleep', language_id: 0, template: '2:2:2:5:7' }
+- { content: 'Did she want to sleep?', language_id: 0, template: '3:2:0:5:7' }
+- { content: 'She wanted to sleep', language_id: 0, template: '3:2:1:5:7' }
+- { content: 'She did not want to sleep', language_id: 0, template: '3:2:2:5:7' }
 
 # === it is their/our/her/his/your/my children
 
-- { content: 'It is my children', language_id: 0, template: '2:1:1:4:8' }
-- { content: 'It is your problem', language_id: 0, template: '2:1:1:4:9' }
-- { content: 'It is his decision', language_id: 0, template: '2:1:1:4:10' }
-- { content: 'It is her desire', language_id: 0, template: '2:1:1:4:11' }
-- { content: 'It is our home', language_id: 0, template: '2:1:1:4:12' }
-- { content: 'It is their country', language_id: 0, template: '2:1:1:4:13' }
+- { content: 'It is my children', language_id: 0, template: '3:1:1:4:8' }
+- { content: 'It is your problem', language_id: 0, template: '3:1:1:4:9' }
+- { content: 'It is his decision', language_id: 0, template: '3:1:1:4:10' }
+- { content: 'It is her desire', language_id: 0, template: '3:1:1:4:11' }
+- { content: 'It is our home', language_id: 0, template: '3:1:1:4:12' }
+- { content: 'It is their country', language_id: 0, template: '3:1:1:4:13' }
 

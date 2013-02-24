@@ -56,9 +56,9 @@
 - { content: 'Я буду думать', language_id: 1, template: '1:0:1:0:3' }
 - { content: 'Я не буду думать', language_id: 1, template: '1:0:2:0:3' }
 
-- { content: 'Ты будешь думать?', language_id: 1, template: '1:1:0:1:3' }
-- { content: 'Ты будешь думать', language_id: 1, template: '1:1:1:1:3' }
-- { content: 'Ты не будешь думать', language_id: 1, template: '1:1:2:1:3' }
+- { content: 'Ты думаешь?', language_id: 1, template: '1:1:0:1:3' }
+- { content: 'Ты думаешь', language_id: 1, template: '1:1:1:1:3' }
+- { content: 'Ты не думаешь', language_id: 1, template: '1:1:2:1:3' }
 
 - { content: 'Мы думаем?', language_id: 1, template: '1:2:0:2:3' }
 - { content: 'Мы думаем', language_id: 1, template: '1:2:1:2:3' }
