@@ -4,10 +4,12 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email, :null => false
       t.string :crypted_password
       t.string :salt
-      
+      t.integer :native_language_id
+      t.integer :foreign_language_id
+
       t.timestamps
-    end    
-    
+    end
+
     add_index :users, :email
   end
 

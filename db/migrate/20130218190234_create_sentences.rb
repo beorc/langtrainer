@@ -4,6 +4,7 @@ class CreateSentences < ActiveRecord::Migration
       t.string :content, null: false
       t.references :language, null: false
       t.string :template, null: false
+      t.boolean :atom, default: false
 
       t.timestamps
     end

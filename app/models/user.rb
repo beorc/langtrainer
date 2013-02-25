@@ -14,15 +14,21 @@ class User < ActiveRecord::Base
   validates_length_of :password, :minimum => 3, :message => "password must be at least 3 characters long", :if => :password
   validates_confirmation_of :password, :message => "should match confirmation", :if => :password
 
-  def self.default
-    with_role(:member).first
+  after_create :assign_default_languages
+
+  def native_language
+    Language.find native_language_id
   end
 
   def foreign_language
-    Language.english
+    Language.find foreign_language_id
   end
 
-  def native_language
-    Language.russian
+  private
+
+  def assign_default_languages
+    self.foreign_language_id = Language.english.id
+    self.native_language_id = Language.russian.id
+    save!
   end
 end

@@ -5,14 +5,13 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, :alert => exception.message
   end
 
-  private
-
-  def current_user
-    super || User.default
+  def native_language
+    return current_user.native_language if logged_in?
+    session[:native_language] ||= Language.russian
   end
 
-  def logged_in?
-    return false if current_user.id == User.default.id
-    super
+  def foreign_language
+    return current_user.foreign_language if logged_in?
+    session[:foreign_language] ||= Language.english
   end
 end
