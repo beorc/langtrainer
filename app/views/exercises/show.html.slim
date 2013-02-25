@@ -24,6 +24,4 @@
         = link_to '#', class: 'show-hint', 'data-toggle' => 'tooltip', title: t('.hint')  do
           i.icon-question-sign
 
-  ul.hints.hide
-    - @hints.each do |hint|
-      li = image_tag hint
+  = render @hint
