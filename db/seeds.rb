@@ -31,9 +31,9 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   puts "Loading data from #{File.basename(file)}"
   sentences = YAML::load(File.open(file, 'r'))
   sentences.each do |sentence|
-    created_sentence = Sentence.find_or_create_by_content_and_language_id_and_template( content: sentence['content'],
-                                                        language_id: sentence['language_id'],
-                                                        template: sentence['template'] )
+    created_sentence = Sentence.find_or_create_by_english_and_russian_and_exercise_id( english: sentence['english'],
+                                                                                       russian: sentence['russian'],
+                                                                                       exercise_id: sentence['exercise_id'] )
     raise "Sentence not created: #{sentence.inspect}" unless created_sentence.valid?
   end
   puts "Loaded sentences: #{sentences.count}"

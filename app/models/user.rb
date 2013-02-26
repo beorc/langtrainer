@@ -16,19 +16,11 @@ class User < ActiveRecord::Base
 
   after_create :assign_default_languages
 
-  def native_language
-    Language.find native_language_id
-  end
-
-  def foreign_language
-    Language.find foreign_language_id
-  end
-
   private
 
   def assign_default_languages
-    self.foreign_language_id = Language.english.id
-    self.native_language_id = Language.russian.id
+    self.foreign_language = :english
+    self.native_language = :russian
     save!
   end
 end

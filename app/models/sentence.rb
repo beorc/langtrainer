@@ -1,6 +1,6 @@
 class Sentence < ActiveRecord::Base
   belongs_to :language
-  attr_protected :exercise_id
+  attr_accessible :russian, :english, :exercise_id
 
   validates :russian, :english, uniqueness: true
 

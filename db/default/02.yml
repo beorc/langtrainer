@@ -1,0 +1,88 @@
+# === see
+
+- { english: 'Will I see you?', russian: 'Я увижу тебя?', exercise_id: 1 }
+- { english: 'I will see you', russian: 'Я увижу тебя', exercise_id: 1 }
+- { english: 'I will not see you', russian: 'Я не увижу тебя', exercise_id: 1 }
+
+- { english: 'Do you see me?', russian: 'Ты видишь меня?', exercise_id: 1 }
+- { english: 'You see me', russian: 'Ты видишь меня', exercise_id: 1 }
+- { english: 'You do not see me', russian: 'Ты не видишь меня', exercise_id: 1 }
+
+- { english: 'Did we see them?', russian: 'Мы видели их?', exercise_id: 1 }
+- { english: 'We saw them', russian: 'Мы видели их', exercise_id: 1 }
+- { english: 'We did not see them', russian: 'Мы не видели их', exercise_id: 1 }
+
+- { english: 'Will they see us?', russian: 'Они увидят нас?', exercise_id: 1 }
+- { english: 'They will see us', russian: 'Они увидят нас', exercise_id: 1 }
+- { english: 'They will not see us', russian: 'Они не увидят нас', exercise_id: 1 }
+
+- { english: 'Does he see her?', russian: 'Он видел ее?', exercise_id: 1 }
+- { english: 'He sees her', russian: 'Он видел ее', exercise_id: 1 }
+- { english: 'He does not see her', russian: 'Он не видел ее', exercise_id: 1 }
+
+- { english: 'Did she see him?', russian: 'Она видела его?', exercise_id: 1 }
+- { english: 'She saw him', russian: 'Она видела его', exercise_id: 1 }
+- { english: 'She did not see him', russian: 'Она не видела его', exercise_id: 1 }
+
+# === know
+
+- { english: 'Will I know you?', russian: 'Я узнаю тебя?', exercise_id: 1 }
+- { english: 'I will know you', russian: 'Я узнаю тебя', exercise_id: 1 }
+- { english: 'I will not know you', russian: 'Я не узнаю тебя', exercise_id: 1 }
+
+- { english: 'Do you know me?', russian: 'Ты знаешь меня?', exercise_id: 1 }
+- { english: 'You know me', russian: 'Ты знаешь меня', exercise_id: 1 }
+- { english: 'You do not know me', russian: 'Ты не знаешь меня', exercise_id: 1 }
+
+- { english: 'Did we know them?', russian: 'Мы знали их?', exercise_id: 1 }
+- { english: 'We knew them', russian: 'Мы знали их', exercise_id: 1 }
+- { english: 'We did not know them', russian: 'Мы не знали их', exercise_id: 1 }
+
+- { english: 'Will they know us?', russian: 'Они узнают нас?', exercise_id: 1 }
+- { english: 'They will know us', russian: 'Они узнают нас', exercise_id: 1 }
+- { english: 'They will not know us', russian: 'Они не узнают нас', exercise_id: 1 }
+
+- { english: 'Does he know her?', russian: 'Он знает ее?', exercise_id: 1 }
+- { english: 'He knows her', russian: 'Он знает ее', exercise_id: 1 }
+- { english: 'He does not know her', russian: 'Он не знает ее', exercise_id: 1 }
+
+- { english: 'Did she know him?', russian: 'Она знала его?', exercise_id: 1 }
+- { english: 'She knew him', russian: 'Она знала его', exercise_id: 1 }
+- { english: 'She did not know him', russian: 'Она не знала его', exercise_id: 1 }
+
+# === how work
+
+- { english: 'How will I work?', russian: 'Как я буду работать?', exercise_id: 1 }
+- { english: 'How do you work?', russian: 'Как ты работаешь?', exercise_id: 1 }
+- { english: 'How did we work?', russian: 'Как мы работали?', exercise_id: 1 }
+- { english: 'How will they work?', russian: 'Как они будут работать?', exercise_id: 1 }
+- { english: 'How does he work?', russian: 'Как он работает?', exercise_id: 1 }
+- { english: 'How did she work?', russian: 'Как она работала?', exercise_id: 1 }
+
+# === where travel
+
+- { english: 'Where will I travel?', russian: 'Где я буду путешествовать?', exercise_id: 1 }
+- { english: 'Where do you travel?', russian: 'Где ты путешествуешь?', exercise_id: 1 }
+- { english: 'Where did we travel?', russian: 'Где мы путешествовали?', exercise_id: 1 }
+- { english: 'Where will they travel?', russian: 'Где они будут путешествовать?', exercise_id: 1 }
+- { english: 'Where does he travel?', russian: 'Где он путешествует?', exercise_id: 1 }
+- { english: 'Where did she travel?', russian: 'Где она путешествовала?', exercise_id: 1 }
+
+# === when go
+
+- { english: 'When will I go to London?', russian: 'Когда я поеду в Лондон?', exercise_id: 1 }
+- { english: 'When did we go to London?', russian: 'Когда мы ездили в Лондон?', exercise_id: 1 }
+- { english: 'When will they go to London?', russian: 'Когда они поедут в Лондон?', exercise_id: 1 }
+- { english: 'When did she go to London?', russian: 'Когда она ездила в Лондон?', exercise_id: 1 }
+
+# === what from
+
+- { english: 'What will I bring you from London?', russian: 'Что я привезу тебе из Лондона?', exercise_id: 1 }
+- { english: 'What do you bring me from London?', russian: 'Что ты везешь мне из Лондона?', exercise_id: 1 }
+- { english: 'What did we bring them from London?', russian: 'Что мы везли им из Лондона?', exercise_id: 1 }
+- { english: 'What will they bring us from London?', russian: 'Что они привезут нам из Лондона?', exercise_id: 1 }
+- { english: 'What does he bring her from London?', russian: 'Что он везет ей из Лондона?', exercise_id: 1 }
+- { english: 'What did she bring him from London?', russian: 'Что она везла ему из Лондона?', exercise_id: 1 }
+
+# === leave
+# === hear

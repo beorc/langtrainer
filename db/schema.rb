@@ -25,17 +25,20 @@ ActiveRecord::Schema.define(:version => 20130218190234) do
   add_index "roles", ["name"], :name => "index_roles_on_name"
 
   create_table "sentences", :force => true do |t|
-    t.string   "content",                        :null => false
-    t.integer  "language_id",                    :null => false
-    t.string   "template",                       :null => false
+    t.integer  "user_id"
+    t.integer  "exercise_id",                    :null => false
     t.boolean  "atom",        :default => false
+    t.string   "english"
+    t.string   "russian"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
 
-  add_index "sentences", ["content", "language_id"], :name => "index_sentences_on_content_and_language_id", :unique => true
-  add_index "sentences", ["language_id"], :name => "index_sentences_on_language_id"
-  add_index "sentences", ["template"], :name => "index_sentences_on_template"
+  add_index "sentences", ["atom"], :name => "index_sentences_on_atom"
+  add_index "sentences", ["english"], :name => "index_sentences_on_english", :unique => true
+  add_index "sentences", ["exercise_id"], :name => "index_sentences_on_exercise_id"
+  add_index "sentences", ["russian"], :name => "index_sentences_on_russian", :unique => true
+  add_index "sentences", ["user_id"], :name => "index_sentences_on_user_id"
 
   create_table "user_providers", :force => true do |t|
     t.integer  "user_id",    :null => false
@@ -49,8 +52,8 @@ ActiveRecord::Schema.define(:version => 20130218190234) do
     t.string   "email",                                          :null => false
     t.string   "crypted_password"
     t.string   "salt"
-    t.integer  "native_language_id"
-    t.integer  "foreign_language_id"
+    t.string   "native_language"
+    t.string   "foreign_language"
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
     t.string   "activation_state"

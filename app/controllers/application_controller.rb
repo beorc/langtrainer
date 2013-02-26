@@ -9,11 +9,11 @@ class ApplicationController < ActionController::Base
 
   def native_language
     return current_user.native_language if logged_in?
-    session[:native_language] ||= Language.russian
+    session[:native_language] ||= :russian
   end
 
   def foreign_language
     return current_user.foreign_language if logged_in?
-    session[:foreign_language] ||= Language.english
+    session[:foreign_language] ||= :english
   end
 end
