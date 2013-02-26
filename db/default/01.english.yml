@@ -1,104 +1,104 @@
 # === love
 
-- { content: 'Will I love?', language_id: 0, template: '1:0:0:0:1' }
-- { content: 'I will love', language_id: 0, template: '1:0:1:0:1' }
-- { content: 'I will not love', language_id: 0, template: '1:0:2:0:1' }
+- { english: 'Will I love?', russian: 'Я буду любить?', exercise_id: 0 }
+- { english: 'I will love', exercise_id: 0 }
+- { english: 'I will not love', exercise_id: 0 }
 
-- { content: 'Do you love?', language_id: 0, template: '1:1:0:1:1' }
-- { content: 'You love', language_id: 0, template: '1:1:1:1:1' }
-- { content: 'You do not love', language_id: 0, template: '1:1:2:1:1' }
+- { english: 'Do you love?', exercise_id: 0 }
+- { english: 'You love', exercise_id: 0 }
+- { english: 'You do not love', exercise_id: 0 }
 
-- { content: 'Did we love?', language_id: 0, template: '1:2:0:2:1' }
-- { content: 'We loved', language_id: 0, template: '1:2:1:2:1' }
-- { content: 'We did not love', language_id: 0, template: '1:2:2:2:1' }
+- { english: 'Did we love?', exercise_id: 0 }
+- { english: 'We loved', exercise_id: 0 }
+- { english: 'We did not love', exercise_id: 0 }
 
-- { content: 'Will they love?', language_id: 0, template: '1:0:0:3:1' }
-- { content: 'They will love', language_id: 0, template: '1:0:1:3:1' }
-- { content: 'They will not love', language_id: 0, template: '1:0:2:3:1' }
+- { english: 'Will they love?', exercise_id: 0 }
+- { english: 'They will love', exercise_id: 0 }
+- { english: 'They will not love', exercise_id: 0 }
 
-- { content: 'Does he love?', language_id: 0, template: '1:1:0:4:1' }
-- { content: 'He loves', language_id: 0, template: '1:1:1:4:1' }
-- { content: 'He does not love', language_id: 0, template: '1:1:2:4:1' }
+- { english: 'Does he love?', exercise_id: 0 }
+- { english: 'He loves', exercise_id: 0 }
+- { english: 'He does not love', exercise_id: 0 }
 
-- { content: 'Did she love?', language_id: 0, template: '1:2:0:5:1' }
-- { content: 'She loved', language_id: 0, template: '1:2:1:5:1' }
-- { content: 'She did not love', language_id: 0, template: '1:2:2:5:1' }
+- { english: 'Did she love?', exercise_id: 0 }
+- { english: 'She loved', exercise_id: 0 }
+- { english: 'She did not love', exercise_id: 0 }
 
 # === speak
 
-- { content: 'Will I speak?', language_id: 0, template: '1:0:0:0:2' }
-- { content: 'I will speak', language_id: 0, template: '1:0:1:0:2' }
-- { content: 'I will not speak', language_id: 0, template: '1:0:2:0:2' }
+- { english: 'Will I speak?', exercise_id: 0 }
+- { english: 'I will speak', exercise_id: 0 }
+- { english: 'I will not speak', exercise_id: 0 }
 
-- { content: 'Do you speak?', language_id: 0, template: '1:1:0:1:2' }
-- { content: 'You speak', language_id: 0, template: '1:1:1:1:2' }
-- { content: 'You do not speak', language_id: 0, template: '1:1:2:1:2' }
+- { english: 'Do you speak?', exercise_id: 0 }
+- { english: 'You speak', exercise_id: 0 }
+- { english: 'You do not speak', exercise_id: 0 }
 
-- { content: 'Did we speak?', language_id: 0, template: '1:2:0:2:2' }
-- { content: 'We spoke', language_id: 0, template: '1:2:1:2:2' }
-- { content: 'We did not speak', language_id: 0, template: '1:2:2:2:2' }
+- { english: 'Did we speak?', exercise_id: 0 }
+- { english: 'We spoke', exercise_id: 0 }
+- { english: 'We did not speak', exercise_id: 0 }
 
-- { content: 'Will they speak?', language_id: 0, template: '1:0:0:3:2' }
-- { content: 'They will speak', language_id: 0, template: '1:0:1:3:2' }
-- { content: 'They will not speak', language_id: 0, template: '1:0:2:3:2' }
+- { english: 'Will they speak?', exercise_id: 0 }
+- { english: 'They will speak', exercise_id: 0 }
+- { english: 'They will not speak', exercise_id: 0 }
 
-- { content: 'Does he speak?', language_id: 0, template: '1:1:0:4:2' }
-- { content: 'He speaks', language_id: 0, template: '1:1:1:4:2' }
-- { content: 'He does not speak', language_id: 0, template: '1:1:2:4:2' }
+- { english: 'Does he speak?', exercise_id: 0 }
+- { english: 'He speaks', exercise_id: 0 }
+- { english: 'He does not speak', exercise_id: 0 }
 
-- { content: 'Did she speak?', language_id: 0, template: '1:2:0:5:2' }
-- { content: 'She spoke', language_id: 0, template: '1:2:1:5:2' }
-- { content: 'She did not speak', language_id: 0, template: '1:2:2:5:2' }
+- { english: 'Did she speak?', exercise_id: 0 }
+- { english: 'She spoke', exercise_id: 0 }
+- { english: 'She did not speak', exercise_id: 0 }
 
 # === think
 
-- { content: 'Will I think?', language_id: 0, template: '1:0:0:0:3' }
-- { content: 'I will think', language_id: 0, template: '1:0:1:0:3' }
-- { content: 'I will not think', language_id: 0, template: '1:0:2:0:3' }
+- { english: 'Will I think?', exercise_id: 0 }
+- { english: 'I will think', exercise_id: 0 }
+- { english: 'I will not think', exercise_id: 0 }
 
-- { content: 'Do you think?', language_id: 0, template: '1:1:0:1:3' }
-- { content: 'You think', language_id: 0, template: '1:1:1:1:3' }
-- { content: 'You do not think', language_id: 0, template: '1:1:2:1:3' }
+- { english: 'Do you think?', exercise_id: 0 }
+- { english: 'You think', exercise_id: 0 }
+- { english: 'You do not think', exercise_id: 0 }
 
-- { content: 'Did we think?', language_id: 0, template: '1:2:0:2:3' }
-- { content: 'We thought', language_id: 0, template: '1:2:1:2:3' }
-- { content: 'We did not think', language_id: 0, template: '1:2:2:2:3' }
+- { english: 'Did we think?', exercise_id: 0 }
+- { english: 'We thought', exercise_id: 0 }
+- { english: 'We did not think', exercise_id: 0 }
 
-- { content: 'Will they think?', language_id: 0, template: '1:0:0:3:3' }
-- { content: 'They will think', language_id: 0, template: '1:0:1:3:3' }
-- { content: 'They will not think', language_id: 0, template: '1:0:2:3:3' }
+- { english: 'Will they think?', exercise_id: 0 }
+- { english: 'They will think', exercise_id: 0 }
+- { english: 'They will not think', exercise_id: 0 }
 
-- { content: 'Does he think?', language_id: 0, template: '1:1:0:4:3' }
-- { content: 'He thinks', language_id: 0, template: '1:1:1:4:3' }
-- { content: 'He does not thinks', language_id: 0, template: '1:1:2:4:3' }
+- { english: 'Does he think?', exercise_id: 0 }
+- { english: 'He thinks', exercise_id: 0 }
+- { english: 'He does not thinks', exercise_id: 0 }
 
-- { content: 'Did she think?', language_id: 0, template: '1:2:0:5:3' }
-- { content: 'She thought', language_id: 0, template: '1:2:1:5:3' }
-- { content: 'She did not think', language_id: 0, template: '1:2:2:5:3' }
+- { english: 'Did she think?', exercise_id: 0 }
+- { english: 'She thought', exercise_id: 0 }
+- { english: 'She did not think', exercise_id: 0 }
 
 # === come
 
-- { content: 'Will I come?', language_id: 0, template: '1:0:0:0:4' }
-- { content: 'I will come', language_id: 0, template: '1:0:1:0:4' }
-- { content: 'I will not come', language_id: 0, template: '1:0:2:0:4' }
+- { english: 'Will I come?', exercise_id: 0 }
+- { english: 'I will come', exercise_id: 0 }
+- { english: 'I will not come', exercise_id: 0 }
 
-- { content: 'Do you come?', language_id: 0, template: '1:1:0:1:4' }
-- { content: 'You come', language_id: 0, template: '1:1:1:1:4' }
-- { content: 'You do not come', language_id: 0, template: '1:1:2:1:4' }
+- { english: 'Do you come?', exercise_id: 0 }
+- { english: 'You come', exercise_id: 0 }
+- { english: 'You do not come', exercise_id: 0 }
 
-- { content: 'Did we come?', language_id: 0, template: '1:2:0:2:4' }
-- { content: 'We came', language_id: 0, template: '1:2:1:2:4' }
-- { content: 'We did not come', language_id: 0, template: '1:2:2:2:4' }
+- { english: 'Did we come?', exercise_id: 0 }
+- { english: 'We came', exercise_id: 0 }
+- { english: 'We did not come', exercise_id: 0 }
 
-- { content: 'Will they come?', language_id: 0, template: '1:0:0:3:4' }
-- { content: 'They will come', language_id: 0, template: '1:0:1:3:4' }
-- { content: 'They will not come', language_id: 0, template: '1:0:2:3:4' }
+- { english: 'Will they come?', exercise_id: 0 }
+- { english: 'They will come', exercise_id: 0 }
+- { english: 'They will not come', exercise_id: 0 }
 
-- { content: 'Does he come?', language_id: 0, template: '1:1:0:4:4' }
-- { content: 'He comes', language_id: 0, template: '1:1:1:4:4' }
-- { content: 'He does not come', language_id: 0, template: '1:1:2:4:4' }
+- { english: 'Does he come?', exercise_id: 0 }
+- { english: 'He comes', exercise_id: 0 }
+- { english: 'He does not come', exercise_id: 0 }
 
-- { content: 'Did she come?', language_id: 0, template: '1:2:0:5:4' }
-- { content: 'She came', language_id: 0, template: '1:2:1:5:4' }
-- { content: 'She did not come', language_id: 0, template: '1:2:2:5:4' }
+- { english: 'Did she come?', exercise_id: 0 }
+- { english: 'She came', exercise_id: 0 }
+- { english: 'She did not come', exercise_id: 0 }
 

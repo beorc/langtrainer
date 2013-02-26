@@ -1,15 +1,8 @@
 class Sentence < ActiveRecord::Base
   belongs_to :language
-  attr_accessible :content, :template, :language_id
+  attr_protected :exercise_id
 
-  validates :content, :template, :language_id, presence: true
-  validates :content, uniqueness: { scope: :language_id }
+  validates :russian, :english, uniqueness: true
 
-  scope :for_exercise, ->(exercise) { where('template LIKE "?:%"', exercise) }
-  scope :with_language, ->(language) { where(language_id: language.id) }
-  scope :with_template, ->(template) { where(template: template) }
-
-  def translation_to(language)
-    Sentence.with_language(language).with_template(template).first
-  end
+  scope :for_exercise, ->(exercise_id) { where(exercise_id: exercise_id) }
 end

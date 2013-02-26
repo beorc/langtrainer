@@ -1,88 +1,88 @@
 # === see
 
-- { content: 'Will I see you?', language_id: 0, template: '2:0:0:0:1' }
-- { content: 'I will see you', language_id: 0, template: '2:0:1:0:1' }
-- { content: 'I will not see you', language_id: 0, template: '2:0:2:0:1' }
+- { english: 'Will I see you?', exercise_id: 1 }
+- { english: 'I will see you', exercise_id: 1 }
+- { english: 'I will not see you', exercise_id: 1 }
 
-- { content: 'Do you see me?', language_id: 0, template: '2:1:0:1:1' }
-- { content: 'You see me', language_id: 0, template: '2:1:1:1:1' }
-- { content: 'You do not see me', language_id: 0, template: '2:1:2:1:1' }
+- { english: 'Do you see me?', exercise_id: 1 }
+- { english: 'You see me', exercise_id: 1 }
+- { english: 'You do not see me', exercise_id: 1 }
 
-- { content: 'Did we see them?', language_id: 0, template: '2:2:0:2:1' }
-- { content: 'We saw them', language_id: 0, template: '2:2:1:2:1' }
-- { content: 'We did not see them', language_id: 0, template: '2:2:2:2:1' }
+- { english: 'Did we see them?', exercise_id: 1 }
+- { english: 'We saw them', exercise_id: 1 }
+- { english: 'We did not see them', exercise_id: 1 }
 
-- { content: 'Will they see us?', language_id: 0, template: '2:0:0:3:1' }
-- { content: 'They will see us', language_id: 0, template: '2:0:1:3:1' }
-- { content: 'They will not see us', language_id: 0, template: '2:0:2:3:1' }
+- { english: 'Will they see us?', exercise_id: 1 }
+- { english: 'They will see us', exercise_id: 1 }
+- { english: 'They will not see us', exercise_id: 1 }
 
-- { content: 'Does he see her?', language_id: 0, template: '2:1:0:4:1' }
-- { content: 'He sees her', language_id: 0, template: '2:1:1:4:1' }
-- { content: 'He does not see her', language_id: 0, template: '2:1:2:4:1' }
+- { english: 'Does he see her?', exercise_id: 1 }
+- { english: 'He sees her', exercise_id: 1 }
+- { english: 'He does not see her', exercise_id: 1 }
 
-- { content: 'Did she see him?', language_id: 0, template: '2:2:0:5:1' }
-- { content: 'She saw him', language_id: 0, template: '2:2:1:5:1' }
-- { content: 'She did not see him', language_id: 0, template: '2:2:2:5:1' }
+- { english: 'Did she see him?', exercise_id: 1 }
+- { english: 'She saw him', exercise_id: 1 }
+- { english: 'She did not see him', exercise_id: 1 }
 
 # === know
 
-- { content: 'Will I know you?', language_id: 0, template: '2:0:0:0:2' }
-- { content: 'I will know you', language_id: 0, template: '2:0:1:0:2' }
-- { content: 'I will not know you', language_id: 0, template: '2:0:2:0:2' }
+- { english: 'Will I know you?', exercise_id: 1 }
+- { english: 'I will know you', exercise_id: 1 }
+- { english: 'I will not know you', exercise_id: 1 }
 
-- { content: 'Do you know me?', language_id: 0, template: '2:1:0:1:2' }
-- { content: 'You know me', language_id: 0, template: '2:1:1:1:2' }
-- { content: 'You do not know me', language_id: 0, template: '2:1:2:1:2' }
+- { english: 'Do you know me?', exercise_id: 1 }
+- { english: 'You know me', exercise_id: 1 }
+- { english: 'You do not know me', exercise_id: 1 }
 
-- { content: 'Did we know them?', language_id: 0, template: '2:2:0:2:2' }
-- { content: 'We knew them', language_id: 0, template: '2:2:1:2:2' }
-- { content: 'We did not know them', language_id: 0, template: '2:2:2:2:2' }
+- { english: 'Did we know them?', exercise_id: 1 }
+- { english: 'We knew them', exercise_id: 1 }
+- { english: 'We did not know them', exercise_id: 1 }
 
-- { content: 'Will they know us?', language_id: 0, template: '2:0:0:3:2' }
-- { content: 'They will know us', language_id: 0, template: '2:0:1:3:2' }
-- { content: 'They will not know us', language_id: 0, template: '2:0:2:3:2' }
+- { english: 'Will they know us?', exercise_id: 1 }
+- { english: 'They will know us', exercise_id: 1 }
+- { english: 'They will not know us', exercise_id: 1 }
 
-- { content: 'Does he know her?', language_id: 0, template: '2:1:0:4:2' }
-- { content: 'He knows her', language_id: 0, template: '2:1:1:4:2' }
-- { content: 'He does not know her', language_id: 0, template: '2:1:2:4:2' }
+- { english: 'Does he know her?', exercise_id: 1 }
+- { english: 'He knows her', exercise_id: 1 }
+- { english: 'He does not know her', exercise_id: 1 }
 
-- { content: 'Did she know him?', language_id: 0, template: '2:2:0:5:2' }
-- { content: 'She knew him', language_id: 0, template: '2:2:1:5:2' }
-- { content: 'She did not know him', language_id: 0, template: '2:2:2:5:2' }
+- { english: 'Did she know him?', exercise_id: 1 }
+- { english: 'She knew him', exercise_id: 1 }
+- { english: 'She did not know him', exercise_id: 1 }
 
 # === how work
 
-- { content: 'How will I work?', language_id: 0, template: '2:0:0:0:3' }
-- { content: 'How do you work?', language_id: 0, template: '2:1:0:1:3' }
-- { content: 'How did we work?', language_id: 0, template: '2:2:0:2:3' }
-- { content: 'How will they work?', language_id: 0, template: '2:0:0:3:3' }
-- { content: 'How does he work?', language_id: 0, template: '2:1:0:4:3' }
-- { content: 'How did she work?', language_id: 0, template: '2:2:0:5:3' }
+- { english: 'How will I work?', exercise_id: 1 }
+- { english: 'How do you work?', exercise_id: 1 }
+- { english: 'How did we work?', exercise_id: 1 }
+- { english: 'How will they work?', exercise_id: 1 }
+- { english: 'How does he work?', exercise_id: 1 }
+- { english: 'How did she work?', exercise_id: 1 }
 
 # === where travel
 
-- { content: 'Where will I travel?', language_id: 0, template: '2:0:0:0:4' }
-- { content: 'Where do you travel?', language_id: 0, template: '2:1:0:1:4' }
-- { content: 'Where did we travel?', language_id: 0, template: '2:2:0:2:4' }
-- { content: 'Where will they travel?', language_id: 0, template: '2:0:0:3:4' }
-- { content: 'Where does he travel?', language_id: 0, template: '2:1:0:4:4' }
-- { content: 'Where did she travel?', language_id: 0, template: '2:2:0:5:4' }
+- { english: 'Where will I travel?', exercise_id: 1 }
+- { english: 'Where do you travel?', exercise_id: 1 }
+- { english: 'Where did we travel?', exercise_id: 1 }
+- { english: 'Where will they travel?', exercise_id: 1 }
+- { english: 'Where does he travel?', exercise_id: 1 }
+- { english: 'Where did she travel?', exercise_id: 1 }
 
 # === when go
 
-- { content: 'When will I go to London?', language_id: 0, template: '2:0:0:0:5' }
-- { content: 'When did we go to London?', language_id: 0, template: '2:2:0:2:5' }
-- { content: 'When will they go to London?', language_id: 0, template: '2:0:0:3:5' }
-- { content: 'When did she go to London?', language_id: 0, template: '2:2:0:5:5' }
+- { english: 'When will I go to London?', exercise_id: 1 }
+- { english: 'When did we go to London?', exercise_id: 1 }
+- { english: 'When will they go to London?', exercise_id: 1 }
+- { english: 'When did she go to London?', exercise_id: 1 }
 
 # === what from
 
-- { content: 'What will I bring you from London?', language_id: 0, template: '2:0:0:0:6' }
-- { content: 'What do you bring me from London?', language_id: 0, template: '2:1:0:1:6' }
-- { content: 'What did we bring them from London?', language_id: 0, template: '2:2:0:2:6' }
-- { content: 'What will they bring us from London?', language_id: 0, template: '2:0:0:3:6' }
-- { content: 'What does he bring her from London?', language_id: 0, template: '2:1:0:4:6' }
-- { content: 'What did she bring him from London?', language_id: 0, template: '2:2:0:5:6' }
+- { english: 'What will I bring you from London?', exercise_id: 1 }
+- { english: 'What do you bring me from London?', exercise_id: 1 }
+- { english: 'What did we bring them from London?', exercise_id: 1 }
+- { english: 'What will they bring us from London?', exercise_id: 1 }
+- { english: 'What does he bring her from London?', exercise_id: 1 }
+- { english: 'What did she bring him from London?', exercise_id: 1 }
 
 # === leave
 # === hear

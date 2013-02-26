@@ -1,15 +1,19 @@
 class CreateSentences < ActiveRecord::Migration
   def change
     create_table :sentences do |t|
-      t.string :content, null: false
-      t.references :language, null: false
-      t.string :template, null: false
+      t.references :user
+      t.references :exercise, null: false
       t.boolean :atom, default: false
+
+      t.string :english
+      t.string :russian
 
       t.timestamps
     end
-    add_index :sentences, :language_id
-    add_index :sentences, :template
-    add_index :sentences, [:content, :language_id], unique: true
+    add_index :sentences, :user_id
+    add_index :sentences, :exercise_id
+    add_index :sentences, :atom
+    add_index :sentences, :english, unique: true
+    add_index :sentences, :russian, unique: true
   end
 end
