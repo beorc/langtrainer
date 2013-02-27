@@ -15,6 +15,7 @@ gem 'simple_form', '>= 2.0.4'
 gem 'figaro', '>= 0.5.3'
 gem 'slim-rails'
 gem 'gon'
+gem 'kaminari'
 
 group :development, :test do
   gem 'factory_girl_rails', '>= 4.2.0'
