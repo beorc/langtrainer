@@ -1,0 +1,35 @@
+doctype 5
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title = content_for?(:title) ? yield(:title) : t(:app_name)
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : t(:app_name)}"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = yield :load_controller_javascript
+    = include_gon
+    = csrf_meta_tags
+    = yield(:head)
+  body class="#{controller_name} #{action_name}"
+    header.navbar.navbar-fixed-top
+      nav.navbar-inner
+        .container
+          = render 'layouts/navigation'
+    #main role="main"
+      .container
+        .content
+          .row
+           .span12
+             = render 'layouts/messages'
+             = yield
+      .sidebar
+        .sidebar_inner
+          #side_accordion.accordion
+            /= render partial: 'layouts/sidebar/group',
+                     collection: SitemplateCore.admin_nav_groups,
+                     as: :group
+            /ul.nav.nav-list
+              = render partial: 'layouts/sidebar/item',
+                collection: SitemplateCore.admin_nav_items_without_group,
+                as: :link
+          footer

@@ -9,10 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
 */
 
-.content {
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-}
+@import "bootstrap_and_overrides";
+@import "imports/definitions";
+@import "imports/sticky";
+@import "gebo/splashy/splashy";
+
+@import "exercises";
+
+

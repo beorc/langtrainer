@@ -18,6 +18,7 @@ Rails3BootstrapDeviseCancan::Application.routes.draw do
   match 'oauth/:provider' => 'oauths#oauth', :as => :auth_at_provider
 
   namespace :admin do
+    get '/' => 'application#dashboard', as: :dashboard
     resources :sentences
   end
 

@@ -1,0 +1,10 @@
+.accordion-group
+  .accordion-heading
+    = link_to "##{group[:name]}", class: 'accordion-toggle', data: { parent: '#side_accordion', toggle: 'collapse' } do
+        i[class=group[:icon]]
+        '&nbsp
+        = t group[:title]
+  .accordion-body.collapse[id=group[:name] class=sidebar_groups_active_class(group)]
+    .accordion-inner
+      ul.nav.nav-list
+        = render partial: 'admin/shared/sidebar/item', collection: group[:items], as: :link

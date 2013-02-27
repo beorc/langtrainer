@@ -1,9 +1,7 @@
 class Admin::ApplicationController < ApplicationController
-  included do
-    before_filter :require_login
-    before_filter :check_abilities
-    layout 'admin'
-  end
+  before_filter :require_login
+  before_filter :check_abilities
+  layout 'admin'
 
   private
 
