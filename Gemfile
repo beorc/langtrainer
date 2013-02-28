@@ -16,6 +16,14 @@ gem 'figaro', '>= 0.5.3'
 gem 'slim-rails'
 gem 'gon'
 gem 'kaminari'
+gem 'meta-tags', require: 'meta_tags'
+gem 'unicode'
+gem 'russian', '~> 0.6.0'
+gem 'has_scope'
+gem 'hashie'
+gem 'delayed_job_active_record'
+gem 'daemons'
+gem 'compass', "0.12.rc.1"
 
 group :development, :test do
   gem 'factory_girl_rails', '>= 4.2.0'

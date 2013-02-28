@@ -3,3 +3,12 @@ MEMBER_PASSWORD: vtvthgfccdjhn
 
 ADMIN_EMAIL: beorc@httplab.ru
 ADMIN_PASSWORD: flvbygfccdjhn
+
+admin_sidebar:
+  management:
+    title: 'admin.sidebar.management.title'
+    icon: 'icon-edit'
+    position: 1
+    items:
+      - title: 'activerecord.models.sentence.few'
+        url_helper: 'admin_sentences_path'

@@ -15,7 +15,16 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Rails3BootstrapDeviseCancan
+module Langtrainer
+
+  def self.config
+    Application.config
+  end
+
+  def self.admin_nav_groups
+    config.admin_sidebar.values.sort_by { |hsh| hsh[:position] }
+  end
+
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
@@ -82,7 +91,11 @@ module Rails3BootstrapDeviseCancan
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'application.yml')
       YAML.load(File.open(env_file)).each do |key, value|
-        ENV[key.to_s] = value
+        if value.is_a? String
+          ENV[key.to_s] = value
+        elsif value.is_a? Hash
+          config.send("#{key.to_s}=", value)
+        end
       end if File.exists?(env_file)
     end
   end

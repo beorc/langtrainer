@@ -1,4 +1,4 @@
-Rails3BootstrapDeviseCancan::Application.routes.draw do
+Langtrainer::Application.routes.draw do
   root :to => 'exercises#index'
 
   resources :users do

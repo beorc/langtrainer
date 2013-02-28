@@ -4,10 +4,11 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     title = content_for?(:title) ? yield(:title) : t(:app_name)
     meta name="description" content="#{content_for?(:description) ? yield(:description) : t(:app_name)}"
-    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "admin", :media => "all"
     = javascript_include_tag "application"
     = yield :load_controller_javascript
     = include_gon
+    = display_meta_tags site: t(:app_name), separator: '–', reverse: true
     = csrf_meta_tags
     = yield(:head)
   body class="#{controller_name} #{action_name}"
@@ -15,8 +16,8 @@ html
       nav.navbar-inner
         .container
           = render 'layouts/navigation'
-    #main role="main"
-      .container
+    #main.clearfix role="main"
+      .container#contentwrapper
         .content
           .row
            .span12
@@ -25,11 +26,7 @@ html
       .sidebar
         .sidebar_inner
           #side_accordion.accordion
-            /= render partial: 'layouts/sidebar/group',
-                     collection: SitemplateCore.admin_nav_groups,
+            = render partial: 'layouts/sidebar/group',
+                     collection: Langtrainer.admin_nav_groups,
                      as: :group
-            /ul.nav.nav-list
-              = render partial: 'layouts/sidebar/item',
-                collection: SitemplateCore.admin_nav_items_without_group,
-                as: :link
           footer

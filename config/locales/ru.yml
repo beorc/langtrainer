@@ -21,7 +21,12 @@ ru:
       date_time_digs: "%d.%m.%Y %H:%M"
       only_time_full: "%H:%M:%S"
 
-  delete_confirm: "Удалить '%{title}'?"
+  delete_confirm: "Удалить?"
+
+  admin:
+    sidebar:
+      management:
+        title: Управление сайтом
 
   language:
     english: Английский
@@ -41,6 +46,8 @@ ru:
   helpers:
     actions:
     submit:
+      sentence:
+        create: Создать
 
   flash:
 
@@ -48,12 +55,17 @@ ru:
 
   activerecord:
     models:
-      language:
-        one: Иностранный язык
-        few: Иностранные языки
+      sentence:
+        one: предложение
+        few: предложения
+        many: предложения
     attributes:
-      language:
-        title: Название
+      sentence:
+        english: Английский
+        russian: Русский
+        atom: Базовая конструкция
+        exercise_id: Упражнение
+        user_id: Пользователь
 
     errors:
       messages:
