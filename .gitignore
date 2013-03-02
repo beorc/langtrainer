@@ -21,4 +21,5 @@ pickle-email-*.html
 .DS_Store
 config/mailer.yml
 config/database.yml
+config/application.yml
 app/tags
