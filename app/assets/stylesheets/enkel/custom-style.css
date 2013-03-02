@@ -1,0 +1,144 @@
+/*/////////////////////////////////////////////////////////////////////
+ //
+ // Custom theme code styles
+ // Written by Themelize.me (http://themelize.me)
+ //
+ // This is an empty starter template for overriding styles
+ // set by Bootstrap & the theme
+ //
+ // ----------------------------------------------------
+ //
+ // Remove unused code for better performances
+ //
+ // ----------------------------------------------------
+ //
+ // @see - Usefuls tools online for editing
+ // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
+ // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
+ //
+ // @note
+ // To ensure custom styles are picked up
+ // wrap definitions in body tag
+ // ie.
+ // body .navbar-inner {
+ //   background: #ff0000;
+ // }
+ //
+ /////////////////////////////////////////////////////////////////////*/
+/*
+ * --------------------------------------------------
+ * 1. General Elements
+ *--------------------------------------------------
+ */
+#navigation {
+  /* 1. Navigation wrapper */
+}
+#highlighted {
+  /* 2. Highlighted (below header) wrapper */
+}
+#content {
+  /* 3. Content wrapper */
+}
+#content-below {
+  /* 4. Content Below wrapper */
+}
+#footer {
+  /* 5. Footer wrapper */
+}
+/*
+ * --------------------------------------------------
+ * 2. Colours
+ *--------------------------------------------------
+ */
+/*
+ * --------------------------------------------------
+ * 3. Responsiveness/media queries
+ *--------------------------------------------------
+ */
+@media (max-width: 979px) {
+  /* Navbar Collapsed (mobile) */
+}
+@media (min-width: 980px) {
+  /* Navbar Expanded (desktop) */
+}
+@media (min-width: 1200px) {
+  /* Responsive: Large desktop and up (wide) */
+}
+@media (max-width: 979px) {
+  /* Responsive: Mobile to desktop (common for all narrow devices) */
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Responsive: Tablet to desktop (normal) */
+}
+@media (max-width: 767px) {
+  /* Responsive: Landscape phone to desktop/tablet (narrow) */
+}
+@media (max-width: 480px) {
+  /* Responsive: Up to Landscape phone (mobile) */
+}
+/*
+ * --------------------------------------------------
+ * 4. Misc
+ * Other stuff
+ *--------------------------------------------------
+ */
+.navbar .brand {
+  color: white;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 30px 15px 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-shadow: 0 1px 0 #377ca8;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#navigation ul#main-menu li a,
+#navigation ul#main-menu li a:link {
+  text-transform: none;
+}
+
+body .header .page-title {
+  span { font-weight: lighter; }
+}
+
+.header .nav-pills li a {
+  width: auto;
+}
+
+.social-media a {
+  color: #ffffff;
+  line-height: 30px;
+  padding-right: 3px;
+}
+.social-media a i {
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: rgba(55, 124, 168, 0.5);
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+.social-media a:hover {
+  text-decoration: none;
+}
+.social-media a:hover i {
+  background-color: #377ca8;
+}
+.social-media a i {
+  background-color: rgba(129, 153, 77, 0.5);
+}
+.social-media a:hover i {
+  background-color: #81994d;
+}

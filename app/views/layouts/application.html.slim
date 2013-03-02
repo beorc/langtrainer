@@ -1,0 +1,44 @@
+doctype 5
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title = content_for?(:title) ? yield(:title) : t(:app_name)
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : t(:app_name)}"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = yield :load_controller_javascript
+    = include_gon
+    = display_meta_tags site: t(:app_name), separator: '–', reverse: true
+    = csrf_meta_tags
+    = yield(:head)
+  body class="#{controller_name} #{action_name} has-navbar-fixed-top"
+    #page
+      #navigation.wrapper
+        .navbar.navbar-fixed-top#top
+          .navbar-inner
+            .inner
+              .container
+                = link_to root_path, class: 'brand', title: t('.home') do
+                  h1 = t(:app_name)
+                  span = t(:slogan)
+                .nav-collapse.collapse
+                  ul.nav.pull-right#main-menu
+                    - if logged_in?
+                      li = link_to t(:logout), logout_path, :method=>'delete'
+                    - else
+                      li = link_to t(:login), login_path
+                    - if logged_in?
+                      li = link_to current_user.title, edit_user_registration_path
+      #content
+        .container
+          .row
+           .span12
+             = render 'layouts/messages'
+             = yield
+      #layout-footer
+    footer#footer
+      .inner
+        .container
+        .row
+          .span12
+            span.pull-right &copy; #{Date.today.year}, Langtrainer

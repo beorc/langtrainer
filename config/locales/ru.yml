@@ -1,5 +1,9 @@
 ru:
   app_name: Langtrainer
+  slogan: Тренажер иностранных языков
+  home: Тренажер иностранных языков
+  login: Войти
+  logout: Выйти
 
   time:
     formats:
@@ -23,6 +27,16 @@ ru:
 
   delete_confirm: "Удалить?"
 
+  layouts:
+    application:
+      home: На главную
+    user_profile:
+      home: На главную
+      title: Профиль пользователя
+      credentials: Данные
+      sentences: Предложения
+      corrections: Правки
+
   email_confirmation:
     title: Подтверждение изменения адреса электронной почты
     hint: Изменить адрес на '%{new_email}'?
@@ -30,6 +44,10 @@ ru:
     same_email_entered: Введен текущий адрес
   token_authentication:
     email_description: На указанный адрес будет отправлено письмо с ссылкой для входа на сайт
+
+  user_registrations:
+    edit:
+      subtitle: Регистрационные данные
 
   user_sessions:
     new:
@@ -87,6 +105,8 @@ ru:
       success: Адрес электронной почты изменен
       fail: Ключ для смены адреса устарел
       email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
+    user_sessions:
+      logged_out: Вы вышли с сайта
 
   legend:
 

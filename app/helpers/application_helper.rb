@@ -43,6 +43,32 @@ module ApplicationHelper
   end
 
   def render_oauth_button(provider)
-    link_to '', auth_at_provider_path(provider: provider.to_sym), class: "auth #{provider}", id: "auth_by_#{provider}"
+    if provider != 'google'
+      class_name = "icon-#{provider}"
+    else
+      class_name = "icon-google-plus"
+    end
+
+    link_to auth_at_provider_path(provider: provider.to_sym) do
+      content_tag 'i', nil, class: class_name
+    end
+  end
+
+  def aclass?(path, with_params = false)
+    path_wo_params = path.split('?').first
+    current_path_wo_params = request.env['PATH_INFO'].split('?').first
+
+    requested_path = with_params ? path : path_wo_params
+    current_path = with_params ? request.fullpath : current_path_wo_params
+
+    if path_wo_params == root_path || with_params
+      requested_path == current_path
+    else
+      current_path.index(requested_path) == 0
+    end
+  end
+
+  def menu_class(path, class_name = 'active', with_params = false)
+    aclass?(path, with_params) ? class_name : ''
   end
 end

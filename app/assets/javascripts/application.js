@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require_tree ./enkel
 //= require_tree ./common
 //= require_tree .

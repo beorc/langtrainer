@@ -11,12 +11,18 @@
  *= require_self
 */
 
-@import 'compass/reset';
-@import "bootstrap_and_overrides";
+@import "compass/reset";
+//@import "bootstrap_and_overrides";
 @import "imports/definitions";
-@import "imports/styles";
-@import "imports/sticky";
-@import "gebo/splashy/splashy";
+@import "compass/layout/sticky-footer";
+
+@import "enkel/bootstrap";
+@import "enkel/responsive";
+@import "enkel/theme-style";
+@import "enkel/colour-green";
+@import "enkel/custom-style";
+
+@import "imports/style";
 
 @import "exercises";
 

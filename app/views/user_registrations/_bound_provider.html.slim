@@ -1,7 +1,0 @@
-li
-  = render_oauth_button(obj.provider.to_sym)
-  - if current_user.can_delete_auth?
-    = link_to t(:delete), authentication_path(obj),
-              method: :delete,
-              confirm: t('delete_confirm', title: obj.provider.to_sym),
-              class: 'btn btn-small'

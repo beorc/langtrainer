@@ -1,7 +1,7 @@
 class UserRegistrationsController < ApplicationController
   before_filter :require_login
   helper_method :resource
-  #layout 'user_profile'
+  layout 'user_profile'
 
   def update
     resource.update_attributes(params[:user_registration])

@@ -8,7 +8,7 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(root_path, :notice => 'Logged out!')
+    redirect_to(root_path, :notice => t('flash.user_sessions.logged_out'))
   end
 
   private
