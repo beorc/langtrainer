@@ -107,6 +107,8 @@ ru:
       email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
     user_sessions:
       logged_out: Вы вышли с сайта
+    oauths:
+      logged_in: Вы вошли на сайт через %{provider}
 
   legend:
 
