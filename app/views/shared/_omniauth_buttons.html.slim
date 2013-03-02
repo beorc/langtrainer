@@ -1,0 +1,6 @@
+.omniauth-block
+  - if Langtrainer.config.oauth_providers.present?
+    .strong = t('.title')
+    ul.unstyled
+      - Langtrainer.config.oauth_providers.each_key do |provider|
+        = render_oauth_button(provider)

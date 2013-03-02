@@ -16,11 +16,12 @@ class OauthsController < ApplicationController
     else
       begin
         @user = create_from(provider)
-        @user.activate!
         reset_session # protect from session fixation attack
         auto_login(@user)
         redirect_to root_path, :notice => "Logged in from #{provider.titleize}!"
-      rescue
+      rescue => e
+        logger.error "==Oauth Error== #{e.message}"
+        logger.error e.backtrace.join("\n")
         redirect_to root_path, :alert => "Failed to login from #{provider.titleize}!"
       end
     end

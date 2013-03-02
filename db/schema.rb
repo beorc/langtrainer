@@ -77,7 +77,8 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                :null => false
+    t.string   "email"
+    t.string   "username"
     t.string   "native_language"
     t.string   "foreign_language"
     t.datetime "created_at",           :null => false
@@ -87,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["username"], :name => "index_users_on_username"
 
   create_table "users_roles", :id => false, :force => true do |t|
     t.integer "user_id"

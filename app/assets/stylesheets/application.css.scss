@@ -11,8 +11,10 @@
  *= require_self
 */
 
+@import 'compass/reset';
 @import "bootstrap_and_overrides";
 @import "imports/definitions";
+@import "imports/styles";
 @import "imports/sticky";
 @import "gebo/splashy/splashy";
 

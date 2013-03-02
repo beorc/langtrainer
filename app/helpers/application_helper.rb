@@ -41,4 +41,8 @@ module ApplicationHelper
       }.html_safe
     end
   end
+
+  def render_oauth_button(provider)
+    link_to '', auth_at_provider_path(provider: provider.to_sym), class: "auth #{provider}", id: "auth_by_#{provider}"
+  end
 end

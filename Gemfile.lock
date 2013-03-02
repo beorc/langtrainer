@@ -58,10 +58,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
-    compass (0.12.rc.1)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     daemons (1.1.9)
     database_cleaner (0.9.1)
     delayed_job (3.0.5)
@@ -227,7 +229,7 @@ DEPENDENCIES
   cancan (>= 1.6.8)
   capybara (>= 2.0.2)
   coffee-rails (~> 3.2.1)
-  compass (= 0.12.rc.1)
+  compass-rails
   daemons
   database_cleaner (>= 0.9.1)
   delayed_job_active_record

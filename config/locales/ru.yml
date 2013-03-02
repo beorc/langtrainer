@@ -27,15 +27,10 @@ ru:
     title: Подтверждение изменения адреса электронной почты
     hint: Изменить адрес на '%{new_email}'?
     confirm: Изменить
-    email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
     same_email_entered: Введен текущий адрес
-    mailer:
-      subject: Ссылка для изменения адреса почты
   token_authentication:
-    email_sent: На почтовый адрес '%{email}' отправлено письмо со ссылкой для входа на сайт
     email_description: На указанный адрес будет отправлено письмо с ссылкой для входа на сайт
-    mailer:
-      subject: Ссылка для входа на сайт
+
   user_sessions:
     new:
       sign_in: Вход на сайт
@@ -56,9 +51,18 @@ ru:
       answer: Введите перевод
       hint: Подсказка
 
+  shared:
+    omniauth_buttons:
+      title: Войти через социальные сети
   views:
     pagination:
       truncate: ...
+
+  mailer:
+    token_authentication:
+      subject: Ссылка для входа на сайт
+    email_confirmation:
+      subject: Ссылка для изменения адреса почты
 
   helpers:
     actions:
@@ -76,6 +80,7 @@ ru:
     token_authentication:
       success: Вы успешно вошли на сайт
       fail: Неверный ключ авторизации
+      email_sent: На почтовый адрес '%{email}' отправлено письмо со ссылкой для входа на сайт
     user_registration:
       success: Профиль пользователя обновлен
     email_confirmation:

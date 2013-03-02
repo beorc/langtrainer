@@ -31,6 +31,10 @@ class User < ActiveRecord::Base
     reset_authentication_token!
   end
 
+  def title
+    email || username
+  end
+
   private
 
   def assign_default_languages

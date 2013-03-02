@@ -13,7 +13,7 @@ if File.exist? path
 
   ActionMailer::Base.default from: config[:from], reply_to: config[:reply_to]
 
-  host = config[:host]
+  host = Rails.configuration.host
   Rails.configuration.action_mailer.default_url_options = { host: host }
   Rails.application.routes.default_url_options[:host] = host
   Rails.application.config.action_mailer.default_url_options = { host: host }

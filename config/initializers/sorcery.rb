@@ -1,39 +1,29 @@
-Rails.application.config.sorcery.submodules = [:session_timeout, :external]
+Rails.application.config.sorcery.submodules = [:external]
 
 Rails.application.config.sorcery.configure do |config|
+  host = Rails.configuration.host
+  oauth_providers = Rails.application.config.oauth_providers
 
-  config.session_timeout = 10.minutes
-  config.session_timeout_from_last_action = false
+  config.external_providers = [:twitter, :facebook, :google]
 
-  config.external_providers = [:twitter, :facebook]
+  config.twitter.key = oauth_providers['twitter']['key']
+  config.twitter.secret = oauth_providers['twitter']['secret']
+  config.twitter.callback_url = "http://#{host}/oauth/callback?provider=twitter"
+  config.twitter.user_info_mapping = {:username => "screen_name"}
 
-  config.twitter.key = "eYVNBjBDi33aa9GkA3w"
-  config.twitter.secret = "XpbeSdCoaKSmQGSeokz5qcUATClRW5u08QWNfv71N8"
-  config.twitter.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=twitter"
-  config.twitter.user_info_mapping = {:email => "screen_name"}
+  config.facebook.key = oauth_providers['facebook']['key']
+  config.facebook.secret = oauth_providers['facebook']['secret']
+  config.facebook.callback_url = "http://#{host}/oauth/callback?provider=facebook"
+  config.facebook.user_info_mapping = {:username => "name"}
 
-  config.facebook.key = "34cebc81c08a521bc66e212f947d73ec"
-  config.facebook.secret = "5b458d179f61d4f036ee66a497ffbcd0"
-  config.facebook.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=facebook"
-  config.facebook.user_info_mapping = {:email => "name"}
+  config.google.key = oauth_providers['google']['key']
+  config.google.secret = oauth_providers['google']['secret']
+  config.google.callback_url = "http://#{host}/oauth/callback?provider=google"
+  config.google.user_info_mapping = {:username => "name"}
 
   config.user_config do |user|
     user.username_attribute_names                      = [:email]
     user.subclasses_inherit_config                    = true
-
-    #user.user_activation_mailer                       = UserMailer
-    #user.activation_token_attribute_name              = :activation_code
-    #user.activation_token_expires_at_attribute_name   = :activation_code_expires_at
-
-    #user.reset_password_mailer                        = UserMailer
-    #user.reset_password_expiration_period             = 10.minutes
-    #user.reset_password_time_between_emails           = nil
-
-    #user.activity_timeout                             = 1.minutes
-
-    #user.consecutive_login_retries_amount_limit       = 10
-    #user.login_lock_time_period                       = 2.minutes
-
     user.authentications_class                        = UserProvider
   end
 

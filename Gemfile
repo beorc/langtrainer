@@ -23,7 +23,7 @@ gem 'has_scope'
 gem 'hashie'
 gem 'delayed_job_active_record'
 gem 'daemons'
-gem 'compass', "0.12.rc.1"
+gem 'compass-rails'
 gem 'virtus'
 
 group :development, :test do

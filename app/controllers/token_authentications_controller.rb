@@ -11,7 +11,7 @@ class TokenAuthenticationsController < ApplicationController
         @user.reset_authentication_token!
         #UserMailer.delay.send_token(@user, I18n.locale)
         UserMailer.send_token(@user, I18n.locale).deliver!
-        flash[:notice] = t('sitemplate_core.token_authentication.email_sent', email: email)
+        flash[:notice] = t('flash.token_authentication.email_sent', email: email)
       end
     end
 
