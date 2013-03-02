@@ -1,16 +1,14 @@
 Langtrainer::Application.routes.draw do
   root :to => 'exercises#index'
 
-  resources :users do
-   get :activate, on: :member
-  end
-
   resources :user_sessions
-  resources :password_resets
+
+  resource :user_registration, path: :registration, only: [:edit, :update]
+  get '/confirm_email' => 'user_registrations#confirm_email', as: :confirm_email
+  resource :token_authentication, only: :create
 
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout
-  get 'signup' => 'users#new', :as => :signup
 
   resource :oauth do
    get :callback

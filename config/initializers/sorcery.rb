@@ -1,11 +1,9 @@
-Rails.application.config.sorcery.submodules = [:user_activation, :http_basic_auth, :remember_me, :reset_password, :session_timeout, :brute_force_protection, :activity_logging, :external]
+Rails.application.config.sorcery.submodules = [:session_timeout, :external]
 
 Rails.application.config.sorcery.configure do |config|
 
   config.session_timeout = 10.minutes
   config.session_timeout_from_last_action = false
-
-  config.controller_to_realm_map = {"application" => "Application", "users" => "Users"}
 
   config.external_providers = [:twitter, :facebook]
 
@@ -23,18 +21,18 @@ Rails.application.config.sorcery.configure do |config|
     user.username_attribute_names                      = [:email]
     user.subclasses_inherit_config                    = true
 
-    user.user_activation_mailer                       = UserMailer
-    user.activation_token_attribute_name              = :activation_code
-    user.activation_token_expires_at_attribute_name   = :activation_code_expires_at
+    #user.user_activation_mailer                       = UserMailer
+    #user.activation_token_attribute_name              = :activation_code
+    #user.activation_token_expires_at_attribute_name   = :activation_code_expires_at
 
-    user.reset_password_mailer                        = UserMailer
-    user.reset_password_expiration_period             = 10.minutes
-    user.reset_password_time_between_emails           = nil
+    #user.reset_password_mailer                        = UserMailer
+    #user.reset_password_expiration_period             = 10.minutes
+    #user.reset_password_time_between_emails           = nil
 
-    user.activity_timeout                             = 1.minutes
+    #user.activity_timeout                             = 1.minutes
 
-    user.consecutive_login_retries_amount_limit       = 10
-    user.login_lock_time_period                       = 2.minutes
+    #user.consecutive_login_retries_amount_limit       = 10
+    #user.login_lock_time_period                       = 2.minutes
 
     user.authentications_class                        = UserProvider
   end

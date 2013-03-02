@@ -1,26 +1,16 @@
-class UserMailer < ActionMailer::Base
+class UserMailer < ActionMailer::Localized
 
-  default :from => "notifications@example.com"
-
-  def activation_needed_email(user)
-    @user = user
-    #@url = "http://0.0.0.0:3000/users/#{user.activation_code}/activate"
-    @url = activate_user_url user.activation_code
-    mail(:to => user.email,
-         :subject => "Welcome to My Awesome Site")
+  def send_token(user, locale)
+    @locale = locale
+    @url = root_url(Langtrainer.config.token_authentication_key => user.authentication_token)
+    mail(to: user.email, subject: t('sitemplate_core.token_authentication.mailer.subject'),
+                          template_name: localized_template(__method__))
   end
 
-  def activation_success_email(user)
-    @user = user
-    @url = login_url
-    mail(:to => user.email,
-         :subject => "Your account is now activated")
-  end
-
-  def reset_password_email(user)
-    @user = user
-    @url = edit_password_reset_url user.reset_password_token
-    mail(:to => user.email,
-         :subject => "Your password reset request")
+  def send_email_confirmation(email_confirmation, locale)
+    @locale = locale
+    @url = confirm_email_url(email_token: email_confirmation.token)
+    mail(to: email_confirmation.new_email, subject: t('sitemplate_core.email_confirmation.mailer.subject'),
+                          template_name: localized_template(__method__))
   end
 end

@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
+  include TokenAuthenticatable
+
   has_many :providers, :class_name => 'UserProvider', :dependent => :destroy
+  has_one :email_confirmation, validate: true
   accepts_nested_attributes_for :providers
 
   authenticates_with_sorcery!
@@ -9,12 +12,24 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :role_ids, :as => :admin
 
-  attr_accessible :email, :password, :password_confirmation, :providers_attributes
+  attr_accessible :email, :providers_attributes
 
-  validates_length_of :password, :minimum => 3, :message => "password must be at least 3 characters long", :if => :password
-  validates_confirmation_of :password, :message => "should match confirmation", :if => :password
+  validates :email, uniqueness: true,
+                    format: { with: Langtrainer.email_regexp },
+                    if: 'email.present?'
+  validates :email, presence: true, if: :email_required?
+
+  validates :username, presence: true,
+                       uniqueness: true,
+                       if: :have_bound_auth?
 
   after_create :assign_default_languages
+  after_create :assign_default_role
+  before_save :ensure_authentication_token
+
+  def after_token_authentication
+    reset_authentication_token!
+  end
 
   private
 
@@ -22,5 +37,19 @@ class User < ActiveRecord::Base
     self.foreign_language = :english
     self.native_language = :russian
     save!
+  end
+
+  def email_required?
+    providers.empty?
+  end
+
+  def have_bound_auth?
+    providers.any?
+  end
+
+  def assign_default_role
+    return unless roles.empty?
+    roles << Role.default
+    save
   end
 end

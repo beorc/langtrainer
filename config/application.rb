@@ -25,6 +25,10 @@ module Langtrainer
     config.admin_sidebar.values.sort_by { |hsh| hsh[:position] }
   end
 
+  def self.email_regexp
+    /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/
+  end
+
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
@@ -44,7 +48,7 @@ module Langtrainer
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib #{config.root}/lib/action_mailer)
 
 
     # Only load the plugins named here, in the order given (default is alphabetical).
@@ -87,6 +91,9 @@ module Langtrainer
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.easy_sign_in_mode = false
+    config.token_authentication_key = :auth_token
 
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'application.yml')

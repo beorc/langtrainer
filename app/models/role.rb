@@ -5,4 +5,10 @@ class Role < ActiveRecord::Base
   attr_accessible :name
 
   scopify
+
+  DEFAULT = :member
+
+  def self.default
+    Role.first(conditions: {name: DEFAULT})
+  end
 end

@@ -24,6 +24,7 @@ gem 'hashie'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'compass', "0.12.rc.1"
+gem 'virtus'
 
 group :development, :test do
   gem 'factory_girl_rails', '>= 4.2.0'

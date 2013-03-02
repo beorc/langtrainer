@@ -11,7 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130218190234) do
+ActiveRecord::Schema.define(:version => 20130302082436) do
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
+
+  create_table "email_confirmations", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "new_email"
+    t.string   "token"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "email_confirmations", ["new_email"], :name => "index_email_confirmations_on_new_email"
+  add_index "email_confirmations", ["token"], :name => "index_email_confirmations_on_token", :unique => true
+  add_index "email_confirmations", ["user_id"], :name => "index_email_confirmations_on_user_id"
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -49,32 +77,16 @@ ActiveRecord::Schema.define(:version => 20130218190234) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                          :null => false
-    t.string   "crypted_password"
-    t.string   "salt"
+    t.string   "email",                :null => false
     t.string   "native_language"
     t.string   "foreign_language"
-    t.datetime "created_at",                                     :null => false
-    t.datetime "updated_at",                                     :null => false
-    t.string   "activation_state"
-    t.string   "activation_code"
-    t.datetime "activation_code_expires_at"
-    t.string   "remember_me_token"
-    t.datetime "remember_me_token_expires_at"
-    t.string   "reset_password_token"
-    t.datetime "reset_password_token_expires_at"
-    t.datetime "reset_password_email_sent_at"
-    t.datetime "last_login_at"
-    t.datetime "last_logout_at"
-    t.datetime "last_activity_at"
-    t.integer  "failed_logins_count",             :default => 0
-    t.datetime "lock_expires_at"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "authentication_token"
   end
 
-  add_index "users", ["activation_code"], :name => "index_users_on_activation_code"
+  add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email"
-  add_index "users", ["last_logout_at", "last_activity_at"], :name => "index_users_on_last_logout_at_and_last_activity_at"
-  add_index "users", ["remember_me_token"], :name => "index_users_on_remember_me_token"
 
   create_table "users_roles", :id => false, :force => true do |t|
     t.integer "user_id"

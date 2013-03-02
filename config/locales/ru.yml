@@ -23,6 +23,23 @@ ru:
 
   delete_confirm: "Удалить?"
 
+  email_confirmation:
+    title: Подтверждение изменения адреса электронной почты
+    hint: Изменить адрес на '%{new_email}'?
+    confirm: Изменить
+    email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
+    same_email_entered: Введен текущий адрес
+    mailer:
+      subject: Ссылка для изменения адреса почты
+  token_authentication:
+    email_sent: На почтовый адрес '%{email}' отправлено письмо со ссылкой для входа на сайт
+    email_description: На указанный адрес будет отправлено письмо с ссылкой для входа на сайт
+    mailer:
+      subject: Ссылка для входа на сайт
+  user_sessions:
+    new:
+      sign_in: Вход на сайт
+
   admin:
     sidebar:
       management:
@@ -48,8 +65,23 @@ ru:
     submit:
       sentence:
         create: Создать
+      email_confirmation:
+        send_token: Отправить
+      user_registration:
+        create: Изменить
+      user:
+        create: Отправить
 
   flash:
+    token_authentication:
+      success: Вы успешно вошли на сайт
+      fail: Неверный ключ авторизации
+    user_registration:
+      success: Профиль пользователя обновлен
+    email_confirmation:
+      success: Адрес электронной почты изменен
+      fail: Ключ для смены адреса устарел
+      email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
 
   legend:
 
@@ -59,6 +91,7 @@ ru:
         one: предложение
         few: предложения
         many: предложения
+      user_registration: профиль пользователя
     attributes:
       sentence:
         english: Английский
@@ -66,6 +99,8 @@ ru:
         atom: Базовая конструкция
         exercise_id: Упражнение
         user_id: Пользователь
+      user_registration:
+        email: E-mail
 
     errors:
       messages:

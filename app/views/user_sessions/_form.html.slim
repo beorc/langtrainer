@@ -1,0 +1,6 @@
+= simple_form_for(user, url: token_authentication_path) do |f|
+  = f.input :email
+  small = t('token_authentication.email_description')
+
+  .form-actions
+    = f.submit class: 'btn btn-primary submit', id: 'send_token_button'
