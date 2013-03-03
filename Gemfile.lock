@@ -128,6 +128,9 @@ GEM
     kgio (2.8.0)
     launchy (2.1.2)
       addressable (~> 2.3)
+    locale_detector (0.3.1)
+      i18n (>= 0.5.0)
+      rails (>= 3.0.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -244,6 +247,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    validates_existence (0.8.0)
     virtus (0.5.4)
       backports (~> 2.6.1)
       descendants_tracker (~> 0.0.1)
@@ -278,6 +282,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   launchy (>= 2.1.2)
+  locale_detector
   meta-tags
   mysql2
   quiet_assets (>= 1.0.1)
@@ -293,4 +298,5 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   unicode
   unicorn
+  validates_existence (>= 0.4)
   virtus

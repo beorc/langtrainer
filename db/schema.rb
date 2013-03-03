@@ -54,8 +54,10 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
 
   create_table "sentences", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "exercise_id",                    :null => false
+    t.integer  "exercise_id"
     t.boolean  "atom",        :default => false
+    t.integer  "sentence_id"
+    t.string   "type"
     t.string   "english"
     t.string   "russian"
     t.datetime "created_at",                     :null => false
@@ -66,6 +68,7 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
   add_index "sentences", ["english"], :name => "index_sentences_on_english", :unique => true
   add_index "sentences", ["exercise_id"], :name => "index_sentences_on_exercise_id"
   add_index "sentences", ["russian"], :name => "index_sentences_on_russian", :unique => true
+  add_index "sentences", ["sentence_id"], :name => "index_sentences_on_sentence_id"
   add_index "sentences", ["user_id"], :name => "index_sentences_on_user_id"
 
   create_table "user_providers", :force => true do |t|

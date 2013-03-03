@@ -25,6 +25,8 @@ gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'compass-rails'
 gem 'virtus'
+gem 'locale_detector'
+gem 'validates_existence', '>= 0.4'
 
 #skY67sdgH
 group :development, :test do
