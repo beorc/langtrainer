@@ -26,9 +26,16 @@ gem 'daemons'
 gem 'compass-rails'
 gem 'virtus'
 
+#skY67sdgH
 group :development, :test do
   gem 'factory_girl_rails', '>= 4.2.0'
   gem 'rspec-rails', '>= 2.12.2'
+
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
+  gem 'capistrano-unicorn', git: 'git://github.com/sosedoff/capistrano-unicorn.git'
+  gem 'capistrano_colors'
 end
 
 group :development do
