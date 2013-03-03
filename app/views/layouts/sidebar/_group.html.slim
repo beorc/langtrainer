@@ -4,7 +4,7 @@
         i[class=group['icon']]
         '&nbsp
         = t group['title']
-  .accordion-body.collapse[id=group['name'] class=sidebar_groups_active_class(group)]
+  .accordion-body[id=group['name'] class=sidebar_groups_active_class(group)]
     .accordion-inner
       ul.nav.nav-list
         = render partial: 'layouts/sidebar/item', collection: group['items'], as: :link

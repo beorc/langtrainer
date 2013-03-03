@@ -13,22 +13,7 @@ html
     = yield(:head)
   body class="#{controller_name} #{action_name} has-navbar-fixed-top"
     #page
-      #navigation.wrapper
-        .navbar.navbar-fixed-top#top
-          .navbar-inner
-            .inner
-              .container
-                = link_to root_path, class: 'brand', title: t('.home') do
-                  h1 = t(:app_name)
-                  span = t(:slogan)
-                .nav-collapse.collapse
-                  ul.nav.pull-right#main-menu
-                    - if logged_in?
-                      li = link_to t(:logout), logout_path, :method=>'delete'
-                    - else
-                      li = link_to t(:login), login_path
-                    - if logged_in?
-                      li = link_to current_user.title, edit_user_registration_path
+      = render 'layouts/topbar'
       #content
         .container
           .row

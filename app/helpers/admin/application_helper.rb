@@ -9,7 +9,7 @@ module Admin::ApplicationHelper
 
   def sidebar_groups_active_class(group)
     group['items'].each do |link|
-      return 'in' if modules_nav_active_class(url_for(link['url_options'])).present?
+      return 'in' if modules_nav_active_class(eval(link['url_helper'])).present?
     end
     ''
   end

@@ -1,8 +1,0 @@
-= link_to t(:app_name), root_path, :class => 'brand'
-ul.nav
-  - if logged_in?
-    li = link_to 'Logout', logout_path, :method=>'delete'
-  - else
-    li = link_to 'Login', login_path
-  - if logged_in?
-    li = link_to current_user.title, edit_user_registration_path

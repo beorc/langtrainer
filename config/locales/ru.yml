@@ -28,10 +28,10 @@ ru:
   delete_confirm: "Удалить?"
 
   layouts:
+    topbar:
+      home: На главную
     application:
-      home: На главную
     user_profile:
-      home: На главную
       title: Профиль пользователя
       credentials: Данные
       sentences: Предложения

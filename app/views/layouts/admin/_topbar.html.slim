@@ -1,0 +1,13 @@
+header.navbar.navbar-fixed-top
+  nav.navbar-inner
+    .container
+      = link_to 'Admin', admin_dashboard_path, :class => 'brand'
+      ul.nav
+        - if logged_in?
+          li = link_to 'Logout', logout_path, :method=>'delete'
+        - else
+          li = link_to 'Login', login_path
+        - if logged_in?
+          li = link_to current_user.title, edit_user_registration_path
+      = link_to root_path, class: 'brand' do
+        i.icon-home
