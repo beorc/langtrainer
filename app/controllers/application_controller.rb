@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   helper_method :native_language
-  helper_method :foreign_language
 
   before_filter :handle_sign_in
   before_filter :store_current_url
@@ -11,13 +10,8 @@ class ApplicationController < ActionController::Base
   end
 
   def native_language
-    return current_user.native_language if logged_in?
-    session[:native_language] ||= :russian
-  end
-
-  def foreign_language
-    return current_user.foreign_language if logged_in?
-    session[:foreign_language] ||= :english
+    session[:language_id] ||= logged_in? ? current_user.language.id : Language.russian.id
+    Language.find(session[:language_id])
   end
 
   private

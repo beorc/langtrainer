@@ -71,4 +71,24 @@ module ApplicationHelper
   def menu_class(path, class_name = 'active', with_params = false)
     aclass?(path, with_params) ? class_name : ''
   end
+
+  def active_language_class(language)
+    native_language.id == language.id ? 'active' : ''
+  end
+
+  def render_language_item(language)
+    content_tag(:li, '', class: active_language_class(language)) do
+      concat link_to language.title,
+                     set_native_language_path(language.id),
+                     method: :put
+    end
+  end
+
+  def render_language_selector
+    content_tag :ul, class: 'unstyled language-selector dropdown-menu' do
+      content = Language.all.each.inject('') do |content, language|
+        content << render_language_item(language)
+      end.html_safe
+    end
+  end
 end

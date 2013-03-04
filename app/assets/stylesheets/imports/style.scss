@@ -13,3 +13,19 @@ a.auth.twitter { background: image_url('authbuttons/twitter_32.png') no-repeat; 
 a.auth.vkontakte { background: image_url('authbuttons/vkontakte_32.png') no-repeat; }
 a.auth.facebook { background: image_url('authbuttons/facebook_32.png') no-repeat; }
 a.auth.google { background: image_url('authbuttons/google_32.png') no-repeat; }
+
+.centered-column {
+  margin-left: auto;
+  margin-right: auto;
+
+  &.big { width: 80% }
+  &.middle { width: 30% }
+  &.small { width: 30% }
+
+  form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

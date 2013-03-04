@@ -32,6 +32,10 @@ class Language
     slug
   end
 
+  def to_i
+    id
+  end
+
   def to_class_name
     'Language'
   end

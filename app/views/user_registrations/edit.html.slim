@@ -1,13 +1,10 @@
 - content_for :subtitle do
   = t('.subtitle')
 
-.block7
-  .row-fluid
-    .span5
-      .well
-        = simple_form_for resource, url: user_registration_path, method: :put do |f|
-          fieldset
-            = f.input :email, as: :email, label: t('activerecord.attributes.user_registration.email')
+.centered-column.small.well
+  = simple_form_for resource, url: user_registration_path, method: :put do |f|
+    fieldset
+      = f.input :email, as: :email, label: t('activerecord.attributes.user_registration.email')
 
-          .form-actions
-            = f.submit class: 'btn btn-primary', id: 'update_registration'
+    .form-actions
+      = f.submit class: 'btn btn-primary pull-right', id: 'update_registration'

@@ -3,8 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :email
       t.string :username
-      t.string :native_language
-      t.string :foreign_language
+      t.integer :language_id
 
       t.timestamps
     end

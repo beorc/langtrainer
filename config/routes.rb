@@ -1,5 +1,5 @@
 Langtrainer::Application.routes.draw do
-  root :to => 'exercises#index'
+  root :to => 'main_page#show'
 
   resources :user_sessions
 
@@ -20,5 +20,8 @@ Langtrainer::Application.routes.draw do
     resources :sentences
   end
 
-  resources :exercises, only: :show
+  resources :languages, only: [], path: '' do
+    resources :exercises, only: :show, path: ''
+    put 'set_native', on: :member
+  end
 end

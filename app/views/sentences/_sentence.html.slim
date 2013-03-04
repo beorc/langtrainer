@@ -1,2 +1,2 @@
-.sentence data-translation=sentence.send(foreign_language)
-  = sentence.send(native_language)
+.sentence data-translation=sentence.send(@language.slug)
+  = sentence.send(native_language.slug)

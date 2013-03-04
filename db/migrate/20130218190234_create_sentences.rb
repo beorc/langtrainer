@@ -8,8 +8,8 @@ class CreateSentences < ActiveRecord::Migration
       t.references :sentence
       t.string :type
 
-      t.string :english
-      t.string :russian
+      t.string :en
+      t.string :ru
 
       t.timestamps
     end
@@ -17,7 +17,7 @@ class CreateSentences < ActiveRecord::Migration
     add_index :sentences, :exercise_id
     add_index :sentences, :sentence_id
     add_index :sentences, :atom
-    add_index :sentences, :english, unique: true
-    add_index :sentences, :russian, unique: true
+    add_index :sentences, :en, unique: true
+    add_index :sentences, :ru, unique: true
   end
 end

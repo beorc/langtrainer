@@ -35,11 +35,14 @@ class User < ActiveRecord::Base
     email || username
   end
 
+  def language
+    Language.find(language_id)
+  end
+
   private
 
   def assign_default_languages
-    self.foreign_language = :english
-    self.native_language = :russian
+    self.language_id = Language.russian
     save!
   end
 

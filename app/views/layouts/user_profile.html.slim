@@ -36,9 +36,4 @@ html
              = render 'layouts/messages'
              = yield
       #layout-footer
-    footer#footer
-      .inner
-        .container
-        .row
-          .span12
-            span.pull-right &copy; #{Date.today.year}, Langtrainer
+    = render 'layouts/footer'

@@ -142,3 +142,16 @@ body .header .page-title {
 .social-media a:hover i {
   background-color: #81994d;
 }
+
+#navigation ul#main-menu li a .caret,
+#navigation ul#main-menu li a:link .caret {
+  margin-top: 8px;
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+
+  &:focus,
+  &:hover {
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+}

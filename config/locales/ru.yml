@@ -27,9 +27,14 @@ ru:
 
   delete_confirm: "Удалить?"
 
+  language:
+    english: Английский
+    russian: Русский
+
   layouts:
     topbar:
       home: На главную
+      your_language: 'Ваш язык:'
     application:
     user_profile:
       title: Профиль пользователя

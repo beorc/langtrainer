@@ -58,16 +58,16 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
     t.boolean  "atom",        :default => false
     t.integer  "sentence_id"
     t.string   "type"
-    t.string   "english"
-    t.string   "russian"
+    t.string   "en"
+    t.string   "ru"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
 
   add_index "sentences", ["atom"], :name => "index_sentences_on_atom"
-  add_index "sentences", ["english"], :name => "index_sentences_on_english", :unique => true
+  add_index "sentences", ["en"], :name => "index_sentences_on_en", :unique => true
   add_index "sentences", ["exercise_id"], :name => "index_sentences_on_exercise_id"
-  add_index "sentences", ["russian"], :name => "index_sentences_on_russian", :unique => true
+  add_index "sentences", ["ru"], :name => "index_sentences_on_ru", :unique => true
   add_index "sentences", ["sentence_id"], :name => "index_sentences_on_sentence_id"
   add_index "sentences", ["user_id"], :name => "index_sentences_on_user_id"
 
@@ -82,8 +82,7 @@ ActiveRecord::Schema.define(:version => 20130302082436) do
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "username"
-    t.string   "native_language"
-    t.string   "foreign_language"
+    t.integer  "language_id"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
     t.string   "authentication_token"
