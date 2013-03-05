@@ -29,3 +29,15 @@ a.auth.google { background: image_url('authbuttons/google_32.png') no-repeat; }
   }
 }
 
+.nav {
+  .prompt { font-weight: bolder; }
+  .language {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px dashed #ffffff;
+    }
+    display: inline;
+  }
+}

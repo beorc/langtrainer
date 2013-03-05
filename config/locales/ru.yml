@@ -1,7 +1,7 @@
 ru:
   app_name: Langtrainer
-  slogan: Тренажер иностранных языков
-  home: Тренажер иностранных языков
+  app_description: Тренажер иностранных языков
+  home: На главную
   login: Войти
   logout: Выйти
 
