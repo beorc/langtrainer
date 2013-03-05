@@ -31,15 +31,15 @@ class EmailConfirmation < ActiveRecord::Base
     end
   end
 
+  def email_changed?
+    new_email != user.email
+  end
+
   private
 
   def send_email
     reset_token!
     #UserMailer.delay.send_email_confirmation(self, I18n.locale)
     UserMailer.send_email_confirmation(self, I18n.locale).deliver!
-  end
-
-  def email_changed?
-    new_email != user.email
   end
 end

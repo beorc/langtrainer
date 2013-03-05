@@ -1,0 +1,26 @@
+- content_for :jumbotron do
+  .jumbotron.masthead
+    .container
+      h1 = t(:app_name)
+      p = t('.description')
+
+.row-fluid
+  .span4
+    h4.strong = t('.why.a.title')
+    = t('.why.a.content')
+  .span4
+    h4.strong = t('.why.b.title')
+    = t('.why.b.content')
+  .span4
+    h4.strong = t('.why.c.title')
+    = t('.why.c.content')
+.row-fluid
+  .span4
+    h4.strong = t('.why.d.title')
+    = t('.why.d.content')
+  .span4
+    h4.strong = t('.why.e.title')
+    = t('.why.e.content')
+  .span4
+    h4.strong = t('.why.f.title')
+    = t('.why.f.content')

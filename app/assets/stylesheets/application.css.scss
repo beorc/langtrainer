@@ -12,18 +12,22 @@
 */
 
 @import "compass/reset";
-//@import "bootstrap_and_overrides";
-@import "imports/definitions";
-@import "compass/layout/sticky-footer";
+@import "bootstrap_and_overrides";
+@import "font-awesome";
 
-@import "enkel/bootstrap";
-@import "enkel/responsive";
+//@import "enkel/bootstrap";
+//@import "enkel/responsive";
+
+@import "compass/layout/sticky-footer";
+@import "imports/definitions";
+@import "imports/sticky_footer";
+
 @import "enkel/theme-style";
 @import "enkel/colour-green";
 @import "enkel/custom-style";
 
 @import "imports/style";
 
+@import "main_page";
 @import "exercises";
-
 

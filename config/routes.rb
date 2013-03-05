@@ -5,6 +5,7 @@ Langtrainer::Application.routes.draw do
 
   resource :user_registration, path: :registration, only: [:edit, :update]
   get '/confirm_email' => 'user_registrations#confirm_email', as: :confirm_email
+  put '/reset_email_confirmation' => 'user_registrations#reset_email_confirmation', as: :reset_email_confirmation
   resource :token_authentication, only: :create
 
   match 'login' => 'user_sessions#new', :as => :login

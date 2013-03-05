@@ -31,6 +31,11 @@ class UserRegistrationsController < ApplicationController
     end
   end
 
+  def reset_email_confirmation
+    resource.reset_email_confirmation!
+    redirect_to :back
+  end
+
   private
 
   def resource

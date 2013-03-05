@@ -11,14 +11,16 @@ html
     = display_meta_tags site: t(:app_name), separator: '–', reverse: true
     = csrf_meta_tags
     = yield(:head)
-  body class="#{controller_name} #{action_name} has-navbar-fixed-top"
+  body class="#{controller_name} #{action_name} has-navbar-fixed-top has-highlighted"
     #page
       = render 'layouts/topbar'
+      = content_for :jumbotron
+      = content_for :highlighted
       #content
         .container
-          .row
-           .span12
-             = render 'layouts/messages'
-             = yield
+          .row-fluid
+            .span12
+              = render 'layouts/messages'
+              = yield
       #layout-footer
     = render 'layouts/footer'

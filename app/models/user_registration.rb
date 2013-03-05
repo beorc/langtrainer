@@ -43,6 +43,10 @@ class UserRegistration
     end
   end
 
+  def reset_email_confirmation!
+    @email_confirmation.destroy
+  end
+
   private
 
   def persist!

@@ -42,7 +42,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe0e0e0', endColorstr='#ffffffff', GradientType=0);
 }
 body {
-  font-family: "Monda", Arial, serif;
+  /*font-family: "Monda", Arial, serif;*/
 }
 .page-title {
   margin: 0;
