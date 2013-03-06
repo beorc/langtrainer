@@ -1,6 +1,19 @@
 - load_controller_script
+- content_for :highlighted do
+  #highlighted
+    .container
+      .row-fluid.header
+        h2.page-title
+          span = @language.title
+          '&nbsp
+          small = Exercise.find(@exercise_id).title
+        ul.nav.nav-pills
+          - Exercise.all.each do |exercise|
+            - url = language_exercise_path(@language, exercise)
+            li*{class: menu_class(url)}
+              = link_to exercise.title, url
 
-.workspace
+.container.workspace
   .question = render @sentences.first
   .sentences.hide = render @sentences
 

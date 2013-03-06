@@ -94,6 +94,13 @@ ru:
     russian: Русский
 
   exercises:
+    first:
+      title: Первое упражнение
+    second:
+      title: Второе упражнение
+    third:
+      title: Третье упражнение
+
     show:
       next: Дальше
       look: Узнать правильный ответ

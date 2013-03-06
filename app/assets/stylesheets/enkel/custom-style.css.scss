@@ -155,3 +155,26 @@ body .header .page-title {
     border-bottom-color: white;
   }
 }
+
+#highlighted {
+  .header {
+    margin-bottom: 0;
+    .page-title {
+      margin: 6px 0 6px 0;
+      float: none;
+    }
+    .nav-pills {
+      margin: 2px 0 5px 0;
+      float: none;
+
+      li {
+        margin-left: 3px;
+
+        &.active > a {
+          color: white;
+          background: $themeText;
+        }
+      }
+    }
+  }
+}

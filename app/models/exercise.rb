@@ -13,6 +13,7 @@ class Exercise
 
   def initialize(hsh = {})
     @id = hsh[:id]
+    @slug = hsh[:slug]
     @title = hsh[:title]
   end
 
@@ -37,8 +38,9 @@ class Exercise
 
   def self.exercises
     @exercises ||= [
-      Exercise.send(:new, id: 0, title: I18n.t('exercises.1.title')),
-      Exercise.send(:new, id: 1, title: I18n.t('exercises.2.title'))
+      Exercise.send(:new, id: 0, slug: :first, title: I18n.t('exercises.first.title')),
+      Exercise.send(:new, id: 1, slug: :second, title: I18n.t('exercises.second.title')),
+      Exercise.send(:new, id: 2, slug: :third, title: I18n.t('exercises.third.title'))
     ]
   end
 
