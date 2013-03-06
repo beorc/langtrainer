@@ -14,6 +14,12 @@ class Language
     find(Russian)
   end
 
+  def self.except(language)
+    collection = all.clone
+    collection.delete language
+    collection
+  end
+
   def self.all
     languages
   end

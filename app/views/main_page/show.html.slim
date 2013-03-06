@@ -4,23 +4,53 @@
       h1 = t(:app_name)
       p = t('.description')
 
-.row-fluid
-  .span4
-    h4.strong = t('.why.a.title')
-    = t('.why.a.content')
-  .span4
-    h4.strong = t('.why.b.title')
-    = t('.why.b.content')
-  .span4
-    h4.strong = t('.why.c.title')
-    = t('.why.c.content')
-.row-fluid
-  .span4
-    h4.strong = t('.why.d.title')
-    = t('.why.d.content')
-  .span4
-    h4.strong = t('.why.e.title')
-    = t('.why.e.content')
-  .span4
-    h4.strong = t('.why.f.title')
-    = t('.why.f.content')
+.row-fluid.mission
+  .inner
+    h3
+      = t('.select_language')
+    - Language.except(native_language).each do |language|
+      = link_to language.title,
+                language_exercise_path(language, Exercise.first),
+                class: 'btn btn-primary btn-large language'
+      '&nbsp
+
+
+.block.why.nargin-top-large
+  .row-fluid
+    .span4
+      h4.title
+        i.icon-lightbulb
+        '&nbsp
+        = t('.why.sentences.title')
+      = t('.why.sentences.content')
+    .span4
+      h4.title
+        i.icon-key
+        '&nbsp
+        = t('.why.hints.title')
+      = t('.why.hints.content')
+    .span4
+      h4.title
+        i.icon-certificate
+        '&nbsp
+        = t('.why.words.title')
+      = t('.why.words.content')
+  .row-fluid
+    .span4
+      h4.title
+        i.icon-check
+        '&nbsp
+        = t('.why.correction.title')
+      = t('.why.correction.content')
+    .span4
+      h4.title
+        i.icon-edit
+        '&nbsp
+        = t('.why.changes.title')
+      = t('.why.changes.content')
+    .span4
+      h4.title
+        i.icon-plus
+        '&nbsp
+        = t('.why.extensions.title')
+      = t('.why.extensions.content')
