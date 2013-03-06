@@ -1,11 +1,12 @@
 class Sentence < ActiveRecord::Base
-  attr_accessible :ru, :en, :exercise_id
+  attr_accessible :ru, :en, :exercise
 
+  belongs_to :exercise
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
   has_many :corrections, class_name: 'Correction', foreign_key: 'sentence_id'
 
   validates :ru, :en, uniqueness: true
-  validates :exercise_id, presence: true
+  validates :exercise, existence: { both: false }
 
-  scope :for_exercise, ->(exercise_id) { where(exercise_id: exercise_id) }
+  scope :for_exercise, ->(exercise) { where(exercise_id: exercise.id) }
 end

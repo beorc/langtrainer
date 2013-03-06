@@ -2,7 +2,7 @@
  *
  * Custom theme code styles
  * Written by Themelize.me (http://themelize.me)
- * 
+ *
  *******************************************************/
 .clearfix {
   *zoom: 1;
@@ -1347,10 +1347,10 @@ a:hover .icon-inverse-80 {
   }
 }
 @media (min-width: 980px) {
-  
+
 }
 @media (min-width: 1200px) {
-  
+
 }
 @media (max-width: 979px) {
   #navigation .inner,
@@ -1404,7 +1404,7 @@ a:hover .icon-inverse-80 {
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  
+
 }
 @media (max-width: 767px) {
   body {

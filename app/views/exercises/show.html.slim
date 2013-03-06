@@ -6,7 +6,7 @@
         h2.page-title
           span = @language.title
           '&nbsp
-          small = Exercise.find(@exercise_id).title
+          small = @exercise.title
         ul.nav.nav-pills
           - Exercise.all.each do |exercise|
             - url = language_exercise_path(@language, exercise)

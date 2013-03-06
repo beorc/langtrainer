@@ -1,151 +1,151 @@
 # === take
 
-- { english: 'Will I take your car?', russian: 'Я буду брать твою машину?', exercise_id: 2 }
-- { english: 'I will take your car', russian: 'Я буду брать твою машину', exercise_id: 2 }
-- { english: 'I will not take your car', russian: 'Я не буду брать твою машину', exercise_id: 2 }
+- { english: 'Will I take your car?', russian: 'Я буду брать твою машину?', exercise: 'third' }
+- { english: 'I will take your car', russian: 'Я буду брать твою машину', exercise: 'third' }
+- { english: 'I will not take your car', russian: 'Я не буду брать твою машину', exercise: 'third' }
 
-- { english: 'Do you take my car?', russian: 'Ты берешь мою машину?', exercise_id: 2 }
-- { english: 'You take my car', russian: 'Ты берешь мою машину', exercise_id: 2 }
-- { english: 'You do not take my car', russian: 'Ты не берешь мою машину', exercise_id: 2 }
+- { english: 'Do you take my car?', russian: 'Ты берешь мою машину?', exercise: 'third' }
+- { english: 'You take my car', russian: 'Ты берешь мою машину', exercise: 'third' }
+- { english: 'You do not take my car', russian: 'Ты не берешь мою машину', exercise: 'third' }
 
-- { english: 'Did we take their car?', russian: 'Мы брали их машину?', exercise_id: 2 }
-- { english: 'We took their car', russian: 'Мы брали их машину', exercise_id: 2 }
-- { english: 'We did not take their car', russian: 'Мы не брали их машину', exercise_id: 2 }
+- { english: 'Did we take their car?', russian: 'Мы брали их машину?', exercise: 'third' }
+- { english: 'We took their car', russian: 'Мы брали их машину', exercise: 'third' }
+- { english: 'We did not take their car', russian: 'Мы не брали их машину', exercise: 'third' }
 
-- { english: 'Will they take our car?', russian: 'Они будут брать нашу машину?', exercise_id: 2 }
-- { english: 'They will take our car', russian: 'Они будут брать нашу машину', exercise_id: 2 }
-- { english: 'They will not take our car', russian: 'Они не будут брать нашу машину', exercise_id: 2 }
+- { english: 'Will they take our car?', russian: 'Они будут брать нашу машину?', exercise: 'third' }
+- { english: 'They will take our car', russian: 'Они будут брать нашу машину', exercise: 'third' }
+- { english: 'They will not take our car', russian: 'Они не будут брать нашу машину', exercise: 'third' }
 
-- { english: 'Does he take her car?', russian: 'Он берет ее машину?', exercise_id: 2 }
-- { english: 'He take her car', russian: 'Он берет ее машину', exercise_id: 2 }
-- { english: 'He does not take her car', russian: 'Он не берет ее машину', exercise_id: 2 }
+- { english: 'Does he take her car?', russian: 'Он берет ее машину?', exercise: 'third' }
+- { english: 'He take her car', russian: 'Он берет ее машину', exercise: 'third' }
+- { english: 'He does not take her car', russian: 'Он не берет ее машину', exercise: 'third' }
 
-- { english: 'Did she take his car?', russian: 'Она брала его машину?', exercise_id: 2 }
-- { english: 'She took his car', russian: 'Она брала его машину', exercise_id: 2 }
-- { english: 'She did not take his car', russian: 'Она не брала его машину', exercise_id: 2 }
+- { english: 'Did she take his car?', russian: 'Она брала его машину?', exercise: 'third' }
+- { english: 'She took his car', russian: 'Она брала его машину', exercise: 'third' }
+- { english: 'She did not take his car', russian: 'Она не брала его машину', exercise: 'third' }
 
 # === to be friend
 
-- { english: 'Will I be your friend?', russian: 'Я буду твоим другом?', exercise_id: 2 }
-- { english: 'I will be your friend', russian: 'Я буду твоим другом', exercise_id: 2 }
-- { english: 'I will not be your friend', russian: 'Я не буду твоим другом', exercise_id: 2 }
+- { english: 'Will I be your friend?', russian: 'Я буду твоим другом?', exercise: 'third' }
+- { english: 'I will be your friend', russian: 'Я буду твоим другом', exercise: 'third' }
+- { english: 'I will not be your friend', russian: 'Я не буду твоим другом', exercise: 'third' }
 
-- { english: 'Are you my friend?', russian: 'Ты мой друг?', exercise_id: 2 }
-- { english: 'You are my friend', russian: 'Ты мой друг', exercise_id: 2 }
-- { english: 'You are not my friend', russian: 'Ты не мой друг', exercise_id: 2 }
+- { english: 'Are you my friend?', russian: 'Ты мой друг?', exercise: 'third' }
+- { english: 'You are my friend', russian: 'Ты мой друг', exercise: 'third' }
+- { english: 'You are not my friend', russian: 'Ты не мой друг', exercise: 'third' }
 
-- { english: 'Were we their friends?', russian: 'Мы были их друзьями?', exercise_id: 2 }
-- { english: 'We were their friends', russian: 'Мы были их друзьями', exercise_id: 2 }
-- { english: 'We were not their friends', russian: 'Мы не были их друзьями', exercise_id: 2 }
+- { english: 'Were we their friends?', russian: 'Мы были их друзьями?', exercise: 'third' }
+- { english: 'We were their friends', russian: 'Мы были их друзьями', exercise: 'third' }
+- { english: 'We were not their friends', russian: 'Мы не были их друзьями', exercise: 'third' }
 
-- { english: 'Will they be our friends?', russian: 'Они будут нашими друзьями?', exercise_id: 2 }
-- { english: 'They will be our friends', russian: 'Они будут нашими друзьями', exercise_id: 2 }
-- { english: 'They will not be our friends', russian: 'Они не будут нашими друзьями', exercise_id: 2 }
+- { english: 'Will they be our friends?', russian: 'Они будут нашими друзьями?', exercise: 'third' }
+- { english: 'They will be our friends', russian: 'Они будут нашими друзьями', exercise: 'third' }
+- { english: 'They will not be our friends', russian: 'Они не будут нашими друзьями', exercise: 'third' }
 
-- { english: 'Is he her friend?', russian: 'Он ее друг?', exercise_id: 2 }
-- { english: 'He is her friend', russian: 'Он ее друг', exercise_id: 2 }
-- { english: 'He is not her friend', russian: 'Он не ее друг', exercise_id: 2}
+- { english: 'Is he her friend?', russian: 'Он ее друг?', exercise: 'third' }
+- { english: 'He is her friend', russian: 'Он ее друг', exercise: 'third' }
+- { english: 'He is not her friend', russian: 'Он не ее друг', exercise: 'third'}
 
-- { english: 'Was she his friend?', russian: 'Она была его подругой?', exercise_id: 2 }
-- { english: 'She was his friend', russian: 'Она была его подругой', exercise_id: 2 }
-- { english: 'She was not his friend', russian: 'Она не была его подругой', exercise_id: 2 }
+- { english: 'Was she his friend?', russian: 'Она была его подругой?', exercise: 'third' }
+- { english: 'She was his friend', russian: 'Она была его подругой', exercise: 'third' }
+- { english: 'She was not his friend', russian: 'Она не была его подругой', exercise: 'third' }
 
 # === I am ing
 
-- { english: 'Will I be speaking afternoon?', russian: 'Я буду говорить днем?', exercise_id: 2 }
-- { english: 'I will be speaking afternoon', russian: 'Я буду говорить днем', exercise_id: 2 }
-- { english: 'I will not be speaking afternoon', russian: 'Я не буду говорить днем', exercise_id: 2 }
+- { english: 'Will I be speaking afternoon?', russian: 'Я буду говорить днем?', exercise: 'third' }
+- { english: 'I will be speaking afternoon', russian: 'Я буду говорить днем', exercise: 'third' }
+- { english: 'I will not be speaking afternoon', russian: 'Я не буду говорить днем', exercise: 'third' }
 
-- { english: 'Are you speaking now?', russian: 'Ты говоришь сейчас?', exercise_id: 2 }
-- { english: 'You are speaking now', russian: 'Ты говоришь сейчас', exercise_id: 2 }
-- { english: 'You are not speaking now', russian: 'Ты не говоришь сейчас', exercise_id: 2 }
+- { english: 'Are you speaking now?', russian: 'Ты говоришь сейчас?', exercise: 'third' }
+- { english: 'You are speaking now', russian: 'Ты говоришь сейчас', exercise: 'third' }
+- { english: 'You are not speaking now', russian: 'Ты не говоришь сейчас', exercise: 'third' }
 
-- { english: 'Were we speaking this morning?', russian: 'Мы говорили этим утром?', exercise_id: 2 }
-- { english: 'We were speaking this morning', russian: 'Мы говорили этим утром', exercise_id: 2 }
-- { english: 'We were not speaking this morning', russian: 'Мы не говорили этим утром', exercise_id: 2 }
+- { english: 'Were we speaking this morning?', russian: 'Мы говорили этим утром?', exercise: 'third' }
+- { english: 'We were speaking this morning', russian: 'Мы говорили этим утром', exercise: 'third' }
+- { english: 'We were not speaking this morning', russian: 'Мы не говорили этим утром', exercise: 'third' }
 
-- { english: 'Will they be speaking after dinner?', russian: 'Они будут говорить после обеда?', exercise_id: 2 }
-- { english: 'They will be speaking after dinner', russian: 'Они будут говорить после обеда', exercise_id: 2 }
-- { english: 'They will not be speaking after dinner', russian: 'Они не будут говорить после обеда', exercise_id: 2 }
+- { english: 'Will they be speaking after dinner?', russian: 'Они будут говорить после обеда?', exercise: 'third' }
+- { english: 'They will be speaking after dinner', russian: 'Они будут говорить после обеда', exercise: 'third' }
+- { english: 'They will not be speaking after dinner', russian: 'Они не будут говорить после обеда', exercise: 'third' }
 
-- { english: 'Is he speaking now?', russian: 'Он говорит сейчас?', exercise_id: 2 }
-- { english: 'He is speaking now', russian: 'Он говорит сейчас', exercise_id: 2 }
-- { english: 'He is not speaking now', russian: 'Он не говорит сейчас', exercise_id: 2 }
+- { english: 'Is he speaking now?', russian: 'Он говорит сейчас?', exercise: 'third' }
+- { english: 'He is speaking now', russian: 'Он говорит сейчас', exercise: 'third' }
+- { english: 'He is not speaking now', russian: 'Он не говорит сейчас', exercise: 'third' }
 
-- { english: 'Was she speaking at the meeting?', russian: 'Она говорила на собрании?', exercise_id: 2 }
-- { english: 'She was speaking at the meeting', russian: 'Она говорила на собрании', exercise_id: 2 }
-- { english: 'She was not speaking at the meeting', russian: 'Она не говорила на собрании', exercise_id: 2 }
+- { english: 'Was she speaking at the meeting?', russian: 'Она говорила на собрании?', exercise: 'third' }
+- { english: 'She was speaking at the meeting', russian: 'Она говорила на собрании', exercise: 'third' }
+- { english: 'She was not speaking at the meeting', russian: 'Она не говорила на собрании', exercise: 'third' }
 
 # === to be here there
 
-- { english: 'Will I be here tomorrow?', russian: 'Я буду здесь завтра?', exercise_id: 2 }
-- { english: 'I will be here tomorrow', russian: 'Я буду здесь завтра', exercise_id: 2 }
-- { english: 'I will not be here tomorrow', russian: 'Я не буду здесь завтра', exercise_id: 2 }
+- { english: 'Will I be here tomorrow?', russian: 'Я буду здесь завтра?', exercise: 'third' }
+- { english: 'I will be here tomorrow', russian: 'Я буду здесь завтра', exercise: 'third' }
+- { english: 'I will not be here tomorrow', russian: 'Я не буду здесь завтра', exercise: 'third' }
 
-- { english: 'Are you there?', russian: 'Ты там?', exercise_id: 2 }
-- { english: 'You are there', russian: 'Ты там', exercise_id: 2 }
-- { english: 'You are not there', russian: 'Ты не там', exercise_id: 2 }
+- { english: 'Are you there?', russian: 'Ты там?', exercise: 'third' }
+- { english: 'You are there', russian: 'Ты там', exercise: 'third' }
+- { english: 'You are not there', russian: 'Ты не там', exercise: 'third' }
 
-- { english: 'Were we here yesterday?', russian: 'Мы были здесь вчера?', exercise_id: 2 }
-- { english: 'We were here yesterday', russian: 'Мы были здесь вчера', exercise_id: 2 }
-- { english: 'We were not here yesterday', russian: 'Мы не были здесь вчера', exercise_id: 2 }
+- { english: 'Were we here yesterday?', russian: 'Мы были здесь вчера?', exercise: 'third' }
+- { english: 'We were here yesterday', russian: 'Мы были здесь вчера', exercise: 'third' }
+- { english: 'We were not here yesterday', russian: 'Мы не были здесь вчера', exercise: 'third' }
 
-- { english: 'Will they be there?', russian: 'Они будут там?', exercise_id: 2 }
-- { english: 'They will be there', russian: 'Они будут там', exercise_id: 2 }
-- { english: 'They will not be there', russian: 'Они не будут там', exercise_id: 2 }
+- { english: 'Will they be there?', russian: 'Они будут там?', exercise: 'third' }
+- { english: 'They will be there', russian: 'Они будут там', exercise: 'third' }
+- { english: 'They will not be there', russian: 'Они не будут там', exercise: 'third' }
 
-- { english: 'Is he here?', russian: 'Он здесь?', exercise_id: 2 }
-- { english: 'He is here', russian: 'Он здесь', exercise_id: 2 }
-- { english: 'He is not here', russian: 'Он не здесь', exercise_id: 2 }
+- { english: 'Is he here?', russian: 'Он здесь?', exercise: 'third' }
+- { english: 'He is here', russian: 'Он здесь', exercise: 'third' }
+- { english: 'He is not here', russian: 'Он не здесь', exercise: 'third' }
 
-- { english: 'Was she there?', russian: 'Она была там?', exercise_id: 2 }
-- { english: 'She was there', russian: 'Она была там', exercise_id: 2 }
-- { english: 'She was not there', russian: 'Она там не была', exercise_id: 2 }
+- { english: 'Was she there?', russian: 'Она была там?', exercise: 'third' }
+- { english: 'She was there', russian: 'Она была там', exercise: 'third' }
+- { english: 'She was not there', russian: 'Она там не была', exercise: 'third' }
 
 # === to be
 
-- { english: 'Where will I want to be?', russian: 'Где я захочу находиться?', exercise_id: 2 }
-- { english: 'Why you do not want to be here?', russian: 'Почему ты не хочешь быть здесь?', exercise_id: 2 }
-- { english: 'Where did we wanted to be?', russian: 'Где мы хотели быть?', exercise_id: 2 }
-- { english: 'Why they will not be there tomorrow?', russian: 'Почему их там не будет завтра?', exercise_id: 2 }
-- { english: 'Where he is?', russian: 'Где он?', exercise_id: 2 }
-- { english: 'Why she was there?', russian: 'Почему она была там?', exercise_id: 2}
+- { english: 'Where will I want to be?', russian: 'Где я захочу находиться?', exercise: 'third' }
+- { english: 'Why you do not want to be here?', russian: 'Почему ты не хочешь быть здесь?', exercise: 'third' }
+- { english: 'Where did we wanted to be?', russian: 'Где мы хотели быть?', exercise: 'third' }
+- { english: 'Why they will not be there tomorrow?', russian: 'Почему их там не будет завтра?', exercise: 'third' }
+- { english: 'Where he is?', russian: 'Где он?', exercise: 'third' }
+- { english: 'Why she was there?', russian: 'Почему она была там?', exercise: 'third'}
 
 # === when go there here
 
-- { english: 'When will I go there?', russian: 'Когда я пойду туда?', exercise_id: 2 }
-- { english: 'When was we go here?', russian: 'Когда мы ходили сюда?', exercise_id: 2 }
-- { english: 'When will they go there?', russian: 'Когда они пойдут туда?', exercise_id: 2 }
-- { english: 'When was she go here?', russian: 'Когда она ходила сюда?', exercise_id: 2 }
+- { english: 'When will I go there?', russian: 'Когда я пойду туда?', exercise: 'third' }
+- { english: 'When was we go here?', russian: 'Когда мы ходили сюда?', exercise: 'third' }
+- { english: 'When will they go there?', russian: 'Когда они пойдут туда?', exercise: 'third' }
+- { english: 'When was she go here?', russian: 'Когда она ходила сюда?', exercise: 'third' }
 
 # === want/like to dance to sleep
 
-- { english: 'Do you like to dance?', russian: 'Тебе нравится танцевать?', exercise_id: 2 }
-- { english: 'You like to dance', russian: 'Тебе нравится танцевать', exercise_id: 2 }
-- { english: 'You do not like to dance', russian: 'Тебе не нравится танцевать', exercise_id: 2 }
+- { english: 'Do you like to dance?', russian: 'Тебе нравится танцевать?', exercise: 'third' }
+- { english: 'You like to dance', russian: 'Тебе нравится танцевать', exercise: 'third' }
+- { english: 'You do not like to dance', russian: 'Тебе не нравится танцевать', exercise: 'third' }
 
-- { english: 'Did we like to dance?', russian: 'Нам нравилось танцевать?', exercise_id: 2 }
-- { english: 'We liked to dance', russian: 'Нам нравилось танцевать', exercise_id: 2 }
-- { english: 'We did not like to dance', russian: 'Нам не нравилось танцевать', exercise_id: 2 }
+- { english: 'Did we like to dance?', russian: 'Нам нравилось танцевать?', exercise: 'third' }
+- { english: 'We liked to dance', russian: 'Нам нравилось танцевать', exercise: 'third' }
+- { english: 'We did not like to dance', russian: 'Нам не нравилось танцевать', exercise: 'third' }
 
-- { english: 'Will they want to sleep?', russian: 'Они будут хотеть спать?', exercise_id: 2 }
-- { english: 'They will want to sleep', russian: 'Они будут хотеть спать', exercise_id: 2 }
-- { english: 'They will not want to sleep', russian: 'Они не будут хотеть спать', exercise_id: 2 }
+- { english: 'Will they want to sleep?', russian: 'Они будут хотеть спать?', exercise: 'third' }
+- { english: 'They will want to sleep', russian: 'Они будут хотеть спать', exercise: 'third' }
+- { english: 'They will not want to sleep', russian: 'Они не будут хотеть спать', exercise: 'third' }
 
-- { english: 'Does he like to dance?', russian: 'Ему нравится танцевать?', exercise_id: 2 }
-- { english: 'He likes to dance', russian: 'Ему нравится танцевать', exercise_id: 2 }
-- { english: 'He does not like to dance', russian: 'Ему не нравится танцевать', exercise_id: 2 }
+- { english: 'Does he like to dance?', russian: 'Ему нравится танцевать?', exercise: 'third' }
+- { english: 'He likes to dance', russian: 'Ему нравится танцевать', exercise: 'third' }
+- { english: 'He does not like to dance', russian: 'Ему не нравится танцевать', exercise: 'third' }
 
-- { english: 'Did she want to sleep?', russian: 'Она хотела спать?', exercise_id: 2 }
-- { english: 'She wanted to sleep', russian: 'Она хотела спать', exercise_id: 2 }
-- { english: 'She did not want to sleep', russian: 'Она не хотела спать', exercise_id: 2 }
+- { english: 'Did she want to sleep?', russian: 'Она хотела спать?', exercise: 'third' }
+- { english: 'She wanted to sleep', russian: 'Она хотела спать', exercise: 'third' }
+- { english: 'She did not want to sleep', russian: 'Она не хотела спать', exercise: 'third' }
 
 # === it is their/our/her/his/your/my children
 
-- { english: 'It is my children', russian: 'Это мой ребенок', exercise_id: 2 }
-- { english: 'It is your problem', russian: 'Это твоя проблема', exercise_id: 2 }
-- { english: 'It is his decision', russian: 'Это его решение', exercise_id: 2 }
-- { english: 'It is her desire', russian: 'Это ее желание', exercise_id: 2 }
-- { english: 'It is our home', russian: 'Это наш дом', exercise_id: 2 }
-- { english: 'It is their country', russian: 'Это их страна', exercise_id: 2 }
+- { english: 'It is my children', russian: 'Это мой ребенок', exercise: 'third' }
+- { english: 'It is your problem', russian: 'Это твоя проблема', exercise: 'third' }
+- { english: 'It is his decision', russian: 'Это его решение', exercise: 'third' }
+- { english: 'It is her desire', russian: 'Это ее желание', exercise: 'third' }
+- { english: 'It is our home', russian: 'Это наш дом', exercise: 'third' }
+- { english: 'It is their country', russian: 'Это их страна', exercise: 'third' }
 

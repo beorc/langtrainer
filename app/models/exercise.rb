@@ -1,50 +1,15 @@
-class Exercise
-  extend ActiveModel::Naming
+class Exercise < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
-  attr_reader :id, :title
+  attr_accessible :title, :slug
 
-  def self.all
-    exercises
-  end
+  belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
+  has_many :sentences
 
-  def self.find(param)
-    exercises[param.to_i]
-  end
+  validates :title, presence: true, uniqueness: { scope: :user_id }
 
-  def initialize(hsh = {})
-    @id = hsh[:id]
-    @slug = hsh[:slug]
-    @title = hsh[:title]
-  end
-
-  def to_param
-    id
-  end
-
-  def to_class_name
-    'Exercise'
-  end
-
-  def persisted?
-    false
-  end
-
-  def ==(obj)
-    return obj == id if obj.is_a? Fixnum
-    super
-  end
-
-  private
-
-  def self.exercises
-    @exercises ||= [
-      Exercise.send(:new, id: 0, slug: :first, title: I18n.t('exercises.first.title')),
-      Exercise.send(:new, id: 1, slug: :second, title: I18n.t('exercises.second.title')),
-      Exercise.send(:new, id: 2, slug: :third, title: I18n.t('exercises.third.title'))
-    ]
-  end
-
-  def self.first
-    exercises.first
+  def should_generate_new_friendly_id?
+    new_record? && !slug
   end
 end

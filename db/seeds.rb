@@ -24,6 +24,11 @@ user = User.find_or_create_by_email :email => ENV['ADMIN_EMAIL'].dup
 puts 'user: ' << user.email
 user.add_role :admin
 
+puts 'EXERCISES'
+[:first, :second, :third].each do |slug|
+  exercise = Exercise.find_or_create_by_slug slug: slug, title: I18n.t("exercises.#{slug}.title")
+end
+
 require 'yaml'
 
 files = Dir[File.join(Rails.root, "db", "default", "*.yml")]
@@ -32,8 +37,8 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   sentences = YAML::load(File.open(file, 'r'))
   sentences.each do |sentence|
     created_sentence = Sentence.find_or_create_by_en_and_ru_and_exercise_id( en: sentence['english'],
-                                                                                       ru: sentence['russian'],
-                                                                                       exercise_id: sentence['exercise_id'] )
+                                                                             ru: sentence['russian'],
+                                                                             exercise: Exercise.find(sentence['exercise']) )
     raise "Sentence not created: #{sentence.inspect}: #{created_sentence.errors.messages.inspect}" unless created_sentence.valid?
   end
   puts "Loaded sentences: #{sentences.count}"

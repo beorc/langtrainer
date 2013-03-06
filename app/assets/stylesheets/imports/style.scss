@@ -13,7 +13,7 @@ a.auth.facebook { background: image_url('authbuttons/facebook_32.png') no-repeat
 a.auth.google { background: image_url('authbuttons/google_32.png') no-repeat; }
 
 .nav {
-  .prompt { font-weight: bolder; }
+  .prompt { text-shadow:1px 1px 1px #333 }
   .language {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
 

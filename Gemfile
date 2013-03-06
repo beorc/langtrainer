@@ -27,6 +27,7 @@ gem 'daemons'
 gem 'compass-rails'
 gem 'virtus'
 gem 'validates_existence', '>= 0.4'
+gem 'friendly_id', '~> 4.0.9'
 
 group :development, :test do
   gem 'factory_girl_rails', '>= 4.2.0'

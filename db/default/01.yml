@@ -1,104 +1,104 @@
 # === love
 
-- { english: 'Will I love?', russian: 'Я буду любить?', exercise_id: 0 }
-- { english: 'I will love', russian: 'Я буду любить', exercise_id: 0 }
-- { english: 'I will not love', russian: 'Я не буду любить', exercise_id: 0 }
+- { english: 'Will I love?', russian: 'Я буду любить?', exercise: 'first' }
+- { english: 'I will love', russian: 'Я буду любить', exercise: 'first' }
+- { english: 'I will not love', russian: 'Я не буду любить', exercise: 'first' }
 
-- { english: 'Do you love?', russian: 'Ты любишь?', exercise_id: 0 }
-- { english: 'You love', russian: 'Ты любишь', exercise_id: 0 }
-- { english: 'You do not love', russian: 'Ты не любишь', exercise_id: 0 }
+- { english: 'Do you love?', russian: 'Ты любишь?', exercise: 'first' }
+- { english: 'You love', russian: 'Ты любишь', exercise: 'first' }
+- { english: 'You do not love', russian: 'Ты не любишь', exercise: 'first' }
 
-- { english: 'Did we love?', russian: 'Мы любили?', exercise_id: 0 }
-- { english: 'We loved', russian: 'Мы любили', exercise_id: 0 }
-- { english: 'We did not love', russian: 'Мы не любили', exercise_id: 0 }
+- { english: 'Did we love?', russian: 'Мы любили?', exercise: 'first' }
+- { english: 'We loved', russian: 'Мы любили', exercise: 'first' }
+- { english: 'We did not love', russian: 'Мы не любили', exercise: 'first' }
 
-- { english: 'Will they love?', russian: 'Они будут любить?', exercise_id: 0 }
-- { english: 'They will love', russian: 'Они будут любить', exercise_id: 0 }
-- { english: 'They will not love', russian: 'Они не будут любить', exercise_id: 0 }
+- { english: 'Will they love?', russian: 'Они будут любить?', exercise: 'first' }
+- { english: 'They will love', russian: 'Они будут любить', exercise: 'first' }
+- { english: 'They will not love', russian: 'Они не будут любить', exercise: 'first' }
 
-- { english: 'Does he love?', russian: 'Он любит?', exercise_id: 0 }
-- { english: 'He loves', russian: 'Он любит', exercise_id: 0 }
-- { english: 'He does not love', russian: 'Он не любит', exercise_id: 0 }
+- { english: 'Does he love?', russian: 'Он любит?', exercise: 'first' }
+- { english: 'He loves', russian: 'Он любит', exercise: 'first' }
+- { english: 'He does not love', russian: 'Он не любит', exercise: 'first' }
 
-- { english: 'Did she love?', russian: 'Она любила?', exercise_id: 0 }
-- { english: 'She loved', russian: 'Она любила', exercise_id: 0 }
-- { english: 'She did not love', russian: 'Она не любила', exercise_id: 0 }
+- { english: 'Did she love?', russian: 'Она любила?', exercise: 'first' }
+- { english: 'She loved', russian: 'Она любила', exercise: 'first' }
+- { english: 'She did not love', russian: 'Она не любила', exercise: 'first' }
 
 # === speak
 
-- { english: 'Will I speak?', russian: 'Я буду говорить?', exercise_id: 0 }
-- { english: 'I will speak', russian: 'Я буду говорить', exercise_id: 0 }
-- { english: 'I will not speak', russian: 'Я не буду говорить', exercise_id: 0 }
+- { english: 'Will I speak?', russian: 'Я буду говорить?', exercise: 'first' }
+- { english: 'I will speak', russian: 'Я буду говорить', exercise: 'first' }
+- { english: 'I will not speak', russian: 'Я не буду говорить', exercise: 'first' }
 
-- { english: 'Do you speak?', russian: 'Ты говоришь?', exercise_id: 0 }
-- { english: 'You speak', russian: 'Ты говоришь', exercise_id: 0 }
-- { english: 'You do not speak', russian: 'Ты не говоришь', exercise_id: 0 }
+- { english: 'Do you speak?', russian: 'Ты говоришь?', exercise: 'first' }
+- { english: 'You speak', russian: 'Ты говоришь', exercise: 'first' }
+- { english: 'You do not speak', russian: 'Ты не говоришь', exercise: 'first' }
 
-- { english: 'Did we speak?', russian: 'Мы говорили?', exercise_id: 0 }
-- { english: 'We spoke', russian: 'Мы говорили', exercise_id: 0 }
-- { english: 'We did not speak', russian: 'Мы не говорили', exercise_id: 0 }
+- { english: 'Did we speak?', russian: 'Мы говорили?', exercise: 'first' }
+- { english: 'We spoke', russian: 'Мы говорили', exercise: 'first' }
+- { english: 'We did not speak', russian: 'Мы не говорили', exercise: 'first' }
 
-- { english: 'Will they speak?', russian: 'Они будут говорить?', exercise_id: 0 }
-- { english: 'They will speak', russian: 'Они будут говорить', exercise_id: 0 }
-- { english: 'They will not speak', russian: 'Они не будут говорить', exercise_id: 0 }
+- { english: 'Will they speak?', russian: 'Они будут говорить?', exercise: 'first' }
+- { english: 'They will speak', russian: 'Они будут говорить', exercise: 'first' }
+- { english: 'They will not speak', russian: 'Они не будут говорить', exercise: 'first' }
 
-- { english: 'Does he speak?', russian: 'Он говорит?', exercise_id: 0 }
-- { english: 'He speaks', russian: 'Он говорит', exercise_id: 0 }
-- { english: 'He does not speak', russian: 'Он не говорит', exercise_id: 0 }
+- { english: 'Does he speak?', russian: 'Он говорит?', exercise: 'first' }
+- { english: 'He speaks', russian: 'Он говорит', exercise: 'first' }
+- { english: 'He does not speak', russian: 'Он не говорит', exercise: 'first' }
 
-- { english: 'Did she speak?', russian: 'Она говорила?', exercise_id: 0 }
-- { english: 'She spoke', russian: 'Она говорила', exercise_id: 0 }
-- { english: 'She did not speak', russian: 'Она не говорила', exercise_id: 0 }
+- { english: 'Did she speak?', russian: 'Она говорила?', exercise: 'first' }
+- { english: 'She spoke', russian: 'Она говорила', exercise: 'first' }
+- { english: 'She did not speak', russian: 'Она не говорила', exercise: 'first' }
 
 # === think
 
-- { english: 'Will I think?', russian: 'Я буду думать?', exercise_id: 0 }
-- { english: 'I will think', russian: 'Я буду думать', exercise_id: 0 }
-- { english: 'I will not think', russian: 'Я не буду думать', exercise_id: 0 }
+- { english: 'Will I think?', russian: 'Я буду думать?', exercise: 'first' }
+- { english: 'I will think', russian: 'Я буду думать', exercise: 'first' }
+- { english: 'I will not think', russian: 'Я не буду думать', exercise: 'first' }
 
-- { english: 'Do you think?', russian: 'Ты думаешь?', exercise_id: 0 }
-- { english: 'You think', russian: 'Ты думаешь', exercise_id: 0 }
-- { english: 'You do not think', russian: 'Ты не думаешь', exercise_id: 0 }
+- { english: 'Do you think?', russian: 'Ты думаешь?', exercise: 'first' }
+- { english: 'You think', russian: 'Ты думаешь', exercise: 'first' }
+- { english: 'You do not think', russian: 'Ты не думаешь', exercise: 'first' }
 
-- { english: 'Did we think?', russian: 'Мы думали?', exercise_id: 0 }
-- { english: 'We thought', russian: 'Мы думали', exercise_id: 0 }
-- { english: 'We did not think', russian: 'Мы не думали', exercise_id: 0 }
+- { english: 'Did we think?', russian: 'Мы думали?', exercise: 'first' }
+- { english: 'We thought', russian: 'Мы думали', exercise: 'first' }
+- { english: 'We did not think', russian: 'Мы не думали', exercise: 'first' }
 
-- { english: 'Will they think?', russian: 'Они будут думать?', exercise_id: 0 }
-- { english: 'They will think', russian: 'Они будут думать', exercise_id: 0 }
-- { english: 'They will not think', russian: 'Они не будут думать', exercise_id: 0 }
+- { english: 'Will they think?', russian: 'Они будут думать?', exercise: 'first' }
+- { english: 'They will think', russian: 'Они будут думать', exercise: 'first' }
+- { english: 'They will not think', russian: 'Они не будут думать', exercise: 'first' }
 
-- { english: 'Does he think?', russian: 'Он думает?', exercise_id: 0 }
-- { english: 'He thinks', russian: 'Он думает', exercise_id: 0 }
-- { english: 'He does not thinks', russian: 'Он не думает', exercise_id: 0 }
+- { english: 'Does he think?', russian: 'Он думает?', exercise: 'first' }
+- { english: 'He thinks', russian: 'Он думает', exercise: 'first' }
+- { english: 'He does not thinks', russian: 'Он не думает', exercise: 'first' }
 
-- { english: 'Did she think?', russian: 'Она думала?', exercise_id: 0 }
-- { english: 'She thought', russian: 'Она думала', exercise_id: 0 }
-- { english: 'She did not think', russian: 'Она не думала', exercise_id: 0 }
+- { english: 'Did she think?', russian: 'Она думала?', exercise: 'first' }
+- { english: 'She thought', russian: 'Она думала', exercise: 'first' }
+- { english: 'She did not think', russian: 'Она не думала', exercise: 'first' }
 
 # === come
 
-- { english: 'Will I come?', russian: 'Я приду?', exercise_id: 0 }
-- { english: 'I will come', russian: 'Я приду', exercise_id: 0 }
-- { english: 'I will not come', russian: 'Я не приду', exercise_id: 0 }
+- { english: 'Will I come?', russian: 'Я приду?', exercise: 'first' }
+- { english: 'I will come', russian: 'Я приду', exercise: 'first' }
+- { english: 'I will not come', russian: 'Я не приду', exercise: 'first' }
 
-- { english: 'Do you come?', russian: 'Ты приходишь?', exercise_id: 0 }
-- { english: 'You come', russian: 'Ты приходишь', exercise_id: 0 }
-- { english: 'You do not come', russian: 'Ты не приходишь', exercise_id: 0 }
+- { english: 'Do you come?', russian: 'Ты приходишь?', exercise: 'first' }
+- { english: 'You come', russian: 'Ты приходишь', exercise: 'first' }
+- { english: 'You do not come', russian: 'Ты не приходишь', exercise: 'first' }
 
-- { english: 'Did we come?', russian: 'Мы приходили?', exercise_id: 0 }
-- { english: 'We came', russian: 'Мы приходили', exercise_id: 0 }
-- { english: 'We did not come', russian: 'Мы не приходили', exercise_id: 0 }
+- { english: 'Did we come?', russian: 'Мы приходили?', exercise: 'first' }
+- { english: 'We came', russian: 'Мы приходили', exercise: 'first' }
+- { english: 'We did not come', russian: 'Мы не приходили', exercise: 'first' }
 
-- { english: 'Will they come?', russian: 'Они придут?', exercise_id: 0 }
-- { english: 'They will come', russian: 'Они придут', exercise_id: 0 }
-- { english: 'They will not come', russian: 'Они не придут', exercise_id: 0 }
+- { english: 'Will they come?', russian: 'Они придут?', exercise: 'first' }
+- { english: 'They will come', russian: 'Они придут', exercise: 'first' }
+- { english: 'They will not come', russian: 'Они не придут', exercise: 'first' }
 
-- { english: 'Does he come?', russian: 'Он приходит?', exercise_id: 0 }
-- { english: 'He comes', russian: 'Он приходит', exercise_id: 0 }
-- { english: 'He does not come', russian: 'Он не приходит', exercise_id: 0 }
+- { english: 'Does he come?', russian: 'Он приходит?', exercise: 'first' }
+- { english: 'He comes', russian: 'Он приходит', exercise: 'first' }
+- { english: 'He does not come', russian: 'Он не приходит', exercise: 'first' }
 
-- { english: 'Did she come?', russian: 'Она приходила?', exercise_id: 0 }
-- { english: 'She came', russian: 'Она приходила', exercise_id: 0 }
-- { english: 'She did not come', russian: 'Она не приходила', exercise_id: 0 }
+- { english: 'Did she come?', russian: 'Она приходила?', exercise: 'first' }
+- { english: 'She came', russian: 'Она приходила', exercise: 'first' }
+- { english: 'She did not come', russian: 'Она не приходила', exercise: 'first' }
 
