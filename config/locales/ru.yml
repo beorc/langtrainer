@@ -27,6 +27,14 @@ ru:
 
   delete_confirm: "Удалить?"
 
+  meta_tags:
+    main_page:
+      open_graph:
+        title: Тренажер иностранных языков
+      description: Тренажер иностранных языков
+      title: Тренажер иностранных языков
+      keywords: 'английский, русский, иностранный, язык, упражнения, уроки, учить'
+
   language:
     english: Английский
     russian: Русский

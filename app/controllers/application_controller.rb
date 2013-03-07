@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   before_filter :handle_sign_in
   before_filter :store_current_url
+  before_filter :build_meta_tags, only: [:index, :show]
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
@@ -43,12 +44,22 @@ class ApplicationController < ActionController::Base
     return unless request.format.html?
     return if logged_in?
 
-    unless params[:controller] == 'user_registrations' ||
-        params[:controller] == 'sessions' ||
-        params[:controller] == 'token_authentications' ||
-        params[:controller] == 'passwords' ||
-        params[:auth_token].present?
+    excluded_controllers = ['user_registrations',
+                            'user_sessions',
+                            'user_workspace',
+                            'token_authentications']
+
+    if !excluded_controllers.include? params[:controller]
       session[:current_url] = request.url
     end
+  end
+
+  def build_meta_tags
+    current_controller = params[:controller]
+    @@tags ||= {}
+    tags = @@tags[current_controller] ||= t("meta_tags.#{current_controller}", default: '').clone
+    tags.blank? && return
+
+    set_meta_tags tags
   end
 end
