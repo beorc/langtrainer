@@ -1,0 +1,21 @@
+- url_options = url_options_for_sentence(sentence)
+tr.sentence data-id=sentence.id data-url=url_options[:url] data-method=url_options[:method]
+  td.translation data-lang='en'
+    = text_area_tag "en-#{sentence.id}", sentence.en
+  td.translation data-lang='ru'
+    = text_area_tag "ru-#{sentence.id}", sentence.ru
+  td
+    = link_to '#', title: t(:save), class: 'save-sentence hidden',
+                   data: { toggle: 'tooltip', placement: 'left' } do
+      i.icon-save
+    - if can?(:manage, sentence) && sentence.type.nil?
+      '&nbsp;
+      = link_to edit_users_sentence_path(sentence), data: { toggle: 'tooltip', placement: 'bottom' },
+                                             title: t("helpers.submit.sentence.edit") do
+        i.icon-pencil
+    - if can? :destroy, sentence
+      '&nbsp;
+      = link_to url_for([:users, sentence]), method: :delete,
+                                             data: { confirm: t(:delete_confirm), toggle: 'tooltip', placement: 'right' },
+                                             title: t("helpers.submit.#{sentence.class.model_name.downcase}.destroy") do
+        i.icon-trash

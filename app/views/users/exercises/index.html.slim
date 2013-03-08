@@ -1,0 +1,22 @@
+- content_for :subtitle do
+  = t('.subtitle')
+
+.row-fluid
+  .offset3.span6
+    - if can? :create, Exercise
+      .btn-group.sepH_a_line
+        = link_to new_users_exercise_path, class: 'btn' do
+          i.icon-plus
+          '&nbsp
+          = t('helpers.submit.exercise.create')
+
+    = paginate collection
+
+    table.table.table-bordered.table-striped.table-condensed
+      thead
+        tr
+          th = collection.human_attribute_name(:title)
+          th = t(:actions)
+      tbody
+        = render collection
+

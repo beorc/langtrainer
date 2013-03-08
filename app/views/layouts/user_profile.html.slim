@@ -2,8 +2,6 @@ doctype 5
 html
   head
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title = content_for?(:title) ? yield(:title) : t(:app_name)
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : t(:app_name)}"
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application"
     = yield :load_controller_javascript
@@ -11,7 +9,7 @@ html
     = display_meta_tags site: t(:app_name), separator: '–', reverse: true
     = csrf_meta_tags
     = yield(:head)
-  body class="#{controller_name} #{action_name} has-navbar-fixed-top has-highlighted"
+  body class="user-profile #{controller_name} #{action_name} has-navbar-fixed-top has-highlighted"
     #page
       = render 'layouts/topbar'
       #highlighted
@@ -24,10 +22,10 @@ html
             ul.nav.nav-pills
               li*{class: menu_class(edit_user_registration_path)}
                 = link_to t('.credentials'), edit_user_registration_path
-              li
-                = link_to t('.sentences'), '#'
-              li
-                = link_to t('.corrections'), '#'
+              li*{class: menu_class(users_exercises_path)}
+                = link_to t('.exercises'), users_exercises_path
+              li*{class: menu_class(users_sentences_path)}
+                = link_to t('.sentences'), users_sentences_path
 
       #content
         .container

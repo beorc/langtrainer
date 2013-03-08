@@ -1,0 +1,7 @@
+= simple_form_for [:users, resource], html: { class: 'form-horizontal' } do |f|
+  fieldset
+    = f.input :title
+  .form-actions
+    = f.submit class: 'btn btn-small btn-primary'
+    '&nbsp;
+    = link_to t(:cancel), :back, class: 'btn btn-small'

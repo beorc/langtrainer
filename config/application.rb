@@ -97,6 +97,8 @@ module Langtrainer
 
     config.host = Rails.env.production? ? 'langtrainer.ru' : 'langtrainer.dev'
 
+    config.action_controller.include_all_helpers = false
+
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'application.yml')
       YAML.load(File.open(env_file)).each do |key, value|

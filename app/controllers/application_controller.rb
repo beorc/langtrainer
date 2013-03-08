@@ -49,7 +49,10 @@ class ApplicationController < ActionController::Base
                             'user_workspace',
                             'token_authentications']
 
-    if !excluded_controllers.include? params[:controller]
+    current_controller = params[:controller]
+
+    if !excluded_controllers.include?(current_controller) &&
+       !current_controller.include?('users')
       session[:current_url] = request.url
     end
   end

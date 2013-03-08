@@ -4,6 +4,14 @@ ru:
   home: На главную
   login: Войти
   logout: Выйти
+  user_profile: Личный кабинет
+  actions: Действия
+  cancel: Отмена
+  authorization_required: Для доступа к этой странице необходимо войти на сайт
+  unknown_error_message: Возникла ошибка. Пожалуйста, повторите запрос позже
+  save: Сохранить
+  'true': Да
+  'false': Нет
 
   time:
     formats:
@@ -35,6 +43,12 @@ ru:
       title: Тренажер иностранных языков
       keywords: 'английский, русский, иностранный, язык, упражнения, уроки, учить'
 
+    users/exercises:
+      title: Пользовательские упражнения
+
+    users/sentences:
+      title: Пользовательские предложения
+
   language:
     english: Английский
     russian: Русский
@@ -45,10 +59,11 @@ ru:
       your_language: 'Ваш язык:'
     application:
     user_profile:
-      title: Профиль пользователя
-      credentials: Данные
-      sentences: Предложения
-      corrections: Правки
+      title: Личный кабинет
+      credentials: Профиль пользователя
+      sentences: Ваши предложения
+      corrections: Ваши исправления
+      exercises: Ваши упражнения
 
   main_page:
     show:
@@ -84,9 +99,33 @@ ru:
 
   user_registrations:
     edit:
-      subtitle: Регистрационные данные
+      subtitle: Профиль пользователя
       pending_email: 'Вы указали новый e-mail: %{email}. На этот адрес отправлено сообщение с ссылкой для подтверждения изменений.'
       reset_email_confirmation: Отменить изменение адреса
+
+  users:
+    exercises:
+      index:
+        subtitle: Ваши упражнения
+      new:
+        subtitle: Новое упражнение
+      edit:
+        subtitle: Изменение упражнения
+      show:
+        subtitle: Просмотр упражнения
+    sentences:
+      index:
+        subtitle: Ваши предложения
+        collection_empty: Нет предложений
+      new:
+        subtitle: Новое предложение
+      edit:
+        subtitle: Изменение предложения
+      show:
+        subtitle: Просмотр предложения
+      form:
+        atom:
+          hint: Базовые конструкции всегда идут в начале упражнения и содержат новые слова или словосочетания
 
   user_sessions:
     new:
@@ -121,6 +160,10 @@ ru:
   views:
     pagination:
       truncate: ...
+      next: Следующая
+      previous: Предыдущая
+      first: Первая
+      last: Последняя
 
   mailer:
     token_authentication:
@@ -132,13 +175,25 @@ ru:
     actions:
     submit:
       sentence:
-        create: Создать
+        create: Создать предложение
+        update: Сохранить
+        edit: Изменить предложение
+        destroy: Удалить предложение
+        edit_corrections: Редактировать исправления
       email_confirmation:
         send_token: Отправить
       user_registration:
         create: Изменить
       user:
         create: Отправить
+      exercise:
+        create: Создать упражнение
+        update: Сохранить
+        edit: Изменить упражнение
+        destroy: Удалить упражнение
+        edit_sentences: Редактировать предложения
+      correction:
+        destroy: Удалить исправление
 
   flash:
     token_authentication:
@@ -156,7 +211,23 @@ ru:
     oauths:
       logged_in: Вы вошли на сайт через %{provider}
 
-  legend:
+    exercise:
+      create:
+        success: Упражнение создано
+      update:
+        success: Упражнение изменено
+    sentence:
+      create:
+        success: Предложение создано
+      update:
+        success: Предложение изменено
+
+    users/exercises:
+      access_denied: У вас нет прав на изменение этого упражнения
+    users/sentences:
+      access_denied: У вас нет прав на изменение этого предложения
+    users/corrections:
+      access_denied: У вас нет прав на изменение этого предложения
 
   activerecord:
     models:
@@ -165,15 +236,26 @@ ru:
         few: предложения
         many: предложения
       user_registration: профиль пользователя
+      exercise:
+        one: упражнение
+        few: упражнения
+        many: упражнения
+      correction:
+        one: исправление
+        few: исправления
+        many: исправления
     attributes:
       sentence:
-        english: Английский
-        russian: Русский
+        en: Английский
+        ru: Русский
         atom: Базовая конструкция
         exercise_id: Упражнение
         user_id: Пользователь
       user_registration:
         email: E-mail
+      exercise:
+        title: Название
+        slug: Идентификатор
 
     errors:
       messages:
@@ -192,7 +274,7 @@ ru:
         too_long: "слишком длинно (максимум: %{count} символов)"
         too_short: "слишком коротко (минимум: %{count} символов)"
         wrong_length: "is the wrong length (should be {{count}} characters)"
-        taken: "%{attribute} уже занята"
+        taken: "%{attribute} уже занято"
         not_a_number: "может содержать только цифры"
         greater_than: "должно быть больше {{count}}"
         greater_than_or_equal_to: "должно быть больше или равно {{count}}"

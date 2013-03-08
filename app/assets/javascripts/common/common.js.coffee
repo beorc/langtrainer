@@ -20,3 +20,11 @@ window.initNamespace = (str) ->
   fjs.parentNode.insertBefore(js, fjs)
 )(document, 'script', 'twitter-wjs')
 
+$ ->
+  $('[data-toggle="tooltip"]').each ->
+    options = {}
+    placement = $(@).data('placement')
+    options.placement = placement if placement
+
+    $(@).tooltip(options)
+

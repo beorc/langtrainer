@@ -1,0 +1,18 @@
+tr
+  td
+    - if can? :update, exercise
+      = link_to exercise.title, users_exercise_path(exercise)
+    - else
+      = exercise.title
+  td
+    - if can? :update, exercise
+      = link_to edit_users_exercise_path(exercise), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.submit.exercise.edit') do
+        i.icon-pencil
+      '&nbsp;
+    = link_to users_sentences_path(exercise: exercise), data: { toggle: 'tooltip', placement: 'right' }, title: t('helpers.submit.exercise.edit_sentences') do
+      i.icon-table
+    - if can? :destroy, exercise
+      '&nbsp;
+      = link_to users_exercise_path(exercise), method: :delete,
+                data: { confirm: t(:delete_confirm) } do
+        i.icon-trash

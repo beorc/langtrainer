@@ -1,7 +1,12 @@
 class User < ActiveRecord::Base
   include TokenAuthenticatable
 
+  EXERCISES_MAX = 1
+
   has_many :providers, :class_name => 'UserProvider', :dependent => :destroy
+  has_many :sentences
+  has_many :corrections
+  has_many :exercises
   has_one :email_confirmation, validate: true
   accepts_nested_attributes_for :providers
 
@@ -39,6 +44,12 @@ class User < ActiveRecord::Base
     Language.find(language_id)
   end
 
+  def assign_default_role
+    return unless roles.empty?
+    roles << Role.default
+    save
+  end
+
   private
 
   def assign_default_languages
@@ -52,11 +63,5 @@ class User < ActiveRecord::Base
 
   def have_bound_auth?
     providers.any?
-  end
-
-  def assign_default_role
-    return unless roles.empty?
-    roles << Role.default
-    save
   end
 end

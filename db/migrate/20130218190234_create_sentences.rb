@@ -11,13 +11,16 @@ class CreateSentences < ActiveRecord::Migration
       t.string :en
       t.string :ru
 
+      t.integer :position
+
       t.timestamps
     end
     add_index :sentences, :user_id
     add_index :sentences, :exercise_id
+    add_index :sentences, [:user_id, :exercise_id]
     add_index :sentences, :sentence_id
+    add_index :sentences, [:user_id, :sentence_id]
     add_index :sentences, :atom
-    add_index :sentences, :en, unique: true
-    add_index :sentences, :ru, unique: true
+    add_index :sentences, :position
   end
 end

@@ -1,0 +1,28 @@
+- title t('.subtitle')
+- content_for :subtitle do
+  = t('.subtitle')
+
+.row-fluid
+  .offset3.span6
+    = resource.title
+    '&nbsp;
+    .form-actions
+
+      = link_to edit_users_exercise_path, class: 'btn btn-small' do
+        i.icon-pencil
+        ' &nbsp;
+        = t("helpers.submit.exercise.edit")
+      ' &nbsp;
+
+      = link_to users_sentences_path(exercise: resource), class: 'btn btn-small' do
+        i.icon-table
+        ' &nbsp;
+        = t('helpers.submit.exercise.edit_sentences')
+      ' &nbsp;
+
+      - if can? :destroy, resource
+        = link_to users_exercise_path, class: 'btn btn-small btn-danger',
+                  method: :delete, confirm: t(:delete_confirm) do
+          i.icon-trash
+          ' &nbsp;
+          = t("helpers.submit.exercise.destroy")

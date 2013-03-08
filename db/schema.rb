@@ -71,15 +71,17 @@ ActiveRecord::Schema.define(:version => 20130306195018) do
     t.string   "type"
     t.string   "en"
     t.string   "ru"
+    t.integer  "position"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
 
   add_index "sentences", ["atom"], :name => "index_sentences_on_atom"
-  add_index "sentences", ["en"], :name => "index_sentences_on_en", :unique => true
   add_index "sentences", ["exercise_id"], :name => "index_sentences_on_exercise_id"
-  add_index "sentences", ["ru"], :name => "index_sentences_on_ru", :unique => true
+  add_index "sentences", ["position"], :name => "index_sentences_on_position"
   add_index "sentences", ["sentence_id"], :name => "index_sentences_on_sentence_id"
+  add_index "sentences", ["user_id", "exercise_id"], :name => "index_sentences_on_user_id_and_exercise_id"
+  add_index "sentences", ["user_id", "sentence_id"], :name => "index_sentences_on_user_id_and_sentence_id"
   add_index "sentences", ["user_id"], :name => "index_sentences_on_user_id"
 
   create_table "user_providers", :force => true do |t|

@@ -5,6 +5,15 @@ class Ability
     user ||= User.new # guest user (not logged in)
     if user.has_role? :admin
       can :manage, :all
+    elsif user.has_role? :member
+      if user.exercises.count < User::EXERCISES_MAX
+        can :create, Exercise
+      end
+      can :update, Exercise, user_id: user.id
+      can :manage, Sentence, user_id: user.id
+      can :create, Sentence
+      can :manage, Correction, user_id: user.id
+      can :manage, Correction, user_id: nil
     end
     # Define abilities for the passed in user here. For example:
     #

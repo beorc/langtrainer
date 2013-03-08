@@ -21,6 +21,13 @@ Langtrainer::Application.routes.draw do
     resources :sentences
   end
 
+  namespace :users do
+    get 'dashboard' => 'user_profile#dashboard', as: :dashboard
+    resources :exercises
+    resources :sentences
+    resources :corrections, only: [:create, :update, :destroy], format: :json, constraints: { format: :json }
+  end
+
   resources :languages, only: [], path: '' do
     resources :exercises, only: :show, path: ''
     put 'set_native', on: :member

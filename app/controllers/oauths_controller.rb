@@ -8,6 +8,12 @@ class OauthsController < ApplicationController
     login_at(params[:provider])
   end
 
+  def create_from(provider_name)
+    user = super
+    user.assign_default_role
+    user
+  end
+
   def callback
     provider = params[:provider]
     begin

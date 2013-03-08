@@ -1,0 +1,28 @@
+- load_controller_script 'lib.sentences'
+- content_for :subtitle do
+  = t('.subtitle')
+
+.row-fluid
+  .offset2.span8
+    .btn-group.sepH_a_line
+      = link_to new_users_sentence_path(@exercise_filter), class: 'btn' do
+        i.icon-plus
+        '&nbsp
+        = t('helpers.submit.sentence.create')
+
+    - if collection.any?
+      = paginate collection
+
+      table.table.table-bordered.table-striped.table-condensed
+        thead
+          tr
+            th = Sentence.human_attribute_name(:english)
+            th = Sentence.human_attribute_name(:russian)
+            th = t(:actions)
+        tbody
+          = render partial: 'sentence', collection: collection, as: :sentence
+
+      = paginate collection
+    - else
+      = t('.collection_empty')
+

@@ -13,7 +13,7 @@ a.auth.facebook { background: image_url('authbuttons/facebook_32.png') no-repeat
 a.auth.google { background: image_url('authbuttons/google_32.png') no-repeat; }
 
 .nav {
-  .prompt { text-shadow:1px 1px 1px #333 }
+  .prompt { text-color: #333 }
   .language {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
 
@@ -29,3 +29,68 @@ a.auth.google { background: image_url('authbuttons/google_32.png') no-repeat; }
   background-color: white;
 }
 
+/* element separation */
+/* line 41, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepH_a {
+  margin-bottom: 5px;
+}
+
+/* line 41, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepH_b {
+  margin-bottom: 10px;
+}
+
+/* line 41, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepH_c {
+  margin-bottom: 20px;
+}
+
+/* line 42, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepV_a {
+  margin-right: 5px;
+}
+
+/* line 42, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepV_b {
+  margin-right: 10px;
+}
+
+/* line 42, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepV_c {
+  margin-right: 20px;
+}
+
+/* line 43, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepH_a_line {
+  width: 100%;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* line 44, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.sepH_no {
+  margin-bottom: 0;
+}
+
+/* line 46, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 47, ../../../sitemplate_core/app/assets/stylesheets/sitemplate_core/gebo/style.scss */
+.line_sep {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 18px;
+  padding-bottom: 5px;
+}
+
+.formSep {margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed #dcdcdc}
+
+.changed {
+  border-color: $changedColor !important;
+}
+
+.help-block {
+  font-size: 12px;
+}

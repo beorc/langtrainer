@@ -143,16 +143,29 @@ body .header .page-title {
   background-color: #81994d;
 }
 
-#navigation ul#main-menu li a .caret,
-#navigation ul#main-menu li a:link .caret {
-  margin-top: 8px;
-  border-top-color: rgba(255, 255, 255, 0.8);
-  border-bottom-color: rgba(255, 255, 255, 0.8);
+#navigation {
+  ul#main-menu {
+    li.reset-border-left {
+      border-left: none;
+    }
+    li.reset-border-right {
+      border-right: none;
+    }
+    li.outstanding {
+      margin-right: 5%;
+    }
+    li a .caret,
+    li a:link .caret {
+      margin-top: 8px;
+      border-top-color: rgba(255, 255, 255, 0.8);
+      border-bottom-color: rgba(255, 255, 255, 0.8);
 
-  &:focus,
-  &:hover {
-    border-top-color: white;
-    border-bottom-color: white;
+      &:focus,
+      &:hover {
+        border-top-color: white;
+        border-bottom-color: white;
+      }
+    }
   }
 }
 
@@ -176,5 +189,11 @@ body .header .page-title {
         }
       }
     }
+  }
+}
+
+.user-profile #highlighted {
+  .nav-pills li {
+    width: 20%;
   }
 }
