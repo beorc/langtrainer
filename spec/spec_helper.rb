@@ -4,14 +4,31 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'email_spec'
 require 'rspec/autorun'
+require 'factory_girl_rails'
+
+ActionMailer::Base.delivery_method = :test
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.default_url_options[:host] = "test.com"
+
+Rails.backtrace_cleaner.remove_silencers!
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+# Run any available migration
+ActiveRecord::Migrator.migrate File.expand_path("../../db/migrate/", __FILE__)
+
 RSpec.configure do |config|
+  require 'rspec/expectations'
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
+  config.include RSpec::Matchers
+  config.include Sorcery::TestHelpers::Rails
+
+  FactoryGirl.definition_file_paths << File.expand_path("../factories", __FILE__)
+  #FactoryGirl.find_definitions
+
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
@@ -19,14 +36,15 @@ RSpec.configure do |config|
   # config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
+  config.mock_with :rspec
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  #config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  config.use_transactional_fixtures = true
+  #config.use_transactional_fixtures = true
 
   # If true, the base class of anonymous controllers will be inferred
   # automatically. This will be the default behavior in future versions of
@@ -38,14 +56,39 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
-  
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :truncation
+
+  config.include Capybara::DSL
+  Capybara.current_driver = :selenium
+
+  config.before(:all) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with :truncation
   end
+
   config.before(:each) do
-    DatabaseCleaner.start
+    Delayed::Worker.delay_jobs = false
+    if example.metadata[:js]
+      Capybara.current_driver = :selenium
+      DatabaseCleaner.strategy = :truncation
+    else
+      DatabaseCleaner.strategy = :transaction
+      DatabaseCleaner.start
+    end
   end
+
   config.after(:each) do
+    Capybara.use_default_driver if example.metadata[:js]
     DatabaseCleaner.clean
   end
 end
+
+def sign_in_by_email
+  visit new_user_session_path
+  email = 'beorc@httplab.ru'
+  fill_in('user[email]', with: email)
+  click_on 'send_token_button'
+  user = User.find_by_email email
+  visit root_path(auth_token: user.authentication_token)
+  user
+end
+

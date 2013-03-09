@@ -1,9 +1,13 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
+# encoding: UTF-8
 
 FactoryGirl.define do
   factory :sentence do
-    content "MyString"
-    language nil
-    template "MyString"
+    sequence(:en) {|n| "Test sentence #{n}" }
+    sequence(:ru) {|n| "Тестовое предложение #{n}" }
+    atom false
+
+    factory :correction do
+      type 'Correction'
+    end
   end
 end
