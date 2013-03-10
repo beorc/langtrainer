@@ -15,6 +15,13 @@
       '&nbsp;
     .form-actions
 
+      - if can? :create, Sentence
+        = link_to new_users_sentence_path, class: 'btn btn-small btn-primary' do
+          i.icon-plus
+          ' &nbsp;
+          = t("helpers.submit.sentence.new")
+        '&nbsp;
+
       = link_to edit_users_sentence_path(resource), class: 'btn btn-small' do
         i.icon-pencil
         ' &nbsp;
@@ -22,8 +29,9 @@
       ' &nbsp;
 
       - if can? :destroy, resource
-        = link_to users_sentence_path, class: 'btn btn-small btn-danger',
+        = link_to users_sentence_path, class: 'btn btn-small',
                   method: :delete, confirm: t(:delete_confirm) do
           i.icon-trash
           ' &nbsp;
           = t("helpers.submit.sentence.destroy")
+

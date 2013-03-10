@@ -10,6 +10,7 @@ class Sentence < ActiveRecord::Base
   validates :exercise, existence: { both: false }
   validates :sentence_id, uniqueness: { scope: :user_id }, allow_nil: true
 
+  scope :not_corrections, -> { where(type: nil) }
   scope :for_exercise, ->(exercise) { where(exercise_id: Exercise.find(exercise).id)}
   scope :order_by_position, -> { order('position ASC') }
 

@@ -40,6 +40,8 @@ class Users::SentencesController < Users::UserProfileController
 
   def resource
     return @sentence if @sentence.present?
+    prepare_params
+
     id = params[:id]
     return @sentence = Sentence.find(id) if id.present?
     @sentence = Sentence.new(params[:sentence])
@@ -63,5 +65,16 @@ class Users::SentencesController < Users::UserProfileController
       @exercise_filter = { exercise: exercise }
       @exercise = Exercise.find exercise
     end
+  end
+
+  def prepare_params
+    correction = {}
+
+    Language.all.each do |lang|
+      attr = lang.slug.to_s
+      correction[attr] = params[attr] if params[attr].present?
+    end
+
+    params[:sentence] = correction
   end
 end

@@ -108,6 +108,7 @@ ru:
       index:
         subtitle: Ваши упражнения
         max_message: 'Максимальное число собственных упражнений: %{number}'
+        created_number_message: 'Создано на данный момент: %{number}'
       new:
         subtitle: Новое упражнение
       edit:
@@ -119,6 +120,7 @@ ru:
         subtitle: Ваши предложения
         collection_empty: Нет предложений
         max_message: 'Максимальное число собственных предложений: %{number}'
+        created_number_message: 'Создано на данный момент: %{number}'
       new:
         subtitle: Новое предложение
       edit:
@@ -177,6 +179,7 @@ ru:
     actions:
     submit:
       sentence:
+        new: Новое предложение
         create: Создать предложение
         update: Сохранить
         edit: Изменить предложение

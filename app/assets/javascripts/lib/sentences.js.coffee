@@ -43,7 +43,8 @@ ns.init = ->
 
     sendCorrection(cfg)
 
-  $('textarea').keydown (e) ->
+  $('textarea').keypress (e) ->
+    #return true if e.which != 13 && symbol == ''
     input = $(@)
 
     unless e.which == 13

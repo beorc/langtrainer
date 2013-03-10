@@ -12,7 +12,7 @@ describe Users::ExercisesController do
     @alien_exercise = FactoryGirl.create :exercise, owner: @another_user
   end
 
-  describe 'for member' do
+  context 'for member' do
 
     it 'does not allow to GET new with maximum exercises created' do
       FactoryGirl.create_list :exercise, User::EXERCISES_MAX, owner: @user
@@ -101,7 +101,7 @@ describe Users::ExercisesController do
     end
   end
 
-  describe 'for admin' do
+  context 'for admin' do
     before :all do
       @admin = FactoryGirl.create :admin
     end

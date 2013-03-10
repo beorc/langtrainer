@@ -8,7 +8,7 @@ tr.sentence data-id=sentence.id data-url=url_options[:url] data-method=url_optio
     = link_to '#', title: t(:save), class: 'save-sentence hidden',
                    data: { toggle: 'tooltip', placement: 'left' } do
       i.icon-save
-    - if can?(:manage, sentence) && sentence.type.nil?
+    - if can?(:update, sentence) && sentence.type.nil?
       '&nbsp;
       = link_to edit_users_sentence_path(sentence), data: { toggle: 'tooltip', placement: 'bottom' },
                                              title: t("helpers.submit.sentence.edit") do
