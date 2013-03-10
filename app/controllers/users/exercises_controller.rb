@@ -2,7 +2,7 @@ class Users::ExercisesController < Users::UserProfileController
   helper_method :collection
   helper_method :resource
 
-  before_filter :authorize_resource, except: [:index]
+  before_filter :authorize_resource, except: :index
 
   has_scope :page, default: 1
 

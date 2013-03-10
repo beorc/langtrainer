@@ -25,6 +25,13 @@ describe Users::CorrectionsController do
       post :create, format: :json, sentence_id: sentence.id, en: 'Corrected english text'
       response.should redirect_to(login_path)
     end
+
+    it 'forbids to update' do
+      sentence = @public_exercise.sentences.first
+      correction = @public_exercise.corrections.first
+      put :update, format: :json, id: correction.id, sentence_id: sentence.id, en: 'Corrected english text'
+      response.should redirect_to(login_path)
+    end
   end
 
   context 'for member' do
@@ -44,6 +51,29 @@ describe Users::CorrectionsController do
       sentence = FactoryGirl.create :sentence, owner: @another_user, exercise: @public_exercise
       post :create, format: :json, sentence_id: sentence.id, en: 'Corrected english text'
       response.should_not be_success
+    end
+
+    it 'forbids to create for own sentence' do
+      login_user(@user)
+      sentence = FactoryGirl.create :sentence, owner: @user, exercise: @public_exercise
+      post :create, format: :json, sentence_id: sentence.id, en: 'Corrected english text'
+      response.should be_redirect
+    end
+
+    it 'allows to update own' do
+      login_user(@user)
+      sentence = @public_exercise.sentences.first
+      correction = FactoryGirl.create :correction, sentence: sentence, exercise: @public_exercise, owner: @user
+      put :update, format: :json, id: correction.id, sentence_id: sentence.id, en: 'Corrected english text'
+      response.should be_success
+    end
+
+    it 'forbids to update alien' do
+      login_user(@user)
+      sentence = @public_exercise.sentences.first
+      correction = @public_exercise.corrections.first
+      put :update, format: :json, id: correction.id, sentence_id: sentence.id, en: 'Corrected english text'
+      response.should be_redirect
     end
   end
 

@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   include TokenAuthenticatable
 
   EXERCISES_MAX = 1
+  SENTENCES_MAX = 3
 
   has_many :providers, :class_name => 'UserProvider', :dependent => :destroy
   has_many :sentences

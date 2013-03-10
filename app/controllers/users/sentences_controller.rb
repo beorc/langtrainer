@@ -1,7 +1,7 @@
 class Users::SentencesController < Users::UserProfileController
   before_filter :fetch_exercise
   before_filter :gon_prepare_error_messages, only: :index
-  before_filter :authorize_resource, only: [:create, :update, :destroy]
+  before_filter :authorize_resource, except: :index
 
   helper_method :collection
   helper_method :resource

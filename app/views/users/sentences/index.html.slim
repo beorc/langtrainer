@@ -4,6 +4,7 @@
 
 .row-fluid
   .offset2.span8
+    .warning = t('.max_message', number: User::SENTENCES_MAX)
     .btn-group.sepH_a_line
       = link_to new_users_sentence_path(@exercise_filter), class: 'btn' do
         i.icon-plus

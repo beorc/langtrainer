@@ -1,5 +1,4 @@
 class Sentence < ActiveRecord::Base
-  MAX = 300
   attr_accessible :ru, :en, :exercise, :exercise_id, :atom
 
   after_create :assign_position, unless: 'position?'

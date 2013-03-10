@@ -13,7 +13,7 @@ class Ability
         can :create, Exercise
       end
       can [:show, :edit, :update, :destroy], Sentence, user_id: user.id, type: nil
-      if user.sentences.count < Sentence::MAX
+      if user.sentences.count < User::SENTENCES_MAX
         can :create, Sentence, sentence_id: nil, type: nil
       end
       can [:update, :destroy], Correction, user_id: user.id

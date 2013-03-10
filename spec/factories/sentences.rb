@@ -6,7 +6,7 @@ FactoryGirl.define do
     sequence(:ru) {|n| "Тестовое предложение #{n}" }
     atom false
 
-    factory :correction do
+    factory :correction, class: 'Correction' do
       type 'Correction'
     end
   end

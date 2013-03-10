@@ -3,7 +3,7 @@
 
 .row-fluid
   .offset3.span6
-    .warning = t('.exercises_max_message', number: User::EXERCISES_MAX)
+    .warning = t('.max_message', number: User::EXERCISES_MAX)
     - if can? :create, Exercise
       .btn-group.sepH_a_line
         = link_to new_users_exercise_path, class: 'btn' do

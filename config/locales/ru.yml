@@ -107,7 +107,7 @@ ru:
     exercises:
       index:
         subtitle: Ваши упражнения
-        exercises_max_message: 'Ограничение на число собственных упражнений: %{number}'
+        max_message: 'Максимальное число собственных упражнений: %{number}'
       new:
         subtitle: Новое упражнение
       edit:
@@ -118,6 +118,7 @@ ru:
       index:
         subtitle: Ваши предложения
         collection_empty: Нет предложений
+        max_message: 'Максимальное число собственных предложений: %{number}'
       new:
         subtitle: Новое предложение
       edit:
