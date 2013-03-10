@@ -4,4 +4,5 @@ footer#footer
     .row
       .span12
         span.pull-right &copy; #{Date.today.year}, Langtrainer
-        span.pull-right = render 'layouts/social_likes'
+        - if Rails.env.production?
+          span.pull-right = render 'layouts/social_likes'

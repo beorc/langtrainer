@@ -85,9 +85,8 @@ RSpec.configure do |config|
   end
 end
 
-def sign_in_by_email
+def sign_in_by_email(email = 'beorc@httplab.ru')
   visit new_user_session_path
-  email = 'beorc@httplab.ru'
   fill_in('user[email]', with: email)
   click_on 'send_token_button'
   user = User.find_by_email email
@@ -95,3 +94,12 @@ def sign_in_by_email
   user
 end
 
+def sign_in_as_admin
+  admin = FactoryGirl.create :admin
+  sign_in_by_email(admin.email)
+end
+
+def check_alert(text)
+  page.driver.browser.switch_to.alert.text.should eq text
+  page.driver.browser.switch_to.alert.accept
+end

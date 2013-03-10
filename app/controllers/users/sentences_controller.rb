@@ -75,6 +75,6 @@ class Users::SentencesController < Users::UserProfileController
       correction[attr] = params[attr] if params[attr].present?
     end
 
-    params[:sentence] = correction
+    params[:sentence] ||= correction
   end
 end

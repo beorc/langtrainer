@@ -11,6 +11,8 @@ ns.init = ->
       dataType: 'json'
       data: data
       context: cfg.element
+      beforeSend: ->
+        $('.changes-applied').removeClass('changes-applied')
       complete: (xhr, status) ->
         if xhr.status == 200
           input = $(@)
@@ -24,6 +26,7 @@ ns.init = ->
             sentence.attr('data-method', response.method)
 
           input.removeClass('changed')
+          input.addClass('changes-applied')
           sentence = input.closest('.sentence')
           sentence.find('.save-sentence').addClass('hidden')
         else
@@ -44,10 +47,9 @@ ns.init = ->
     sendCorrection(cfg)
 
   $('textarea').keypress (e) ->
-    #return true if e.which != 13 && symbol == ''
     input = $(@)
 
-    unless e.which == 13
+    if e.which != 13
       unless input.hasClass('changed')
         input.addClass('changed')
         sentence = input.closest('.sentence')
