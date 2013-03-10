@@ -83,13 +83,21 @@ describe Users::ExercisesController do
 
     it 'allows to create own exercise' do
       login_user(@user)
-      @user.exercises.destroy_all
       title = 'Own exercise'
-      get :create, exercise: { title: title }
+      post :create, exercise: { title: title }
       response.status.should be 302
       exercise = Exercise.last
       exercise.title.should == title
       exercise.owner.id.should == @user.id
+    end
+
+    it 'allows to update own exercise' do
+      own_exercise = FactoryGirl.create :exercise, owner: @user
+      login_user(@user)
+      title = 'New exercise title'
+      put :update, id: own_exercise.id, exercise: { title: title }
+      response.should redirect_to(users_exercises_path)
+      Exercise.find(own_exercise.id).title.should == title
     end
   end
 

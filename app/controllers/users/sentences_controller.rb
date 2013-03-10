@@ -9,7 +9,7 @@ class Users::SentencesController < Users::UserProfileController
   has_scope :page, default: 1
 
   def create
-    resource.owner = current_user
+    resource.owner = current_user unless current_user.admin?
     if resource.save
       redirect_to [:users, resource], notice: t('flash.sentence.create.success')
     else
