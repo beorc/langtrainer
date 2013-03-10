@@ -11,6 +11,7 @@ class Users::UserProfileController < ApplicationController
   end
 
   def authorize_resource
+    Rails.logger.info "==Auth== #{params[:action].to_sym}, #{resource.inspect}"
     authorize! params[:action].to_sym, resource, message: t("flash.#{params[:controller]}.access_denied")
   end
 

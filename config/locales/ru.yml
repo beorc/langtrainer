@@ -107,6 +107,7 @@ ru:
     exercises:
       index:
         subtitle: Ваши упражнения
+        exercises_max_message: 'Ограничение на число собственных упражнений: %{number}'
       new:
         subtitle: Новое упражнение
       edit:
@@ -223,11 +224,11 @@ ru:
         success: Предложение изменено
 
     users/exercises:
-      access_denied: У вас нет прав на изменение этого упражнения
+      access_denied: У вас нет прав на доступ к этому упражнению
     users/sentences:
-      access_denied: У вас нет прав на изменение этого предложения
+      access_denied: У вас нет прав на доступ к этому предложению
     users/corrections:
-      access_denied: У вас нет прав на изменение этого предложения
+      access_denied: У вас нет прав на доступ к этому предложению
 
   activerecord:
     models:

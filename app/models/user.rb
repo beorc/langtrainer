@@ -12,7 +12,6 @@ class User < ActiveRecord::Base
 
   authenticates_with_sorcery!
   rolify
-  # attr_accessible :title, :body
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :role_ids, :as => :admin
@@ -48,6 +47,10 @@ class User < ActiveRecord::Base
     return unless roles.empty?
     roles << Role.default
     save
+  end
+
+  def admin?
+    has_role? :admin
   end
 
   private

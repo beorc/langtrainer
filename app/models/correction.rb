@@ -1,4 +1,5 @@
 class Correction < Sentence
+  attr_accessible :sentence_id
   belongs_to :sentence
 
   validates :sentence, :owner, existence: { both: false }
@@ -6,7 +7,6 @@ class Correction < Sentence
   delegate :exercise_id, to: :sentence
 
   def init_from(sentence)
-    self.sentence = sentence
     self.exercise = sentence.exercise
     self.position = sentence.position
     Language.all.each do |lang|

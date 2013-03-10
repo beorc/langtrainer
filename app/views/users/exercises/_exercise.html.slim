@@ -1,9 +1,6 @@
 tr
   td
-    - if can? :update, exercise
-      = link_to exercise.title, users_exercise_path(exercise)
-    - else
-      = exercise.title
+    = exercise.title
   td
     - if can? :update, exercise
       = link_to edit_users_exercise_path(exercise), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.submit.exercise.edit') do

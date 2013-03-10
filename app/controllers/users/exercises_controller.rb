@@ -2,14 +2,14 @@ class Users::ExercisesController < Users::UserProfileController
   helper_method :collection
   helper_method :resource
 
-  before_filter :authorize_resource, only: [:create, :update, :destroy]
+  before_filter :authorize_resource, except: [:index]
 
   has_scope :page, default: 1
 
   def create
-    resource.owner = current_user
+    resource.owner = current_user unless current_user.admin?
     if resource.save
-      redirect_to [:users, resource], notice: t('flash.exercise.create.success')
+      redirect_to users_exercises_path, notice: t('flash.exercise.create.success')
     else
       render action: 'new'
     end
@@ -17,7 +17,7 @@ class Users::ExercisesController < Users::UserProfileController
 
   def update
     if resource.update_attributes(params[:exercise])
-      redirect_to [:users, resource], notice: t('flash.exercise.update.success')
+      redirect_to users_exercises_path, notice: t('flash.exercise.update.success')
     else
       render action: 'edit'
     end

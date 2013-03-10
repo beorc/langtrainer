@@ -36,6 +36,7 @@ class Users::CorrectionsController < Users::UserProfileController
     id = params[:id]
     return @correction = Correction.find(id) if id.present?
     @correction = Correction.new(params[:correction])
+    @correction
   end
 
   def prepare_params
@@ -45,6 +46,8 @@ class Users::CorrectionsController < Users::UserProfileController
       attr = lang.slug.to_s
       correction[attr] = params[attr] if params[attr].present?
     end
+
+    correction[:sentence_id] = params[:sentence_id]
 
     params[:correction] = correction
   end

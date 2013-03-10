@@ -63,6 +63,9 @@ RSpec.configure do |config|
   config.before(:all) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with :truncation
+
+    FactoryGirl.create :role
+    FactoryGirl.create_list :exercise, 3
   end
 
   config.before(:each) do
