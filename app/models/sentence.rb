@@ -5,7 +5,7 @@ class Sentence < ActiveRecord::Base
 
   belongs_to :exercise
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
-  has_many :corrections, class_name: 'Correction', foreign_key: 'sentence_id'
+  has_many :corrections, class_name: 'Correction', foreign_key: 'sentence_id', dependent: :destroy
 
   validates :exercise, existence: { both: false }
   validates :sentence_id, uniqueness: { scope: :user_id }, allow_nil: true
@@ -16,6 +16,14 @@ class Sentence < ActiveRecord::Base
 
   def self.for_user(user)
     where('user_id IS NULL OR user_id = ?', user.id) - joins(:corrections).where('corrections_sentences.user_id = ?', user.id)
+  end
+
+  def correction_by(user)
+    corrections.where( user_id: user.id ).first
+  end
+
+  def correction?
+    type == 'Correction'
   end
 
   private

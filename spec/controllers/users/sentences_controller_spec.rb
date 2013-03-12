@@ -44,7 +44,7 @@ describe Users::SentencesController do
 
     it 'does not allow to create public sentence' do
       login_user(@user)
-      post :create, en: 'English text', exercise: @public_exercise
+      post :create, sentence: { en: 'English text', exercise_id: @public_exercise.id }
       response.should be_redirect
     end
 

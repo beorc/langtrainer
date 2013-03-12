@@ -1,5 +1,6 @@
 class Users::SentencesController < Users::UserProfileController
-  before_filter :fetch_exercise
+  before_filter :fetch_exercise, only: :index
+  before_filter :fetch_sentence, only: :index
   before_filter :gon_prepare_error_messages, only: :index
   before_filter :authorize_resource, except: :index
 
@@ -9,7 +10,7 @@ class Users::SentencesController < Users::UserProfileController
   has_scope :page, default: 1
 
   def create
-    resource.owner = current_user unless current_user.admin?
+    #resource.owner = current_user unless current_user.admin?
     if resource.save
       redirect_to [:users, resource], notice: t('flash.sentence.create.success')
     else
@@ -46,12 +47,15 @@ class Users::SentencesController < Users::UserProfileController
     return @sentence = Sentence.find(id) if id.present?
     @sentence = Sentence.new(params[:sentence])
     @sentence.exercise = @exercise if @exercise.present?
+    @sentence.owner ||= current_user unless current_user.admin?
     @sentence
   end
 
   def collection
     return @sentences unless @sentences.nil?
-    if @exercise.present?
+    if @sentence.present?
+      return @sentences = apply_scopes( Kaminari.paginate_array([Sentence.find(@sentence.id)]) )
+    elsif @exercise.present?
       @sentences = Sentence.for_exercise(@exercise)
     else
       @sentences = Sentence
@@ -64,6 +68,20 @@ class Users::SentencesController < Users::UserProfileController
     if exercise.present? && exercise != 'all'
       @exercise_filter = { exercise: exercise }
       @exercise = Exercise.find exercise
+    end
+  end
+
+  def fetch_sentence
+    sentence_id = params[:sentence]
+    if sentence_id.present?
+      instance = Sentence.find(sentence_id)
+      correction = instance.correction_by(current_user)
+      sentence = correction || instance
+      sentence_id = sentence.id
+      if can?(:view, sentence)
+        @sentence_filter = { sentence: sentence_id }
+        @sentence = sentence
+      end
     end
   end
 

@@ -17,5 +17,9 @@ tr.sentence data-id=sentence.id data-url=url_options[:url] data-method=url_optio
       '&nbsp;
       = link_to url_for([:users, sentence]), method: :delete,
                                              data: { confirm: t(:delete_confirm), toggle: 'tooltip', placement: 'right' },
+                                             class: 'destroy-sentence',
                                              title: t("helpers.submit.#{sentence.class.model_name.downcase}.destroy") do
-        i.icon-trash
+        - if sentence.correction?
+          i.icon-undo
+        - else
+          i.icon-trash
