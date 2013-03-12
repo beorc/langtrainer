@@ -4,6 +4,20 @@
 
 .row-fluid
   .offset2.span8
+    .row-fluid
+      .span5
+        .search-form
+          = form_tag users_sentences_path, method: :get do
+            .input-append
+              - if @exercise.present?
+                = hidden_field_tag :exercise, @exercise.slug
+              = text_field_tag :search, @query, class: 'search'
+              = button_tag class: 'btn btn-primary btn-search' do
+                i.icon-search
+      .span7
+        .exercises-list
+          = select_tag 'exercises', exercises_list_options
+
     .warning = t('.max_message', number: User::SENTENCES_MAX)
     .warning = t('.created_number_message', number: current_user.sentences.not_corrections.count)
     .btn-group.sepH_a_line

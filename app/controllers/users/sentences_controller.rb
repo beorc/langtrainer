@@ -1,4 +1,5 @@
 class Users::SentencesController < Users::UserProfileController
+  before_filter :fetch_query, only: :index
   before_filter :fetch_exercise, only: :index
   before_filter :fetch_sentence, only: :index
   before_filter :gon_prepare_error_messages, only: :index
@@ -53,13 +54,28 @@ class Users::SentencesController < Users::UserProfileController
 
   def collection
     return @sentences unless @sentences.nil?
+
     if @sentence.present?
       return @sentences = apply_scopes( Kaminari.paginate_array([Sentence.find(@sentence.id)]) )
-    elsif @exercise.present?
-      @sentences = Sentence.for_exercise(@exercise)
+    end
+
+    if @query.present?
+      cols = Language.all.map &:slug
+      words = @query.split.map {|term| "%#{term}%" }
+
+      sql_conditions = cols.map{ |column| words.map{|word| "sentences.#{column} like '#{word}'"}}.join(' OR ')
+
+      @search_filter = { search: @query }
+      @sentences = Sentence.where(sql_conditions)
     else
       @sentences = Sentence
     end
+
+
+    if @exercise.present?
+      @sentences = @sentences.for_exercise(@exercise)
+    end
+
     @sentences = apply_scopes( Kaminari.paginate_array(@sentences.order_by_position.for_user(current_user)) )
   end
 
@@ -82,6 +98,14 @@ class Users::SentencesController < Users::UserProfileController
         @sentence_filter = { sentence: sentence_id }
         @sentence = sentence
       end
+    end
+  end
+
+  def fetch_query
+    query = params[:search]
+    if query.present?
+      @search_filter = { search: query }
+      @query = query
     end
   end
 

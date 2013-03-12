@@ -66,4 +66,17 @@ ns.init = ->
       applyTranslation($(@))
     false
 
+  $('.exercises-list select').change () ->
+    option = $(@).find('option:selected')
+    url = option.attr('url')
+    window.location = url
+
+  $('input.search').keypress (e) ->
+    input = $(@)
+
+    return true if e.which != 13
+
+    input.closest('form').submit()
+
+    return false
 
