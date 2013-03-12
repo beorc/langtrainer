@@ -159,9 +159,10 @@ body .header .page-title {
       margin-top: 8px;
       border-top-color: rgba(255, 255, 255, 0.8);
       border-bottom-color: rgba(255, 255, 255, 0.8);
-
-      &:focus,
-      &:hover {
+    }
+    li a:focus,
+    li a:hover {
+      .caret {
         border-top-color: white;
         border-bottom-color: white;
       }

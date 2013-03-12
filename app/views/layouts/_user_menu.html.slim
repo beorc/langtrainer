@@ -1,0 +1,5 @@
+ul.unstyled.user-menu.dropdown-menu
+  li.credentials
+    = link_to t('.credentials'), edit_user_registration_path
+  li.logout
+    = link_to t(:logout), logout_path, :method=>'delete'

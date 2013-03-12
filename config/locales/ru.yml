@@ -64,6 +64,8 @@ ru:
       sentences: Ваши предложения
       corrections: Ваши исправления
       exercises: Ваши упражнения
+    user_menu:
+      credentials: Профиль пользователя
 
   main_page:
     show:
