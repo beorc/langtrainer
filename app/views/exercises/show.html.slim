@@ -9,27 +9,39 @@
           = render_exercises_select
 
 .container.workspace
-  .question = render partial: 'sentence', object: @sentences.first
-  .sentences.hide = render partial: 'sentence', collection: @sentences
+  .container.question = render partial: 'sentence', object: @sentences.first
+  .sentences.hide  data-creation-url=new_users_sentence_path(exercise: @exercise)
+    = render partial: 'sentence', collection: @sentences
 
   .form-horizontal.control-group.string
-    .controls
+    .container.controls
       = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
 
       '&nbsp
 
-      span.actions
-        = link_to '#', class: 'next', 'data-toggle' => 'tooltip', title: t('.next') do
+      .container.actions
+        = link_to '#', class: 'next', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next') do
           i.icon-refresh
 
         '&nbsp
 
-        = link_to '#', class: 'look', 'data-toggle' => 'tooltip', title: t('.look') do
+        = link_to '#', class: 'look', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.look') do
           i.icon-eye-open
 
         '&nbsp
 
-        = link_to '#', class: 'show-hint', 'data-toggle' => 'tooltip', title: t('.hint')  do
+        = link_to '#', class: 'show-hint', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.hint')  do
           i.icon-question-sign
+
+        '&nbsp
+
+        = link_to '#', class: 'correct', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.correct')  do
+          i.icon-edit
+
+        '&nbsp
+
+        = link_to '#', class: 'create', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.create')  do
+          i.icon-plus
+
 
   = render @hint

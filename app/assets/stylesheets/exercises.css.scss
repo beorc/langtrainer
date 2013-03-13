@@ -2,15 +2,15 @@
   width: 500px;
 
   .controls {
-    margin-left: 100px;
+    margin-left: auto;
+    width: 300px;
     .answer {
       width: 300px;
     }
   }
 
-  .actions, .question {
-    margin-left: auto;
-    margin-right: auto;
+  .actions {
+    width: 100px;
   }
   .question {
     font-size: 20px;
@@ -18,9 +18,6 @@
     width: 400px;
     margin-bottom: 30px;
     text-align: center;
-  }
-  .actions {
-    width: 330px;
   }
   ul.hints {
     list-style-type: none;

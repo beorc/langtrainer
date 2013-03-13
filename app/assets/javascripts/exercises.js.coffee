@@ -34,11 +34,12 @@ ns.init = () ->
       input.css color:'red'
     true
 
-  $('.look').click () ->
+  $('.look').click ->
     rightAnswer = ns.currentSentence.data('translation')
     $('.answer').val(rightAnswer)
+    false
 
-  $('.show-hint').click () ->
+  $('.show-hint').click ->
     hints = $('.hints')
     if hints.hasClass('hide')
       hints.removeClass('hide')
@@ -47,7 +48,15 @@ ns.init = () ->
 
     false
 
-  $('.actions a').tooltip(placement: 'bottom')
+  $('.correct').click ->
+    url = ns.currentSentence.data('correction-url')
+    window.location = url
+    false
+
+  $('.create').click ->
+    url = $('.sentences').data('creation-url')
+    window.location = url
+    false
 
   LANGTRAINER.lib.exercises_select.init()
 

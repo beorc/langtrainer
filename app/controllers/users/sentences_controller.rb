@@ -1,6 +1,6 @@
 class Users::SentencesController < Users::UserProfileController
   before_filter :fetch_query, only: :index
-  before_filter :fetch_exercise, only: :index
+  before_filter :fetch_exercise, only: [:new, :index]
   before_filter :fetch_sentence, only: :index
   before_filter :gon_prepare_error_messages, only: :index
   before_filter :authorize_resource, except: :index

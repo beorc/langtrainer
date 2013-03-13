@@ -92,12 +92,11 @@ module ApplicationHelper
     end
   end
 
-  def exercises_list_options(hsh)
+  def exercises_list_options(hsh = {})
     options = { include_all: true }
     options.merge! hsh
     if options[:include_all]
       url = yield(nil)
-      #users_sentences_path(@search_filter)
       options = content_tag( :option, t(:all), value: 0, url: url)
     else
       options = ''

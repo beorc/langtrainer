@@ -175,6 +175,8 @@ ru:
       look: Узнать правильный ответ
       answer: Введите перевод
       hint: Подсказка
+      correct: Изменить предложение
+      create: Добавить предложение
 
   shared:
     omniauth_buttons:
