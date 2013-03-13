@@ -5,17 +5,12 @@
       .row-fluid.header
         h2.page-title
           span = @language.title
-          '&nbsp
-          small = @exercise.title
-        ul.nav.nav-pills
-          - Exercise.all.each do |exercise|
-            - url = language_exercise_path(@language, exercise)
-            li*{class: menu_class(url)}
-              = link_to exercise.title, url
+        span.exercises-list
+          = render_exercises_select
 
 .container.workspace
-  .question = render @sentences.first
-  .sentences.hide = render @sentences
+  .question = render partial: 'sentence', object: @sentences.first
+  .sentences.hide = render partial: 'sentence', collection: @sentences
 
   .form-horizontal.control-group.string
     .controls

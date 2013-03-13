@@ -49,4 +49,6 @@ ns.init = () ->
 
   $('.actions a').tooltip(placement: 'bottom')
 
+  LANGTRAINER.lib.exercises_select.init()
+
 

@@ -11,7 +11,7 @@ class Users::SentencesController < Users::UserProfileController
   has_scope :page, default: 1
 
   def create
- sentence   if resource.save
+    if resource.save
       redirect_to [:users, resource], notice: t('flash.sentence.create.success')
     else
       render action: 'new'

@@ -16,7 +16,7 @@
                 i.icon-search
       .span7
         .exercises-list
-          = select_tag 'exercises', exercises_list_options
+          = render_exercises_select
 
     .warning = t('.max_message', number: User::SENTENCES_MAX)
     .warning = t('.created_number_message', number: current_user.sentences.not_corrections.count)
