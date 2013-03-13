@@ -101,10 +101,9 @@ module ApplicationHelper
     else
       options = ''
     end
-    Exercise.for_user(current_user).each do |exercise|
+    Exercise.not_empty.for_user(current_user).each do |exercise|
       url_params = { exercise: exercise }
       url_params.merge!( @search_filter ) if @search_filter.present?
-      #parameters = { value: exercise.id, url: users_sentences_path(url_params) }
       parameters = { value: exercise.id, url: yield(exercise) }
       if @exercise.present? && exercise.id == @exercise.id
         parameters.merge!({ selected: 'selected' })

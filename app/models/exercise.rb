@@ -10,7 +10,8 @@ class Exercise < ActiveRecord::Base
 
   validates :title, presence: true, uniqueness: { scope: :user_id }
 
-  scope :for_user, ->(user) { where('user_id IS NULL OR user_id = ?', user.id) }
+  scope :for_user, ->(user) { where('exercises.user_id IS NULL OR exercises.user_id = ?', user.id) }
+  scope :not_empty, -> { joins(:sentences).where('sentences.id IS NOT NULL').group('exercises.id') }
 
   def should_generate_new_friendly_id?
     new_record? && !slug

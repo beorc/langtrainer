@@ -1,6 +1,6 @@
 class Users::SentencesController < Users::UserProfileController
   before_filter :fetch_query, only: :index
-  before_filter :fetch_exercise, only: [:new, :index]
+  before_filter :fetch_exercise, only: [:new, :index, :show]
   before_filter :fetch_sentence, only: :index
   before_filter :gon_prepare_error_messages, only: :index
   before_filter :authorize_resource, except: :index
@@ -14,7 +14,7 @@ class Users::SentencesController < Users::UserProfileController
     if resource.save
       redirect_to [:users, resource], notice: t('flash.sentence.create.success')
     else
-      render action: 'new'
+      render action: 'new', exercise: @exercise
     end
   end
 

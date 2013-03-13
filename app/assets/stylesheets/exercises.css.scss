@@ -10,7 +10,10 @@
   }
 
   .actions {
-    width: 100px;
+    text-align: center;
+    width: 100%;
+
+    i { font-size: 1.5em }
   }
   .question {
     font-size: 20px;

@@ -30,10 +30,11 @@
 
         '&nbsp
 
-        = link_to '#', class: 'show-hint', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.hint')  do
-          i.icon-question-sign
+        - if @hint.present?
+          = link_to '#', class: 'show-hint', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.hint')  do
+            i.icon-question-sign
 
-        '&nbsp
+          '&nbsp
 
         = link_to '#', class: 'correct', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.correct')  do
           i.icon-edit
@@ -44,4 +45,5 @@
           i.icon-plus
 
 
-  = render @hint
+  - if @hint.present?
+    = render @hint
