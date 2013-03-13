@@ -1,0 +1,12 @@
+Здравствуйте!
+
+  Получено новое сообщение от пользователя.
+
+<% if @options[:email].present? %>
+  Email: <%= @options[:email] %>
+
+<% end %>
+<%= @options[:message] %>
+
+Ссылка для редактирования сообщения: <%= @options[:url] %>
+

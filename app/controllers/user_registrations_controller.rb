@@ -7,7 +7,7 @@ class UserRegistrationsController < ApplicationController
     resource.update_attributes(params[:user_registration])
     if resource.save
       flash[:notice] = t('flash.user_registration.success')
-      flash[:notice] = t('flash.email_confirmation.email_sent', email: resource.email)
+      #flash[:notice] = t('flash.email_confirmation.email_sent', email: resource.email)
       redirect_to action: :edit
     else
       render action: :edit

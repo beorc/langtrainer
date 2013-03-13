@@ -3,6 +3,8 @@ footer#footer
     .container
     .row
       .span12
-        span.pull-right &copy; #{Date.today.year}, Langtrainer
+        span.copyright.pull-right &copy; #{Date.today.year}, Langtrainer
         - if Rails.env.production?
-          span.pull-right = render 'layouts/social_likes'
+          span.social.pull-right = render 'layouts/social_likes'
+        span.feedback.pull-right
+          = link_to Feedback.model_name.human.mb_chars.capitalize, new_feedback_path

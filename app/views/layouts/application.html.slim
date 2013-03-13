@@ -1,16 +1,7 @@
 doctype 5
 html
   head
-    meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title = content_for?(:title) ? yield(:title) : t(:app_name)
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : t(:app_name)}"
-    = stylesheet_link_tag "application", :media => "all"
-    = javascript_include_tag "application"
-    = yield :load_controller_javascript
-    = include_gon
-    = display_meta_tags site: t(:app_name), separator: '–', reverse: true
-    = csrf_meta_tags
-    = yield(:head)
+    = render 'layouts/head'
   body class="#{controller_name} #{action_name} has-navbar-fixed-top has-highlighted"
     #page
       = render 'layouts/topbar'

@@ -11,14 +11,17 @@ Langtrainer::Application.routes.draw do
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout
 
+  resources :feedbacks, only: [:new, :create]
+
   resource :oauth do
-   get :callback
+    get :callback
   end
   match 'oauth/:provider' => 'oauths#oauth', :as => :auth_at_provider
 
   namespace :admin do
     get '/' => 'application#dashboard', as: :dashboard
     resources :sentences
+    resources :feedbacks, only: [:index, :show, :destroy]
   end
 
   namespace :users do

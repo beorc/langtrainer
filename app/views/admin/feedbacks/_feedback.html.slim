@@ -1,0 +1,11 @@
+tr
+  td = link_to truncate(feedback.message, length: 100, separator: ' '), admin_feedback_path(feedback)
+  td = l(feedback.created_at, format: :long)
+  td
+    = link_to admin_feedback_path(feedback) do
+      i.icon-eye-open
+        ' &nbsp
+    ' &nbsp
+    = link_to admin_feedback_path(feedback), method: :delete,
+              data: { confirm: t(:delete_confirm, title: Feedback.human_attribute_name(:message) ) } do
+      i.icon-trash

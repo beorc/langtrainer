@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   has_many :sentences
   has_many :corrections
   has_many :exercises
+  has_many :feedbacks
   has_one :email_confirmation, validate: true
   accepts_nested_attributes_for :providers
 
@@ -31,6 +32,8 @@ class User < ActiveRecord::Base
   after_create :assign_default_languages
   after_create :assign_default_role
   before_save :ensure_authentication_token
+
+  scope :admins, -> { with_role(:admin) }
 
   def after_token_authentication
     reset_authentication_token!

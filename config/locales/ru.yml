@@ -36,19 +36,27 @@ ru:
 
   delete_confirm: "Удалить?"
 
+  shared_meta_tags: &shared_meta_tags
+    open_graph:
+      title: Тренажер иностранных языков
+    site: Langtrainer
+    description: Langtrainer - Тренажер иностранных языков
+    keywords: 'английский, русский, иностранный, язык, упражнения, уроки, изучение, самостоятельно'
+
   meta_tags:
     main_page:
-      open_graph:
-        title: Тренажер иностранных языков
-      description: Тренажер иностранных языков
-      title: Тренажер иностранных языков
-      keywords: 'английский, русский, иностранный, язык, упражнения, уроки, учить'
+      <<: *shared_meta_tags
+      title: Главная страница
 
     users/exercises:
       title: Пользовательские упражнения
 
     users/sentences:
       title: Пользовательские предложения
+
+    contacts:
+      <<: *shared_meta_tags
+      title: Обратная связь
 
   language:
     english: Английский
@@ -138,6 +146,13 @@ ru:
     new:
       sign_in: Вход на сайт
 
+  feedbacks:
+    new:
+      title: Обратная связь
+      placeholders:
+        email: Электронная почта
+
+
   admin:
     sidebar:
       management:
@@ -174,9 +189,11 @@ ru:
 
   mailer:
     token_authentication:
-      subject: Ссылка для входа на сайт
+      subject: 'Langtrainer: Ссылка для входа на сайт'
     email_confirmation:
-      subject: Ссылка для изменения адреса почты
+      subject: 'Langtrainer: Ссылка для изменения адреса почты'
+    feedback:
+      subject: 'Langtrainer: Новое сообщение от пользователя'
 
   helpers:
     actions:
@@ -202,6 +219,8 @@ ru:
         edit_sentences: Редактировать предложения
       correction:
         destroy: Удалить исправление
+      feedback:
+        create: Отправить
 
   flash:
     token_authentication:
@@ -229,6 +248,9 @@ ru:
         success: Предложение создано
       update:
         success: Предложение изменено
+    feedback:
+      create:
+        success: Сообщение отправлено
 
     users/exercises:
       access_denied: У вас нет прав на доступ к этому упражнению
@@ -236,6 +258,10 @@ ru:
       access_denied: У вас нет прав на доступ к этому предложению
     users/corrections:
       access_denied: У вас нет прав на доступ к этому предложению
+
+  legend:
+    feedback:
+      show: Сообщение от пользователя
 
   activerecord:
     models:
@@ -252,6 +278,7 @@ ru:
         one: исправление
         few: исправления
         many: исправления
+      feedback: oбратная связь
     attributes:
       sentence:
         en: Английский
@@ -264,6 +291,10 @@ ru:
       exercise:
         title: Название
         slug: Идентификатор
+      feedback:
+        message: Сообщение
+        email: E-mail
+        created_at: Дата
 
     errors:
       messages:

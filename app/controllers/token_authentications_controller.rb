@@ -9,8 +9,10 @@ class TokenAuthenticationsController < ApplicationController
       @user = User.find_or_create_by_email(email)
       if @user.valid?
         @user.reset_authentication_token!
-        #UserMailer.delay.send_token(@user, I18n.locale)
-        UserMailer.send_token(@user, I18n.locale).deliver!
+        UserMailer.delay.send_token( { Langtrainer.config.token_authentication_key => @user.authentication_token },
+                                     @user.email,
+                                     I18n.locale )
+        #UserMailer.send_token(@user, I18n.locale).deliver!
         flash[:notice] = t('flash.token_authentication.email_sent', email: email)
       end
     end

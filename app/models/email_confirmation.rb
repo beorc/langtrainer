@@ -39,7 +39,7 @@ class EmailConfirmation < ActiveRecord::Base
 
   def send_email
     reset_token!
-    #UserMailer.delay.send_email_confirmation(self, I18n.locale)
-    UserMailer.send_email_confirmation(self, I18n.locale).deliver!
+    UserMailer.delay.send_email_confirmation(token, new_email, I18n.locale)
+    #UserMailer.send_email_confirmation(self, I18n.locale).deliver!
   end
 end

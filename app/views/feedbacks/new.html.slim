@@ -1,0 +1,16 @@
+- content_for :highlighted do
+  #highlighted
+    .container
+      .row-fluid.header
+        h2.page-title
+          span = t('.title')
+
+.row-fluid
+  .offset4.span4
+    = simple_form_for @feedback || Feedback.new, html: { class: :contacts } do |f|
+      = f.input :email, placeholder: t('.placeholders.email'), input_html: { class: :span12 }
+      = f.input :message, as: :text, input_html: { class: :span12 }
+
+      .form-actions
+        = f.submit class: 'btn btn-primary'
+

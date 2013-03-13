@@ -1,0 +1,18 @@
+- title Feedback.model_name.human.capitalize
+
+.admin-feedbacks
+  h1.heading = Feedback.model_name.human.capitalize
+
+  .btn-group.sepH_b
+
+  = paginate @feedbacks
+
+  table.table.table-bordered.table-striped.table-condensed.feedback
+    thead
+      tr
+        th = Feedback.human_attribute_name(:message)
+        th = Feedback.human_attribute_name(:created_at)
+        th = t(:actions)
+    tbody
+      = render @feedbacks
+
