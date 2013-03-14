@@ -1,6 +1,4 @@
 .workspace {
-  width: 500px;
-
   .controls {
     margin-left: auto;
     width: 300px;
@@ -26,4 +24,9 @@
     list-style-type: none;
     li { margin-top: 20px; }
   }
+}
+
+.hints td.column {
+  width: 30%;
+  text-align: center;
 }

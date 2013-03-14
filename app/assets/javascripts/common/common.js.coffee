@@ -21,6 +21,9 @@ window.initNamespace = (str) ->
 )(document, 'script', 'twitter-wjs')
 
 $ ->
+  if $("[data-skip-analytics]").size() == 0
+    LANGTRAINER.lib.visitorsAnalytics.init()
+
   $('[data-toggle="tooltip"]').each ->
     options = {}
     placement = $(@).data('placement')

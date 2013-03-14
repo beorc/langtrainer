@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :handle_sign_in
   before_filter :store_current_url
   before_filter :build_meta_tags, only: [:index, :show]
+  before_filter :prepare_gon
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
@@ -64,5 +65,12 @@ class ApplicationController < ActionController::Base
     tags.blank? && return
 
     set_meta_tags tags
+  end
+
+  def prepare_gon
+    if Rails.env.production?
+      id = ENV['YANDEX_METRIKA_ID']
+      gon.ym = id if id
+    end
   end
 end

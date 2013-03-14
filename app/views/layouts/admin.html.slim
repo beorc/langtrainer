@@ -4,6 +4,7 @@ html
     = render 'layouts/head'
   body class="#{controller_name} #{action_name}"
     = render 'layouts/admin/topbar'
+    .constraints[data-skip-analytics="true"]
     #main.clearfix role="main"
       .container#contentwrapper
         .content

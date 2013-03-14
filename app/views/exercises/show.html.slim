@@ -46,4 +46,9 @@
 
 
   - if @hint.present?
-    = render @hint
+    .hints
+      .mission
+        .inner
+          h3
+            = t('.hint')
+      = render @hint
