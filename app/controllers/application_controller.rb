@@ -68,6 +68,7 @@ class ApplicationController < ActionController::Base
   end
 
   def prepare_gon
+    gon.ym = nil
     if Rails.env.production?
       id = ENV['YANDEX_METRIKA_ID']
       gon.ym = id if id
