@@ -12,7 +12,7 @@ class Users::SentencesController < Users::UserProfileController
 
   def create
     if resource.save
-      redirect_to [:users, resource], notice: t('flash.sentence.create.success')
+      redirect_to users_sentences_path(sentence: resource), notice: t('flash.sentence.create.success')
     else
       render action: 'new', exercise: @exercise
     end

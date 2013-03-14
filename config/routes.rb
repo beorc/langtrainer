@@ -27,7 +27,7 @@ Langtrainer::Application.routes.draw do
   namespace :users do
     get 'dashboard' => 'user_profile#dashboard', as: :dashboard
     resources :exercises, except: :show
-    resources :sentences
+    resources :sentences, except: :show
     resources :corrections, only: [:create, :update, :destroy], format: :json, constraints: { format: :json }
   end
 
