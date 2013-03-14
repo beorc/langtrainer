@@ -1,0 +1,14 @@
+- content_for :subtitle do
+  = t('.subtitle')
+
+.row-fluid
+  .offset4.span4
+    dl.dl-horizontal
+      dt
+        = t('.exercises')
+        '&nbsp
+      dd = current_user.exercises.count
+      dt
+        = t('.sentences')
+        '&nbsp
+      dd = current_user.sentences.count

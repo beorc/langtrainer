@@ -4,7 +4,7 @@
     .container
       .row-fluid.header
         h2.page-title
-          span = @language.title
+          span = title_for(@language)
         span.exercises-list
           = render_exercises_select
 

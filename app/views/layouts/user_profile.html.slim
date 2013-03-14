@@ -19,6 +19,8 @@ html
                 = link_to t('.exercises'), users_exercises_path
               li*{class: menu_class(users_sentences_path)}
                 = link_to t('.sentences'), users_sentences_path
+              li*{class: menu_class(users_dashboard_path)}
+                = link_to t('.dashboard'), users_dashboard_path
 
       #content
         .container

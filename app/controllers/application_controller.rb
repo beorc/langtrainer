@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_filter :store_current_url
   before_filter :build_meta_tags, only: [:index, :show]
   before_filter :prepare_gon
+  before_filter :set_locale
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
@@ -60,6 +61,7 @@ class ApplicationController < ActionController::Base
 
   def build_meta_tags
     current_controller = params[:controller]
+    Rails.logger.info "==Controller== #{current_controller}"
     @@tags ||= {}
     tags = @@tags[current_controller] ||= t("meta_tags.#{current_controller}", default: '').clone
     tags.blank? && return
@@ -72,6 +74,14 @@ class ApplicationController < ActionController::Base
     if Rails.env.production?
       id = ENV['YANDEX_METRIKA_ID']
       gon.ym = id if id
+    end
+  end
+
+  def set_locale
+    if native_language.russian?
+      I18n.locale = :ru
+    else
+      I18n.locale = :en
     end
   end
 end

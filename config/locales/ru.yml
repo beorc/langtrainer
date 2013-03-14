@@ -14,6 +14,9 @@ ru:
   'true': Да
   'false': Нет
 
+  en: Английский
+  ru: Русский
+
   time:
     formats:
       only_date_default: "%Y-%m-%d"
@@ -58,10 +61,6 @@ ru:
       <<: *shared_meta_tags
       title: Обратная связь
 
-  language:
-    english: Английский
-    russian: Русский
-
   layouts:
     topbar:
       home: На главную
@@ -72,8 +71,8 @@ ru:
       title: Личный кабинет
       credentials: Профиль пользователя
       sentences: Ваши предложения
-      corrections: Ваши исправления
       exercises: Ваши упражнения
+      dashboard: Общие данные
     user_menu:
       credentials: Профиль пользователя
 
@@ -84,7 +83,7 @@ ru:
       why:
         sentences:
           title: Построение предложений
-          content: 'Предложение на иностранном языке полностью строится вами на основании аналога на вашем языке и скрываемых подсказок по грамматике, представленных в табличном виде'
+          content: 'Предложение на иностранном языке полностью строится вами на основании аналога на вашем языке'
         hints:
           title: Опциональная справка по грамматике
           content: 'Справка по грамматике для каждого упражнения основана на таблицах и может быть отображена или скрыта в любой момент по вашему желанию'
@@ -116,6 +115,11 @@ ru:
       reset_email_confirmation: Отменить изменение адреса
 
   users:
+    user_profile:
+      dashboard:
+        subtitle: Общие данные
+        exercises: 'Создано упражнений:'
+        sentences: 'Создано предложений:'
     exercises:
       index:
         subtitle: Ваши упражнения
@@ -158,10 +162,6 @@ ru:
     sidebar:
       management:
         title: Управление сайтом
-
-  language:
-    english: Английский
-    russian: Русский
 
   exercises:
     first:

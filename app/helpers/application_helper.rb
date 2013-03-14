@@ -78,7 +78,7 @@ module ApplicationHelper
 
   def render_language_item(language)
     content_tag(:li, '', class: active_language_class(language)) do
-      concat link_to language.title,
+      concat link_to title_for(language),
                      set_native_language_path(language.id),
                      method: :put
     end
@@ -114,5 +114,9 @@ module ApplicationHelper
       end
     end
     options.html_safe
+  end
+
+  def title_for(language)
+    t(language.slug)
   end
 end

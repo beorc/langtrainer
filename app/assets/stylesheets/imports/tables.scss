@@ -1,0 +1,45 @@
+.t10 .vbrace-u{
+	margin-right:75px;
+}
+.t10 .vbrace-place{
+	margin:10px 0;
+	display:block;
+	padding:35px 0 30px 17px;
+}
+.t10  .vbrace-d{
+	padding-bottom:10px;
+}
+
+.t5 .vbrace-u{
+  margin-right:75px;
+}
+.t5 .vbrace-place{
+  margin:10px 0;
+  display:block;
+  padding:15px 0 10px 17px;
+}
+.t5  .vbrace-d{
+  padding-bottom:10px;
+}
+
+.brace {background-image:none;}
+.brace tr td {background:image_url('tables/brace_r.gif') 100% 0 no-repeat; padding-top:15px;}
+.brace tr td:first-child {background:image_url('tables/brace_l.gif') 0 0 no-repeat;}
+.brace tr td.brace_place {background:image_url('tables/brace.gif') center top no-repeat; text-align:center; padding-right:20px;}
+.braceu tr td {background:image_url('tables/braceu_r.gif') 100% 0 no-repeat; padding-top:15px;}
+.braceu tr td:first-child {background:image_url('tables/braceu_l.gif') 0 0 no-repeat;}
+.braceu tr td.braceu_place {background:image_url('tables/braceu.gif') center top no-repeat; text-align:center;}
+.vbrace-place {background:image_url('tables/brace.png') left center no-repeat; padding-left:15px;}
+.vbrace-u {background:image_url('tables/brace_u.png') left top no-repeat;}
+.vbrace-d {background:image_url('tables/brace_d.png') left bottom no-repeat;}
+.vlbrace-place {background:image_url('tables/lbrace.png') right center no-repeat; padding-left:15px;}
+.vlbrace-u {background:image_url('tables/lbrace_u.png') right top no-repeat;}
+.vlbrace-d {background:image_url('tables/lbrace_d.png') right bottom no-repeat;}
+
+.braced {
+  overflow: hidden;
+}
+
+.braced-bottom {
+  clear: both;
+}

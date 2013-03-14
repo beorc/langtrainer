@@ -46,7 +46,7 @@ describe 'Sentences' do
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click
 
-      page.has_selector?('body.sentences.show')
+      page.has_selector?('body.sentences.index')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.update.success')
       page.has_text?(en_text).should be true
       page.has_text?(exercise_title).should be true
@@ -54,11 +54,11 @@ describe 'Sentences' do
 
     it 'allows to destroy own ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit users_sentence_path(sentence)
+      visit users_sentences_path(sentence: sentence)
 
-      page.has_selector?('body.sentences.show')
+      page.has_selector?('body.sentences.index')
 
-      find('.form-actions .btn-destroy').click
+      find('.destroy-sentence').click
 
       check_alert(I18n.t(:delete_confirm))
 
@@ -131,16 +131,18 @@ describe 'Sentences' do
 
     it 'allows to destroy public ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit users_sentence_path(sentence)
+      visit users_sentences_path(sentence: sentence)
 
-      page.has_selector?('body.sentences.show')
+      page.has_selector?('body.sentences.index')
 
-      find('.form-actions .btn-destroy').click
+      find('.destroy-sentence').click
 
       check_alert(I18n.t(:delete_confirm))
 
       page.has_selector?('body.sentences.index')
       find('body.sentences.index')
+
+      Sentence.where(id: sentence.id).empty?.should == true
     end
   end
 end

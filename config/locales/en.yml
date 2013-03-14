@@ -1,9 +1,21 @@
-ru:
+en:
   app_name: Langtrainer
-  app_description: Foreign language skills trainer
-  home: На главную
-  login: Войти
-  logout: Выйти
+  app_description: Foreign languages trainer
+  home: Home
+  login: Sign in
+  logout: Sign out
+  user_profile: Personal account
+  actions: Actions
+  cancel: Cancel
+  authorization_required: You need to authorize to access this page
+  unknown_error_message: Error occured. Please, try again later
+  save: Save
+  all: All
+  'true': Yes
+  'false': No
+
+  en: English
+  ru: Russian
 
   time:
     formats:
@@ -14,9 +26,9 @@ ru:
       date_time_digs: "%d.%m.%Y %H:%M"
       only_time_full: "%H:%M:%S"
     second:
-      one: секнуда
-      few: секунды
-      many: секунд
+      one: second
+      few: seconds
+      many: seconds
   date:
     formats:
       only_date_default: "%Y-%m-%d"
@@ -25,84 +37,198 @@ ru:
       date_time_digs: "%d.%m.%Y %H:%M"
       only_time_full: "%H:%M:%S"
 
-  delete_confirm: "Удалить?"
+  delete_confirm: "Are you sure?"
 
-  language:
-    english: Английский
-    russian: Русский
+  shared_meta_tags: &shared_meta_tags
+    open_graph:
+      title: Foreign languages treiner
+    site: Langtrainer
+    description: Langtrainer - Foreign languages trainer
+    keywords: 'english, russian, foreign, language, exercises, learn, yourself, training'
+
+  meta_tags:
+    main_page:
+      <<: *shared_meta_tags
+      title: Home page
+
+    users/exercises:
+      title: "User's exercises"
+
+    users/sentences:
+      title: "User's sentences"
+
+    contacts:
+      <<: *shared_meta_tags
+      title: Feedback
 
   layouts:
     topbar:
-      home: На главную
-      your_language: 'Ваш язык:'
+      home: Home
+      your_language: 'Your language:'
+      exercises: Exercises
     application:
     user_profile:
-      title: Профиль пользователя
-      credentials: Данные
-      sentences: Предложения
-      corrections: Правки
+      title: Private account
+      credentials: Credentials
+      sentences: Your sentences
+      exercises: Your exercises
+      dashboard: Dashboard
+    user_menu:
+      credentials: Credentials
+
+  main_page:
+    show:
+      description: Foreign languages trainer
+      select_language: To start trainig, just select a language
+      why:
+        sentences:
+          title: Sentences building
+          content: 'You form sentence on foreign language by transcript equivalent in your language'
+        hints:
+          title: Optional grammar information
+          content: 'Grammar information for each exercise is based on tables and can be hidden at any time by you'
+        words:
+          title: Learning new words
+          content: Each exercise starts with learning new words
+        correction:
+          title: Real-time validation
+          content: Validation is performed immediately in process of entering text
+        changes:
+          title: You have ability to change
+          content: If you notice a mistake or want to use alter version, simply change the text of entence
+        extensions:
+          title: You have ability to extend
+          content: You can add new exercises and sentences for training to make it more interesting
 
   email_confirmation:
-    title: Подтверждение изменения адреса электронной почты
-    hint: Изменить адрес на '%{new_email}'?
-    confirm: Изменить
-    same_email_entered: Введен текущий адрес
+    title: Email confirmation
+    hint: Do you want to change your email to '%{new_email}'?
+    confirm: Confirm
+    same_email_entered: Existing email entered
   token_authentication:
-    email_description: На указанный адрес будет отправлено письмо с ссылкой для входа на сайт
+    email_description: To this address will be sent email with a link to access Langtrainer
 
   user_registrations:
     edit:
-      subtitle: Регистрационные данные
+      subtitle: User credentials
+      pending_email: 'You specified the new e-mail: %{email}. To this email sent message with a link to confirm your changes.'
+      reset_email_confirmation: Cancel email changing
+
+  users:
+    user_profile:
+      dashboard:
+        subtitle: Dashboard
+        exercises: 'Your exercises:'
+        sentences: 'Your sentences:'
+    exercises:
+      index:
+        subtitle: Your exercises
+        max_message: 'The maximum number of your exercises: %{number}'
+        created_number_message: 'Already created: %{number}'
+      new:
+        subtitle: New exercise
+      edit:
+        subtitle: Changing exercise
+      show:
+        subtitle: Viewing exercise
+    sentences:
+      index:
+        subtitle: Your sentences
+        collection_empty: There is no sentences yet
+        max_message: 'The maximun number of your sentences: %{number}'
+        created_number_message: 'Already created: %{number}'
+      new:
+        subtitle: New sentence
+      edit:
+        subtitle: Changing sentence
+      show:
+        subtitle: Viewing sentence
+      form:
+        atom:
+          hint: Basic forms are always in the begining of the exercise and usually contain new words and phrases
 
   user_sessions:
     new:
-      sign_in: Вход на сайт
+      sign_in: Sign in
+
+  feedbacks:
+    new:
+      title: Feedback
+      placeholders:
+        email: E-mail
+
 
   admin:
     sidebar:
       management:
-        title: Управление сайтом
-
-  language:
-    english: Английский
-    russian: Русский
+        title: Management
 
   exercises:
+    first:
+      title: First exercise
+    second:
+      title: Seconf exercise
+    third:
+      title: Third exercise
+
     show:
-      next: Дальше
-      look: Узнать правильный ответ
-      answer: Введите перевод
-      hint: Подсказка
+      next: Next
+      look: See right answer
+      answer: Enter tranlation
+      hint: Hint
+      correct: Change sentence
+      create: Add new sentence
 
   shared:
     omniauth_buttons:
-      title: Войти через социальные сети
+      title: Enter with social networks
   views:
     pagination:
       truncate: ...
+      next: Next
+      previous: Previous
+      first: First
+      last: Last
 
   mailer:
     token_authentication:
-      subject: Ссылка для входа на сайт
+      subject: 'Langtrainer: Link to sign in'
     email_confirmation:
-      subject: Ссылка для изменения адреса почты
+      subject: 'Langtrainer: Link to confirm your email changing'
+    feedback:
+      subject: 'Langtrainer: New message from user'
 
   helpers:
     actions:
     submit:
       sentence:
-        create: Создать
+        new: New sentence
+        create: Create sentence
+        update: Save
+        edit: Change sentence
+        destroy: Delete sentence
+        edit_corrections: Edit corrections
       email_confirmation:
-        send_token: Отправить
+        send_token: Send
       user_registration:
-        create: Изменить
+        create: Change
       user:
-        create: Отправить
+        create: Send
+      exercise:
+        create: Create exercise
+        update: Save
+        edit: Change exercise
+        destroy: Delete exercise
+        edit_sentences: Edit sentence
+      correction:
+        destroy: Destroy correction
+      feedback:
+        create: Send
 
   flash:
     token_authentication:
-      success: Вы успешно вошли на сайт
-      fail: Неверный ключ авторизации
+      success: You have successfully signed in
+      fail: Wrong authorization token
       email_sent: На почтовый адрес '%{email}' отправлено письмо со ссылкой для входа на сайт
     user_registration:
       success: Профиль пользователя обновлен
@@ -115,49 +241,61 @@ ru:
     oauths:
       logged_in: Вы вошли на сайт через %{provider}
 
+    exercise:
+      create:
+        success: Упражнение создано
+      update:
+        success: Упражнение изменено
+    sentence:
+      create:
+        success: Предложение создано
+      update:
+        success: Предложение изменено
+    feedback:
+      create:
+        success: Сообщение отправлено
+
+    users/exercises:
+      access_denied: Access denied
+    users/sentences:
+      access_denied: Access denied
+    users/corrections:
+      access_denied: Access denied
+
   legend:
+    feedback:
+      show: Message from user
 
   activerecord:
     models:
       sentence:
-        one: предложение
-        few: предложения
-        many: предложения
-      user_registration: профиль пользователя
+        one: sentence
+        few: sentences
+        many: sentences
+      user_registration: user profile
+      exercise:
+        one: exercise
+        few: exercises
+        many: exercises
+      correction:
+        one: correction
+        few: corrections
+        many: corrections
+      feedback: feedback
     attributes:
       sentence:
-        english: Английский
-        russian: Русский
-        atom: Базовая конструкция
-        exercise_id: Упражнение
-        user_id: Пользователь
+        en: English
+        ru: Russian
+        atom: Basic form
+        exercise_id: Exercise
+        user_id: User
       user_registration:
         email: E-mail
-
-    errors:
-      messages:
-        taken: "%{model} с таким именем уже существует"
-        record_invalid: "Валидация не прошла: %{errors}"
-        restrict_dependent_destroy:
-          one: "Невозможно удалить запись, так как существуют зависимости: %{record}"
-          many: "Невозможно удалить записи, так как существуют зависимости: %{record} "
-        inclusion: "недопустимое значение"
-        exclusion: "is reserved"
-        invalid: "содержит недопустимое значение"
-        confirmation: "doesn't match confirmation"
-        accepted: "must be accepted"
-        empty: "не может быть пустым"
-        blank: "не может быть пустым"
-        too_long: "слишком длинно (максимум: %{count} символов)"
-        too_short: "слишком коротко (минимум: %{count} символов)"
-        wrong_length: "is the wrong length (should be {{count}} characters)"
-        taken: "%{attribute} уже занята"
-        not_a_number: "может содержать только цифры"
-        greater_than: "должно быть больше {{count}}"
-        greater_than_or_equal_to: "должно быть больше или равно {{count}}"
-        equal_to: "должно быть равно {{count}}"
-        less_than: "должно быть меншье {{count}}"
-        less_than_or_equal_to: "должно быть меньше или равно {{count}}"
-        odd: "может быть только нечетным"
-        even: "может быть только четным"
+      exercise:
+        title: Title
+        slug: Slug
+      feedback:
+        message: Message
+        email: E-mail
+        created_at: Date
 

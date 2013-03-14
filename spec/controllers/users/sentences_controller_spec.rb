@@ -52,7 +52,7 @@ describe Users::SentencesController do
       login_user(@user)
       text = 'English text'
       post :create, sentence: { en: text, exercise_id: @public_exercise.id }
-      response.should redirect_to(users_sentence_path(Sentence.last))
+      response.should redirect_to(users_sentences_path(sentence: Sentence.last))
       Sentence.last.en.should == text
     end
 
@@ -61,7 +61,7 @@ describe Users::SentencesController do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user
       text = 'new english text'
       put :update, id: sentence.id, sentence: { en: text }
-      response.should redirect_to(users_sentence_path(sentence))
+      response.should redirect_to(users_sentences_path(sentence: sentence))
       Sentence.find(sentence.id).en.should == text
     end
 
@@ -119,7 +119,7 @@ describe Users::SentencesController do
       login_user(@admin)
       text = 'English text'
       post :create, sentence: { en: text, exercise_id: @public_exercise.id }
-      response.should redirect_to(users_sentence_path(Sentence.last))
+      response.should redirect_to(users_sentences_path(sentence: Sentence.last))
       Sentence.last.en.should == text
     end
 
@@ -128,7 +128,7 @@ describe Users::SentencesController do
       sentence = @public_exercise.sentences.first
       text = 'new english text'
       put :update, id: sentence.id, sentence: { en: text }
-      response.should redirect_to(users_sentence_path(sentence))
+      response.should redirect_to(users_sentences_path(sentence: sentence))
       Sentence.find(sentence.id).en.should == text
     end
 

@@ -14,14 +14,14 @@ class Users::SentencesController < Users::UserProfileController
     if resource.save
       redirect_to users_sentences_path(sentence: resource), notice: t('flash.sentence.create.success')
     else
-      render action: 'new', exercise: @exercise
+      render action: 'new'
     end
   end
 
   def update
     if resource.update_attributes(params[:sentence])
       respond_to do |format|
-        format.html { redirect_to [:users, resource], notice: t('flash.sentence.update.success') }
+        format.html { redirect_to users_sentences_path(sentence: resource), notice: t('flash.sentence.update.success') }
         format.json { render nothing: true, status: 200 }
       end
     else

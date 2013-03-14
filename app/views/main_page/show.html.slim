@@ -9,7 +9,7 @@
     h3
       = t('.select_language')
     - Language.except(native_language).each do |language|
-      = link_to language.title,
+      = link_to title_for(language),
                 language_exercise_path(language, Exercise.first),
                 class: 'btn btn-primary btn-large language'
       '&nbsp
