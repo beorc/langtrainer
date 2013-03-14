@@ -1,0 +1,6 @@
+ul.unstyled.exercise-menu.dropdown-menu
+  - Language.except(native_language).each do |language|
+    li
+      = link_to language.title,
+              language_exercise_path(language, Exercise.first)
+      '&nbsp

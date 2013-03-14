@@ -8,18 +8,23 @@
             span = t(:app_description)
           .nav-collapse.collapse
             ul.nav.pull-right#main-menu
-              li.user-profile.reset-border-right = link_to t(:user_profile), users_dashboard_path
-              li.choose-another-language.reset-border-left.dropdown
+              li.user-profile = link_to t(:user_profile), users_dashboard_path
+              li.exercises.dropdown
+                = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
+                  span.prompt = t('.exercises')
+                  b.caret &nbsp;
+                = render 'layouts/exercise_menu'
+              li.choose-another-language.dropdown
                 = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
                   span.prompt = t('.your_language')
                   '&nbsp
-                  span.language.dash-underlined = native_language.title
+                  span.language = native_language.title
                   b.caret &nbsp;
                 = render_language_selector
               - if logged_in?
                 li.logged-user.dropdown
                   = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
-                    span.user-title.dash-underlined = current_user.title
+                    span.user-title = current_user.title
                     b.caret &nbsp;
 
                   = render 'layouts/user_menu'

@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def native_language
-    session[:language_id] ||= logged_in? ? current_user.language.id : Language.russian.id
+    session[:language_id] = logged_in? ? current_user.language.id : Language.russian.id
     Language.find(session[:language_id])
   end
 

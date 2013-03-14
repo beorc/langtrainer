@@ -66,6 +66,7 @@ ru:
     topbar:
       home: На главную
       your_language: 'Ваш язык:'
+      exercises: Упражнения
     application:
     user_profile:
       title: Личный кабинет

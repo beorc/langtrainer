@@ -25,7 +25,8 @@ class Language
   end
 
   def self.find(param)
-    languages[param.to_i]
+    return languages[param] if param.is_a? Integer
+    languages.select { |lang| lang.slug == param.to_sym }.first
   end
 
   def initialize(hsh = {})

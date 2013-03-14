@@ -4,7 +4,7 @@ class ExercisesController < ApplicationController
     @exercise = Exercise.find params[:id]
     sentences = Sentence.for_exercise(@exercise)
     @sentences = sentences.training_order
-    @language = Language.find params[:language]
+    @language = Language.find params[:language_id]
 
     @hint = "exercises/#{native_language.slug}/hint_#{@exercise.slug}" if @exercise.owner.nil?
   end
