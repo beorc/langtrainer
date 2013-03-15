@@ -198,3 +198,9 @@ body .header .page-title {
     width: 20%;
   }
 }
+
+/* line 158, ../../app/assets/stylesheets/enkel/custom-style.css.scss */
+#navigation ul#main-menu li a .caret,
+#navigation ul#main-menu li a:link .caret {
+  margin-top: 9px;
+}
