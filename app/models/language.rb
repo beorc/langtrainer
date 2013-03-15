@@ -1,7 +1,7 @@
 class Language
   extend ActiveModel::Naming
 
-  attr_reader :id, :slug
+  attr_reader :id, :slug, :title
 
   English = 0
   Russian = 1
@@ -40,6 +40,7 @@ class Language
   def initialize(hsh = {})
     @id = hsh[:id]
     @slug = hsh[:slug]
+    @title = hsh[:title]
   end
 
   def to_param
@@ -67,8 +68,8 @@ class Language
 
   def self.languages
     @languages ||= [
-      Language.send(:new, id: English, slug: :en),
-      Language.send(:new, id: Russian, slug: :ru)
+      Language.send(:new, id: English, slug: :en, title: 'English'),
+      Language.send(:new, id: Russian, slug: :ru, title: 'Russian')
     ]
   end
 

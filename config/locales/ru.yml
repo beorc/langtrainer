@@ -14,8 +14,14 @@ ru:
   'true': Да
   'false': Нет
 
-  en: Английский
-  ru: Русский
+  titles:
+    language:
+      en: Английский
+      ru: Русский
+    exercise:
+      first: Первое упражнение
+      second: Второе упражнение
+      third: Третье упражнение
 
   time:
     formats:

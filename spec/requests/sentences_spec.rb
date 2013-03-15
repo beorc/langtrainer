@@ -24,7 +24,7 @@ describe 'Sentences' do
 
       page.has_selector?('body.sentences.new')
       en_text = 'I love you'
-      exercise_title = Exercise.first.title
+      exercise_title = title_for Exercise.first
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click
@@ -41,7 +41,7 @@ describe 'Sentences' do
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
-      exercise_title = Exercise.last.title
+      exercise_title = title_for(Exercise.last)
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click
@@ -80,7 +80,7 @@ describe 'Sentences' do
 
       page.has_selector?('body.sentences.new')
       en_text = 'I love you'
-      exercise_title = Exercise.first.title
+      exercise_title = title_for Exercise.first
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click
@@ -101,7 +101,7 @@ describe 'Sentences' do
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
-      exercise_title = Exercise.last.title
+      exercise_title = title_for Exercise.last
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click
@@ -118,7 +118,7 @@ describe 'Sentences' do
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
-      exercise_title = Exercise.last.title
+      exercise_title = title_for Exercise.last
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
       find('.form-actions .btn-primary').click

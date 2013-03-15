@@ -25,6 +25,7 @@ RSpec.configure do |config|
   config.include(EmailSpec::Matchers)
   config.include RSpec::Matchers
   config.include Sorcery::TestHelpers::Rails
+  config.include ApplicationHelper
 
   FactoryGirl.definition_file_paths << File.expand_path("../factories", __FILE__)
   #FactoryGirl.find_definitions

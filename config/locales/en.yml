@@ -16,6 +16,14 @@ en:
 
   en: English
   ru: Russian
+  titles:
+    language:
+      en: English
+      ru: Russian
+    exercise:
+      first: First exercise
+      second: Second exercise
+      third: Third exercise
 
   time:
     formats:

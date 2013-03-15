@@ -110,14 +110,14 @@ module ApplicationHelper
       end
 
       options << content_tag(:option, parameters) do
-        exercise.title
+        title_for(exercise)
       end
     end
     options.html_safe
   end
 
-  def title_for(language)
-    t(language.slug)
+  def title_for(slugged)
+    I18n.t(['titles', slugged.class.model_name.downcase, slugged.slug].join('.'), default: slugged.title)
   end
 
   def native_language
