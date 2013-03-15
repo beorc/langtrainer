@@ -12,6 +12,10 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, :alert => exception.message
   end
 
+  def default_url_options
+    { locale: I18n.locale }
+  end
+
   private
 
   def handle_sign_in
