@@ -119,4 +119,31 @@ module ApplicationHelper
   def title_for(language)
     t(language.slug)
   end
+
+  def native_language
+    Language.find(session[:language_id] || build_native_language)
+  end
+
+  def build_native_language
+    session[:language_id] = logged_in? ? current_user.language.id : Language.russian.id
+    change_locale
+    session[:language_id]
+  end
+
+  def change_native_language(language)
+    session[:language_id] = language.id
+    if logged_in?
+      current_user.update_attribute 'language_id', language.id
+    end
+    change_locale
+    Language.find(session[:language_id])
+  end
+
+  def change_locale
+    if native_language.russian?
+      I18n.locale = :ru
+    else
+      I18n.locale = :en
+    end
+  end
 end

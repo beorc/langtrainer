@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
+  include ApplicationHelper
   protect_from_forgery
-  helper_method :native_language
 
   before_filter :handle_sign_in
   before_filter :store_current_url
@@ -10,11 +10,6 @@ class ApplicationController < ActionController::Base
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
-  end
-
-  def native_language
-    session[:language_id] = logged_in? ? current_user.language.id : Language.russian.id
-    Language.find(session[:language_id])
   end
 
   private
@@ -61,7 +56,7 @@ class ApplicationController < ActionController::Base
 
   def build_meta_tags
     current_controller = params[:controller]
-    Rails.logger.info "==Controller== #{current_controller}"
+    logger.info "==Controller== #{current_controller}"
     @@tags ||= {}
     tags = @@tags[current_controller] ||= t("meta_tags.#{current_controller}", default: '').clone
     tags.blank? && return
@@ -78,10 +73,10 @@ class ApplicationController < ActionController::Base
   end
 
   def set_locale
-    if native_language.russian?
-      I18n.locale = :ru
-    else
-      I18n.locale = :en
+    if params[:locale].present? && params[:locale] != native_language.slug
+      return change_native_language(Language.find(params[:locale]))
     end
+
+    change_locale if I18n.locale != native_language.slug
   end
 end
