@@ -35,7 +35,7 @@ describe Users::SentencesController do
   describe 'for member' do
 
     it 'does not allow to create new with maximum sentences created' do
-      FactoryGirl.create_list :sentence, User::SENTENCES_MAX, owner: @user, exercise: @public_exercise
+      FactoryGirl.create_list :sentence, Langtrainer.sentences[:max], owner: @user, exercise: @public_exercise
       login_user(@user)
       get :new
       response.should redirect_to(root_path)

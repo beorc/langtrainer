@@ -15,7 +15,7 @@ describe Users::ExercisesController do
   context 'for member' do
 
     it 'does not allow to GET new with maximum exercises created' do
-      FactoryGirl.create_list :exercise, User::EXERCISES_MAX, owner: @user
+      FactoryGirl.create_list :exercise, Langtrainer.exercises[:max], owner: @user
       login_user(@user)
       get :new
       response.should redirect_to(root_path)

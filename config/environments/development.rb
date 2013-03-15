@@ -52,4 +52,8 @@ Langtrainer::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.langtrainer = {}
+  config.langtrainer[:exercises] = { max: 3 }
+  config.langtrainer[:sentences] = { max: 30 }
 end

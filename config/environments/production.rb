@@ -91,4 +91,8 @@ Langtrainer::Application.configure do
   config.middleware.use ExceptionNotifier,
     sender_address: 'noreply.bairkan@gmail.com',
     exception_recipients: 'bairkan@gmail.com'
+
+  config.langtrainer = {}
+  config.langtrainer[:exercises] = { max: 5 }
+  config.langtrainer[:sentences] = { max: 100 }
 end

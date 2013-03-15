@@ -82,7 +82,7 @@ en:
       select_language: To start trainig, just select a language
       why:
         sentences:
-          title: Sentences building
+          title: Focus on sentences forming
           content: 'You form sentence on foreign language by transcript equivalent in your language'
         hints:
           title: Optional grammar information
