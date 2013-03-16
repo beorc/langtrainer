@@ -26,7 +26,8 @@ user.add_role :admin
 
 puts 'EXERCISES'
 [:first, :second, :third].each do |slug|
-  exercise = Exercise.find_or_create_by_slug slug: slug, title: I18n.t("exercises.#{slug}.title")
+  exercise = Exercise.find_or_create_by_slug(slug: slug, title: "#{slug.to_s.capitalize} exercise")
+  raise "Exercise not created: #{slug}: #{exercise.errors.messages.inspect}" unless exercise.valid?
 end
 
 require 'yaml'
@@ -38,7 +39,7 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   sentences.each do |sentence|
     created_sentence = Sentence.find_or_create_by_en_and_ru_and_exercise_id( en: sentence['english'],
                                                                              ru: sentence['russian'],
-                                                                             exercise: Exercise.find(sentence['exercise']),
+                                                                             exercise_id: Exercise.find(sentence['exercise']).id,
                                                                              atom: sentence['atom'] )
     raise "Sentence not created: #{sentence.inspect}: #{created_sentence.errors.messages.inspect}" unless created_sentence.valid?
   end

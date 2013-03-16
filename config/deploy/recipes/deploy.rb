@@ -3,7 +3,7 @@
 Capistrano::Configuration.instance(:must_exist).load do
 
   namespace :deploy do
-    DEFAULT_SYMLINKS = %w(config/database.yml config/mailer.yml config/application.yml public/uploads public/assets)
+    DEFAULT_SYMLINKS = %w(config/database.yml config/application.yml public/uploads public/assets)
     DEFAULT_SHARED_DIRS = 'public public/uploads config sockets'
 
     desc "Локальная компиляция и синхронизация ассетов с S3"
