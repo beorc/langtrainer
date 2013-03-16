@@ -1,3 +1,8 @@
+- { english: 'To see', russian: 'Видеть', atom: true, exercise: 'second' }
+- { english: 'To know', russian: 'Знать', atom: true, exercise: 'second' }
+- { english: 'To work', russian: 'Работать', atom: true, exercise: 'second' }
+- { english: 'To go', russian: 'Идти', atom: true, exercise: 'second' }
+
 # === see
 
 - { english: 'Will I see you?', russian: 'Я увижу тебя?', exercise: 'second' }

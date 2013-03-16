@@ -15,6 +15,7 @@ class Users::CorrectionsController < Users::UserProfileController
   end
 
   def update
+    params[:correction].delete(:sentence_id)
     if resource.update_attributes(params[:correction])
       render nothing: true, status: 200
     else

@@ -11,17 +11,16 @@ class Sentence < ActiveRecord::Base
   validates :sentence_id, uniqueness: { scope: :user_id }, allow_nil: true
 
   scope :not_corrections, -> { where(type: nil) }
-  scope :for_exercise, ->(exercise) { where(exercise_id: Exercise.find(exercise).id)}
+  scope :for_exercise, ->(exercise) { where(exercise_id: exercise.id)}
   scope :order_by_position, -> { order('position ASC') }
   scope :atoms, -> { where(atom: true) }
-  scope :complex, -> { where(atom: false) }
-
+  scope :compound, -> { where('atom IS NULL OR atom = false') }
   def self.for_user(user)
     where('user_id IS NULL OR user_id = ?', user.id) - joins(:corrections).where('corrections_sentences.user_id = ?', user.id)
   end
 
   def self.training_order
-    atoms + complex.sample(count)
+    atoms + compound.sample(count)
   end
 
   def correction_by(user)

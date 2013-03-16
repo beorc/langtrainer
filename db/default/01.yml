@@ -1,3 +1,8 @@
+- { english: 'A love', russian: 'Любовь', atom: true, exercise: 'first' }
+- { english: 'To speak', russian: 'Говорить', atom: true, exercise: 'first' }
+- { english: 'To think', russian: 'Думать', atom: true, exercise: 'first' }
+- { english: 'To come', russian: 'Приходить', atom: true, exercise: 'first' }
+
 # === love
 
 - { english: 'Will I love?', russian: 'Я буду любить?', exercise: 'first' }

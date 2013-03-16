@@ -1,3 +1,26 @@
+- { english: 'To take', russian: 'Брать', atom: true, exercise: 'third' }
+- { english: 'A car', russian: 'Машина', atom: true, exercise: 'third' }
+- { english: 'Afternoon', russian: 'После полудня', atom: true, exercise: 'third' }
+- { english: 'Morning', russian: 'Утро', atom: true, exercise: 'third' }
+- { english: 'Evening', russian: 'Вечер', atom: true, exercise: 'third' }
+- { english: 'Now', russian: 'Сейчас', atom: true, exercise: 'third' }
+- { english: 'Tomorrow', russian: 'Завтра', atom: true, exercise: 'third' }
+- { english: 'Yesterday', russian: 'Вчера', atom: true, exercise: 'third' }
+- { english: 'Dinner', russian: 'Обед', atom: true, exercise: 'third' }
+- { english: 'Meeting', russian: 'Встреча', atom: true, exercise: 'third' }
+- { english: 'Here', russian: 'Здесь', atom: true, exercise: 'third' }
+- { english: 'There', russian: 'Там', atom: true, exercise: 'third' }
+- { english: 'To want', russian: 'Хотеть', atom: true, exercise: 'third' }
+- { english: 'Like', russian: 'Нравиться', atom: true, exercise: 'third' }
+- { english: 'To dance', russian: 'Танцевать', atom: true, exercise: 'third' }
+- { english: 'To sleep', russian: 'Спать', atom: true, exercise: 'third' }
+- { english: 'A children', russian: 'Ребенок', atom: true, exercise: 'third' }
+- { english: 'A problem', russian: 'Проблема', atom: true, exercise: 'third' }
+- { english: 'A decision', russian: 'Решение', atom: true, exercise: 'third' }
+- { english: 'A desire', russian: 'Желание', atom: true, exercise: 'third' }
+- { english: 'My home', russian: 'Мой дом', atom: true, exercise: 'third' }
+- { english: 'My country', russian: 'Моя страна', atom: true, exercise: 'third' }
+
 # === take
 
 - { english: 'Will I take your car?', russian: 'Я буду брать твою машину?', exercise: 'third' }

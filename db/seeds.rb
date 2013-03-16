@@ -38,7 +38,8 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   sentences.each do |sentence|
     created_sentence = Sentence.find_or_create_by_en_and_ru_and_exercise_id( en: sentence['english'],
                                                                              ru: sentence['russian'],
-                                                                             exercise: Exercise.find(sentence['exercise']) )
+                                                                             exercise: Exercise.find(sentence['exercise']),
+                                                                             atom: sentence['atom'] )
     raise "Sentence not created: #{sentence.inspect}: #{created_sentence.errors.messages.inspect}" unless created_sentence.valid?
   end
   puts "Loaded sentences: #{sentences.count}"

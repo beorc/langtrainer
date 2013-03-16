@@ -26,8 +26,8 @@ ns.init = () ->
       return false
 
     input = $(@)
-    answer = input.val()
-    rightAnswer = ns.currentSentence.data('translation')
+    answer = input.val().toLowerCase()
+    rightAnswer = ns.currentSentence.data('translation').toLowerCase()
     if rightAnswer.indexOf(answer) >= 0
       input.css color:'green'
     else
