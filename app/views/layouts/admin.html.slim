@@ -1,7 +1,16 @@
 doctype 5
 html
   head
-    = render 'layouts/head'
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    = stylesheet_link_tag "admin", :media => "all"
+    = javascript_include_tag "application"
+    link rel='shortcut icon' href=asset_path('imports/favicon.ico')
+    = yield :load_controller_javascript
+    = include_gon
+    = display_meta_tags separator: '–', reverse: true
+    = csrf_meta_tags
+    = yield(:head)
+
   body class="#{controller_name} #{action_name}"
     = render 'layouts/admin/topbar'
     .constraints[data-skip-analytics="true"]

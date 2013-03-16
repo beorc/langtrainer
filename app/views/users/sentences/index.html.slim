@@ -18,8 +18,9 @@
         .exercises-list
           = render_exercises_select
 
-    .warning = t('.max_message', number: Langtrainer.sentences[:max])
-    .warning = t('.created_number_message', number: current_user.sentences.not_corrections.count)
+    - unless current_user.admin?
+      .warning = t('.max_message', number: Langtrainer.sentences[:max])
+      .warning = t('.created_number_message', number: current_user.sentences.not_corrections.count)
     .btn-group.sepH_a_line
       = link_to new_users_sentence_path(@exercise_filter), class: 'btn new-sentence' do
         i.icon-plus

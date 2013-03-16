@@ -1,5 +1,5 @@
 class Sentence < ActiveRecord::Base
-  attr_accessible :ru, :en, :exercise, :exercise_id, :atom
+  attr_accessible :ru, :en, :exercise_id, :atom
 
   after_create :assign_position, unless: 'position?'
 
@@ -7,7 +7,7 @@ class Sentence < ActiveRecord::Base
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
   has_many :corrections, class_name: 'Correction', foreign_key: 'sentence_id', dependent: :destroy
 
-  validates :exercise, existence: { both: false }
+  validates :exercise_id, existence: { both: false }
   validates :sentence_id, uniqueness: { scope: :user_id }, allow_nil: true
 
   scope :not_corrections, -> { where(type: nil) }

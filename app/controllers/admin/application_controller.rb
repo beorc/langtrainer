@@ -6,6 +6,6 @@ class Admin::ApplicationController < ApplicationController
   private
 
   def check_abilities
-    redirect_to root_path if cannot? :manage, :all
+    redirect_to root_path unless current_user.admin?
   end
 end
