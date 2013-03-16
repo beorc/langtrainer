@@ -44,6 +44,8 @@ end
 group :production do
   gem 'unicorn'
   gem 'exception_notification'
+  gem 'whenever', :require => false
+  gem 'db2fog'
 end
 
 group :development do
