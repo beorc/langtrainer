@@ -1,5 +1,8 @@
+.pull-left.vbrace-u {
+  margin-left: 10px;
+}
 .t10 .vbrace-u{
-	margin-right:75px;
+	//margin-right:75px;
 }
 .t10 .vbrace-place{
 	margin:10px 0;
@@ -11,7 +14,7 @@
 }
 
 .t5 .vbrace-u{
-  margin-right:75px;
+  //margin-right:75px;
 }
 .t5 .vbrace-place{
   margin:10px 0;
@@ -21,6 +24,18 @@
 .t5  .vbrace-d{
   padding-bottom:10px;
 }
+
+.cramp{
+  background:url(tables/crampon2.png) no-repeat scroll 100% 50% transparent;
+  height:197px;
+  padding-right:25px;
+  //margin-left:-55px;
+
+  p {
+    margin-top:86px;
+	}
+}
+
 
 .brace {background-image:none;}
 .brace tr td {background:image_url('tables/brace_r.gif') 100% 0 no-repeat; padding-top:15px;}
@@ -42,4 +57,33 @@
 
 .braced-bottom {
   clear: both;
+}
+
+.height9 {
+  line-height: 9em;
+}
+
+.height5 {
+  line-height: 5em;
+}
+
+.height4 {
+  line-height: 4em;
+}
+
+.height3 {
+  line-height: 3em;
+}
+
+.height5 {
+  line-height: 5em;
+}
+
+.lspacer { margin-left: 20px; }
+
+table {
+  .table th, .table td {
+     border-right: none;
+     border-left: none;
+  }
 }
