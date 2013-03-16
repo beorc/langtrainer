@@ -13,10 +13,12 @@
 
 @import "compass/reset";
 @import "bootstrap_and_overrides";
-@import "font-awesome";
+//@import "font-awesome";
 
 //@import "enkel/bootstrap";
 //@import "enkel/responsive";
+@import "font_awesome/_font-awesome-ie7.min";
+@import "font_awesome/_font-awesome";
 
 @import "compass/layout/sticky-footer";
 @import "imports/definitions";
