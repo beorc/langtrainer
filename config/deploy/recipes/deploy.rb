@@ -35,14 +35,6 @@ Capistrano::Configuration.instance(:must_exist).load do
         fetch(:custom_symlinks).each { |s, t| lns(s, t) }
       end
     end
-
-    task :notify_ratchetio, :roles => :app do
-      set :revision, `git log -n 1 --pretty=format:"%H"`
-      set :local_user, `whoami`
-      rails_env = fetch(:rails_env, 'production')
-      run "curl https://submit.ratchet.io/api/1/deploy/ -F access_token=#{ratchetio_token} -F environment=#{rails_env} -F revision=#{revision} -F local_username=#{local_user} >/dev/null 2>&1"
-    end
-
   end
 
     namespace :db do
