@@ -65,6 +65,15 @@ en:
     users/sentences:
       title: "User's sentences"
 
+    users/user_profile:
+      title: Personal account
+
+    user_registrations:
+      title: Credentials
+
+    exercises:
+      title: Exercises
+
     contacts:
       <<: *shared_meta_tags
       title: Feedback
@@ -76,7 +85,7 @@ en:
       exercises: Exercises
     application:
     user_profile:
-      title: Private account
+      title: Personal account
       credentials: Credentials
       sentences: Your sentences
       exercises: Your exercises

@@ -63,6 +63,15 @@ ru:
     users/sentences:
       title: Пользовательские предложения
 
+    users/user_profile:
+      title: Личный кабинет
+
+    user_registrations:
+      title: Профиль пользователя
+
+    exercises:
+      title: Упражнения
+
     contacts:
       <<: *shared_meta_tags
       title: Обратная связь
@@ -315,8 +324,6 @@ ru:
         username: Ник
         language_id: Язык
         created_at: Дата регистрации
-
-        
 
     errors:
       messages:

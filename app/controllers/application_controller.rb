@@ -4,17 +4,13 @@ class ApplicationController < ActionController::Base
 
   before_filter :handle_sign_in
   before_filter :store_current_url
-  before_filter :build_meta_tags, only: [:index, :show]
+  before_filter :build_meta_tags
   before_filter :prepare_gon
   before_filter :set_locale
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
   end
-
-  #def default_url_options
-    #{ locale: I18n.locale }
-  #end
 
   private
 
