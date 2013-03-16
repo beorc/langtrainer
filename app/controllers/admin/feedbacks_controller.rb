@@ -1,7 +1,4 @@
 class Admin::FeedbacksController < Admin::ApplicationController
-  before_filter :authenticate_user!
-  authorize_resource
-
   has_scope :page, default: 1
 
   def index

@@ -290,6 +290,10 @@ ru:
         few: исправления
         many: исправления
       feedback: oбратная связь
+      user:
+        one: пользователь
+        few: пользователи
+        many: пользователи
     attributes:
       sentence:
         en: Английский
@@ -306,6 +310,13 @@ ru:
         message: Сообщение
         email: E-mail
         created_at: Дата
+      user:
+        email: E-mail
+        username: Ник
+        language_id: Язык
+        created_at: Дата регистрации
+
+        
 
     errors:
       messages:

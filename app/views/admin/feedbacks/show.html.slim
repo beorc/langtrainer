@@ -3,11 +3,6 @@
 .admin-feedback
   h1.heading
     = truncate @feedback.message, length: 50, separator: ' '
-  - if @feedback.name.present?
-    div
-      strong = Feedback.human_attribute_name :name
-      ':&nbsp;
-      = @feedback.name
   div
     strong = Feedback.human_attribute_name :created_at
     ':&nbsp;
@@ -17,11 +12,6 @@
       strong = Feedback.human_attribute_name :email
       ':&nbsp;
       = @feedback.email
-  - if @feedback.phone.present?
-    div
-      strong = Feedback.human_attribute_name :phone
-      ':&nbsp;
-      = @feedback.phone
   div
     strong = Feedback.human_attribute_name :message
     ':&nbsp;

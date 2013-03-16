@@ -20,7 +20,7 @@ Langtrainer::Application.routes.draw do
 
   namespace :admin do
     get '/' => 'application#dashboard', as: :dashboard
-    resources :sentences
+    resources :users
     resources :feedbacks, only: [:index, :show, :destroy]
   end
 

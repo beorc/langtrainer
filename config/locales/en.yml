@@ -292,6 +292,10 @@ en:
         few: corrections
         many: corrections
       feedback: feedback
+      user:
+        one: user
+        few: users
+        many: users
     attributes:
       sentence:
         en: English
@@ -308,4 +312,9 @@ en:
         message: Message
         email: E-mail
         created_at: Date
+      user:
+        email: E-mail
+        username: Nickname
+        language_id: Language
+        created_at: Created at
 
