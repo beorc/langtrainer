@@ -186,6 +186,8 @@ en:
       hint: Hint
       correct: Change sentence
       create: Add new sentence
+    help:
+      hint: Help
 
   shared:
     omniauth_buttons:

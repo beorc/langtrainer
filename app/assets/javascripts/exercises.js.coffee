@@ -60,4 +60,9 @@ ns.init = () ->
 
   LANGTRAINER.lib.exercises_select.init()
 
+  $('a.accordion-toggle').click ->
+    targetId = $(@).attr('href')
+    $(targetId).collapse('toggle')
+    false
+
 

@@ -5,4 +5,9 @@ module ExercisesHelper
     end
     select_tag 'exercises', options
   end
+
+  def accordion_body_class(exercise)
+    return 'in' if exercise.id == @exercise.id
+    ''
+  end
 end

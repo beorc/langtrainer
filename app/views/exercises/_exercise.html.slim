@@ -1,0 +1,9 @@
+.accordion-group
+  .accordion-heading
+    = link_to "##{exercise.slug}", data: { parent: '#help-accordion' }, class: 'accordion-toggle' do
+      i.icon-question-sign
+      '&nbsp
+      = title_for(exercise)
+  .accordion-body.collapse id=exercise.slug class=accordion_body_class(exercise)
+    .accordion-inner
+      = render("exercises/#{@language.slug}/hint_#{exercise.slug}") rescue nil

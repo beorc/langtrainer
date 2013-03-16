@@ -181,9 +181,11 @@ ru:
       next: Дальше
       look: Узнать правильный ответ
       answer: Введите перевод
-      hint: Подсказка
+      hint: Помощь
       correct: Изменить предложение
       create: Добавить предложение
+    help:
+      hint: Помощь
 
   shared:
     omniauth_buttons:
