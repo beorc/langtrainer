@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/caarlos0/font-awesome-sass-rails.git
-  revision: 05a5ed40489c7bf7fb0b1a7f6e40508aed5601f3
-  specs:
-    font-awesome-sass-rails (3.0.0.1)
-      railties (>= 3.1.1)
-      sass-rails (>= 3.1.1)
-
-GIT
   remote: git://github.com/sosedoff/capistrano-unicorn.git
   revision: c2862dc2af256d31b2353cc223a608c05ac430b5
   specs:
@@ -313,7 +305,6 @@ DEPENDENCIES
   exception_notification
   factory_girl_rails (>= 4.2.0)
   figaro (>= 0.5.3)
-  font-awesome-sass-rails!
   friendly_id (~> 4.0.9)
   gon
   has_scope
