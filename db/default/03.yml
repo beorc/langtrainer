@@ -11,41 +11,11 @@
 - { english: 'Here', russian: 'Здесь', atom: true, exercise: 'third' }
 - { english: 'There', russian: 'Там', atom: true, exercise: 'third' }
 - { english: 'To want', russian: 'Хотеть', atom: true, exercise: 'third' }
-- { english: 'Like', russian: 'Нравиться', atom: true, exercise: 'third' }
-- { english: 'To dance', russian: 'Танцевать', atom: true, exercise: 'third' }
-- { english: 'To sleep', russian: 'Спать', atom: true, exercise: 'third' }
 - { english: 'A children', russian: 'Ребенок', atom: true, exercise: 'third' }
 - { english: 'A problem', russian: 'Проблема', atom: true, exercise: 'third' }
 - { english: 'A decision', russian: 'Решение', atom: true, exercise: 'third' }
 - { english: 'A desire', russian: 'Желание', atom: true, exercise: 'third' }
-- { english: 'My home', russian: 'Мой дом', atom: true, exercise: 'third' }
-- { english: 'My country', russian: 'Моя страна', atom: true, exercise: 'third' }
 
-# === take
-
-- { english: 'Will I take your car?', russian: 'Я буду брать твою машину?', exercise: 'third' }
-- { english: 'I will take your car', russian: 'Я буду брать твою машину', exercise: 'third' }
-- { english: 'I will not take your car', russian: 'Я не буду брать твою машину', exercise: 'third' }
-
-- { english: 'Do you take my car?', russian: 'Ты берешь мою машину?', exercise: 'third' }
-- { english: 'You take my car', russian: 'Ты берешь мою машину', exercise: 'third' }
-- { english: 'You do not take my car', russian: 'Ты не берешь мою машину', exercise: 'third' }
-
-- { english: 'Did we take their car?', russian: 'Мы брали их машину?', exercise: 'third' }
-- { english: 'We took their car', russian: 'Мы брали их машину', exercise: 'third' }
-- { english: 'We did not take their car', russian: 'Мы не брали их машину', exercise: 'third' }
-
-- { english: 'Will they take our car?', russian: 'Они будут брать нашу машину?', exercise: 'third' }
-- { english: 'They will take our car', russian: 'Они будут брать нашу машину', exercise: 'third' }
-- { english: 'They will not take our car', russian: 'Они не будут брать нашу машину', exercise: 'third' }
-
-- { english: 'Does he take her car?', russian: 'Он берет ее машину?', exercise: 'third' }
-- { english: 'He take her car', russian: 'Он берет ее машину', exercise: 'third' }
-- { english: 'He does not take her car', russian: 'Он не берет ее машину', exercise: 'third' }
-
-- { english: 'Did she take his car?', russian: 'Она брала его машину?', exercise: 'third' }
-- { english: 'She took his car', russian: 'Она брала его машину', exercise: 'third' }
-- { english: 'She did not take his car', russian: 'Она не брала его машину', exercise: 'third' }
 
 # === to be friend
 
@@ -134,35 +104,6 @@
 - { english: 'Where he is?', russian: 'Где он?', exercise: 'third' }
 - { english: 'Why was she there?', russian: 'Почему она была там?', exercise: 'third'}
 
-# === when go there here
-
-- { english: 'When will I go there?', russian: 'Когда я пойду туда?', exercise: 'third' }
-- { english: 'When was we go here?', russian: 'Когда мы ходили сюда?', exercise: 'third' }
-- { english: 'When will they go there?', russian: 'Когда они пойдут туда?', exercise: 'third' }
-- { english: 'When was she go here?', russian: 'Когда она ходила сюда?', exercise: 'third' }
-
-# === want/like to dance to sleep
-
-- { english: 'Do you like to dance?', russian: 'Тебе нравится танцевать?', exercise: 'third' }
-- { english: 'You like to dance', russian: 'Тебе нравится танцевать', exercise: 'third' }
-- { english: 'You do not like to dance', russian: 'Тебе не нравится танцевать', exercise: 'third' }
-
-- { english: 'Did we like to dance?', russian: 'Нам нравилось танцевать?', exercise: 'third' }
-- { english: 'We liked to dance', russian: 'Нам нравилось танцевать', exercise: 'third' }
-- { english: 'We did not like to dance', russian: 'Нам не нравилось танцевать', exercise: 'third' }
-
-- { english: 'Will they want to sleep?', russian: 'Они будут хотеть спать?', exercise: 'third' }
-- { english: 'They will want to sleep', russian: 'Они будут хотеть спать', exercise: 'third' }
-- { english: 'They will not want to sleep', russian: 'Они не будут хотеть спать', exercise: 'third' }
-
-- { english: 'Does he like to dance?', russian: 'Ему нравится танцевать?', exercise: 'third' }
-- { english: 'He likes to dance', russian: 'Ему нравится танцевать', exercise: 'third' }
-- { english: 'He does not like to dance', russian: 'Ему не нравится танцевать', exercise: 'third' }
-
-- { english: 'Did she want to sleep?', russian: 'Она хотела спать?', exercise: 'third' }
-- { english: 'She wanted to sleep', russian: 'Она хотела спать', exercise: 'third' }
-- { english: 'She did not want to sleep', russian: 'Она не хотела спать', exercise: 'third' }
-
 # === it is their/our/her/his/your/my children
 
 - { english: 'It is my children', russian: 'Это мой ребенок', exercise: 'third' }
@@ -171,4 +112,15 @@
 - { english: 'It is her desire', russian: 'Это ее желание', exercise: 'third' }
 - { english: 'It is our home', russian: 'Это наш дом', exercise: 'third' }
 - { english: 'It is their country', russian: 'Это их страна', exercise: 'third' }
+
+- { english: 'He is at home', russian: 'Он дома', exercise: 'third' }
+- { english: 'We were at the lecture', russian: 'Мы были на лекции', exercise: 'third' }
+- { english: 'She is an engineer', russian: 'Она инженер', exercise: 'third' }
+- { english: 'He is reading a newspaper now', russian: 'Он читает сейчас газету', exercise: 'third' }
+- { english: 'The book was published last week', russian: 'Книга опубликована в прошлом году', exercise: 'third' }
+- { english: 'I am to do the work at once', russian: 'Я должен сделать эту работу немедленно', exercise: 'third' }
+- { english: 'We were to meet in the evening', russian: 'Мы должны были встретиться вечером', exercise: 'third' }
+- { english: 'There are some interesting articles in this magazine', russian: 'В этом журнале есть несколько интересных статей', exercise: 'third' }
+- { english: 'The train is to arrive at 5', russian: 'Поезд должен прибыть в 5', exercise: 'third' }
+- { english: 'I was to send him a letter, but I forgot', russian: 'Мне нужно было послать ему письмо, но я забыл', exercise: 'third' }
 

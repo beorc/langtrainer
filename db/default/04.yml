@@ -1,0 +1,38 @@
+- { english: 'A book.', russian: 'Книга', atom: true, exercise: 'fourth' }
+- { english: 'A pencil.', russian: 'Карандаш', atom: true, exercise: 'fourth' }
+- { english: 'A tie', russian: 'Галстук', atom: true, exercise: 'fourth' }
+- { english: 'Saw', 'Видел', atom: true, exercise: 'fourth' }
+- { english: 'Following', russian: 'Следующие', atom: true, exercise: 'fourth' }
+- { english: 'A question', russian: 'Вопрос', atom: true, exercise: 'fourth' }
+- { english: 'First', russian: 'Первый', atom: true, exercise: 'fourth' }
+- { english: 'Clever', russian: 'Умный', atom: true, exercise: 'fourth' }
+- { english: 'Young', russian: 'Молодой', atom: true, exercise: 'fourth' }
+- { english: 'Interesting', russian: 'Интересный', atom: true, exercise: 'fourth' }
+- { english: 'Room', russian: 'Комната', atom: true, exercise: 'fourth' }
+- { english: 'Grandmother', russian: 'Бабушка', atom: true, exercise: 'fourth' }
+
+- { english: 'Give me a book, please', russian: 'Дайте мне, пожалуйста, книгу', exercise: 'fourth' }
+- { english: 'Yesterday I met my friend with a girl. The girl is a student of the University. She lives in the house not far from us.', russian: 'Вчера я встретил своего друга с девушкой. Эта девушка студентка универститета. Она живет в доме недалеко от нас.', exercise: 'fourth' }
+- { english: 'This is a pencil. It is a red pencil. The red pencil is on the table.', russian: 'Это карандаш. Это красный карандаш. Красный карандаш на столе.', exercise: 'fourth' }
+- { english: 'This is a black tie and that is a white tie.', russian: 'Это черный галстук, а то белый галстук', exercise: 'fourth' }
+- { english: 'This is my room. The room is large and clean.', russian: 'Это моя комната. Команата большая и чистая.', exercise: 'fourth' }
+- { english: 'The Black Sea is in the South of our Country. I live in Russia but my uncle lives in Canada.', russian: 'Черное море находится на юге нашей страны. Я живу в России, но мой дядя живет в Канаде.', exercise: 'fourth' }
+- { english: 'The Black Sea is in the South of our Country. I live in Russia but my uncle lives in Canada.', russian: 'Черное море находится на юге нашей страны. Я живу в России, но мой дядя живет в Канаде.', exercise: 'fourth' }
+- { english: 'Do you like tea or coffee? The coffee is cold.', russian: 'Вам нравится чай или кофе? Кофе холодный.', exercise: 'fourth' }
+- { english: 'We are friends.', russian: 'Мы друзья.', exercise: 'fourth' }
+- { english: 'Nick and Tom are doctors.', russian: 'Ник и Том доктора.', exercise: 'fourth' }
+- { english: 'Give me your plan, please.', russian: 'Дайте мне ваш план, пожалуйста.', exercise: 'fourth' }
+- { english: 'There are some books on the table.', russian: 'На столе есть несколько книг.', exercise: 'fourth' }
+- { english: 'Where is room number six?', russian: 'Где комната номер шесть?', exercise: 'fourth' }
+- { english: 'I have five English books', russian: 'У меня есть пять английских книг.', exercise: 'fourth' }
+- { english: 'Gagarin is the first cosmonaut of the world.', russian: 'Гагарин - первый космонавт в мире.', exercise: 'fourth' }
+- { english: 'Answer the following questions.', russian: 'Ответьте на следующие вопросы.', exercise: 'fourth' }
+- { english: 'She is the only child in the family.', russian: 'Она единственный ребенок в семье.', exercise: 'fourth' }
+- { english: 'She is the only child in the family.', russian: 'Она единственный ребенок в семье.', exercise: 'fourth' }
+- { english: 'He works in the North.', russian: 'Он работает на севере.', exercise: 'fourth' }
+- { english: 'The Browns spend their holidays in Italy.', russian: 'Брауны проводят свои праздники в Италии.', exercise: 'fourth' }
+- { english: 'There are special schools for the blind.', russian: 'Там есть специальные школы для слепых.', exercise: 'fourth' }
+- { english: 'My brother is a doctor. He is a clever young man.', russian: 'Мой брат - доктор. Он умный молодой человек.', exercise: 'fourth' }
+- { english: 'There is a new music school in our street.', russian: 'На нашей улице есть новая музыкальная школа.', exercise: 'fourth' }
+- { english: 'Tom is such a nice boy.', russian: 'Том такой милый мальчик.', exercise: 'fourth' }
+- { english: 'My grandmother, a schoolteacher, is on pension now.', russian: 'Моя бабушка, школьный учитель, сейчас на пенсии.', exercise: 'fourth' }

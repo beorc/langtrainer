@@ -1,0 +1,58 @@
+- { english: 'In a hour', russian: 'Через час', atom: true, exercise: 'fifth' }
+- { english: 'In a week', russian: 'Через неделю', atom: true, exercise: 'fifth' }
+- { english: 'In winter', russian: 'Зимой', atom: true, exercise: 'fifth' }
+- { english: 'In December', russian: 'В декабре', atom: true, exercise: 'fifth' }
+- { english: "At 5 o'clock", russian: 'В 5 часов', atom: true, exercise: 'fifth' }
+- { english: 'Large', russian: 'Большой', atom: true, exercise: 'fifth' }
+- { english: 'Larger', russian: 'Больше', atom: true, exercise: 'fifth' }
+- { english: 'The largest', russian: 'Наибольший', atom: true, exercise: 'fifth' }
+- { english: 'Younger', russian: 'Моложе', atom: true, exercise: 'fifth' }
+- { english: 'Month', russian: 'Месяц', atom: true, exercise: 'fifth' }
+- { english: 'Ago', russian: 'Тому назад', atom: true, exercise: 'fifth' }
+- { english: 'Last', russian: 'Последний', atom: true, exercise: 'fifth' }
+- { english: 'Next', russian: 'Следующий', atom: true, exercise: 'fifth' }
+- { english: 'Common', russian: 'Общий', atom: true, exercise: 'fifth' }
+
+- { english: 'I saw a new film yesterday. The film is not very interesting.', russian: 'Я видел новый фильм вчера. Фильм не очень интересный.', exercise: 'fifth' }
+- { english: 'Give me the books that I gave you yesterday', russian: 'Дайте мне книги, которые я дал вам вчера', exercise: 'fifth' }
+- { english: "I get up at 7 o'clock in the morning and go to bed at 11 o'clock in the evening.", russian: 'Я просыпаюсь в 7 утра и ложусь спать в 11 вечера.', exercise: 'fifth' }
+- { english: 'Summer is the most beautiful season of year. There are many flowers in the fields and gardens. The flowers are very beautiful in your garden.', russian: 'Лето - самый красивое время года. В полях и садах много цветов. Цветы в твоем саду очень красивые.', exercise: 'fifth' }
+- { english: 'Winter begins in December', russian: 'Зима начинается в декабре', exercise: 'fifth' }
+- { english: 'Moscow is the largest city in Russia.', russian: 'Москва - самый большой город в России.', exercise: 'fifth' }
+- { english: 'The sky is blue and the sun shines brightly in summer.', russian: 'Летом небо голубое и солнце светит ярко.', exercise: 'fifth' }
+- { english: 'The air is fresh and the ground covered with leaves in autumn.', russian: 'Летом небо голубое и солнце светит ярко.', exercise: 'fifth' }
+- { english: 'Yesterday I spoke worse than today.', russian: 'Вчера я говорил хуже чем сегодня', exercise: 'fifth' }
+- { english: 'Today I speak better than yesterday.', russian: 'Сегодня я говорю лучше чем вчера', exercise: 'fifth' }
+- { english: 'I am younger than him.', russian: 'Я моложе его', exercise: 'fifth' }
+- { english: 'November is shorter than October.', russian: 'Ноябрь короче октября.', exercise: 'fifth' }
+- { english: 'February is the shortest month.', russian: 'Февраль - самый короткий месяц в году.', exercise: 'fifth' }
+- { english: 'I will come in 3 days.', russian: 'Я приду через 3 дня.', exercise: 'fifth' }
+- { english: 'He went 3 days ago.', russian: 'Он ушел 3 дня назад.', exercise: 'fifth' }
+- { english: 'I will see you in a week.', russian: 'Я увижу тебя через неделю.', exercise: 'fifth' }
+- { english: 'In a hour we will go home.', russian: 'Через час мы пойдем домой.', exercise: 'fifth' }
+- { english: 'This boy is as tall as my brother.', russian: 'Этот мальчик такой же высокий как мой брат.', exercise: 'fifth' }
+- { english: 'This room is not so light as that one.', russian: 'Эта комната не такая светлая как та.', exercise: 'fifth' }
+- { english: 'She does not know Moscow as well as we do.', russian: 'Она знает Москву не так хорошо, как мы.', exercise: 'fifth' }
+- { english: 'The earlier we leave, the sooner we arrive.', russian: 'Чем раньше мы отправимся, тем раньше приедем.', exercise: 'fifth' }
+- { english: 'The Baltic Sea is colder than the Black Sea.', russian: 'Балтийское море холоднее Черного.', exercise: 'fifth' }
+- { english: 'This book is as interesting as that one.', russian: 'Эта книга такая же интересная, как та.', exercise: 'fifth' }
+- { english: 'The second text is not so long as the first one.', russian: 'Второй текст не такой длинный, как первый.', exercise: 'fifth' }
+- { english: 'The more we speak English the better.', russian: 'Чем больше мы говорим по-английски, тем лучше.', exercise: 'fifth' }
+- { english: 'The earlier you get up the more you can do.', russian: 'Чем раньше вы встанете, тем больше сможете сделать.', exercise: 'fifth' }
+- { english: 'The Missisipi is longest river in the World.', russian: 'Миссисипи - длиннейшая река в мире.', exercise: 'fifth' }
+- { english: 'My cigarettes are worse than yours.', russian: 'Мои сигареты хуже ваших.', exercise: 'fifth' }
+- { english: 'The battle of Waterloo was the greatest battle of all times.', russian: 'Битва при Ватерлоо была величайшей битвой всех времен.', exercise: 'fifth' }
+- { english: 'This plan is most practical of all.', russian: 'Этот план самый практичный из всех.', exercise: 'fifth' }
+- { english: 'He is stronger than his brother.', russian: 'Он сильнее своего брата.', exercise: 'fifth' }
+- { english: 'Our house is as low as yours.', russian: 'Наш дом такой же низкий, как ваш.', exercise: 'fifth' }
+- { english: 'This method is more efficient than the common one.', russian: 'Этот метод эффективнее общего.', exercise: 'fifth' }
+- { english: 'October is colder than June', russian: 'Октябрь холоднее июня.', exercise: 'fifth' }
+
+- { english: 'Are the cities in Scotland as large as the cities of England?', russian: 'Города Шотландии такие же большие, как города Англии?', exercise: 'fifth' }
+- { english: 'Is the Volga longer than the Don?', russian: 'Волга длиннее чем Дон?', exercise: 'fifth' }
+- { english: 'Which is the shortest month of the year?', russian: 'Какой месяц самый короткий в году?', exercise: 'fifth' }
+- { english: 'Which is the greatest city in Great Britain?', russian: 'Какой город самый большой в Великобритании?', exercise: 'fifth' }
+- { english: 'Which is most beautiful square in Moscow?', russian: 'Какая площадь самая красивая в Москве?', exercise: 'fifth' }
+- { english: 'Which season is the coldest?', russian: 'Какой сезон самый холодный?', exercise: 'fifth' }
+- { english: 'Where is it better to spend holiday: in the South or in the North?', russian: 'Где лучше провести выходной: на юге или на севере?', exercise: 'fifth' }
+- { english: 'Where is it better to live: in the city or in the countryside?', russian: 'Где лучше жить: в городе или за городом?', exercise: 'fifth' }

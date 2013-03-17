@@ -89,5 +89,58 @@
 - { english: 'What does he bring her from London?', russian: 'Что он везет ей из Лондона?', exercise: 'second' }
 - { english: 'What did she bring him from London?', russian: 'Что она везла ему из Лондона?', exercise: 'second' }
 
-# === leave
-# === hear
+# === when go there here
+
+- { english: 'When will I go there?', russian: 'Когда я пойду туда?', exercise: 'second' }
+- { english: 'When was we go here?', russian: 'Когда мы ходили сюда?', exercise: 'second' }
+- { english: 'When will they go there?', russian: 'Когда они пойдут туда?', exercise: 'second' }
+- { english: 'When was she go here?', russian: 'Когда она ходила сюда?', exercise: 'second' }
+
+# === want/like to dance to sleep
+
+- { english: 'Do you like to dance?', russian: 'Тебе нравится танцевать?', exercise: 'second' }
+- { english: 'You like to dance', russian: 'Тебе нравится танцевать', exercise: 'second' }
+- { english: 'You do not like to dance', russian: 'Тебе не нравится танцевать', exercise: 'second' }
+
+- { english: 'Did we like to dance?', russian: 'Нам нравилось танцевать?', exercise: 'second' }
+- { english: 'We liked to dance', russian: 'Нам нравилось танцевать', exercise: 'second' }
+- { english: 'We did not like to dance', russian: 'Нам не нравилось танцевать', exercise: 'second' }
+
+- { english: 'Will they want to sleep?', russian: 'Они будут хотеть спать?', exercise: 'second' }
+- { english: 'They will want to sleep', russian: 'Они будут хотеть спать', exercise: 'second' }
+- { english: 'They will not want to sleep', russian: 'Они не будут хотеть спать', exercise: 'second' }
+
+- { english: 'Does he like to dance?', russian: 'Ему нравится танцевать?', exercise: 'second' }
+- { english: 'He likes to dance', russian: 'Ему нравится танцевать', exercise: 'second' }
+- { english: 'He does not like to dance', russian: 'Ему не нравится танцевать', exercise: 'second' }
+
+- { english: 'Did she want to sleep?', russian: 'Она хотела спать?', exercise: 'second' }
+- { english: 'She wanted to sleep', russian: 'Она хотела спать', exercise: 'second' }
+- { english: 'She did not want to sleep', russian: 'Она не хотела спать', exercise: 'second' }
+
+# === take
+
+- { english: 'Will I take your car?', russian: 'Я буду брать твою машину?', exercise: 'second' }
+- { english: 'I will take your car', russian: 'Я буду брать твою машину', exercise: 'second' }
+- { english: 'I will not take your car', russian: 'Я не буду брать твою машину', exercise: 'second' }
+
+- { english: 'Do you take my car?', russian: 'Ты берешь мою машину?', exercise: 'second' }
+- { english: 'You take my car', russian: 'Ты берешь мою машину', exercise: 'second' }
+- { english: 'You do not take my car', russian: 'Ты не берешь мою машину', exercise: 'second' }
+
+- { english: 'Did we take their car?', russian: 'Мы брали их машину?', exercise: 'second' }
+- { english: 'We took their car', russian: 'Мы брали их машину', exercise: 'second' }
+- { english: 'We did not take their car', russian: 'Мы не брали их машину', exercise: 'second' }
+
+- { english: 'Will they take our car?', russian: 'Они будут брать нашу машину?', exercise: 'second' }
+- { english: 'They will take our car', russian: 'Они будут брать нашу машину', exercise: 'second' }
+- { english: 'They will not take our car', russian: 'Они не будут брать нашу машину', exercise: 'second' }
+
+- { english: 'Does he take her car?', russian: 'Он берет ее машину?', exercise: 'second' }
+- { english: 'He take her car', russian: 'Он берет ее машину', exercise: 'second' }
+- { english: 'He does not take her car', russian: 'Он не берет ее машину', exercise: 'second' }
+
+- { english: 'Did she take his car?', russian: 'Она брала его машину?', exercise: 'second' }
+- { english: 'She took his car', russian: 'Она брала его машину', exercise: 'second' }
+- { english: 'She did not take his car', russian: 'Она не брала его машину', exercise: 'second' }
+
