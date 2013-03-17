@@ -132,7 +132,7 @@
 - { english: 'Where did we wanted to be?', russian: 'Где мы хотели быть?', exercise: 'third' }
 - { english: 'Why they will not be there tomorrow?', russian: 'Почему их там не будет завтра?', exercise: 'third' }
 - { english: 'Where he is?', russian: 'Где он?', exercise: 'third' }
-- { english: 'Why she was there?', russian: 'Почему она была там?', exercise: 'third'}
+- { english: 'Why was she there?', russian: 'Почему она была там?', exercise: 'third'}
 
 # === when go there here
 

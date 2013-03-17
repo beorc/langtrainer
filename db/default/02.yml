@@ -21,9 +21,9 @@
 - { english: 'They will see us', russian: 'Они увидят нас', exercise: 'second' }
 - { english: 'They will not see us', russian: 'Они не увидят нас', exercise: 'second' }
 
-- { english: 'Does he see her?', russian: 'Он видел ее?', exercise: 'second' }
-- { english: 'He sees her', russian: 'Он видел ее', exercise: 'second' }
-- { english: 'He does not see her', russian: 'Он не видел ее', exercise: 'second' }
+- { english: 'Does he see her?', russian: 'Он видит ее?', exercise: 'second' }
+- { english: 'He sees her', russian: 'Он видит ее', exercise: 'second' }
+- { english: 'He does not see her', russian: 'Он не видит ее', exercise: 'second' }
 
 - { english: 'Did she see him?', russian: 'Она видела его?', exercise: 'second' }
 - { english: 'She saw him', russian: 'Она видела его', exercise: 'second' }
