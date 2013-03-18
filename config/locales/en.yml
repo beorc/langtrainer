@@ -124,10 +124,10 @@ en:
           title: Real-time validation
           content: Validation is performed immediately in process of entering text
         changes:
-          title: You have ability to change
+          title: You can to change
           content: If you notice a mistake or want to use alter version, simply change the text of sentence
         extensions:
-          title: You have ability to extend
+          title: You can to extend
           content: You can add new exercises and sentences for training to make it more interesting
 
   email_confirmation:
