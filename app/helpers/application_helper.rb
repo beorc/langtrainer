@@ -125,7 +125,7 @@ module ApplicationHelper
   end
 
   def build_native_language
-    session[:language_id] = logged_in? ? current_user.language.id : Language.russian.id
+    session[:language_id] = logged_in? ? current_user.language.id : Language.find(extract_locale_from_tld).id
     change_locale
     session[:language_id]
   end
@@ -145,5 +145,11 @@ module ApplicationHelper
     else
       I18n.locale = :en
     end
+  end
+
+  def extract_locale_from_tld
+    zone = request.host.split('.').last
+    return :ru if zone == 'ru'
+    :en
   end
 end
