@@ -57,8 +57,7 @@ class ApplicationController < ActionController::Base
   def build_meta_tags
     current_controller = params[:controller]
     logger.info "==Controller== #{current_controller}"
-    @@tags ||= {}
-    tags = @@tags[current_controller] ||= t("meta_tags.#{current_controller}", default: t(:app_name)).clone
+    tags = t("meta_tags.#{current_controller}", default: t(:app_name)).clone
     tags.blank? && return
 
     set_meta_tags tags
