@@ -53,7 +53,7 @@ class User < ActiveRecord::Base
   def assign_default_role
     return unless roles.empty?
     roles << Role.default
-    save
+    save(:validate => false)
   end
 
   def admin?
@@ -64,7 +64,7 @@ class User < ActiveRecord::Base
 
   def assign_default_languages
     self.language_id = Language.russian
-    save!
+    save(:validate => false)
   end
 
   def email_required?
