@@ -10,7 +10,7 @@ class OauthsController < ApplicationController
 
   def create_from(provider_name)
     user = super
-    user.assign_default_role
+    user.after_oauth_sign_in!
     user
   end
 

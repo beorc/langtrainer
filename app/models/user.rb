@@ -36,11 +36,17 @@ class User < ActiveRecord::Base
     reset_authentication_token!
   end
 
+  def after_oauth_sign_in!
+    assign_default_languages
+    assign_default_role
+  end
+
   def title
     email || username
   end
 
   def language
+    assign_default_languages if language_id.nil?
     Language.find(language_id)
   end
 
