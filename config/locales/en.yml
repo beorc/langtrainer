@@ -112,8 +112,8 @@ en:
       select_language: To start trainig, just select a language
       why:
         sentences:
-          title: Focus on sentences forming
-          content: 'You form sentence on foreign language by transcript equivalent in your language'
+          title: Focus on sentence forming
+          content: 'You form sentences on foreign language based on equivalent in your language'
         hints:
           title: Optional grammar information
           content: 'Grammar information for each exercise is based on tables and can be hidden at any time by you'
@@ -122,7 +122,7 @@ en:
           content: Each exercise starts with learning new words
         correction:
           title: Real-time validation
-          content: Validation is performed immediately in process of entering text
+          content: Validation is performed immediately while you entering the text
         changes:
           title: You can to change
           content: If you notice a mistake or want to use alter version, simply change the text of sentence
@@ -261,31 +261,32 @@ en:
     token_authentication:
       success: You have successfully signed in
       fail: Wrong authorization token
-      email_sent: На почтовый адрес '%{email}' отправлено письмо со ссылкой для входа на сайт
+      email_sent: The message with link for sign in is sent to e-mail '%{email}'
     user_registration:
-      success: Профиль пользователя обновлен
+      success: Information delivered successfully
     email_confirmation:
-      success: Адрес электронной почты изменен
-      fail: Ключ для смены адреса устарел
-      email_sent: На почтовый адрес '%{email}' отправлено сообщение для подтверждения изменений
+      success: Your e-mail successfully changed
+      fail: The key for address change is out of date
+      email_sent: The message with link for changes confirmation is sent to e-mail '%{email}'
     user_sessions:
-      logged_out: Вы вышли с сайта
+      logged_out: You signed out from Langtrainer
     oauths:
-      logged_in: Вы вошли на сайт через %{provider}
+      logged_in: You signed in through %{provider}
+      error: There was an error when signing in through %{provider}
 
     exercise:
       create:
-        success: Упражнение создано
+        success: The exercise successfully created
       update:
-        success: Упражнение изменено
+        success: The exercise successfully updated
     sentence:
       create:
-        success: Предложение создано
+        success: The sentence successfully created
       update:
-        success: Предложение изменено
+        success: The sentence successfully updated
     feedback:
       create:
-        success: Сообщение отправлено
+        success: The message sent
 
     users/exercises:
       access_denied: Access denied
