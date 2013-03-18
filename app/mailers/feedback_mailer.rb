@@ -1,11 +1,10 @@
-class FeedbackMailer < ActionMailer::Localized
-  def send_notification_email(emails, locale, options)
-    @locale = locale
+class FeedbackMailer < ActionMailer::Base
+  def send_notification_email(emails, options)
+    options[:url_options][:host] = Langtrainer.localized_url
     @options = options
     @options[:url] = admin_feedback_url(options[:url_options])
 
-    subject = I18n.t('mailers.feedback.subject')
-    mail(to: emails, subject: subject,
-                    template_name: localized_template(__method__))
+    subject = I18n.t('mailer.feedback.subject')
+    mail(to: emails, subject: subject)
   end
 end

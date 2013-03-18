@@ -38,6 +38,7 @@ module Langtrainer
   end
 
   def self.localized_url
+    return ENV['HOST_DEV'] unless Rails.env.production?
     config.localized_url[I18n.locale.to_s]
   end
 

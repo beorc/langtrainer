@@ -13,8 +13,8 @@ class Feedback < ActiveRecord::Base
   def send_notifications
     emails = ::User.admins.map(&:email).compact
 
-    FeedbackMailer.delay.send_notification_email(emails, I18n.locale, url_options: { id: id },
-                                                                      email: email,
-                                                                      message: message)
+    FeedbackMailer.delay.send_notification_email(emails, url_options: { id: id },
+                                                         email: email,
+                                                         message: message)
   end
 end
