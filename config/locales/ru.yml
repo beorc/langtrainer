@@ -270,6 +270,7 @@ ru:
       logged_out: Вы вышли с сайта
     oauths:
       logged_in: Вы вошли на сайт через %{provider}
+      error: Возникла ошибка при входе через %{provider}
 
     exercise:
       create:

@@ -9,12 +9,12 @@ Rails.application.config.sorcery.configure do |config|
   config.twitter.key = oauth_providers['twitter']['key']
   config.twitter.secret = oauth_providers['twitter']['secret']
   config.twitter.callback_url = "http://#{host}/oauth/callback?provider=twitter"
-  config.twitter.user_info_mapping = {:username => "screen_name"}
+  config.twitter.user_info_mapping = {:username => "name"}
 
-  #config.facebook.key = oauth_providers['facebook']['key']
-  #config.facebook.secret = oauth_providers['facebook']['secret']
-  #config.facebook.callback_url = "http://#{host}/oauth/callback?provider=facebook"
-  #config.facebook.user_info_mapping = {:username => "name"}
+  config.facebook.key = oauth_providers['facebook']['key']
+  config.facebook.secret = oauth_providers['facebook']['secret']
+  config.facebook.callback_url = "http://#{host}/oauth/callback?provider=facebook"
+  config.facebook.user_info_mapping = {:username => "name"}
 
   config.google.key = oauth_providers['google']['key']
   config.google.secret = oauth_providers['google']['secret']
