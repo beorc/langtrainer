@@ -208,6 +208,9 @@ en:
       hint: Hint
       correct: Change sentence
       create: Add new sentence
+      accept: Skip
+      decline: Don't skip
+      skip_atoms: At the start of the exercise you learn the words that will be used in the construction of sentences. Skip this part of the class?
     help:
       hint: Help
 

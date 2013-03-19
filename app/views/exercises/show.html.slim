@@ -9,6 +9,16 @@
           = render_exercises_select
 
 .container.workspace
+  .container
+    .offset3.span6
+      .alert.skip-atoms
+        button type="button" class="close" data-dismiss="alert"
+          '&times;
+        .message
+          = t('.skip_atoms')
+        .actions
+          = link_to t('.accept'), '#', class: 'btn accept'
+          = link_to t('.decline'), '#', class: 'btn decline'
   .container.question = render partial: 'sentence', object: @sentences.first
   .sentences.hide  data-creation-url=new_users_sentence_path(exercise: @exercise)
     = render partial: 'sentence', collection: @sentences

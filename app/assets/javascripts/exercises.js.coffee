@@ -58,6 +58,16 @@ ns.init = () ->
     window.location = url
     false
 
+  $('.skip-atoms a.accept').click ->
+    $(@).closest('.skip-atoms').remove()
+    ns.currentSentence = $('.sentences .sentence[data-atom=true]:last')
+    ns.rollSentence()
+    false
+
+  $('.skip-atoms a.decline').click ->
+    $(@).closest('.skip-atoms').remove()
+    false
+
   LANGTRAINER.lib.exercises_select.init()
 
   $('a.accordion-toggle').click ->
