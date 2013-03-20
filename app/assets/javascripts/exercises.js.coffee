@@ -6,12 +6,19 @@ ns.rollSentence = () ->
   ns.currentSentence = ns.currentSentence.next()
 
   if ns.currentSentence.length == 0
-    ns.currentSentence = $('.sentences .sentence:first')
+    ns.currentSentence = $('.sentences .sentence[data-atom=false]:first')
 
   question = $('.question').empty()
   ns.currentSentence.clone().appendTo question
 
+
+  unless ns.currentSentence.data('atom')
+    ns.hideSkipAtoms()
+
   $('.answer').val ''
+
+ns.hideSkipAtoms = ->
+  $('.actions a.skip-atoms').addClass('hide')
 
 ns.init = () ->
   ns.currentSentence = $('.sentences .sentence:first')
@@ -58,14 +65,10 @@ ns.init = () ->
     window.location = url
     false
 
-  $('.skip-atoms a.accept').click ->
-    $(@).closest('.skip-atoms').remove()
+  $('a.skip-atoms').click ->
+    ns.hideSkipAtoms()
     ns.currentSentence = $('.sentences .sentence[data-atom=true]:last')
     ns.rollSentence()
-    false
-
-  $('.skip-atoms a.decline').click ->
-    $(@).closest('.skip-atoms').remove()
     false
 
   LANGTRAINER.lib.exercises_select.init()

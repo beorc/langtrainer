@@ -10,4 +10,9 @@ module ExercisesHelper
     return 'in' if exercise.id == @exercise.id
     ''
   end
+
+  def atom_value(sentence)
+    return 'true' if sentence.atom
+    'false'
+  end
 end
