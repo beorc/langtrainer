@@ -25,7 +25,7 @@ puts 'user: ' << user.email
 user.add_role :admin
 
 puts 'EXERCISES'
-[:first, :second, :third, :fourth, :fifth, :sixth].each do |slug|
+[:first, :second, :third, :fourth, :fifth, :sixth, :seventh, :eighth].each do |slug|
   exercise = Exercise.find_or_create_by_slug(slug: slug, title: "#{slug.to_s.capitalize} exercise")
   raise "Exercise not created: #{slug}: #{exercise.errors.messages.inspect}" unless exercise.valid?
 end

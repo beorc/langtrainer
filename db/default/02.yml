@@ -144,3 +144,28 @@
 - { english: 'She took his car', russian: 'Она брала его машину', exercise: 'second' }
 - { english: 'She did not take his car', russian: 'Она не брала его машину', exercise: 'second' }
 
+- { english: 'One never knows what he can do', russian: 'Никогда не знаешь, что он может сделать', exercise: 'second' }
+- { english: 'One must go in for sport', russian: 'Необходимо заниматься спортом', exercise: 'second' }
+- { english: 'One must not do it', russian: 'Этого делать нельзя', exercise: 'second' }
+- { english: 'One can not get this book anywhere', russian: 'Нигде невозможно достать эту книгу', exercise: 'second' }
+- { english: 'One should be careful when crossing the street', russian: 'Переходя улицу, нужно быть осторожным', exercise: 'second' }
+- { english: "One should always keep one's word", russian: 'Надо всегда держать свое слово', exercise: 'second' }
+- { english: 'This book is more interesting than that one', russian: 'Эта книга более интересная, чем та', exercise: 'second' }
+- { english: 'Where is my bag? It is on the table', russian: 'Где моя сумка? Она на столе', exercise: 'second' }
+- { english: 'Here is a picture', russian: 'Вот картина', exercise: 'second' }
+- { english: 'Look at it', russian: 'Посмотрите на это', exercise: 'second' }
+- { english: 'It was in the street that I saw him', russian: 'Я видел его именно на улице', exercise: 'second' }
+- { english: 'It is this article that I want to refer to', russian: 'Это именно та статья, на которую я хочу сослаться', exercise: 'second' }
+- { english: 'It was he who came first', russian: 'Именно он пришел первым', exercise: 'second' }
+- { english: 'It is raining heavily', russian: 'Идет сильный дождь', exercise: 'second' }
+- { english: 'It is important to answer this letter', russian: 'Важно ответить на это письмо', exercise: 'second' }
+- { english: 'I saw this picture, show me another one', russian: 'Я видел эту картину, покажи мне другую', exercise: 'second' }
+- { english: 'This text is easier than that one', russian: 'Этот текст легче, чем тот', exercise: 'second' }
+- { english: 'Bring me the book. Which one?', russian: 'Принеси мне книгу. Которую?', exercise: 'second' }
+- { english: "It's a funny short story. Is it interesting? Yes it is", russian: 'Это смешной короткий рассказ. Он интересный? Да', exercise: 'second' }
+- { english: 'It is necessary to revise all grammar material', russian: 'Необходимо повторить весь грамматический материал', exercise: 'second' }
+- { english: 'It was my sister who told me about it', russian: 'Именно моя сестра рассказала мне об этом', exercise: 'second' }
+- { english: "Don't put on old shoes, put on new ones", russian: 'Не надевайте старые ботинки, наденьте новые', exercise: 'second' }
+- { english: 'One who teaches is called a teacher', russian: 'Тот, кто учит, называется учителем', exercise: 'second' }
+- { english: "One must know one's duty", russian: 'Нужно знать свой долг', exercise: 'second' }
+

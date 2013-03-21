@@ -124,3 +124,10 @@
 - { english: 'The train is to arrive at 5', russian: 'Поезд должен прибыть в 5', exercise: 'third' }
 - { english: 'I was to send him a letter, but I forgot', russian: 'Мне нужно было послать ему письмо, но я забыл', exercise: 'third' }
 
+- { english: "My aim is to master English", russian: "Моя цель - освоить английский", exercise: 'third' }
+- { english: "Where is Bill? He is working in the library", russian: "Где Билл? Он работает в библиотеке", exercise: 'third' }
+- { english: "The students were in the meeting hall before the lessons", russian: "До занятий студенты были в конференц-зале", exercise: 'third' }
+- { english: "I was glad to meet my friend yesterday", russian: "Я был рад встретить своего друга вчера", exercise: 'third' }
+- { english: "Last year my friend was preparing to enter the University", russian: "Последний год мой друг готовился к моступлению в университет", exercise: 'third' }
+- { english: "When I met my old friend I was going to Florida", russian: "Когда я встретил своего старого друга, я собирался во Флориду", exercise: 'third' }
+- { english: "Such problems were discussed at our meeting yesterday", russian: "Такие проблемы были обсуждены на нашей встрече вчера", exercise: 'third' }
