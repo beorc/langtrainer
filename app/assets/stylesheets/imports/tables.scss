@@ -14,6 +14,11 @@
   display:block;
   padding:47px 0 42px 17px;
 }
+.t12 .vbrace-place{
+  margin:10px 0;
+  display:block;
+  padding:57px 0 52px 17px;
+}
 .vbrace-d{
 	padding-bottom:10px;
 }
@@ -94,4 +99,12 @@ table {
      border-right: none;
      border-left: none;
   }
+}
+
+.top-bordered {
+  border-top: 1px solid #dddddd;
+}
+
+.bottom-bordered {
+  border-bottom: 1px solid #dddddd;
 }
