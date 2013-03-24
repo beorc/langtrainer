@@ -1,3 +1,9 @@
+- { english: "A canteen", russian: "Столовая", atom: true, exercise: 'eighth' }
+- { english: "A refrigerator", russian: "Холодильник", atom: true, exercise: 'eighth' }
+- { english: "A rule", russian: "Правило", atom: true, exercise: 'eighth' }
+- { english: "Headache", russian: "Головная боль", atom: true, exercise: 'eighth' }
+- { english: "Of late", russian: "За последнее время", atom: true, exercise: 'eighth' }
+
 - { english: "I have got a car.", russian: "У меня есть машина.", exercise: 'eighth' }
 - { english: "She has just told me about it.", russian: "Она только что сказала мне об этом.", exercise: 'eighth' }
 - { english: "You will have to go there.", russian: "Вам придется туда поехать.", exercise: 'eighth' }
@@ -15,3 +21,46 @@
 - { english: "Did you have a good rest on Sunday?", russian: "Вы хорошо отдохнули в воскресенье?", exercise: 'eighth' }
 - { english: "The teacher had to explain this grammar rule again.", russian: "Учителю пришлось объяснить это грамматическое правило еще раз.", exercise: 'eighth' }
 - { english: "He had his watch repaired.", russian: "Ему починили часы.", exercise: 'eighth' }
+- { english: "They had a meeting yesterday.", russian: "У них была встреча вчера.", exercise: 'seventh' }
+- { english: "He had a lot of free time last week.", russian: "У него было много свободного времени на прошлой неделе.", exercise: 'seventh' }
+- { english: "The students of our group have a scientific conference today.", russian: "У студентов нашей группы сегодня научная конференция.", exercise: 'seventh' }
+- { english: "We usually had our dinner in the canteen last year.", russian: "В этом году мы обычно обедали в столовой.", exercise: 'seventh' }
+- { english: "We have a dictation in English today.", russian: "У нас сегодня диктант по английскому.", exercise: 'seventh' }
+- { english: "They had to start this experiment yesterday.", russian: "Они начали этот эксперимент вчера.", exercise: 'seventh' }
+- { english: "We will have a good rest next Sunday.", russian: "Мы хорошо отдохнем в следующее воскресенье.", exercise: 'seventh' }
+- { english: "I will have finished my work by 5 o'clock.", russian: "Я закончу свою работу к 5 часам.", exercise: 'seventh' }
+- { english: "We will have plenty of fruit in our garden in autumn.", russian: "Осенью у нас будет много фруктов в нашем саду.", exercise: 'seventh' }
+- { english: "The students will have a lecture in philosophy tomorrow.", russian: "Завтра у студентов лекция по философии.", exercise: 'seventh' }
+- { english: "We will have to do this research in a day.", russian: "Нам придется провести это исследование через день.", exercise: 'seventh' }
+- { english: "The teacher will have to explain this grammar rule again at the next lesson.", russian: "Учителю придется объяснить это грамматическое правило еще раз на следующем уроке.", exercise: 'seventh' }
+- { english: "He has many friends in Florida.", russian: "У него много друзей во Флориде", exercise: 'seventh' }
+- { english: "She hasn't any new dresses.", russian: "У нее нет ни одного нового платья.", exercise: 'seventh' }
+- { english: "We have no fruit in the refrigerator.", russian: "У нас нет фруктов в холодильнике.", exercise: 'seventh' }
+- { english: "He hasn't any right to do it.", russian: "У него нет никакого права так поступать.", exercise: 'seventh' }
+- { english: "He has got a car.", russian: "У него есть машина.", exercise: 'seventh' }
+- { english: "My friend hasn't got a new flat.", russian: "У моего друга нет новой квартиры.", exercise: 'seventh' }
+- { english: "They have got two sons.", russian: "У них два сына.", exercise: 'seventh' }
+- { english: "Have you many good friends abroad?", russian: "У вас много друзей за границей?", exercise: 'seventh' }
+- { english: "Did father have to agree?", russian: "Отцу пришлось согласиться?", exercise: 'seventh' }
+- { english: "She had to stay there for some more days.", russian: "Ей пришлось остаться там еще на несколько дней.", exercise: 'seventh' }
+- { english: "Did she have to learn this rule?", russian: "Ей пришлось выучить это правило?", exercise: 'seventh' }
+- { english: "When did they have a lecture?", russian: "Когда у них была лекция?", exercise: 'seventh' }
+- { english: "What lesson do you have today?", russian: "Какое урок у тебя сегодня?", exercise: 'seventh' }
+- { english: "Where do you usually have supper?", russian: "Где вы обычно ужинаете?", exercise: 'seventh' }
+- { english: "Who has much work to do? The students has much work to do.", russian: "У кого много работы? У студентов много работы.", exercise: 'seventh' }
+- { english: "Do you have to prepare for your lessons in the library?", russian: "Тебе приходится готовиться к занятиям в библиотеке?", exercise: 'seventh' }
+- { english: "Have you got many books by foreign writers?", russian: "У тебя много книг зарубежных писателей?", exercise: 'seventh' }
+- { english: "Do you always have light supper?", russian: "Ты всегда ужинаешь легко?", exercise: 'seventh' }
+- { english: "Have you a great influence on your friends?", russian: "Ты имеешь большое влияние на своих друзей?", exercise: 'seventh' }
+- { english: "Where do you have dinner after classes?", russian: "Где ты обедаешь после занятий?", exercise: 'seventh' }
+- { english: "Do you have to rewrite this exercise?", russian: "Тебе придется переписать это упражнение?", exercise: 'seventh' }
+- { english: "He had learnt to speak english by the end of the year.", russian: "Он научился говорить по-английски к концу года.", exercise: 'seventh' }
+- { english: "I often have a headache in the evening.", russian: "У меня часто болит голова по вечерам.", exercise: 'seventh' }
+- { english: "We received some letters from you of late.", russian: "Мы получили несколько писем от тебя за последнее время.", exercise: 'seventh' }
+- { english: "I will have much work to do next week.", russian: "На следующей неделе у меня будет много работы.", exercise: 'seventh' }
+- { english: "He has to finish his exeriment in 2 hours.", russian: "Ему придется закончить свой эксперимент через два часа.", exercise: 'seventh' }
+- { english: "You will have to stay here for 10 days.", russian: "Он должен будет остаться здесь на 10 дней.", exercise: 'seventh' }
+- { english: "They haven't paid for the tickets yet.", russian: "Они еще не заплатили за билеты.", exercise: 'seventh' }
+- { english: "I have to complete this work today, becouse I will have no time for it tomorrow.", russian: "Мне придется завершить эту работу сегодня, потому что у меня не будет на это времени завтра.", exercise: 'seventh' }
+- { english: "I haven't seen you for ages. Where have you been?", russian: "Я не видел тебя годы. Где ты был?", exercise: 'seventh' }
+- { english: "She has no relatives in Saint Petersburg.", russian: "У нее нет родственников в Санкт-Петербурге.", exercise: 'seventh' }

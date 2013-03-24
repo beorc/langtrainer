@@ -1,3 +1,5 @@
+- { english: "An essay", russian: "Сочинение", atom: true, exercise: 'ninth' }
+
 - { english: "He is reading a newspaper now.", russian: "Он сейчас читает газету.", exercise: 'ninth' }
 - { english: "Is he reading a newspaper or a book now?", russian: "Он читает сейчас газету или книгу?", exercise: 'ninth' }
 - { english: "He is not reading, he is listening to the radio now.", russian: "Он не читает, он слушает радио сейчас.", exercise: 'ninth' }
@@ -8,3 +10,39 @@
 - { english: "Will they be writing their course papers in April?", russian: "Они будут писать свои курсовые работы в апреле?", exercise: 'ninth' }
 - { english: "We are leaving at 8 tomorrow.", russian: "Мы уезжаем завтра в 8 часов.", exercise: 'ninth' }
 - { english: "What are you doing tonight?", russian: "Что вы будете делать сегодня вечером?", exercise: 'ninth' }
+- { english: "We are having a lecture now.", russian: "У нас сейчас лекция.", exercise: 'ninth' }
+- { english: "He is watching TV at the moment.", russian: "Он смотрит телевизор прямо сейчас.", exercise: 'ninth' }
+- { english: "We are listening to the teacher at this time.", russian: "Мы слушаем учителя в это время.", exercise: 'ninth' }
+- { english: "He is sleeping from 2 till 3.", russian: "Он спит с 2 до 3.", exercise: 'ninth' }
+- { english: "She is writing a letter to his parents now.", russian: "Она пишет письмо своим родителям сейчас.", exercise: 'ninth' }
+- { english: "He was delivering a lecture at 12 o'clock yesterday.", russian: "Вчера в 12 часов он читал лекцию.", exercise: 'ninth' }
+- { english: "He was working in the library from 3 till 5 o'clock yesterday.", russian: "Вчера он работал в библиотеке с 3 до 5 часов.", exercise: 'ninth' }
+- { english: "He was leaving the house when the bell rang.", russian: "Он выходил из дома, когда зазвенел звонок.", exercise: 'ninth' }
+- { english: "He was crossing the street when I saw him.", russian: "Он переходил улицу, когда я увидел его.", exercise: 'ninth' }
+- { english: "The children were playing in the yard from 10 till 12 o'clock.", russian: "Дети играли во дворе с 10 до 12 часов.", exercise: 'ninth' }
+- { english: "He will be preparing for his exams next month.", russian: "Он будет готовиться к своим экзаменам в следующем месяце.", exercise: 'ninth' }
+- { english: "She will be translating the text at 3 o'clock tomorrow.", russian: "Она будет переводить текст завтра в 3 часа.", exercise: 'ninth' }
+- { english: "He will be leaving at 7 o'clock tomorrow.", russian: "Он уезжает завтра в 7 часов.", exercise: 'ninth' }
+- { english: "She will be singing at the concert tonight.", russian: "Она будет петь на концерте вечером.", exercise: 'ninth' }
+- { english: "She will be doing her home exercises after supper.", russian: "Она будет делать свое домашнее задание после ужина.", exercise: 'ninth' }
+- { english: "I will be studying French for two more years.", russian: "Я буду учить французский на два года больше.", exercise: 'ninth' }
+- { english: "We will be discussing my essay at the seminar.", russian: "Мы будем обсуждать мое сочинение на семинаре.", exercise: 'ninth' }
+- { english: "Are his friends still speaking?", russian: "Его друзья еще говорят?", exercise: 'ninth' }
+- { english: "Is Tom repairing the car?", russian: "Том чинит машину?", exercise: 'ninth' }
+- { english: "Is he leaving by 8 o'clock train?", russian: "Она узежает восьмичасовым поездом?", exercise: 'ninth' }
+- { english: "Are they crossing the street?", russian: "Они переходят улицу?", exercise: 'ninth' }
+- { english: "Were we looking for him the day before yesterday?", russian: "Мы искали его позавчера?", exercise: 'ninth' }
+- { english: "Was she typing a letter at that moment?", russian: "Она печатала письмо в этот момент?", exercise: 'ninth' }
+- { english: "Was he watching TV when I came home?", russian: "Он смотрел телевизор, когда я пришла домой?", exercise: 'ninth' }
+- { english: "Will you be waiting for me at the usual time?.", russian: "Ты будешь ждать меня в обычное время?", exercise: 'ninth' }
+- { english: "Will he be sleeping at that time?", russian: "Он будет спать в это время?", exercise: 'ninth' }
+- { english: "Will it be raining in a minute?", russian: "Через минуту пойдет дождь?", exercise: 'ninth' }
+- { english: "It is not raining.", russian: "Дождя нет.", exercise: 'ninth' }
+- { english: "She is not talking to her old friend now.", russian: "Она не говорит со своим старым другом сейчас.", exercise: 'ninth' }
+- { english: "I am not buying sweets here.", russian: "Я не покупаю сладости здесь.", exercise: 'ninth' }
+- { english: "Boys are not playing football now.", russian: "Мальчики не играют в футбол сейчас.", exercise: 'ninth' }
+- { english: "We were not having dinner when you rang me up.", russian: "Мы не обедали, когда ты позвонил мне.", exercise: 'ninth' }
+- { english: "John was not listening to the last news at 7 o'clock in the evening.", russian: "Джон не слушал последние новости в 7 часов вечера.", exercise: 'ninth' }
+- { english: "She was not hurrying to the station at that moment.", russian: "Она не спешила на вокзал в это время.", exercise: 'ninth' }
+- { english: "They will not be working hard in autumn.", russian: "Они не будут много работать осенью.", exercise: 'ninth' }
+- { english: "She will not be coming to see us today.", russian: "Она не придет сегодня, чтобы увидеть нас.", exercise: 'ninth' }
