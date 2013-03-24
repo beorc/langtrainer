@@ -25,11 +25,11 @@
         i.icon-refresh.icon-border
 
       '&nbsp
+      - if @sentences.first.atom?
+        = link_to '#', class: 'skip-atoms', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.skip_atoms') do
+          i.icon-forward.icon-border
 
-      = link_to '#', class: 'skip-atoms', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.skip_atoms') do
-        i.icon-forward.icon-border
-
-      '&nbsp
+        '&nbsp
 
       = link_to '#', class: 'look', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.look') do
         i.icon-key.icon-border

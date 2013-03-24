@@ -1,3 +1,4 @@
+# COMPLEX SENTENCES
 - { english: "He was busy but she insisted on going to the country.", russian: "Он был занят, но она настояла на поездке за город", exercise: 'fourteenth' }
 - { english: "I was in the bathroom when the telephone rang.", russian: "Я был в ванной, когда зазвонил телефон.", exercise: 'fourteenth' }
 - { english: "I was sure that he would come.", russian: "Я был уверен, что он придет.", exercise: 'fourteenth' }
@@ -13,6 +14,7 @@
 - { english: "If you keep secrets, I'll tell you something.", russian: "Если ты умеешь хранить секреты, я расскажу тебе кое-что.", exercise: 'fourteenth' }
 - { english: "Mary was so scared that she could hardly utter a word.", russian: "Мэри была так напугана, что едва могла промолвить слово.", exercise: 'fourteenth' }
 - { english: "He pronounced this word with a strong accent as if he were a foreigner.", russian: "Он произнес это слово с сильным акцентом, как будто он был иностранцем.", exercise: 'fourteenth' }
+# DIRECT AND INDIRECT SPEECH
 - { english: "He says he studies English.", russian: "Он говорит, что изучает английский язык.", exercise: 'fourteenth' }
 - { english: "He says he will study English.", russian: "Он говорит, что будет изучать английский язык.", exercise: 'fourteenth' }
 - { english: "He says he has studied English.", russian: "Он говорит, что изучает английский язык.", exercise: 'fourteenth' }
@@ -36,3 +38,82 @@
 - { english: "I thought that the article had been translated.", russian: "Я думал, что статья переведена.", exercise: 'fourteenth' }
 - { english: "I was sure that they would be given this work.", russian: "Я был уверен, что им дадут эту работу.", exercise: 'fourteenth' }
 - { english: "She said that she didn't understand the text.", russian: "Она сказала, что не понимает текст.", exercise: 'fourteenth' }
+- { english: "I want you to help me.", russian: "Я хочу, чтобы вы помогли мне.", exercise: 'fourteenth' }
+- { english: "Would you like me to translate this text?", russian: "Хотели бы вы, чтобы я перевел этот текст?", exercise: 'fourteenth' }
+# THE INFINITIVE
+- { english: "We believe her to be in Madrid now.", russian: "Мы полагаем, что она сейчас в Мадриде.", exercise: 'fourteenth' }
+- { english: "She wanted me to return soon.", russian: "Она хотела, чтобы я скорее вернулся.", exercise: 'fourteenth' }
+- { english: "We expect him to come here.", russian: "Мы ожидем, что он придет сюда.", exercise: 'fourteenth' }
+- { english: "They consider him to become a good enginer.", russian: "Они считают, что он станет хорошим инженером.", exercise: 'fourteenth' }
+- { english: "She felt somebody look at her.", russian: "Она чувствовала, что кто-то смотрит на нее.", exercise: 'fourteenth' }
+- { english: "They heard him play the piano.", russian: "Они слышали, как он играл на пианино.", exercise: 'fourteenth' }
+- { english: "We know him to have taken part in the conference.", russian: "Мы знаем, что он принял участие в конференции.", exercise: 'fourteenth' }
+- { english: "We could not get him go there.", russian: "Мы не могли его заставить пойти туда.", exercise: 'fourteenth' }
+- { english: "I allowed him to come in.", russian: "Я разрешила ему войти.", exercise: 'fourteenth' }
+- { english: "They are said to have travelled a lot.", russian: "Говорят, что они много путешествовали.", exercise: 'fourteenth' }
+- { english: "The data proved to be wrong.", russian: "Данные оказались неверными.", exercise: 'fourteenth' }
+- { english: "The delegation was reported to have already arrived.", russian: "Сообщили, что делегация уже приехала.", exercise: 'fourteenth' }
+- { english: "The conference is believed to take place in Berlin.", russian: "Полагают, что конференция состоится в Берлине.", exercise: 'fourteenth' }
+- { english: "The dinner seems to be ready.", russian: "Кажется, обед готов.", exercise: 'fourteenth' }
+- { english: "The weather is not likely to change.", russian: "Вероятно, погода не изменится.", exercise: 'fourteenth' }
+- { english: "They are sure to come.", russian: "Безусловно, они придут.", exercise: 'fourteenth' }
+- { english: "Everybody waited for the meeting to start.", russian: "Все ждали, когда начнется собрание.", exercise: 'fourteenth' }
+- { english: "He waited for her to speak.", russian: "Он ждал, чтобы она заговорила.", exercise: 'fourteenth' }
+- { english: "To learn two foreign languages simultaneously.", russian: "Изучать два иностранных языка одновременно трудно.", exercise: 'fourteenth' }
+- { english: "How to solve this problem is not clear.", russian: "Неясно, как решать эту проблему.", exercise: 'fourteenth' }
+- { english: "My friend is likely to come today.", russian: "Вероятно, что мой друг придет сегодня.", exercise: 'fourteenth' }
+- { english: "The article is easy to understand.", russian: "Эту статью легко понять.", exercise: 'fourteenth' }
+- { english: "I want them to come here in time.", russian: "Я хочу, чтобы они пришли сюда вовремя.", exercise: 'fourteenth' }
+- { english: "He turned out to be a specialist in such matters.", russian: "Он оказался специалистом по таким случаям.", exercise: 'fourteenth' }
+- { english: "This is the only thing for you to do.", russian: "Это единственное, что вам нужно сделать.", exercise: 'fourteenth' }
+- { english: "He is said to be  writing his article.", russian: "Говорят, что он пишет свою курсовую работу.", exercise: 'fourteenth' }
+- { english: "I was happy to have been offered this job.", russian: "Я был счастлив, что мне предложили эту работу.", exercise: 'fourteenth' }
+# THE PARTICIPLE
+- { english: "Mother is looking at her sleeping child.", russian: "Мать смотрит на спящего ребенка.", exercise: 'fourteenth' }
+- { english: "When asked he refused to answer the question.", russian: "Когда его спросили, он отказался отвечать на вопрос.", exercise: 'fourteenth' }
+- { english: "Having been translated into many languages the book became world famous.", russian: "Так как книга была переведена на многие языки, она стала всемирно знаменитой.", exercise: 'fourteenth' }
+- { english: "He was reading the newspaper sitting in the arm-chair.", russian: "Он читал газету, сидя в кресле.", exercise: 'fourteenth' }
+- { english: "We heard him playing the piano.", russian: "Мы слышали, как он играл на пианино.", exercise: 'fourteenth' }
+- { english: "I considered the work done.", russian: "Я считал работу выполненной.", exercise: 'fourteenth' }
+- { english: "He was seen crossing the street.", russian: "Его видели переходящим улицу.", exercise: 'fourteenth' }
+- { english: "She was heard talking about it.", russian: "Слышали, как она говорила об этом.", exercise: 'fourteenth' }
+- { english: "He was seen looking for something.", russian: "Видели, как он что-то искал.", exercise: 'fourteenth' }
+- { english: "It being warm, we went for a walk.", russian: "Так как было тепло, мы пошли гулять.", exercise: 'fourteenth' }
+- { english: "Radio was invented in 1895, the inventor being the russian scientist.", russian: "Радио было изобретено в 1895 году, причем изобретатель был русским ученым.", exercise: 'fourteenth' }
+- { english: "I don't know the girl sitting in the corner.", russian: "Я не знаю девушку, сидящую в углу.", exercise: 'fourteenth' }
+- { english: "Knowing English well, he translated the text without a dictionary.", russian: "Хорошо зная английский язык, он перевел текст без словаря.", exercise: 'fourteenth' }
+- { english: "He sat in the arm-chair reading a book.", russian: "Он сидел в кресле, читая книгу.", exercise: 'fourteenth' }
+- { english: "The student being asked now is Morris.", russian: "Студент, которого сейчас спрашивают, Моррис.", exercise: 'fourteenth' }
+- { english: "The answer received from him greatly surprised me.", russian: "Полученный от него ответ очень удивил меня.", exercise: 'fourteenth' }
+- { english: "Given the book only yesterday he was not able to read it.", russian: "Так как ему дали книгу только вчера, он не смог прочитать ее.", exercise: 'fourteenth' }
+# THE GERUND
+- { english: "Swimming is my favourite sport.", russian: "Плаванье  - мой любимый вид спорта.", exercise: 'fourteenth' }
+- { english: "He kept on asking her about the details.", russian: "Он продолжал спрашивать ее о подробностях.", exercise: 'fourteenth' }
+- { english: "I don't mind going there.", russian: "Я не против пойти туда.", exercise: 'fourteenth' }
+- { english: "I'm afraid of making a mistake.", russian: "Я боюсь, как бы не сделать ошибку.", exercise: 'fourteenth' }
+- { english: "I'm tired of arguing with you.", russian: "Я устал спорить с вами.", exercise: 'fourteenth' }
+# THE MOOD
+- { english: "Open the window and air the room.", russian: "Откройте окно и проветрите комнату.", exercise: 'fourteenth' }
+- { english: "Don't speak so fast.", russian: "Не разговаривай так быстро.", exercise: 'fourteenth' }
+- { english: "Let Ann read the text.", russian: "Пусть Анна читает текст.", exercise: 'fourteenth' }
+- { english: "Let's go for a walk.", russian: "Давайте пойдем гулять.", exercise: 'fourteenth' }
+- { english: "I should call him if I had known his telephone number.", russian: "Я бы позвонила ему, если бы знала номер его телефона.", exercise: 'fourteenth' }
+- { english: "It is necessary that he go there.", russian: "Необходимо, чтобы он пошел туда.", exercise: 'fourteenth' }
+- { english: "I suggest that you do it.", russian: "Я предлагаю, чтобы вы сделали это.", exercise: 'fourteenth' }
+- { english: "I wish I lived in the south.", russian: "Жаль, что я не живу на юге.", exercise: 'fourteenth' }
+- { english: "I wish she had taken part in the concert.", russian: "Жаль, что она не приняла участие в концерте.", exercise: 'fourteenth' }
+- { english: "If I were you I should accept the invitation.", russian: "Если бы я был на вашем месте, я бы принял приглашение.", exercise: 'fourteenth' }
+- { english: "If he were here he would help us.", russian: "Если бы он был здесь, он бы нам помог.", exercise: 'fourteenth' }
+- { english: "I wish she were with us.", russian: "Как бы я хотел, чтобы она была с нами.", exercise: 'fourteenth' }
+- { english: "We could go to the park if it were not cold.", russian: "Мы могли бы пойти в парк, если бы не было холодно.", exercise: 'fourteenth' }
+- { english: "I wish I speak French next year.", russian: "Как бы мне хотелось говорить по-французски в следующем году.", exercise: 'fourteenth' }
+- { english: "He would go to the park if he had time.", russian: "Он бы пошел в парк, если бы у него было время.", exercise: 'fourteenth' }
+- { english: "He will go to the park if he has time.", russian: "Он пойдет в парк, если у него будет время.", exercise: 'fourteenth' }
+- { english: "If I have time I will watch TV in the evening.", russian: "Если у меня будет время, я посмотрю телевизор вечером.", exercise: 'fourteenth' }
+- { english: "If we have money we will travel.", russian: "Если у нас будут деньги, мы будем путешествовать.", exercise: 'fourteenth' }
+- { english: "If I am in town, I will visit you.", russian: "Если я буду в городе, я навещу вас.", exercise: 'fourteenth' }
+- { english: "If you worked hard during the year you wouldn't fail in the exam.", russian: "Если бы вы много работали в течение года, вы бы не провалились на экзамене.", exercise: 'fourteenth' }
+- { english: "If she weren't so busy she would come and see us.", russian: "Если бы она не была так занята, она бы нас навестила.", exercise: 'fourteenth' }
+- { english: "Had you warned me, nothing would have happened.", russian: "Если бы вы меня предупредили, ничего бы не случилось.", exercise: 'fourteenth' }
+- { english: "I wish he were in Prague now.", russian: "Жаль, что он не в Праге сейчас.", exercise: 'fourteenth' }
+- { english: "Nobody demands that you should do it immediately.", russian: ".", exercise: 'fourteenth' }
