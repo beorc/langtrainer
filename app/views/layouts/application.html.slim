@@ -2,7 +2,7 @@ doctype 5
 html
   head
     = render 'layouts/head'
-  body class="#{controller_name} #{action_name} has-navbar-fixed-top has-highlighted"
+  body class="#{controller_name.dasherize} #{action_name.dasherize} has-navbar-fixed-top has-highlighted"
     #page
       = render 'layouts/topbar'
       = content_for :jumbotron

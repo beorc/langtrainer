@@ -15,8 +15,8 @@ class UserRegistration
 
   def initialize(hsh)
     @user = hsh.delete(:user)
-    @email_confirmation = @user.email_confirmation || @user.build_email_confirmation(new_email: @user.email)
-    super hsh.merge(email: @email_confirmation.new_email)
+    @email_confirmation = @user.email_confirmation || @user.build_email_confirmation
+    super hsh.merge(email: @user.email)
   end
 
 

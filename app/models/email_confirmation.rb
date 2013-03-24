@@ -1,3 +1,5 @@
+require File.join(Rails.root, 'lib/validators/email_unique_for_user.rb')
+
 class EmailConfirmation < ActiveRecord::Base
   attr_accessible :new_email, :user
 
@@ -5,7 +7,7 @@ class EmailConfirmation < ActiveRecord::Base
 
   validates :new_email, presence: true,
                         email_unique_for_user: true,
-                        format: { with: Langtrainer.email_regexp }
+                        format: { with: Langtrainer.email_regexp }, if: :email_changed?
   validates :user, presence: true
 
   def reset_token!
@@ -32,7 +34,7 @@ class EmailConfirmation < ActiveRecord::Base
   end
 
   def email_changed?
-    new_email != user.email
+    !new_email.nil? && new_email != user.email
   end
 
   private

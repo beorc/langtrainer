@@ -34,7 +34,7 @@ describe 'Corrections' do
       sentence = @public_exercise.sentences.first
       correction = FactoryGirl.create :correction, sentence: sentence, exercise: @public_exercise, owner: @user
 
-      visit users_sentences_path(sentence: sentence)
+      visit users_sentences_path(sentence: sentence, locale: I18n.locale)
 
       en_input = find('.sentence:first .translation[data-lang=en] textarea')
       en_input.text.should == correction.en
@@ -62,7 +62,7 @@ describe 'Corrections' do
       sentence = @public_exercise.sentences.first
       correction = FactoryGirl.create :correction, sentence: sentence, exercise: @public_exercise, owner: user
 
-      visit users_sentences_path(sentence: sentence)
+      visit users_sentences_path(sentence: sentence, locale: I18n.locale)
 
       en_input = find('.sentence:first .translation[data-lang=en] textarea')
       en_input.text.should == sentence.en

@@ -10,8 +10,8 @@ class UserMailer < ActionMailer::Localized
 
   def send_email_confirmation(token, email, locale)
     @locale = locale
-    url_params[:host] = Langtrainer.localized_url
-    @url = confirm_email_url(email_token: token)
+    url_params = {host: Langtrainer.localized_url, email_token: token}
+    @url = confirm_email_url(url_params)
     mail(to: email, subject: t('mailer.email_confirmation.subject'),
                           template_name: localized_template(__method__))
   end
