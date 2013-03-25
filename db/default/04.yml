@@ -1,7 +1,7 @@
 - { english: 'A book.', russian: 'Книга', atom: true, exercise: 'fourth' }
 - { english: 'A pencil.', russian: 'Карандаш', atom: true, exercise: 'fourth' }
 - { english: 'A tie', russian: 'Галстук', atom: true, exercise: 'fourth' }
-- { english: 'Saw', 'Видел', atom: true, exercise: 'fourth' }
+- { english: 'Saw', russian: 'Видел', atom: true, exercise: 'fourth' }
 - { english: 'Following', russian: 'Следующие', atom: true, exercise: 'fourth' }
 - { english: 'A question', russian: 'Вопрос', atom: true, exercise: 'fourth' }
 - { english: 'First', russian: 'Первый', atom: true, exercise: 'fourth' }
