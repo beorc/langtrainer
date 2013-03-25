@@ -64,8 +64,9 @@ $ ->
 
     options =
       element: 'yashare'
+      l10n: gon.locale
       elementStyle:
-        type: 'icon'
+        type: 'button'
         quickServices: ['twitter', 'facebook', 'vkontakte', 'odnoklassniki']
       title: $('title').text(),
       image: $('meta[property="og:image"]').attr('content'),

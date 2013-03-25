@@ -68,6 +68,7 @@ class ApplicationController < ActionController::Base
     if Rails.env.production?
       id = ENV['YANDEX_METRIKA_ID']
       gon.ym = id if id
+      gon.locale = I18n.locale.to_s
     end
   end
 
