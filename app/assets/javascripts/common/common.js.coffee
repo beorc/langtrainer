@@ -68,7 +68,7 @@ $ ->
       elementStyle:
         type: 'button'
         quickServices: ['twitter', 'facebook', 'vkontakte', 'odnoklassniki']
-      title: $('title').text(),
+      title: gon.shares_title,
       image: $('meta[property="og:image"]').attr('content'),
       description: $('meta[name="description"]').attr('content'),
       serviceSpecific:

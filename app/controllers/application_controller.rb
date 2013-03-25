@@ -69,6 +69,7 @@ class ApplicationController < ActionController::Base
       id = ENV['YANDEX_METRIKA_ID']
       gon.ym = id if id
       gon.locale = I18n.locale.to_s
+      gon.shares_title = t(:shares_title)
     end
   end
 
