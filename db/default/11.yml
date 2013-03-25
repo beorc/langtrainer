@@ -1,3 +1,9 @@
+- { english: "A smell.", russian: "Запах.", atom: true, exercise: 'eleventh' }
+- { english: "A tooth.", russian: "Зуб.", atom: true, exercise: 'eleventh' }
+- { english: "To ache.", russian: "Болеть.", atom: true, exercise: 'eleventh' }
+- { english: "Abroad.", russian: "За границей.", atom: true, exercise: 'eleventh' }
+- { english: "To smoke.", russian: "Курить.", atom: true, exercise: 'eleventh' }
+
 - { english: "I have been typing the letters for an hour but I haven't finished them yet.", russian: "Я печатаю письма уже целый час, но еще не закончил их печатать.", exercise: 'eleventh' }
 - { english: "She has been working hard all this month.", russian: "Весь этот месяц она много работает.", exercise: 'eleventh' }
 - { english: "It has been raining since 8 o'clock.", russian: "Дождь идет с 8 часов.", exercise: 'eleventh' }
@@ -8,3 +14,40 @@
 - { english: "We couldn't go out as it had been raining since early morning.", russian: "Мы не могли выйти на улицу, так как с раннего утра шел дождь.", exercise: 'eleventh' }
 - { english: "I felt tired when I came home as I had been repairing my car.", russian: "Я чувствовал себя усталым, когда пришел домой, так как чинил машину.", exercise: 'eleventh' }
 - { english: "She will have been typing the documents for an hour by the time you come back.", russian: "К тому времени, как мы вернемся, она будет печатать документы уже целый час.", exercise: 'eleventh' }
+- { english: "He has been working since 8 o'clock.", russian: "Он работает с 8 часов.", exercise: 'eleventh' }
+- { english: "She has been preparing for her exam since June.", russian: "Она готовится к своему экзамену в июня.", exercise: 'eleventh' }
+- { english: "I have been learning the poem for 20 minutes.", russian: "Я учила поэму 20 минут.", exercise: 'eleventh' }
+- { english: "We have been waiting for the teacher for some time.", russian: "Мы ждали учителя какое-то время.", exercise: 'eleventh' }
+- { english: "He has been smoking cigarettes for 10 years.", russian: "Он курит сигареты 10 лет.", exercise: 'eleventh' }
+- { english: "There was a smell of cigarettes when I entered the room. Somebody had been smoking.", russian: "Пахло сигаретами, когда я вошел в комнату. Кто-то курил.", exercise: 'eleventh' }
+- { english: "He was feeling very tired. He had been driving the car all day.", russian: "Он был очень уставшим. Он вел машину целый день.", exercise: 'eleventh' }
+- { english: "He had been listening to music for a hour before I came.", russian: "Он слушал музыку в течение часа, пока я не пришла.", exercise: 'eleventh' }
+- { english: "The students had been discussing their plans for a long time before the teacher came.", russian: "Студенты обсуждали свои планы долгое время, пока не пришел учитель.", exercise: 'eleventh' }
+- { english: "The child had been sleeping for an hour when we returned.", russian: "Ребенок спал в течение часа, когда мы вернулись.", exercise: 'eleventh' }
+- { english: "Has the telephone been ringing for 10 minutes?", russian: "Телефон звонит 10 минут?", exercise: 'eleventh' }
+- { english: "Have the boys been playing football for 2 hours?", russian: "Мальчики играют в футбол 2 часа?", exercise: 'eleventh' }
+- { english: "Have you been learning English for 5 years?", russian: "Вы учите английский 5 лет?", exercise: 'eleventh' }
+- { english: "Had you been learning English for 5 years before you went abroad?", russian: "Вы учили английский 5 лет до того как уехать за границу?", exercise: 'eleventh' }
+- { english: "Will she have been teaching at the University for 20 years by the end of this year?", russian: "В конце этого года исполнится 20 лет, как она преподает в университете?", exercise: 'eleventh' }
+- { english: "The tooth has not been aching since Monday.", russian: "Зуб не болит с понедельника.", exercise: 'eleventh' }
+- { english: "We have been translating the text for half an hour.", russian: "Мы переводим текст пол-часа.", exercise: 'eleventh' }
+- { english: "It has been snowing for 2 days.", russian: "Снег идет 2 дня.", exercise: 'eleventh' }
+- { english: "She had been cooking for a long time when the guests came.", russian: "Она готовила в течение долгого времени, когда гости пришли.", exercise: 'eleventh' }
+- { english: "By the end of August we will have been living here for 10 years.", russian: "В конце августа будет 10 лет как мы живем здесь.", exercise: 'eleventh' }
+- { english: "Have you been staying here for a month?", russian: "Вы остаетесь здесь в течение месяца?", exercise: 'eleventh' }
+- { english: "Has he been swimming long?", russian: "Он долго плавает?", exercise: 'eleventh' }
+- { english: "Since when has it been snowing here?", russian: "С каких пор здесь идет снег?", exercise: 'eleventh' }
+- { english: "How long have you been watching TV?", russian: "Как долго ты смотрел телевизор?", exercise: 'eleventh' }
+- { english: "How long has she been talking to her friend?", russian: "Как долго она разговаривала со своими друзьями?", exercise: 'eleventh' }
+- { english: "What has he been translating for an hour?", russian: "Что он переводил в течение часа?", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }
+- { english: ".", russian: ".", exercise: 'eleventh' }

@@ -1,7 +1,7 @@
 - { english: "I have already seen this play.", russian: "Я уже видел этот спектакль.", exercise: 'tenth' }
 - { english: "He hasn't spoken to the father yet.", russian: "Он еще не разговаривал с деканом.", exercise: 'tenth' }
 - { english: "We haven't heard from him since we came to Moscow in 2011.", russian: "Мы не получали от него писем с тех пор, как приехали в Москву в 2011.", exercise: 'tenth' }
-- { english: "We had prepared our exercises by 5 o'clock.", russian: ".", exercise: 'tenth' }
+- { english: "We had prepared our exercises by 5 o'clock.", russian: "Мы сделали наши упражнения к 5 часам.", exercise: 'tenth' }
 - { english: "I had lived in New York before I moved to San Francisco.", russian: "Я жил в Нью-Йорке до того, как переехал в Сан-Франциско.", exercise: 'tenth' }
 - { english: "By the end of the year he had learnt to speak French.", russian: "К концу года он научился говорить по-французски.", exercise: 'tenth' }
 - { english: "I will have lived there for a month by the time you come.", russian: "Я проживу там уже месяц к тому времени, как вы приедете.", exercise: 'tenth' }
@@ -11,3 +11,35 @@
 - { english: "We have already translated English texts.", russian: "Мы уже перевели английские тексты.", exercise: 'tenth' }
 - { english: "Have you seen any of John's plays. I have seen some of them", russian: "Вы видели какие-нибудь спектакли Джона? Я видел некоторые из них.", exercise: 'tenth' }
 - { english: "Had Till graduated from the University by that time?", russian: "К тому времени Тиль закончил университет?", exercise: 'tenth' }
+
+- { english: "I have seen her today.", russian: "Я видел ее сегодня.", exercise: 'tenth' }
+- { english: "They have already passed the exams.", russian: "Они уже сдали экзамены.", exercise: 'tenth' }
+- { english: "I have known him since 2005.", russian: "Я знаю его с 2005.", exercise: 'tenth' }
+- { english: "They had finished their experiment by 5 o'clock.", russian: "Они закончили свой эксперимент к 5 часам.", exercise: 'tenth' }
+- { english: "She had typed the letter by the time we returned.", russian: "Он напечатал письмо ко времени нашего возвращения.", exercise: 'tenth' }
+- { english: "He had looked through the documents by 12 o'clock.", russian: "Он просмотрел документы к 12 часам.", exercise: 'tenth' }
+- { english: "He had supper by that time.", russian: "Он поужинал к тому времени.", exercise: 'tenth' }
+- { english: "I'll have made dinner by the time my husband comes.", russian: "Я сделаю обед к тому времени как мой муж придет.", exercise: 'tenth' }
+- { english: "They will have built the shop before we move here.", russian: "Они построят магазин до того, как мы переедем сюда.", exercise: 'tenth' }
+- { english: "We'll have packed the things by the time the taxi comes.", russian: "Мы упакуем вещи к тому времени, как приедет такси.", exercise: 'tenth' }
+- { english: "They will have passed their exams by July.", russian: "Они сдадут свои экзамены к Июлю.", exercise: 'tenth' }
+- { english: "Has she read all the books in her library?", russian: "Она прочитала все книги в своей библиотеке?", exercise: 'tenth' }
+- { english: "Has he left his book at home?", russian: "Он оставил свою книгу дома?", exercise: 'tenth' }
+- { english: "Will you have done your shopping by the evening?", russian: "Вы сходите по магазинам к вечеру?", exercise: 'tenth' }
+- { english: "Will he have seen anything of London by the week-end?", russian: "Он увидит что-нибудь в Лондоне к выходным?", exercise: 'tenth' }
+- { english: "Will they have come to the London by July, 10?", russian: "Они приедут в Лондон к 10 июля?", exercise: 'tenth' }
+- { english: "Will she have finished school by that time?", russian: "Она закончит школу к тому времени?", exercise: 'tenth' }
+- { english: "I havn't been to the cinema since Sunday.", russian: "Я не был в кино с воскресенья.", exercise: 'tenth' }
+- { english: "They haven't been here since 2000.", russian: "Они не были здесь с 2000.", exercise: 'tenth' }
+- { english: "My sister hasn't written me letters since winter.", russian: "Моя сестра не написала мне писем с зимы.", exercise: 'tenth' }
+- { english: "We hadn't had rains here before you came.", russian: "У нас здесь не было дождей до вашего прихода.", exercise: 'tenth' }
+- { english: "My sister will not have passed her exams by the end of January.", russian: "Моя сестра не сдаст свои экзамены до конца января.", exercise: 'tenth' }
+- { english: "They will not have finished their work before you return.", russian: "Они не закончат свою работу до вашего возвращения.", exercise: 'tenth' }
+- { english: "She will not have written her article by the end of the month.", russian: "Она не напишет свою статью до конца месяца.", exercise: 'tenth' }
+- { english: "Where had you studied before you entered the University?", russian: "Где ты учился до того, как поступил в университет.", exercise: 'tenth' }
+- { english: "I had studied at school before I entered the University.", russian: "Я учился в школе до того как, поступил в университет.", exercise: 'tenth' }
+- { english: "Where had he worked before he joined the army?", russian: "Где он работал до того как пошел в армию?", exercise: 'tenth' }
+- { english: "He had worked at the plant before he joined the army.", russian: "Он работал на заводе до того как пошел в армию.", exercise: 'tenth' }
+- { english: "What language had she studied before she began to study English?", russian: "Какой язык она выучила до того как начала изучать английский?", exercise: 'tenth' }
+- { english: "She had studied German before she began to study English.", russian: "Она выучила немецкий до того как начала изучать Английский.", exercise: 'tenth' }
+- { english: "We had passed History before English.", russian: "Мы сдали историю до английского.", exercise: 'tenth' }
