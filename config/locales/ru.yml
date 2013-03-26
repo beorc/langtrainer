@@ -69,7 +69,7 @@ ru:
   meta_tags:
     main_page:
       <<: *shared_meta_tags
-      title: Главная страница
+      title: Тренажер иностранных языков
 
     users/exercises:
       title: Пользовательские упражнения

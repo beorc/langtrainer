@@ -63,7 +63,7 @@ en:
 
   shared_meta_tags: &shared_meta_tags
     open_graph:
-      title: Foreign languages treiner
+      title: Foreign languages trainer
     site: Langtrainer
     description: Langtrainer - Foreign languages trainer
     keywords: 'learning foreign language, foreign language, english, russian, foreign, language, exercises, learn, yourself, training'
@@ -71,7 +71,7 @@ en:
   meta_tags:
     main_page:
       <<: *shared_meta_tags
-      title: Home page
+      title: Foreign languages trainer
 
     users/exercises:
       title: "User's exercises"
