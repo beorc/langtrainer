@@ -1,3 +1,10 @@
+- { english: "The ground floor.", russian: "Цокольный этаж.", atom: true, exercise: 'twelfth' }
+- { english: "To postpone.", russian: "Отложить.", atom: true, exercise: 'twelfth' }
+- { english: "Going on.", russian: "Происходит.", atom: true, exercise: 'twelfth' }
+- { english: "A leave.", russian: "Отпуск.", atom: true, exercise: 'twelfth' }
+- { english: "To allow.", russian: "Позволять.", atom: true, exercise: 'twelfth' }
+- { english: "A treaty.", russian: "Договор.", atom: true, exercise: 'twelfth' }
+
 - { english: "Are the exercises done?", russian: "Упражнения выполнены?", exercise: 'twelfth' }
 - { english: "The book was published last year.", russian: "Эта книга была опубликована в прошлом году.", exercise: 'twelfth' }
 - { english: "This problem is being discussed.", russian: "Эта проблема обсуждается.", exercise: 'twelfth' }
@@ -23,3 +30,31 @@
 - { english: "The house will have been built by September.", russian: "Дом будет построен к сентябрю.", exercise: 'twelfth' }
 - { english: "She can be depended on.", russian: "Нв нее можно положиться.", exercise: 'twelfth' }
 - { english: "The lecture will be attended by many students.", russian: "На лекции будут присутствовать многие студенты.", exercise: 'twelfth' }
+- { english: "He is always invited to our place.", russian: "Он всегда приглашен к нам.", exercise: 'twelfth' }
+- { english: "He is often seen in the club.", russian: "Его часто видят в клубе.", exercise: 'twelfth' }
+- { english: "What's going on in the kitchen? Dinner is being cooked.", russian: "Что происходит на кухне? Готовится обед.", exercise: 'twelfth' }
+- { english: "Are you translating the article? No, the article has already been translated.", russian: "Вы переводите статью? Нет, статья уже была переведена.", exercise: 'twelfth' }
+- { english: "Are you discussing the new movie? No, the new movie has already been discussed.", russian: "Вы обсуждаете новый фильм? Нет, новый фильм уже был обсужден.", exercise: 'twelfth' }
+- { english: "Are they still building the ground floor? No, the ground floor has already been built.", russian: "Они еще строят цокольный этаж? Нет, цокольный этаж уже был построен.", exercise: 'twelfth' }
+- { english: "Is she still packing the bag? No, the bag has just been packed.", russian: "Она все еще пакует чемодан? Нет, чемодан только что был упакован.", exercise: 'twelfth' }
+- { english: "This article can be easily translated.", russian: "Эта статья может быть легко переведена.", exercise: 'twelfth' }
+- { english: "It must be done at once.", russian: "Это должно быть сделано сразу.", exercise: 'twelfth' }
+- { english: "The poem was to be learnt by heart.", russian: "Поэма должна была быть выучена наизусть.", exercise: 'twelfth' }
+- { english: "The day of the meeting may be changed.", russian: "День встречи должен быть изменен.", exercise: 'twelfth' }
+- { english: "The rules should be learnt.", russian: "Правила должны быть выучены.", exercise: 'twelfth' }
+- { english: "Their visit should to be postponed.", russian: "Их визит должен быть отложен.", exercise: 'twelfth' }
+- { english: "We are tought English at the University.", russian: "Мы преподавали английский в университете.", exercise: 'twelfth' }
+- { english: "English is spoken all over the world.", russian: "На английском говорят по всему миру.", exercise: 'twelfth' }
+- { english: "The rooms are cleaned every day.", russian: "Комнаты убираются каждый день.", exercise: 'twelfth' }
+- { english: "Her report was delivered in English.", russian: "Ее доклад был сделан на английском языке.", exercise: 'twelfth' }
+- { english: "He was asked to come later.", russian: "Его попросили прийти позже.", exercise: 'twelfth' }
+- { english: "One of his books was published last year.", russian: "Одна из его книг была опубликована в прошлом году.", exercise: 'twelfth' }
+- { english: "We were told this story.", russian: "На рассказали эту историю.", exercise: 'twelfth' }
+- { english: "He was promised a leave.", russian: "Ему был обещан отпуск.", exercise: 'twelfth' }
+- { english: "The children will be allowed to watch TV.", russian: "Детям будет позволено смотреть телевизор.", exercise: 'twelfth' }
+- { english: "The treaty will be signed.", russian: "Договор будет подписан.", exercise: 'twelfth' }
+- { english: "Our friends will be invited to the party.", russian: "Наши друзья будут приглашены на вечеринку.", exercise: 'twelfth' }
+- { english: "The article will be published in a day.", russian: "Статья будет опубликована через день.", exercise: 'twelfth' }
+- { english: "The house will be built in a month.", russian: "Дом будет построен через месяц.", exercise: 'twelfth' }
+- { english: "A lecture is being delivered.", russian: "Лекция читается.", exercise: 'twelfth' }
+- { english: "What's going on in the surgery? A child is being examined.", russian: "Что происходит в операционной? Ребенок осматривается.", exercise: 'twelfth' }
