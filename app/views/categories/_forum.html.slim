@@ -1,0 +1,13 @@
+tr
+  td
+  td.description
+    div = link_to forum.title, forum_path(forum)
+    span.smaller = forum.description
+  td.counts.smaller = forum.topics.count
+  td.counts.smaller = forum.posts.count - forum.topics.count
+  td.last_post.smaller
+    - if forum.posts.any?
+      div = forum.posts.last.created_at
+      div = forum.posts.last.user.username
+    - else
+      'No Topics / Posts

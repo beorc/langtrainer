@@ -8,6 +8,9 @@ class Ability
       can [:show, :edit, :update, :destroy], Sentence
       can :create, Sentence, sentence_id: nil, type: nil
       can :view, :all
+      can :manage, Category
+      can :manage, Forum
+      can :manage, Post
     elsif user.has_role? :member
       can [:show, :edit, :update, :destroy], Exercise, user_id: user.id
       if user.exercises.count < Langtrainer.exercises[:max]
@@ -23,7 +26,16 @@ class Ability
       end
       can [:update, :destroy], Correction, user_id: user.id
       can :create, Correction, sentence: { owner: nil }
+
+      can :show, Category
+      can :show, Forum
+      can [:create, :show], Post
     end
+
+    can :show, Category
+    can :show, Forum
+    can :show, Post
+
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)

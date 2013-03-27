@@ -1,0 +1,13 @@
+- content_for :highlighted do
+  #highlighted
+    .container
+      .row-fluid.header
+        h2.page-title
+          span = t('.title')
+          '&nbsp
+          small = t('.subtitle')
+
+.container
+  - if can? :manage, Category
+    .right.controls = link_to t(".new_forum_category"), new_category_path
+  = render @categories

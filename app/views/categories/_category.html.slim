@@ -1,0 +1,22 @@
+.module
+  .module_header
+    = category.title
+    - if can? :manage, Category
+      span.controls.right.smaller
+        = link_to "New Forum", new_forum_path
+        = link_to "Edit Category", edit_category_path(category)
+        = link_to "Delete Category", category_path(category), :confirm => "Are you sure you want to delete this category?", :method => :delete
+
+  - if category.forums.any?
+    div
+      table
+        tr.smaller
+          th colspan="2" align="left"
+            'Forum
+          th Topics
+          th Posts
+          th class="last_post" align="left"
+            'Last Post
+          = render partial: 'forum', collection: category.forums
+  - else
+    .module_body There are currently no forums.

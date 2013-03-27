@@ -15,12 +15,6 @@
 @import "bootstrap_and_overrides";
 @import "font-awesome";
 
-//@import "font_awesome/_font-awesome-ie7.min";
-//@import "font_awesome/_font-awesome";
-
-//@import "enkel/bootstrap";
-//@import "enkel/responsive";
-
 @import "compass/layout/sticky-footer";
 @import "imports/definitions";
 @import "imports/sticky_footer";
@@ -33,6 +27,7 @@
 @import "imports/tables";
 
 @import "talky";
+@import "imports/talky_custom";
 
 @import "main_page";
 @import "exercises";
