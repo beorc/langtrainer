@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   has_many :exercises
   has_many :feedbacks
   has_one :email_confirmation, validate: true
+  has_many :topics, dependent: :destroy
+  has_many :posts, dependent: :destroy
   accepts_nested_attributes_for :providers
 
   authenticates_with_sorcery!

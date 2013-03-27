@@ -5,6 +5,14 @@ GIT
     capistrano-unicorn (0.1.6)
       capistrano
 
+GIT
+  remote: git@github.com:beorc/talky.git
+  revision: e8059fa18e27b19d2d7e144269645f5d71ac9f47
+  branch: master
+  specs:
+    talky (0.0.1)
+      rails (~> 3.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -329,6 +337,7 @@ DEPENDENCIES
   simple_form (>= 2.0.4)
   slim-rails
   sorcery
+  talky!
   uglifier (>= 1.0.3)
   unicode
   unicorn

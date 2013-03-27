@@ -7,6 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # Environment variables (ENV['...']) are set in the file config/application.yml.
 # See http://railsapps.github.com/rails-environment-variables.html
+
+
+puts 'FORUM'
+
+Category.find_or_create_by_title(:title => "General Discussion", :position => 0)
+
+Forum.find_or_create_by_title(:title => "General Discussion", :description => "Discuss any topic in this forum.", :category_id => Category.find_by_title("General Discussion").id, :position => 0)
+
 puts 'ROLES'
 
 [:admin, :member].each do |name|
@@ -45,3 +53,4 @@ files.sort {|f1, f2| File.basename(f1) <=> File.basename(f2)}.each do |file|
   end
   puts "Loaded sentences: #{sentences.count}"
 end
+

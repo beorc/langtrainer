@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130312084418) do
+ActiveRecord::Schema.define(:version => 20130327185743) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "title"
+    t.boolean  "state",      :default => true
+    t.integer  "position",   :default => 0
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+  end
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -62,6 +70,27 @@ ActiveRecord::Schema.define(:version => 20130312084418) do
 
   add_index "feedbacks", ["user_id"], :name => "index_feedbacks_on_user_id"
 
+  create_table "forums", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "state",        :default => true
+    t.integer  "topics_count", :default => 0
+    t.integer  "posts_count",  :default => 0
+    t.integer  "position",     :default => 0
+    t.integer  "category_id"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
+
+  create_table "posts", :force => true do |t|
+    t.text     "body"
+    t.integer  "forum_id"
+    t.integer  "topic_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "roles", :force => true do |t|
     t.string   "name"
     t.integer  "resource_id"
@@ -94,6 +123,18 @@ ActiveRecord::Schema.define(:version => 20130312084418) do
   add_index "sentences", ["user_id", "sentence_id"], :name => "index_sentences_on_user_id_and_sentence_id"
   add_index "sentences", ["user_id"], :name => "index_sentences_on_user_id"
 
+  create_table "topics", :force => true do |t|
+    t.string   "title"
+    t.integer  "hits",        :default => 0
+    t.boolean  "sticky",      :default => false
+    t.boolean  "locked",      :default => false
+    t.integer  "posts_count"
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
+
   create_table "user_providers", :force => true do |t|
     t.integer  "user_id",    :null => false
     t.string   "provider",   :null => false
@@ -106,9 +147,11 @@ ActiveRecord::Schema.define(:version => 20130312084418) do
     t.string   "email"
     t.string   "username"
     t.integer  "language_id"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
     t.string   "authentication_token"
+    t.integer  "topics_count",         :default => 0
+    t.integer  "posts_count",          :default => 0
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true

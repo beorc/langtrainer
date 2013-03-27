@@ -1,4 +1,6 @@
 Langtrainer::Application.routes.draw do
+  draw_talky_routes
+
   root :to => 'main_page#show'
 
   resources :user_sessions
