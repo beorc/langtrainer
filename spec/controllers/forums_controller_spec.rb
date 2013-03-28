@@ -1,11 +1,12 @@
 require 'spec_helper'
 
-describe CategoriesController do
+describe ForumsController do
   render_views
 
   let(:user) { FactoryGirl.create :user }
   let(:admin) { FactoryGirl.create :admin }
-  let(:new_category) { FactoryGirl.create :category }
+  let(:category) { FactoryGirl.create :category }
+  let(:forum) { category.forums.first }
 
   context 'for unauthorized' do
     it 'does not allow to get new' do
@@ -14,28 +15,28 @@ describe CategoriesController do
     end
 
     it 'does not allow to post create' do
-      post :create, category: { title: 'Category title' }
+      post :create, forum: { title: 'Forum title', description: 'Forum description', category_id: category.id }
       response.should redirect_to(login_path)
     end
 
     it 'forbids to edit' do
-      get :edit, id: new_category.id
+      get :edit, id: forum.id
       response.should redirect_to(login_path)
     end
 
     it 'forbids to update' do
-      put :update, id: new_category.id, category: { title: 'Corrected category title' }
+      put :update, id: forum.id, forum: { title: 'Corrected forum title' }
       response.should redirect_to(login_path)
     end
 
     it 'forbids to destroy' do
-      delete :destroy, id: new_category.id
+      delete :destroy, id: category.forums.first.id
       response.should redirect_to(login_path)
     end
 
     it 'allows to view' do
-      get :index
-      response.status.should == 302
+      get :show, id: forum.id
+      response.status.should == 200
     end
   end
 
@@ -51,31 +52,31 @@ describe CategoriesController do
     end
 
     it 'does not allow to post create' do
-      post :create, category: { title: 'Category title' }
+      post :create, forum: { title: 'Forum title', description: 'Forum description', category_id: category.id }
       flash[:alert].should == I18n.t('flash.categories.access_denied')
     end
 
     it 'forbids to edit' do
-      get :edit, id: new_category.id
+      get :edit, id: forum.id
       response.should redirect_to(root_path)
       flash[:alert].should == I18n.t('flash.categories.access_denied')
     end
 
     it 'forbids to update' do
-      put :update, id: new_category.id, title: 'Corrected category title'
+      put :update, id: forum.id, forum: { title: 'Corrected forum title' }
       response.should redirect_to(root_path)
       flash[:alert].should == I18n.t('flash.categories.access_denied')
     end
 
     it 'forbids to destroy' do
-      delete :destroy, id: new_category.id
+      delete :destroy, id: forum.id
       response.should redirect_to(root_path)
       flash[:alert].should == I18n.t('flash.categories.access_denied')
     end
 
     it 'allows to view' do
-      get :index
-      response.status.should == 302
+      get :show, id: forum.id
+      response.status.should == 200
     end
   end
 
@@ -90,29 +91,34 @@ describe CategoriesController do
     end
 
     it 'allows post create' do
-      title = 'Category title'
-      post :create, category: { title: title }
-      response.status.should == 302
-      Category.last.title.should == title
+      title = 'Forum title'
+      description = 'Forum description'
+      post :create, forum: { title: title, description: description, category_id: category.id }
+      response.should redirect_to forums_path
+
+      last_forum = Forum.unscoped.last
+      last_forum.title.should == title
+      last_forum.description.should == description
+      last_forum.category.id == category.id
     end
 
     it 'allows to get edit' do
-      get :edit, id: new_category.id
-      response.should be_success
+      get :edit, id: forum.id
+      response.status.should == 200
     end
 
     it 'allows to put update' do
-      title = 'Corrected category title'
-      put :update, id: new_category.id, category: { title: title }
-      response.should redirect_to forums_path
-      updated = Category.where(id: new_category.id).first
+      title = 'Corrected forum title'
+      put :update, id: forum.id, forum: { title: title }
+      response.should redirect_to forum_path(forum)
+      updated = Forum.where(id: forum.id).first
       updated.title.should == title
     end
 
     it 'allows to destroy' do
-      delete :destroy, id: new_category.id
+      delete :destroy, id: forum.id
       response.should redirect_to forums_url
-      Category.where(id: new_category.id).empty?.should == true
+      Forum.where(id: forum.id).empty?.should == true
     end
   end
 end
