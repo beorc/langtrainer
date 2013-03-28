@@ -152,4 +152,9 @@ module ApplicationHelper
     return :ru if zone == 'ru'
     :en
   end
+
+  def friendly_title(object, fallback)
+    return fallback if object.new_record?
+    object.title
+  end
 end

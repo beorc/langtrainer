@@ -47,6 +47,10 @@ class User < ActiveRecord::Base
     email || username
   end
 
+  def friendly_title
+    username || email.split('@').first
+  end
+
   def language
     assign_default_languages if language_id.nil?
     Language.find(language_id)

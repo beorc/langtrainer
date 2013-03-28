@@ -1,0 +1,13 @@
+tr
+  td
+  td.description
+    div = link_to topic.title, topic_path(topic)
+    span.smaller
+      'by&nbsp;
+      = topic.user.friendly_title
+  td.counts.smaller = topic.posts.count - 1
+  td.counts.smaller = topic.hits
+  td.last_post.smaller
+    div = topic.posts.last.created_at
+    'by&nbsp;
+    = topic.posts.last.user.friendly_title

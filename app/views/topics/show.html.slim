@@ -1,0 +1,23 @@
+- content_for :highlighted do
+  #highlighted
+    .container
+      .row-fluid.header
+        h2.page-title
+          span = Forum.model_name.human
+          '&nbsp
+          small = @topic.title
+
+.right.controls = link_to "Back to Forum", forum_path(@topic.forum)
+.module
+  .module_header
+    = @topic.title
+    span.right.controls
+      - if can? :edit, @topic
+        = link_to "Edit", edit_topic_path(@topic)
+      - if can? :destroy, @topic
+        = link_to "Delete", @topic, :confirm => "Are you sure?", :method => :delete
+      - if can? :manage, @topic
+        = link_to @topic.sticky ? "Unstick" : "Sticky", {:controller => 'topics', :action => 'update', :topic => {:sticky => @topic.sticky ? "false" : "true" }}, :method => :put
+        = link_to @topic.locked ? "Unlock" : "Lock", {:controller => 'topics', :action => 'update', :topic => {:locked => @topic.locked ? "false" : "true" }}, :method => :put
+  table
+    = render partial: 'post', collection: @topic.posts

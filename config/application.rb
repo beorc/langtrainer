@@ -122,8 +122,5 @@ module Langtrainer
         end
       end if File.exists?(env_file)
     end
-
-    #config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    #config.assets.precompile += %w( .svg .eot .woff .ttf )
   end
 end

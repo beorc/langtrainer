@@ -1,0 +1,25 @@
+tr
+  td.post_author rowspan="2"
+    span.name = post.user.username
+    span.avatar
+    span.info.smaller
+      div
+        'Posts&nbsp;
+        = post.user.posts.count
+      div
+        'Registered&nbsp;
+        = post.user.created_at.to_s(:joined)
+  td.post_header
+    span.left.post_date.smaller
+      'Posted&nbsp;
+      = post.created_at
+    span.right.controls
+      = link_to "Reply", new_topic_post_path(@topic)
+      = link_to "Quote", new_topic_post_path(@topic, :quote => post)
+      - if can? :edit, post
+        = link_to "Edit", edit_post_path(post)
+      - if can? :destroy, post
+        = link_to "Delete", post, :confirm => "Are you sure?", :method => :delete
+tr
+  td.post_body
+    = simple_format(auto_link(post.body))

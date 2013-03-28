@@ -10,6 +10,7 @@ class Ability
       can :view, :all
       can :manage, Category
       can :manage, Forum
+      can :manage, Topic
       can :manage, Post
     elsif user.has_role? :member
       can [:show, :edit, :update, :destroy], Exercise, user_id: user.id
@@ -29,11 +30,14 @@ class Ability
 
       can :show, Category
       can :show, Forum
-      can [:create, :show], Post
+      can [:new, :create, :show, :edit, :update], Topic, user_id: user.id
+      can [:new, :create, :show], Post
+      can [:edit, :update, :destroy], Post, user_id: user.id
     end
 
     can :show, Category
     can :show, Forum
+    can :show, Topic
     can :show, Post
 
     # Define abilities for the passed in user here. For example:
