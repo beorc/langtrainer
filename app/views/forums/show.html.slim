@@ -8,6 +8,7 @@
           small = t('.subtitle')
 
 .right.controls = link_to "Back to Forum List", forums_path
+= paginate @topics
 .module
   .module_header
     = @forum.title
@@ -25,4 +26,7 @@
         th Views
         th class="last_post" align="left"
           'Last Post
-      = render partial: 'topic', collection: @forum.topics
+
+      = render partial: 'topic', collection: @topics
+
+= paginate @topics
