@@ -5,7 +5,7 @@
         h2.page-title
           span = Forum.model_name.human
           '&nbsp
-          small = @topic.title
+          small = Topic.model_name.human
 
 .right.controls = link_to "Back to Forum", forum_path(@topic.forum)
 .module

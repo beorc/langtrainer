@@ -5,7 +5,7 @@
         h2.page-title
           span = Forum.model_name.human
           '&nbsp
-          small = @forum.title
+          small = t('.subtitle')
 
 .right.controls = link_to "Back to Forum List", forums_path
 .module
