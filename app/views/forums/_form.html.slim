@@ -1,0 +1,25 @@
+- content_for :highlighted do
+  #highlighted
+    .container
+      .row-fluid.header
+        h2.page-title
+          span = Forum.model_name.human
+          '&nbsp
+          small = t('.subtitle')
+
+.row-fluid
+  .offset3.span6
+    .module
+      .module_header = friendly_title(@forum, t('.new'))
+      .module_body
+        = simple_form_for @forum do |f|
+          fieldset
+            = f.input :category_id, collection: Category.all, selected: @forum.category
+            = f.input :title, input_html: { class: 'span12' }
+            = f.input :description, as: :text, input_html: { class: 'span12' }
+            = f.input :position, input_html: { class: 'span1' }
+            = f.input :state
+          .module_footer
+            = f.submit class: 'btn btn-primary'
+            '&nbsp;
+            = link_to t(:cancel), :back, class: 'btn'
