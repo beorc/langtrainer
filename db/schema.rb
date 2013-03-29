@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327185743) do
+ActiveRecord::Schema.define(:version => 20130329064951) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -152,6 +152,8 @@ ActiveRecord::Schema.define(:version => 20130327185743) do
     t.string   "authentication_token"
     t.integer  "topics_count",         :default => 0
     t.integer  "posts_count",          :default => 0
+    t.integer  "en_counter",           :default => 0
+    t.integer  "ru_counter",           :default => 0
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true

@@ -3,12 +3,28 @@
 
 .row-fluid
   .offset4.span4
-    dl.dl-horizontal
-      dt
-        = t('.exercises')
-        '&nbsp
-      dd = current_user.exercises.count
-      dt
-        = t('.sentences')
-        '&nbsp
-      dd = current_user.sentences.count
+    .module
+      .module_header = t('.created')
+      .module_body
+        dl.dl-horizontal
+          dt
+            = t('.exercises')
+            '&nbsp
+          dd = current_user.exercises.count
+          dt
+            = t('.sentences')
+            '&nbsp
+          dd = current_user.sentences.count
+
+    .module
+      .module_header = t('.passed')
+      .module_body
+        dl.dl-horizontal
+          dt
+            = User.human_attribute_name :en_counter
+            ':&nbsp
+          dd = current_user.en_counter
+          dt
+            = User.human_attribute_name :ru_counter
+            ':&nbsp
+          dd = current_user.ru_counter

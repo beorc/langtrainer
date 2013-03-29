@@ -149,8 +149,10 @@ en:
     user_profile:
       dashboard:
         subtitle: Dashboard
-        exercises: 'Your exercises:'
-        sentences: 'Your sentences:'
+        created: Created
+        exercises: 'Exercises:'
+        sentences: 'Sentences:'
+        passed: Passed
     exercises:
       index:
         subtitle: Your exercises
@@ -181,6 +183,8 @@ en:
   user_sessions:
     new:
       sign_in: Sign in
+    form:
+      login_with_email: Log in with email
 
   feedbacks:
     new:
@@ -342,4 +346,6 @@ en:
         username: Nickname
         language_id: Language
         created_at: Created at
+        en_counter: English senteces
+        ru_counter: Russian sentences
 

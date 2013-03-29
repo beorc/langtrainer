@@ -147,8 +147,10 @@ ru:
     user_profile:
       dashboard:
         subtitle: Общие данные
-        exercises: 'Создано упражнений:'
-        sentences: 'Создано предложений:'
+        created: Создано
+        exercises: 'Упражнений:'
+        sentences: 'Предложений:'
+        passed: Пройдено
     exercises:
       index:
         subtitle: Ваши упражнения
@@ -179,6 +181,8 @@ ru:
   user_sessions:
     new:
       sign_in: Вход на сайт
+    form:
+      login_with_email: Войти через электронную почту
 
   feedbacks:
     new:
@@ -340,6 +344,8 @@ ru:
         username: Ник
         language_id: Язык
         created_at: Дата регистрации
+        en_counter: Английские фразы
+        ru_counter: Русские фразы
 
     errors:
       messages:

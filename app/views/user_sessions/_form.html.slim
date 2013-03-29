@@ -1,7 +1,11 @@
-= simple_form_for(user, url: token_authentication_path) do |f|
-  fieldset
-    = f.input :email
+.module
+  .module_header = t('.login_with_email')
+  .module_subheader.smaller
     small = t('token_authentication.email_description')
+  .module_body
+    = simple_form_for(user, url: token_authentication_path) do |f|
+      fieldset
+        = f.input :email
 
-  .form-actions
-    = f.submit class: 'btn btn-primary', id: 'send_token_button'
+      .module_footer
+        = f.submit class: 'btn btn-primary', id: 'send_token_button'

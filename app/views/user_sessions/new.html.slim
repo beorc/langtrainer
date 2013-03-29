@@ -7,11 +7,10 @@
 
 .row-fluid
   .span6
-    .well
-      = render partial: 'form', object: @user, as: :user
+    = render partial: 'form', object: @user, as: :user
 
   .span6
     - if Langtrainer.config.oauth_providers.present?
-      .well.well-white.margined-bottom
-        = render partial: 'shared/omniauth_buttons', locals: {title: t("omniauth.block_title")}
+      /.well.well-white.margined-bottom
+      = render partial: 'shared/omniauth_buttons', locals: {title: t("omniauth.block_title")}
 

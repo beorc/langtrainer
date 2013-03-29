@@ -7,9 +7,12 @@
       .alert.pending-email
         = simple_format t('.pending_email', email: @user_decorator.email_confirmation.new_email)
         = link_to t('.reset_email_confirmation'), reset_email_confirmation_path, method: 'put', class: 'btn'
-    = simple_form_for @user_decorator, url: user_registration_path, method: :put, html: { class: 'form-horizontal' } do |f|
-      fieldset
-        = f.input :email, as: :email, label: t('activerecord.attributes.user_registration.email')
+    .module
+      .module_header = current_user.title
+      .module_body
+        = simple_form_for @user_decorator, url: user_registration_path, method: :put, html: { class: 'form-horizontal' } do |f|
+          fieldset
+            = f.input :email, as: :email, label: t('activerecord.attributes.user_registration.email')
 
-      .form-actions
-        = f.submit class: 'btn btn-primary', id: 'update_registration'
+          .module_footer
+            = f.submit class: 'btn btn-primary', id: 'update_registration'

@@ -1,6 +1,7 @@
-.omniauth-block
-  - if Langtrainer.config.oauth_providers.present?
-    .strong = t('.title')
-    .unstyled.social-media
-      - Langtrainer.config.oauth_providers.each_key do |provider|
-        = render_oauth_button(provider)
+- if Langtrainer.config.oauth_providers.present?
+  .module
+    .module_header = t('.title')
+    .module_body
+      .unstyled.social-media
+        - Langtrainer.config.oauth_providers.each_key do |provider|
+          = render_oauth_button(provider)
