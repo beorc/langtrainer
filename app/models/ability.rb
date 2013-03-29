@@ -28,14 +28,14 @@ class Ability
       can [:update, :destroy], Correction, user_id: user.id
       can :create, Correction, sentence: { owner: nil }
 
-      can :show, Category
+      can :index, Category
       can :show, Forum
       can [:new, :create, :show, :edit, :update], Topic, user_id: user.id
       can [:new, :create, :show], Post
       can [:edit, :update, :destroy], Post, user_id: user.id
     end
 
-    can :show, Category
+    can :index, Category
     can :show, Forum
     can :show, Topic
     can :show, Post
