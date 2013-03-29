@@ -10,7 +10,7 @@
 .row-fluid
   .offset3.span6
     .module
-      .module_header = friendly_title(@post, t('.new'))
+      .module_header = Post.model_name.human
       .module_subheader.smaller
         = Topic.model_name.human
         ':&nbsp;

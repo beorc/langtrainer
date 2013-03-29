@@ -74,8 +74,8 @@ describe TopicsController do
     end
 
     it 'allows to edit own ones' do
-      own_topic = FactoryGirl.create :topic, forum: forum, user: user
-      get :edit, id: own_topic.id
+      own = FactoryGirl.create :topic, forum: forum, user: user
+      get :edit, id: own.id
       response.should be_success
     end
 
@@ -86,13 +86,13 @@ describe TopicsController do
     end
 
     it 'allows to update own ones' do
-      own_topic = FactoryGirl.create :topic, forum: forum, user: user
+      own = FactoryGirl.create :topic, forum: forum, user: user
       title = 'Corrected topic title'
-      put :update, id: own_topic.id, topic: { title: title }
-      response.should redirect_to topic_path(own_topic)
+      put :update, id: own.id, topic: { title: title }
+      response.should redirect_to topic_path(own)
 
-      last = Topic.unscoped.last
-      last.title.should == title
+      updated = Topic.find(own.id)
+      updated.title.should == title
     end
 
     it 'forbids to destroy' do
@@ -142,7 +142,7 @@ describe TopicsController do
       title = 'Corrected topic title'
       put :update, id: topic.id, topic: { title: title }
       response.should redirect_to topic_path(topic)
-      updated = Topic.where(id: topic.id).first
+      updated = Topic.find(topic.id)
       updated.title.should == title
     end
 
