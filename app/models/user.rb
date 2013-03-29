@@ -66,6 +66,21 @@ class User < ActiveRecord::Base
     has_role? :admin
   end
 
+  def summary_passes
+    en_counter + ru_counter
+  end
+
+  def increment_pass_counter!
+    case language.slug
+    when :ru
+      self.en_counter += 1
+    when :en
+      self.ru_counter += 1
+    end
+
+    save
+  end
+
   private
 
   def assign_default_languages

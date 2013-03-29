@@ -374,3 +374,7 @@ ru:
         odd: "может быть только нечетным"
         even: "может быть только четным"
 
+  topics:
+    post:
+      author:
+        sentences_passed: 'Пройдено фраз:'

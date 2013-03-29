@@ -349,3 +349,7 @@ en:
         en_counter: English senteces
         ru_counter: Russian sentences
 
+  topics:
+    post:
+      author:
+        sentences_passed: 'Sentences passed:'

@@ -2,6 +2,24 @@ ns = initNamespace('LANGTRAINER.exercises')
 
 ns.currentSentence = null
 
+ns.getTime = ->
+  new Date().getTime()
+
+ns.prevPassIncTime = ns.getTime()
+
+ns.incPassCounter = ->
+  MIN_INC_INTERVAL = 2000
+  currentTime = ns.getTime()
+  timeDiff = currentTime  - ns.prevPassIncTime
+  ns.prevPassIncTime = currentTime
+
+  return if timeDiff < MIN_INC_INTERVAL
+
+  $.ajax
+    url: gon.increment_pass_counter_path
+    type: 'put'
+    dataType: 'json'
+
 ns.rollSentence = () ->
   ns.currentSentence = ns.currentSentence.next()
 
@@ -16,6 +34,8 @@ ns.rollSentence = () ->
     ns.hideSkipAtoms()
 
   $('.answer').val ''
+
+  ns.incPassCounter()
 
 ns.hideSkipAtoms = ->
   $('.actions a.skip-atoms').addClass('hide')

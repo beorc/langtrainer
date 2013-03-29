@@ -1,0 +1,32 @@
+tr
+  td.post_author rowspan="2"
+    span.name = post.user.friendly_title
+    span.avatar
+    span.info.smaller
+      div
+        = t('.author.posts')
+        '&nbsp;
+        = post.user.posts.count
+      div
+        = t('.author.registered')
+        '&nbsp;
+        = post.user.created_at.to_s(:joined)
+      div
+        = t('.author.sentences_passed')
+        '&nbsp;
+        = post.user.summary_passes
+  td.post_header
+    span.left.post_date.smaller
+      = t('.posted')
+      '&nbsp;
+      = post.created_at
+    span.right.controls
+      = link_to t('.reply'), new_topic_post_path(@topic)
+      = link_to t('.quote'), new_topic_post_path(@topic, :quote => post)
+      - if can? :edit, post
+        = link_to t('.edit'), edit_post_path(post)
+      - if can? :destroy, post
+        = link_to t('.delete'), post, :confirm => t('.confirm_delete'), :method => :delete
+tr
+  td.post_body
+    = simple_format(auto_link(post.body))

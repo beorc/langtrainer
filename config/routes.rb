@@ -37,4 +37,6 @@ Langtrainer::Application.routes.draw do
     resources :exercises, only: :show, path: ''
     put 'set_native', on: :member
   end
+
+  put 'increment_pass_counter' => 'exercises#increment_pass_counter'
 end
