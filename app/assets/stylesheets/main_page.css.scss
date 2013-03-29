@@ -130,3 +130,15 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .btn.language {
   width: 110px;
 }
+
+.top-users.block {
+  .module_header {
+    text-align: center;
+  }
+  .module_body {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+

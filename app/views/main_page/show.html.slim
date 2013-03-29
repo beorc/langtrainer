@@ -4,18 +4,36 @@
       h1 = t(:app_name)
       p = t('.description')
 
-.row-fluid.mission
-  .inner
-    h3
-      = t('.select_language')
-    - Language.except(native_language).each do |language|
-      = link_to title_for(language),
-                language_exercise_path(language, Exercise.first),
-                class: 'btn btn-primary btn-large language'
-      '&nbsp
+.languages.block
+  h2.block-title
+    span = t('.languages_block_title')
+  .row-fluid
+    .offset5
+      - Language.except(native_language).each do |language|
+        li.span2 = link_to title_for(language),
+                  language_exercise_path(language, Exercise.first),
+                  class: 'btn btn-primary btn-large language'
+        '&nbsp
 
+- top_users = User.top(12)
+- if top_users.present?
+  .top-users.block
+    h2.block-title
+      span = t('.top_users')
+    - top_users.each_slice(6) do |arr|
+      .one-block
+        - arr.each_slice(6) do |row|
+          ul.thumbnails.top-users
+            - row.each do |user|
+              li.span2.user
+                .module
+                  .module_header = user.friendly_title
+                  .module_body
+                    = number_to_human(user.summary_passes, :strip_insignificant_zeros => true )
 
 .block.why.nargin-top-large
+  h2.block-title
+    span = t('.why_block_title')
   .row-fluid
     .span4
       h4.title

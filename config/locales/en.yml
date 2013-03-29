@@ -15,6 +15,18 @@ en:
   'true': Yes
   'false': No
 
+  number:
+    human:
+      decimal_units:
+        format: "%n%u"
+        units:
+          unit: ""
+          thousand: K
+          million: M
+          billion: B
+          trillion: T
+          quadrillion: Q
+
   en: English
   ru: Russian
   titles:
@@ -110,7 +122,9 @@ en:
   main_page:
     show:
       description: Foreign languages trainer
-      select_language: To start trainig, just select a language
+      top_users: Top 12
+      why_block_title: Features
+      languages_block_title: Languages
       why:
         sentences:
           title: Focus on sentence forming

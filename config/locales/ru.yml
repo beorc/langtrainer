@@ -15,6 +15,18 @@ ru:
   'true': Да
   'false': Нет
 
+  number:
+    human:
+      decimal_units:
+        format: "%n%u"
+        units:
+          unit: ""
+          thousand: K
+          million: M
+          billion: B
+          trillion: T
+          quadrillion: Q
+
   titles:
     language:
       en: English
@@ -108,7 +120,9 @@ ru:
   main_page:
     show:
       description: Тренажер иностранных языков
-      select_language: Чтобы приступить к тренировке, достаточно выбрать изучаемый язык
+      top_users: Топ 12
+      why_block_title: Особенности
+      languages_block_title: Языки
       why:
         sentences:
           title: Построение предложений

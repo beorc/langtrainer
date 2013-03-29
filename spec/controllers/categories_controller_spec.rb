@@ -35,7 +35,7 @@ describe CategoriesController do
 
     it 'allows to view' do
       get :index
-      response.status.should == 302
+      response.should be_success
     end
   end
 
@@ -75,7 +75,7 @@ describe CategoriesController do
 
     it 'allows to view' do
       get :index
-      response.status.should == 302
+      response.should be_success
     end
   end
 
@@ -86,7 +86,7 @@ describe CategoriesController do
 
     it 'allows get new' do
       get :new
-      response.status.should == 200
+      response.should be_success
     end
 
     it 'allows post create' do
@@ -113,6 +113,11 @@ describe CategoriesController do
       delete :destroy, id: new_category.id
       response.should redirect_to forums_url
       Category.where(id: new_category.id).empty?.should == true
+    end
+
+    it 'allows to view' do
+      get :index
+      response.should be_success
     end
   end
 end

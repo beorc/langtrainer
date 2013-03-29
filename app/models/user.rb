@@ -81,6 +81,10 @@ class User < ActiveRecord::Base
     save
   end
 
+  def self.top(number)
+    order('(en_counter + ru_counter) DESC').limit(number)
+  end
+
   private
 
   def assign_default_languages

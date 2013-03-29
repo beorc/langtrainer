@@ -36,7 +36,7 @@ describe ForumsController do
 
     it 'allows to view' do
       get :show, id: forum.id
-      response.status.should == 200
+      response.should be_success
     end
   end
 
@@ -76,7 +76,7 @@ describe ForumsController do
 
     it 'allows to view' do
       get :show, id: forum.id
-      response.status.should == 200
+      response.should be_success
     end
   end
 
@@ -87,7 +87,7 @@ describe ForumsController do
 
     it 'allows get new' do
       get :new
-      response.status.should == 200
+      response.should be_success
     end
 
     it 'allows post create' do
@@ -104,7 +104,7 @@ describe ForumsController do
 
     it 'allows to get edit' do
       get :edit, id: forum.id
-      response.status.should == 200
+      response.should be_success
     end
 
     it 'allows to put update' do
@@ -119,6 +119,11 @@ describe ForumsController do
       delete :destroy, id: forum.id
       response.should redirect_to forums_url
       Forum.where(id: forum.id).empty?.should == true
+    end
+
+    it 'allows to view' do
+      get :show, id: forum.id
+      response.should be_success
     end
   end
 end
