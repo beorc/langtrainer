@@ -30,7 +30,7 @@ describe ForumsController do
     end
 
     it 'forbids to destroy' do
-      delete :destroy, id: category.forums.first.id
+      delete :destroy, id: forum.id
       response.should redirect_to(login_path)
     end
 
@@ -48,30 +48,30 @@ describe ForumsController do
     it 'does not allow to get new' do
       get :new
       response.should redirect_to(root_path)
-      flash[:alert].should == I18n.t('flash.categories.access_denied')
+      flash[:alert].should == I18n.t('flash.forums.access_denied')
     end
 
     it 'does not allow to post create' do
       post :create, forum: { title: 'Forum title', description: 'Forum description', category_id: category.id }
-      flash[:alert].should == I18n.t('flash.categories.access_denied')
+      flash[:alert].should == I18n.t('flash.forums.access_denied')
     end
 
     it 'forbids to edit' do
       get :edit, id: forum.id
       response.should redirect_to(root_path)
-      flash[:alert].should == I18n.t('flash.categories.access_denied')
+      flash[:alert].should == I18n.t('flash.forums.access_denied')
     end
 
     it 'forbids to update' do
       put :update, id: forum.id, forum: { title: 'Corrected forum title' }
       response.should redirect_to(root_path)
-      flash[:alert].should == I18n.t('flash.categories.access_denied')
+      flash[:alert].should == I18n.t('flash.forums.access_denied')
     end
 
     it 'forbids to destroy' do
       delete :destroy, id: forum.id
       response.should redirect_to(root_path)
-      flash[:alert].should == I18n.t('flash.categories.access_denied')
+      flash[:alert].should == I18n.t('flash.forums.access_denied')
     end
 
     it 'allows to view' do
@@ -99,7 +99,7 @@ describe ForumsController do
       last_forum = Forum.unscoped.last
       last_forum.title.should == title
       last_forum.description.should == description
-      last_forum.category.id == category.id
+      last_forum.category.id.should == category.id
     end
 
     it 'allows to get edit' do
