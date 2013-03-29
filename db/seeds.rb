@@ -11,9 +11,14 @@
 
 puts 'FORUM'
 
-Category.find_or_create_by_title(:title => "General Discussion", :position => 0)
+general = Category.find_or_create_by_title(:title => "General Discussion", :position => 0)
 
-Forum.find_or_create_by_title(:title => "General Discussion", :description => "Discuss any topic in this forum.", :category_id => Category.find_by_title("General Discussion").id, :position => 0)
+Forum.find_or_create_by_title(:title => "General Discussion", :description => "Discuss any topic in any language.", :category_id => general.id, :position => 0)
+
+practice = Category.find_or_create_by_title(:title => "Foreign language practice", :position => 1)
+
+Forum.find_or_create_by_title(:title => "Practice English", :description => "Discuss any topic in English for preference.", :category_id => practice.id, language: 'english', :position => 0)
+
 
 puts 'ROLES'
 

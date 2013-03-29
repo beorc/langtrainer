@@ -16,6 +16,7 @@
           fieldset
             = f.input :category_id, collection: Category.all, selected: @forum.category
             = f.input :title, input_html: { class: 'span12' }
+            = f.input :language, input_html: { class: 'span12' }
             = f.input :description, as: :text, input_html: { class: 'span12' }
             = f.input :position, input_html: { class: 'span1' }
             = f.input :state

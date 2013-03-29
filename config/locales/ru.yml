@@ -15,6 +15,9 @@ ru:
   'true': Да
   'false': Нет
 
+  english: английский
+  russian: русский
+
   number:
     human:
       decimal_units:

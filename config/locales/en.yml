@@ -27,8 +27,9 @@ en:
           trillion: T
           quadrillion: Q
 
-  en: English
-  ru: Russian
+  english: English
+  russian: Russian
+
   titles:
     language:
       en: English
