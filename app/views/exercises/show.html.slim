@@ -8,53 +8,58 @@
         span.exercises-list
           = render_exercises_select
 
-.container.workspace
-  .container
+- if @sentences.empty?
+  .row-fluid
     .offset3.span6
-  .container.question
-    = render partial: 'sentence', object: @sentences.first
-  .sentences.hide  data-creation-url=new_users_sentence_path(exercise: @exercise)
-    = render partial: 'sentence', collection: @sentences
+      p = t('.no_sentences')
+- else
+  .container.workspace
+    .container
+      .offset3.span6
+    .container.question
+      = render partial: 'sentence', object: @sentences.first
+    .sentences.hide  data-creation-url=new_users_sentence_path(exercise: @exercise)
+      = render partial: 'sentence', collection: @sentences
 
-  .form-horizontal.control-group.string
-    .container.answer
-      = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
+    .form-horizontal.control-group.string
+      .container.answer
+        = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
 
-    .container.actions
-      = link_to '#', class: 'next', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next') do
-        i.icon-refresh.icon-border
+      .container.actions
+        = link_to '#', class: 'next', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next') do
+          i.icon-refresh.icon-border
 
-      '&nbsp
-      - if @sentences.first.atom?
-        = link_to '#', class: 'skip-atoms', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.skip_atoms') do
-          i.icon-forward.icon-border
+        '&nbsp
+        - if @sentences.first.atom?
+          = link_to '#', class: 'skip-atoms', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.skip_atoms') do
+            i.icon-forward.icon-border
+
+          '&nbsp
+
+        = link_to '#', class: 'look', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.look') do
+          i.icon-key.icon-border
 
         '&nbsp
 
-      = link_to '#', class: 'look', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.look') do
-        i.icon-key.icon-border
+        = link_to '#', class: 'show-hint', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.hint')  do
+          i.icon-question-sign.icon-border
 
-      '&nbsp
+        '&nbsp
 
-      = link_to '#', class: 'show-hint', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.hint')  do
-        i.icon-question-sign.icon-border
+        = link_to '#', class: 'correct', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.correct')  do
+          i.icon-edit.icon-border
 
-      '&nbsp
+        '&nbsp
 
-      = link_to '#', class: 'correct', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.correct')  do
-        i.icon-edit.icon-border
-
-      '&nbsp
-
-      = link_to '#', class: 'create', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.create')  do
-        i.icon-plus.icon-border
+        = link_to '#', class: 'create', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.create')  do
+          i.icon-plus.icon-border
 
 
-  = render 'help'
-  /- if @hint.present?
-    .hints
-      .mission
-        .inner
-          h3
-            = t('.hint')
-      = render @hint
+    = render 'help'
+    /- if @hint.present?
+      .hints
+        .mission
+          .inner
+            h3
+              = t('.hint')
+        = render @hint
