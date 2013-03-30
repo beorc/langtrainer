@@ -8,12 +8,14 @@
   h2.block-title
     span = t('.languages_block_title')
   .row-fluid
-    .offset5
-      - Language.except(native_language).each do |language|
-        li.span2 = link_to title_for(language),
-                  language_exercise_path(language, Exercise.first),
-                  class: 'btn btn-primary btn-large language'
-        '&nbsp
+    - Language.except(native_language).each do |language|
+      li.span3
+        .module
+          .module_header = title_for(language)
+          .module_body
+            = link_to t('.exercises_link_title'),
+                      language_exercise_path(language, Exercise.first),
+                      class: 'btn btn-primary btn-large'
 
 /- top_users = User.top(12)
 /- if top_users.present?

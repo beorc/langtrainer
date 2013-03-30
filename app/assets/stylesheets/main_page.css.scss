@@ -131,6 +131,15 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   width: 110px;
 }
 
+.languages.block {
+  .module_header {
+    text-align: center;
+  }
+  .module_body {
+    text-align: center;
+  }
+}
+
 .top-users.block {
   .module_header {
     text-align: center;
