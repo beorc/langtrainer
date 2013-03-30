@@ -17,7 +17,7 @@
     = render partial: 'sentence', collection: @sentences
 
   .form-horizontal.control-group.string
-    .container.controls
+    .container.answer
       = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
 
     .container.actions
