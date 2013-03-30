@@ -29,6 +29,8 @@ Langtrainer::Application.configure do
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
 
+  ActionMailer::Base.default from: ENV['MAIL_FROM'], reply_to: ENV['MAIL_REPLY_TO']
+
   # Raise exception on mass assignment protection for Active Record models
   config.active_record.mass_assignment_sanitizer = :strict
 

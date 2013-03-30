@@ -28,14 +28,15 @@ describe 'Users' do
 
   it 'can visit private workspace after sign in' do
     user = sign_in_by_email
-    find('.user-profile a').click
+    page.has_selector?('body.main-page')
+    find('#main-menu .user-profile a').click
     page.has_selector?('body.user-profile')
     find('body.user-profile')
   end
 
   it 'can not visit private workspace without sign in' do
     visit root_path
-    find('.user-profile a').click
+    find('#main-menu .user-profile a').click
     page.has_selector?('body.user-sessions')
     find('body.user-sessions')
   end

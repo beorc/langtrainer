@@ -1,8 +1,6 @@
 require "spec_helper"
-require "erb"
 
 describe UserMailer do
-  include ERB::Util
 
   describe 'token authentication' do
     before(:each) do
@@ -14,7 +12,7 @@ describe UserMailer do
 
     it "should generate proper message" do
       @email.should have_subject(I18n.t('mailer.token_authentication.subject'))
-      url = h root_url(auth_token: @user.authentication_token, host: 'langtrainer.dev', locale: I18n.locale)
+      url = root_url(auth_token: @user.authentication_token, host: 'langtrainer.dev', locale: I18n.locale)
       @email.should have_body_text(url)
     end
 

@@ -17,7 +17,7 @@ describe 'Sentences' do
     end
 
     it 'allows to create own ones', js: true do
-      visit users_sentences_path
+      visit users_sentences_path(locale: I18n.locale)
       page.has_selector?('body.user-profile')
 
       find('a.new-sentence').click
@@ -27,7 +27,7 @@ describe 'Sentences' do
       exercise_title = title_for Exercise.first
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
-      find('.form-actions .btn-primary').click
+      find('form .btn-primary').click
 
       page.has_selector?('body.sentences.show')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.create.success')
@@ -37,14 +37,14 @@ describe 'Sentences' do
 
     it 'allows to change own ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit edit_users_sentence_path(sentence)
+      visit edit_users_sentence_path(sentence, locale: I18n.locale)
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
       exercise_title = title_for(Exercise.last)
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
-      find('.form-actions .btn-primary').click
+      find('form .btn-primary').click
 
       page.has_selector?('body.sentences.index')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.update.success')
@@ -54,7 +54,7 @@ describe 'Sentences' do
 
     it 'allows to destroy own ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit users_sentences_path(sentence: sentence)
+      visit users_sentences_path(sentence: sentence, locale: I18n.locale)
 
       page.has_selector?('body.sentences.index')
 
@@ -75,7 +75,7 @@ describe 'Sentences' do
     end
 
     it 'allows to create public ones', js: true do
-      visit users_sentences_path
+      visit users_sentences_path(locale: I18n.locale)
       find('a.new-sentence').click
 
       page.has_selector?('body.sentences.new')
@@ -83,7 +83,7 @@ describe 'Sentences' do
       exercise_title = title_for Exercise.first
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
-      find('.form-actions .btn-primary').click
+      find('form .btn-primary').click
 
       page.has_selector?('body.sentences.show')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.create.success')
@@ -97,14 +97,14 @@ describe 'Sentences' do
 
     it 'allows to change users ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit edit_users_sentence_path(sentence)
+      visit edit_users_sentence_path(sentence, locale: I18n.locale)
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
       exercise_title = title_for Exercise.last
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
-      find('.form-actions .btn-primary').click
+      find('form .btn-primary').click
 
       page.has_selector?('body.sentences.show')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.update.success')
@@ -114,14 +114,14 @@ describe 'Sentences' do
 
     it 'allows to change public ones', js: true do
       sentence = @public_exercise.sentences.first
-      visit edit_users_sentence_path(sentence)
+      visit edit_users_sentence_path(sentence, locale: I18n.locale)
 
       page.has_selector?('body.sentences.edit')
       en_text = 'I love them all'
       exercise_title = title_for Exercise.last
       fill_in('sentence_en', with: en_text)
       select exercise_title, from: 'sentence_exercise_id'
-      find('.form-actions .btn-primary').click
+      find('form .btn-primary').click
 
       page.has_selector?('body.sentences.show')
       find('#flash_notice').text.should eq I18n.t('flash.sentence.update.success')
@@ -131,7 +131,7 @@ describe 'Sentences' do
 
     it 'allows to destroy public ones', js: true do
       sentence = FactoryGirl.create :sentence, exercise: @public_exercise, owner: @user, en: 'I love them'
-      visit users_sentences_path(sentence: sentence)
+      visit users_sentences_path(sentence: sentence, locale: I18n.locale)
 
       page.has_selector?('body.sentences.index')
 

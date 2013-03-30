@@ -5,8 +5,10 @@ GIT
     capistrano-unicorn (0.1.6)
       capistrano
 
-PATH
-  remote: /Users/beorc/dev/talky
+GIT
+  remote: git@github.com:beorc/talky.git
+  revision: f371cd16d11b2c1d390e8b5de356a273c04d43e1
+  branch: master
   specs:
     talky (0.0.1)
       cancan

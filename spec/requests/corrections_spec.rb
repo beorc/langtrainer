@@ -18,7 +18,7 @@ describe 'Corrections' do
     end
 
     it 'allows to create own ones', js: true do
-      visit users_sentences_path
+      visit users_sentences_path(locale: I18n.locale)
       page.has_selector?('body.user-profile')
 
       en_input = find('.sentence:first .translation[data-lang=en] textarea')
@@ -43,7 +43,7 @@ describe 'Corrections' do
 
       check_alert(I18n.t(:delete_confirm))
 
-      visit users_sentences_path(sentence: sentence)
+      visit users_sentences_path(sentence: sentence, locale: I18n.locale)
 
       Correction.where(id: correction.id).empty?.should == true
 
@@ -71,7 +71,7 @@ describe 'Corrections' do
 
       check_alert(I18n.t(:delete_confirm))
 
-      visit root_path
+      visit root_path(locale: I18n.locale)
 
       Sentence.where(id: sentence.id).empty?.should == true
       Correction.where(id: correction.id).empty?.should == true
