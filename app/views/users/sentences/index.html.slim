@@ -33,8 +33,9 @@
       table.table.table-bordered.table-striped.table-condensed
         thead
           tr
-            th = Sentence.human_attribute_name(:english)
-            th = Sentence.human_attribute_name(:russian)
+            th = Sentence.human_attribute_name(:en)
+            th = Sentence.human_attribute_name(:ru)
+            th = Sentence.human_attribute_name(:de)
             th = t(:actions)
         tbody
           = render partial: 'sentence', collection: collection, as: :sentence

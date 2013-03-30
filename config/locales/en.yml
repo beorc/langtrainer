@@ -350,6 +350,7 @@ en:
       sentence:
         en: English
         ru: Russian
+        de: German
         atom: Basic form
         exercise_id: Exercise
         user_id: User

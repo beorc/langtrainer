@@ -19,6 +19,7 @@ practice = Category.find_or_create_by_title(:title => "Foreign language practice
 
 Forum.find_or_create_by_title(:title => "Practice English", :description => "Discuss any topic in English for preference.", :category_id => practice.id, language: 'english', :position => 0)
 
+Forum.find_or_create_by_title(:title => "Practice German", :description => "Discuss any topic in German for preference.", :category_id => practice.id, language: 'german', :position => 0)
 
 puts 'ROLES'
 
