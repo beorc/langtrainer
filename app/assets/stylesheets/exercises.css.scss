@@ -35,9 +35,15 @@
 .table td {
   vertical-align: middle;
   text-align: center;
+
+  .block {
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 
 .hints { margin-top: 30px; }
 .hints td {
   p { margin: 0 }
 }
+

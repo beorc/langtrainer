@@ -79,7 +79,7 @@ class Language
     @languages ||= [
       Language.send(:new, id: English, slug: :en, title: 'English'),
       Language.send(:new, id: Russian, slug: :ru, title: 'Russian'),
-      #Language.send(:new, id: German, slug: :de, title: 'German')
+      Language.send(:new, id: German, slug: :de, title: 'German')
     ]
   end
 

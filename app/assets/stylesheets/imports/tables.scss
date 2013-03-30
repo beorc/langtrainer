@@ -99,6 +99,10 @@ table {
      border-right: none;
      border-left: none;
   }
+
+  td.left-bordered {
+    border-left: 1px solid #dddddd;
+  }
 }
 
 .top-bordered {
@@ -108,3 +112,14 @@ table {
 .bottom-bordered {
   border-bottom: 1px solid #dddddd;
 }
+
+td table {
+  tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  tr:last-child {
+    border-bottom: 0 none;
+  }
+}
+
