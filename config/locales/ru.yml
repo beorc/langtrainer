@@ -17,6 +17,7 @@ ru:
 
   english: английский
   russian: русский
+  german: немецкий
 
   number:
     human:
@@ -34,6 +35,7 @@ ru:
     language:
       en: English
       ru: Русский
+      de: Deutsch
     exercise:
       first: Первое упражнение
       second: Второе упражнение
@@ -124,8 +126,10 @@ ru:
     show:
       description: Тренажер иностранных языков
       top_users: Топ 12
+      top_users_subtitle: по числу пройденных фраз
       why_block_title: Особенности
       languages_block_title: Языки
+      languages_block_subtitle: Чтобы начать, достаточно выбрать язык
       exercises_link_title: Начать тренировку
       why:
         sentences:

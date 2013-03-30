@@ -82,7 +82,7 @@ class User < ActiveRecord::Base
   end
 
   def self.top(number)
-    order('(en_counter + ru_counter) DESC').limit(number)
+    order('(en_counter + ru_counter) DESC').where('en_counter + ru_counter > 0').limit(number)
   end
 
   private

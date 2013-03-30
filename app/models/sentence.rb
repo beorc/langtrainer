@@ -15,6 +15,7 @@ class Sentence < ActiveRecord::Base
   scope :order_by_position, -> { order('position ASC') }
   scope :atoms, -> { where(atom: true) }
   scope :compound, -> { where('atom IS NULL OR atom = false') }
+  scope :with_language, ->(language) { where('? IS NOT NULL', language.slug) }
   def self.for_user(user)
     where('user_id IS NULL OR user_id = ?', user.id) - joins(:corrections).where('corrections_sentences.user_id = ?', user.id)
   end
