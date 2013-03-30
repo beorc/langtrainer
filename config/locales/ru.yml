@@ -17,6 +17,7 @@ ru:
 
   english: английский
   russian: русский
+  german: немецкий
 
   number:
     human:
@@ -34,6 +35,7 @@ ru:
     language:
       en: English
       ru: Русский
+      de: Deutsch
     exercise:
       first: Первое упражнение
       second: Второе упражнение
@@ -126,7 +128,7 @@ ru:
       top_users: Топ 12
       why_block_title: Особенности
       languages_block_title: Языки
-      exercises_link_title: Начать упражнение
+      exercises_link_title: Начать тренировку
       why:
         sentences:
           title: Построение предложений

@@ -29,11 +29,13 @@ en:
 
   english: English
   russian: Russian
+  german: German
 
   titles:
     language:
       en: English
       ru: Русский
+      de: Deutsch
     exercise:
       first: First exercise
       second: Second exercise
