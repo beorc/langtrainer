@@ -30,7 +30,8 @@ class Ability
 
       can :index, Category
       can :show, Forum
-      can [:new, :create, :show, :edit, :update], Topic, user_id: user.id
+      can [:new, :create, :show], Topic
+      can [:edit, :update], Topic, user_id: user.id
       can [:new, :create, :show], Post
       can [:edit, :update, :destroy], Post, user_id: user.id
     end
