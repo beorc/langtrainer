@@ -7,6 +7,7 @@
 .languages.block
   h2.block-title
     span = t('.languages_block_title')
+    small = t('.languages_block_subtitle')
   .row-fluid
     - Language.except(native_language).each do |language|
       li.span3
@@ -17,11 +18,12 @@
                       language_exercise_path(language, Exercise.first),
                       class: 'btn btn-primary btn-large'
 
-/- top_users = User.top(12)
-/- if top_users.present?
+- top_users = User.top(12)
+- if top_users.present?
   .top-users.block
     h2.block-title
       span = t('.top_users')
+      small = t('.top_users_subtitle')
     - top_users.each_slice(6) do |arr|
       .one-block
         - arr.each_slice(6) do |row|

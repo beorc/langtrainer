@@ -126,9 +126,11 @@ en:
     show:
       description: Foreign languages trainer
       top_users: Top 12
+      top_users_subtitle: by passed sentences
       why_block_title: Features
       languages_block_title: Languages
       exercises_link_title: Start training
+      languages_block_subtitle: Just select a language
       why:
         sentences:
           title: Focus on sentence forming
