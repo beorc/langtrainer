@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git@github.com:beorc/talky.git
-  revision: 99adf21ae69fc4e15b98c594bb767a454416869c
+  revision: eabfa0574a6f37d9eac0b90a035ab617f48b89b6
   branch: master
   specs:
     talky (0.0.1)

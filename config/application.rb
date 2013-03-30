@@ -105,7 +105,7 @@ module Langtrainer
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.easy_sign_in_mode = false
+    config.easy_sign_in_mode = true
     config.token_authentication_key = :auth_token
 
     config.host = Rails.env.production? ? 'langtrainer.ru' : 'langtrainer.dev'

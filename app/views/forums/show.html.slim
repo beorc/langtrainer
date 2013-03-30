@@ -13,11 +13,12 @@
   .module_header
     = @forum.title
     span.controls.right
-      - if can? :create, Topic
-        = link_to t('.new_topic'), new_forum_topic_path(@forum)
+      = link_to t('.new_topic'), new_forum_topic_path(@forum)
       - if can? :update, @forum
+        '&nbsp;
         = link_to t('.edit_forum'), edit_forum_path(@forum)
       - if can? :destroy, @forum
+        '&nbsp;
         = link_to t('.delete_forum'), forum_path(@forum), :confirm => t('.confirm_delete'), :method => :delete
   div
     table

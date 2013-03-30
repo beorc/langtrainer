@@ -22,11 +22,15 @@ tr
       = post.created_at
     span.right.controls
       = link_to t('.reply'), new_topic_post_path(@topic)
+      '&nbsp;
       = link_to t('.quote'), new_topic_post_path(@topic, :quote => post)
       - if can? :edit, post
+        '&nbsp;
         = link_to t('.edit'), edit_post_path(post)
       - if can? :destroy, post
+        '&nbsp;
         = link_to t('.delete'), post, :confirm => t('.confirm_delete'), :method => :delete
+
 tr
   td.post_body
     = simple_format(auto_link(post.body))

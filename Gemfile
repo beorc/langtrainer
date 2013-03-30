@@ -29,7 +29,6 @@ gem 'compass-rails'
 gem 'virtus'
 gem 'validates_existence', '>= 0.4'
 gem 'friendly_id', '~> 4.0.9'
-#gem 'talky', path: '/Users/beorc/dev/talky'
 gem 'talky', git: 'git@github.com:beorc/talky.git', branch: 'master'
 
 group :development, :test do
