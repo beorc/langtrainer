@@ -103,9 +103,25 @@ en:
     exercises:
       title: Exercises
 
-    contacts:
+    feedbacks:
       <<: *shared_meta_tags
       title: Feedback
+
+    categories:
+      <<: *shared_meta_tags
+      title: Forum
+
+    forums:
+      <<: *shared_meta_tags
+      title: Forum
+
+    topics:
+      <<: *shared_meta_tags
+      title: Forum
+
+    posts:
+      <<: *shared_meta_tags
+      title: Forum
 
   layouts:
     topbar:

@@ -2,58 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://langtrainer.com/?locale=ru</loc>
-      <priority>1.0</priority>
+      <priority>0.8</priority>
    </url>
    <url>
       <loc>http://langtrainer.com/?locale=en</loc>
-      <priority>1.0</priority>
+      <priority>0.8</priority>
    </url>
    <url>
-     <loc>http://langtrainer.com/en/first?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/en/second?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/en/third?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/en/fourth?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/en/fifth?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/en/sixth?locale=ru</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/first?locale=en</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/second?locale=en</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/third?locale=en</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/fourth?locale=en</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/fifth?locale=en</loc>
-      <priority>0.5</priority>
-   </url>
-   <url>
-     <loc>http://langtrainer.com/ru/sixth?locale=en</loc>
-      <priority>0.5</priority>
+      <loc>http://langtrainer.com/forums?locale=ru</loc>
+      <priority>0.8</priority>
    </url>
 </urlset>

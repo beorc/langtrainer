@@ -15,6 +15,7 @@
         = simple_form_for @category do |f|
           fieldset
             = f.input :title, input_html: { class: 'span12' }
+            = f.input :slug, input_html: { class: 'span12' }
             = f.input :position, input_html: { class: 'span1' }
             = f.input :state, as: :boolean
           .module_footer

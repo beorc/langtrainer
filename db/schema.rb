@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330092753) do
+ActiveRecord::Schema.define(:version => 20130331044117) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(:version => 20130330092753) do
     t.integer  "position",   :default => 0
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
+    t.string   "slug"
   end
+
+  add_index "categories", ["slug"], :name => "index_categories_on_slug", :unique => true
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -81,7 +84,10 @@ ActiveRecord::Schema.define(:version => 20130330092753) do
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
     t.string   "language"
+    t.string   "slug"
   end
+
+  add_index "forums", ["slug"], :name => "index_forums_on_slug", :unique => true
 
   create_table "posts", :force => true do |t|
     t.text     "body"
@@ -135,7 +141,10 @@ ActiveRecord::Schema.define(:version => 20130330092753) do
     t.integer  "user_id"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
+    t.string   "slug"
   end
+
+  add_index "topics", ["slug"], :name => "index_topics_on_slug", :unique => true
 
   create_table "user_providers", :force => true do |t|
     t.integer  "user_id",    :null => false

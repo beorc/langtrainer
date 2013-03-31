@@ -107,6 +107,22 @@ ru:
       <<: *shared_meta_tags
       title: Обратная связь
 
+    feedbacks:
+      <<: *shared_meta_tags
+      title: Форум
+
+    forums:
+      <<: *shared_meta_tags
+      title: Форум
+
+    topics:
+      <<: *shared_meta_tags
+      title: Форум
+
+    posts:
+      <<: *shared_meta_tags
+      title: Форум
+
   layouts:
     topbar:
       home: На главную

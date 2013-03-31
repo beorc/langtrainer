@@ -19,8 +19,10 @@
         .module_body
           fieldset
             = f.input :title, input_html: { class: 'span12' }
-          - if @topic.new_record?
-            = f.input :body, as: :text, input_html: { class: 'span12' }
+            - if can? :manage, Topic
+              = f.input :slug, input_html: { class: 'span12' }
+            - if @topic.new_record?
+              = f.input :body, as: :text, input_html: { class: 'span12' }
         .module_footer
           = f.submit class: 'btn btn-primary'
           '&nbsp;
