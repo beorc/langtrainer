@@ -18,23 +18,6 @@
                       language_exercise_path(language, Exercise.first),
                       class: 'btn btn-primary btn-large'
 
-- top_users = User.top(12)
-- if top_users.present?
-  .top-users.block
-    h2.block-title
-      span = t('.top_users')
-      small = t('.top_users_subtitle')
-    - top_users.each_slice(6) do |arr|
-      .one-block
-        - arr.each_slice(6) do |row|
-          ul.thumbnails.top-users
-            - row.each do |user|
-              li.span2.user
-                .module
-                  .module_header = user.friendly_title
-                  .module_body
-                    = number_to_human(user.summary_passes, :strip_insignificant_zeros => true )
-
 .block.why.nargin-top-large
   h2.block-title
     span = t('.why_block_title')
@@ -76,3 +59,22 @@
         '&nbsp
         = t('.why.extensions.title')
       = t('.why.extensions.content')
+
+- top_users = User.top(12)
+- if top_users.present?
+  .top-users.block
+    h2.block-title
+      span = t('.top_users')
+      small = t('.top_users_subtitle')
+    - top_users.each_slice(6) do |arr|
+      .one-block
+        - arr.each_slice(6) do |row|
+          ul.thumbnails.top-users
+            - row.each do |user|
+              li.span2.user
+                .module
+                  .module_header title=user.friendly_title
+                    = truncate(user.friendly_title, :length => 20, :omission => '...')
+                  .module_body
+                    = number_to_human(user.summary_passes, :strip_insignificant_zeros => true )
+

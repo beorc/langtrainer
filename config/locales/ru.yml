@@ -141,7 +141,7 @@ ru:
   main_page:
     show:
       description: Тренажер иностранных языков
-      top_users: Топ 12
+      top_users: Топ
       top_users_subtitle: по числу пройденных фраз
       why_block_title: Особенности
       languages_block_title: Языки
