@@ -9,8 +9,8 @@ describe PostsMailer do
   let(:new_post) { topic.posts.first }
   let(:user) { new_post.user }
   let(:email) do
-    PostsMailer.send_notification_email([admin.email], post_url_options: { id: new_post.id },
-                                                       topic_url_options: { id: topic.id },
+    PostsMailer.send_notification_email([admin.email], post_url_options: { id: new_post.to_param },
+                                                       topic_url_options: { id: topic.to_param },
                                                        topic: topic.title,
                                                        user: user.title,
                                                        message: new_post.body)
