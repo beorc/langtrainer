@@ -74,7 +74,7 @@
               li.span2.user
                 .module
                   .module_header title=user.friendly_title
-                    = truncate(user.friendly_title, :length => 20, :omission => '...')
+                    = truncate(user.friendly_title, :length => 15, :omission => '...')
                   .module_body
                     = number_to_human(user.summary_passes, :strip_insignificant_zeros => true )
 
