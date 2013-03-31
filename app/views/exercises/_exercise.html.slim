@@ -6,4 +6,4 @@
       = title_for(exercise)
   .accordion-body.collapse id=exercise.slug class=accordion_body_class(exercise)
     .accordion-inner
-      = render("exercises/#{@language.slug}/hint_#{exercise.slug}") rescue nil
+      = render("exercises/#{@language.slug}/#{native_language.slug}/hint_#{exercise.slug}") rescue nil
