@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :providers_attributes, :nickname
 
-  validates :nickname, uniqueness: true
+  validates :nickname, uniqueness: true, if: :nickname?
   validates :email, uniqueness: true,
                     format: { with: Langtrainer.email_regexp },
                     if: 'email.present?'
