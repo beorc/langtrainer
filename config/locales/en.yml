@@ -371,6 +371,7 @@ en:
         exercise_id: Exercise
         user_id: User
       user_registration:
+        nickname: Nickname
         email: E-mail
       exercise:
         title: Title
@@ -380,13 +381,16 @@ en:
         email: E-mail
         created_at: Date
       user:
+        nickname: Nickname
         email: E-mail
-        username: Nickname
+        username: Username
         language_id: Language
         created_at: Created at
         en_counter: English senteces
         ru_counter: Russian sentences
         de_counter: German sentences
+    errors:
+      messages:
 
   topics:
     post:

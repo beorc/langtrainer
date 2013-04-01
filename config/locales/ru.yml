@@ -371,6 +371,7 @@ ru:
         exercise_id: Упражнение
         user_id: Пользователь
       user_registration:
+        nickname: Имя пользователя
         email: E-mail
       exercise:
         title: Название
@@ -380,6 +381,7 @@ ru:
         email: E-mail
         created_at: Дата
       user:
+        nickname: Имя пользователя
         email: E-mail
         username: Ник
         language_id: Язык

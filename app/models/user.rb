@@ -17,8 +17,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :role_ids, :as => :admin
 
-  attr_accessible :email, :providers_attributes
+  attr_accessible :email, :providers_attributes, :nickname
 
+  validates :nickname, uniqueness: true
   validates :email, uniqueness: true,
                     format: { with: Langtrainer.email_regexp },
                     if: 'email.present?'
@@ -44,11 +45,11 @@ class User < ActiveRecord::Base
   end
 
   def title
-    email || username
+    nickname || email || username
   end
 
   def friendly_title
-    username || email.split('@').first
+    nickname || username || email.split('@').first
   end
 
   def language

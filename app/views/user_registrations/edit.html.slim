@@ -12,6 +12,7 @@
       .module_body
         = simple_form_for @user_decorator, url: user_registration_path, method: :put, html: { class: 'form-horizontal' } do |f|
           fieldset
+            = f.input :nickname, label: t('activerecord.attributes.user_registration.nickname')
             = f.input :email, as: :email, label: t('activerecord.attributes.user_registration.email')
 
           .module_footer

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130331044117) do
+ActiveRecord::Schema.define(:version => 20130401043353) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -166,10 +166,12 @@ ActiveRecord::Schema.define(:version => 20130331044117) do
     t.integer  "en_counter",           :default => 0
     t.integer  "ru_counter",           :default => 0
     t.integer  "de_counter",           :default => 0
+    t.string   "nickname"
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["nickname"], :name => "index_users_on_nickname", :unique => true
   add_index "users", ["username"], :name => "index_users_on_username"
 
   create_table "users_roles", :id => false, :force => true do |t|
