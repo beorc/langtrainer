@@ -1,8 +1,7 @@
 Rails.application.config.sorcery.submodules = [:external]
 
 Rails.application.config.sorcery.configure do |config|
-  #host = Rails.configuration.host
-  host = Langtrainer.localized_url
+  host = Rails.configuration.host
   oauth_providers = Rails.application.config.oauth_providers
 
   config.external_providers = [:twitter, :facebook, :google]
