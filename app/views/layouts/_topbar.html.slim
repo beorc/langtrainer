@@ -19,6 +19,8 @@
                 = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
                   span.prompt = t('.your_language')
                   '&nbsp
+                  span.language-flag = image_tag "flags/#{native_language.slug}.ico"
+                  '&nbsp;
                   span.language = title_for(native_language)
                   b.caret &nbsp;
                 = render_language_selector

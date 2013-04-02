@@ -1,0 +1,6 @@
+li class=active_language_class(language)
+  = link_to set_native_language_path(language.id), method: :put do
+    span.language-flag = image_tag "flags/#{language.slug}.ico"
+    '&nbsp;
+    span.language-title = title_for(language)
+
