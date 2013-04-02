@@ -76,10 +76,6 @@ module ApplicationHelper
     native_language.id == language.id ? 'active' : ''
   end
 
-  def render_language_selector
-    render 'layouts/language_selector'
-  end
-
   def exercises_list_options(hsh = {})
     options = { include_all: true }
     options.merge! hsh

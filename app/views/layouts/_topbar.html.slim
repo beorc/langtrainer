@@ -23,7 +23,7 @@
                   '&nbsp;
                   span.language = title_for(native_language)
                   b.caret &nbsp;
-                = render_language_selector
+                = render 'layouts/language_selector'
               - if logged_in?
                 li.logged-user.dropdown
                   = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do

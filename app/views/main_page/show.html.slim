@@ -12,7 +12,10 @@
     - Language.except(native_language).each do |language|
       li.span3
         .module
-          .module_header = title_for(language)
+          .module_header
+            span.language-flag = image_tag "flags/#{language.slug}.ico"
+            '&nbsp;
+            span = title_for(language)
           .module_body
             = link_to t('.exercises_link_title'),
                       language_exercise_path(language, Exercise.first),
