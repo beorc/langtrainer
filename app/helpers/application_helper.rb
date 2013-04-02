@@ -109,7 +109,7 @@ module ApplicationHelper
   end
 
   def build_native_language
-    session[:language_id] = logged_in? ? current_user.language.id : Language.find(extract_locale_from_tld).id
+    session[:language_id] = logged_in? ? current_user.language.id : Language.find(guess_locale).id
     change_locale
     session[:language_id]
   end
@@ -131,7 +131,11 @@ module ApplicationHelper
     end
   end
 
-  def extract_locale_from_tld
+  def guess_locale
+    available = %w{ru en}
+    locale = http_accept_language.preferred_language_from(available)
+    return locale.to_sym if locale.present?
+
     zone = request.host.split('.').last
     return :ru if zone == 'ru'
     :en
