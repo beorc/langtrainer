@@ -225,6 +225,7 @@ ru:
   feedbacks:
     new:
       title: Обратная связь
+      header: Новое сообщение
       placeholders:
         email: Электронная почта
 

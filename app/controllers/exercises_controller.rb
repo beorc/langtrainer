@@ -12,7 +12,10 @@ class ExercisesController < ApplicationController
   end
 
   def increment_pass_counter
-    current_user.try :increment_pass_counter!
+    unless logged_in?
+      render(status: 401, nothing: true) and return
+    end
+    current_user.increment_pass_counter!
     render status: 200, nothing: true
   end
 end

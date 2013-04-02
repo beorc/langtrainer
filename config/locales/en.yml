@@ -225,6 +225,7 @@ en:
   feedbacks:
     new:
       title: Feedback
+      header: New message
       placeholders:
         email: E-mail
 
