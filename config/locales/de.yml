@@ -6,14 +6,14 @@ de:
   logout: Ausloggen
   user_profile: Persönlichen Konto
   actions: Aktionen
-  cancel: Cancel
-  authorization_required: You need to authorize to access this page
-  unknown_error_message: Error occured. Please, try again later
-  save: Save
-  all: All
-  shares_title: 'Langtrainer - foreign languages trainer.'
-  'true': Yes
-  'false': No
+  cancel: Stornieren
+  authorization_required: Bitte melden Sie sich an, um diese Seite anzuzeigen
+  unknown_error_message: Ein Fehler ist aufgetreten. Bitte versuchen Sie es später nochmals.
+  save: Speichern
+  all: Alle
+  shares_title: 'Langtrainer - Fremdsprachen Trainer.'
+  'true': Ja
+  'false': Nein
 
   number:
     human:
@@ -27,9 +27,9 @@ de:
           trillion: T
           quadrillion: Q
 
-  english: English
-  russian: Russian
-  german: German
+  english: Englisch
+  russian: Russisch
+  german: Deutsch
 
   titles:
     language:
@@ -37,22 +37,22 @@ de:
       ru: Русский
       de: Deutsch
     exercise:
-      first: First exercise
-      second: Second exercise
-      third: Third exercise
-      fourth: Fourth exercise
-      fifth: Fifth exercise
-      sixth: Sixth exercise
-      seventh: Seventh exercise
-      eighth: Eighth exercise
-      ninth: Ninth exercise
-      tenth: Tenth exercise
-      eleventh: Eleventh exercise
-      twelfth: Twelfth exercise
-      thirteenth: Thirteenth exercise
-      fourteenth: Fourteenth exercise
-      fifteenth: Fifteenth exercise
-      sixteenth: Sixteenth exercise
+      first: Erste Übung
+      second: Zweite Übung
+      third: Dritte Übung
+      fourth: Vierte Übung
+      fifth: Fünfte Übung
+      sixth: Sechste Übung
+      seventh: Siebte Übung
+      eighth: Achte Übung
+      ninth: Neunte Übung
+      tenth: Zehnte Übung
+      eleventh: Elf Übung
+      twelfth: Zwölfte Übung
+      thirteenth: Dreizehnte Übung
+      fourteenth: Vierzehnte Übung
+      fifteenth: Fünfzehnte Übung
+      sixteenth: Sechzehnte Übung
 
   time:
     formats:
@@ -63,9 +63,9 @@ de:
       date_time_digs: "%d.%m.%Y %H:%M"
       only_time_full: "%H:%M:%S"
     second:
-      one: second
-      few: seconds
-      many: seconds
+      one: sekunde
+      few: sekunden
+      many: sekunden
   date:
     formats:
       only_date_default: "%Y-%m-%d"
@@ -74,38 +74,38 @@ de:
       date_time_digs: "%d.%m.%Y %H:%M"
       only_time_full: "%H:%M:%S"
 
-  delete_confirm: "Are you sure?"
+  delete_confirm: "Sind Sie sicher?"
 
   shared_meta_tags: &shared_meta_tags
     open_graph:
-      title: Foreign languages trainer
+      title: Fremdsprachen Trainer
     site: Langtrainer
-    description: Langtrainer - Foreign languages trainer
-    keywords: 'learning foreign language, foreign language, english, russian, foreign, language, exercises, learn, yourself, training'
+    description: Langtrainer - Fremdsprachen Trainer
+    keywords: 'fremdsprachen lernen, fremdsprachen, englisch, russisch, Übungen, lernen, selbst, training'
 
   meta_tags:
     main_page:
       <<: *shared_meta_tags
-      title: Foreign languages trainer
+      title: Fremdsprachen Trainer
 
     users/exercises:
-      title: "User's exercises"
+      title: "Die Übungen des Nutzer"
 
     users/sentences:
-      title: "User's sentences"
+      title: "Die Sätze des Nutzer"
 
     users/user_profile:
-      title: Personal account
+      title: Persönlichen Konto
 
     user_registrations:
-      title: Credentials
+      title: Zeugnisse
 
     exercises:
-      title: Exercises
+      title: Übungen
 
     feedbacks:
       <<: *shared_meta_tags
-      title: Feedback
+      title: Rückkopplung
 
     categories:
       <<: *shared_meta_tags
@@ -125,152 +125,145 @@ de:
 
   layouts:
     topbar:
-      home: Home
-      your_language: 'Your language:'
-      exercises: Exercises
+      home: Startseite
+      your_language: 'Ihre Sprache:'
+      exercises: Übungen
     application:
     user_profile:
-      title: Personal account
-      credentials: Credentials
-      sentences: Your sentences
-      exercises: Your exercises
-      dashboard: Dashboard
+      title: Persönlichen Konto
+      credentials: Benutzeranmeldeinformationen
+      sentences: Ihre Sätze
+      exercises: Ihre Übungen
+      dashboard: Armaturenbrett
     user_menu:
-      credentials: Credentials
+      credentials: Benutzeranmeldeinformationen
 
   main_page:
     show:
-      description: Foreign languages trainer
+      description: Fremdsprachen Trainer
       top_users: Top
-      top_users_subtitle: by passed sentences
+      top_users_subtitle: vorbei Sätzen
       why_block_title: Features
-      languages_block_title: Languages
-      exercises_link_title: Start training
-      languages_block_subtitle: Just select a language
+      languages_block_title: Sprachen
+      exercises_link_title: Beginnen training
+      languages_block_subtitle: Wählen Sie einfach eine Sprache
       why:
         sentences:
-          title: Focus on sentence forming
-          content: 'You form sentences on foreign language based on equivalent in your language'
+          title: Konzentrieren Sie sich auf Satz bilden
+          content: 'Sie bilden Sätze auf fremden Sprache basierend auf Gegenwert in Ihrer Sprache'
         hints:
-          title: Optional grammar information
-          content: 'Grammar information for each exercise is based on tables and can be hidden at any time by you'
+          title: Optional Grammatik Informationen
+          content: 'Grammatik für jede Übung wird auf den Tabellen und kann jederzeit ausgeblendet werden'
         words:
-          title: Learning new words
-          content: Each exercise starts with learning new words
+          title: Das Erlernen neuer Wörter
+          content: Jede Übung beginnt mit dem Lernen neuer Wörter
         correction:
-          title: Real-time validation
-          content: Validation is performed immediately while you entering the text
+          title: Echtzeitvalidierung
+          content: Validation wird sofort während Sie den Text eingeben durchgeführt
         changes:
-          title: You can to change
-          content: If you notice a mistake or want to use alter version, simply change the text of sentence
+          title: Sie können Änderungen
+          content: Wenn Sie einen Fehler bemerken oder wollen alter Version verwenden, ändern Sie einfach den Text des Satzes
         extensions:
-          title: You can to extend
-          content: You can add new exercises and sentences for training to make it more interesting
+          title: Sie können zu verlängern
+          content: Sie können neue Übungen und Sätze für die Ausbildung zu machen es noch interessanter
 
   email_confirmation:
-    title: Email confirmation
-    hint: Do you want to change your email to '%{new_email}'?
-    confirm: Confirm
-    same_email_entered: Existing email entered
+    title: E-Mail Bestätigung
+    hint: Wollen Sie Ihre E-Mail um '%{new_email}' zu ändern?
+    confirm: Bestätigen
+    same_email_entered: E-Mail bereits vorhanden
   token_authentication:
-    email_description: To this address will be sent email with a link to access Langtrainer
+    email_description: Der E-Mail, der die Verbannung auf dem Langtrainer erhält, wird an diese Addresse gesendet.
 
   user_registrations:
     edit:
-      subtitle: User credentials
-      pending_email: 'You specified the new e-mail: %{email}. To this email sent message with a link to confirm your changes.'
-      reset_email_confirmation: Cancel email changing
+      subtitle: Benutzeranmeldeinformationen
+      pending_email: 'Sie haben den neuen E-Mail: %{email}. Der E-Mail, der die Verbannung auf dem Langtrainer erhält, an diese Addresse gesendet.'
+      reset_email_confirmation: Stornieren E-Mail ändern
 
   users:
     user_profile:
       dashboard:
-        subtitle: Dashboard
-        created: Created
-        exercises: 'Exercises:'
-        sentences: 'Sentences:'
-        passed: Passed
+        subtitle: Armaturenbrett
+        created: Drstellt
+        exercises: 'Sätze:'
+        sentences: 'Übungen:'
+        passed: Bestanden
     exercises:
       index:
-        subtitle: Your exercises
-        max_message: 'The maximum number of your exercises: %{number}'
-        created_number_message: 'Already created: %{number}'
+        subtitle: Ihre Sätze
+        max_message: 'Die maximale Anzahl der Übungen: %{number}'
+        created_number_message: 'Erstellt: %{number}'
       new:
-        subtitle: New exercise
+        subtitle: Neue Übung
       edit:
-        subtitle: Changing exercise
+        subtitle: Ändern Übung
       show:
-        subtitle: Viewing exercise
+        subtitle: Anzeigen Übung
     sentences:
       index:
-        subtitle: Your sentences
-        collection_empty: There is no sentences yet
-        max_message: 'The maximun number of your sentences: %{number}'
-        created_number_message: 'Already created: %{number}'
+        subtitle: Ihre Sätze
+        collection_empty: Es hat keinen Sätze
+        max_message: 'Die maximale Anzahl der Sätze: %{number}'
+        created_number_message: 'Erstellt: %{number}'
       new:
-        subtitle: New sentence
+        subtitle: Neuen Satz
       edit:
-        subtitle: Changing sentence
+        subtitle: Ändern die Satz
       show:
-        subtitle: Viewing sentence
+        subtitle: Anzeigen die Satz
       form:
         atom:
-          hint: Basic forms are always in the begining of the exercise and usually contain new words and phrases
+          hint: Grundformen sind immer am Anfang der Übung und sie enthalten in der Regel neue Wörter und Phrasen
 
   user_sessions:
     new:
-      sign_in: Sign in
+      sign_in: Einloggen
     form:
-      login_with_email: Log in with email
+      login_with_email: Einloggen mit E-Mail
 
   feedbacks:
     new:
-      title: Feedback
-      header: New message
+      title: Rückkopplung
+      header: Nachricht
       placeholders:
-        email: E-mail
+        email: E-Mail
 
 
   admin:
     sidebar:
       management:
-        title: Management
+        title: Verwaltung
 
   exercises:
-    first:
-      title: First exercise
-    second:
-      title: Seconf exercise
-    third:
-      title: Third exercise
-
     show:
-      next: Next
-      look: See right answer
-      answer: Enter tranlation
-      hint: Hint
-      correct: Change sentence
-      create: Add new sentence
-      skip_atoms: At the start of the exercise you learn the words that will be used in the construction of sentences. This button skips this part of the class.
-      no_sentences: This exercise is not translated to selected language yet
+      next: Neben
+      look: Siehe richtige Antwort
+      answer: Geben Übersetzung
+      hint: Hilfe
+      correct: Ändern Satz
+      create: Erstellen neuer Satz
+      skip_atoms: Zu Beginn der Übung werden Sie lernen, die Wörter, die in der Konstruktion von Sätzen verwendet werden. Diese Schaltfläche überspringt diesen Teil der Klasse.
+      no_sentences: Diese Übung ist nicht auf die ausgewählte Sprache noch übersetzt
     help:
-      hint: Help
+      hint: Hilfe
 
   shared:
     omniauth_buttons:
-      title: Enter with social networks
+      title: Geben Sie mit sozialen Netzwerken
   views:
     pagination:
       truncate: ...
-      next: Next
-      previous: Previous
-      first: First
-      last: Last
+      next: Neben
+      previous: Früher
+      first: Erste
+      last: Letzte
 
   mailer:
     token_authentication:
-      subject: 'Langtrainer: Link to sign in'
+      subject: 'Langtrainer: Sich eintragen'
     email_confirmation:
-      subject: 'Langtrainer: Link to confirm your email changing'
+      subject: 'Langtrainer: Bestätigen Sie Ihre E-Mail-Adresse'
     feedback:
       subject: 'Langtrainer: New message from user'
 
@@ -278,66 +271,66 @@ de:
     actions:
     submit:
       sentence:
-        new: New sentence
-        create: Create sentence
-        update: Save
-        edit: Change sentence
-        destroy: Delete sentence
-        edit_corrections: Edit corrections
+        new: Neue Satz
+        create: Schaffen
+        update: Aktualisieren
+        edit: Ändern
+        destroy: Löschen
+        edit_corrections: Bearbeiten Korrekturen
       email_confirmation:
-        send_token: Send
+        send_token: Senden
       user_registration:
-        create: Change
+        create: Ändern
       user:
-        create: Send
+        create: Senden
       exercise:
-        create: Create exercise
-        update: Save
-        edit: Change exercise
-        destroy: Delete exercise
-        edit_sentences: Edit sentence
+        create: Schaffen
+        update: Speichern
+        edit: Ändern
+        destroy: Löschen
+        edit_sentences: Ändern
       correction:
-        destroy: Destroy correction
+        destroy: Löschen Korrekturen
       feedback:
-        create: Send
+        create: Senden
 
   flash:
     token_authentication:
-      success: You have successfully signed in
-      fail: Wrong authorization token
+      success: Sie haben sich erfolgreich angemeldet
+      fail: Falsche Autorisierungs-Token
       email_sent: The message with link for sign in is sent to e-mail '%{email}'
     user_registration:
-      success: Information delivered successfully
+      success: Informationen erfolgreich zugestellt
     email_confirmation:
-      success: Your e-mail successfully changed
-      fail: The key for address change is out of date
+      success: Ihre E-Mail wurde erfolgreich geändert
+      fail: Der Schlüssel für die geänderte Adresse ist veraltet
       email_sent: The message with link for changes confirmation is sent to e-mail '%{email}'
     user_sessions:
-      logged_out: You signed out from Langtrainer
+      logged_out: Sie unterzeichnete aus Langtrainer
     oauths:
-      logged_in: You signed in through %{provider}
-      error: There was an error when signing in through %{provider}
+      logged_in: Sie unterzeichnete mit %{provider}
+      error: Es gab einen Fehler bei der Anmeldung durch %{provider}
 
     exercise:
       create:
-        success: The exercise successfully created
+        success: Die Übung erfolgreich erstellt
       update:
-        success: The exercise successfully updated
+        success: Die Übung erfolgreich aktualisiert
     sentence:
       create:
-        success: The sentence successfully created
+        success: Der Satz erfolgreich erstellt
       update:
-        success: The sentence successfully updated
+        success: Der Satz erfolgreich aktualisiert
     feedback:
       create:
-        success: The message sent
+        success: Nachricht gesendet
 
     users/exercises:
-      access_denied: Access denied
+      access_denied: Zugriff verweigert
     users/sentences:
-      access_denied: Access denied
+      access_denied: Zugriff verweigert
     users/corrections:
-      access_denied: Access denied
+      access_denied: Zugriff verweigert
 
   legend:
     feedback:
@@ -346,54 +339,54 @@ de:
   activerecord:
     models:
       sentence:
-        one: sentence
-        few: sentences
-        many: sentences
-      user_registration: user profile
+        one: Satz
+        few: Sätze
+        many: Sätze
+      user_registration: Benutzerprofil
       exercise:
-        one: exercise
-        few: exercises
-        many: exercises
+        one: Übung
+        few: Übungen
+        many: Übungen
       correction:
-        one: correction
-        few: corrections
-        many: corrections
-      feedback: feedback
+        one: Korrektur
+        few: Korrekturen
+        many: Korrekturen
+      feedback: Rückkopplung
       user:
-        one: user
-        few: users
-        many: users
+        one: Benutzer
+        few: Nutzer
+        many: Nutzer
     attributes:
       sentence:
-        en: English
-        ru: Russian
-        de: German
-        atom: Basic form
-        exercise_id: Exercise
-        user_id: User
+        en: Englisch
+        ru: Russisch
+        de: Deutsch
+        atom: Grundform
+        exercise_id: Übung
+        user_id: Benutzer
       user_registration:
-        nickname: Nickname
-        email: E-mail
+        nickname: Spitzname
+        email: E-Mail
       exercise:
-        title: Title
-        slug: Slug
+        title: Titel
+        slug: Permalink
       feedback:
-        message: Message
-        email: E-mail
-        created_at: Date
+        message: Nachricht
+        email: E-Mail
+        created_at: Datum
       user:
-        nickname: Nickname
-        email: E-mail
-        username: Username
-        language_id: Language
-        created_at: Created at
-        en_counter: English senteces
-        ru_counter: Russian sentences
-        de_counter: German sentences
+        nickname: Spitzname
+        email: E-Mail
+        username: Benutzername
+        language_id: Sprache
+        created_at: Erstellt am
+        en_counter: Englisch Sätzen
+        ru_counter: Russische Sätzen
+        de_counter: Deutsch Sätzen
     errors:
       messages:
 
   topics:
     post:
       author:
-        sentences_passed: 'Sentences passed:'
+        sentences_passed: 'Angepasst Sätze Anzahl:'

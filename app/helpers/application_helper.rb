@@ -126,6 +126,8 @@ module ApplicationHelper
   def change_locale
     if native_language.russian?
       I18n.locale = :ru
+    elsif native_language.german?
+      I18n.locale = :de
     else
       I18n.locale = :en
     end

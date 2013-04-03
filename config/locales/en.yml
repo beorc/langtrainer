@@ -8,7 +8,7 @@ en:
   actions: Actions
   cancel: Cancel
   authorization_required: You need to authorize to access this page
-  unknown_error_message: Error occured. Please, try again later
+  unknown_error_message: An error has occured. Please, try again later
   save: Save
   all: All
   shares_title: 'Langtrainer - foreign languages trainer.'
@@ -171,7 +171,7 @@ en:
     title: Email confirmation
     hint: Do you want to change your email to '%{new_email}'?
     confirm: Confirm
-    same_email_entered: Existing email entered
+    same_email_entered: Email already exist
   token_authentication:
     email_description: To this address will be sent email with a link to access Langtrainer
 
@@ -204,7 +204,7 @@ en:
       index:
         subtitle: Your sentences
         collection_empty: There is no sentences yet
-        max_message: 'The maximun number of your sentences: %{number}'
+        max_message: 'The maximum number of your sentences: %{number}'
         created_number_message: 'Already created: %{number}'
       new:
         subtitle: New sentence
@@ -214,7 +214,7 @@ en:
         subtitle: Viewing sentence
       form:
         atom:
-          hint: Basic forms are always in the begining of the exercise and usually contain new words and phrases
+          hint: Basic forms are always in the beginning of the exercise and usually contain new words and phrases
 
   user_sessions:
     new:
@@ -225,7 +225,7 @@ en:
   feedbacks:
     new:
       title: Feedback
-      header: New message
+      header: Message
       placeholders:
         email: E-mail
 
@@ -239,15 +239,15 @@ en:
     first:
       title: First exercise
     second:
-      title: Seconf exercise
+      title: Second exercise
     third:
       title: Third exercise
 
     show:
       next: Next
       look: See right answer
-      answer: Enter tranlation
-      hint: Hint
+      answer: Enter translation
+      hint: Help
       correct: Change sentence
       create: Add new sentence
       skip_atoms: At the start of the exercise you learn the words that will be used in the construction of sentences. This button skips this part of the class.
@@ -268,9 +268,9 @@ en:
 
   mailer:
     token_authentication:
-      subject: 'Langtrainer: Link to sign in'
+      subject: 'Langtrainer: Sign in'
     email_confirmation:
-      subject: 'Langtrainer: Link to confirm your email changing'
+      subject: 'Langtrainer: Confirm your email changing'
     feedback:
       subject: 'Langtrainer: New message from user'
 
@@ -387,7 +387,7 @@ en:
         username: Username
         language_id: Language
         created_at: Created at
-        en_counter: English senteces
+        en_counter: English sentences
         ru_counter: Russian sentences
         de_counter: German sentences
     errors:
