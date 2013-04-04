@@ -94,6 +94,6 @@ Langtrainer::Application.configure do
     exception_recipients: 'bairkan@gmail.com'
 
   config.langtrainer = {}
-  config.langtrainer[:exercises] = { max: 5 }
-  config.langtrainer[:sentences] = { max: 100 }
+  config.langtrainer[:exercises] = { max: 30 }
+  config.langtrainer[:sentences] = { max: 3000 }
 end

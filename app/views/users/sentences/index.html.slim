@@ -3,9 +3,9 @@
   = t('.subtitle')
 
 .row-fluid
-  .offset2.span8
+  .span12
     .row-fluid
-      .span5
+      .span3
         .search-form
           = form_tag users_sentences_path, method: :get do
             .input-append
@@ -14,7 +14,7 @@
               = text_field_tag :search, @query, class: 'search'
               = button_tag class: 'btn btn-primary btn-search' do
                 i.icon-search
-      .span7
+      .span3
         .exercises-list
           = render_exercises_select
 
