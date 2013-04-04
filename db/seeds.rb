@@ -44,6 +44,11 @@ puts 'EXERCISES'
   raise "Exercise not created: #{slug}: #{exercise.errors.messages.inspect}" unless exercise.valid?
 end
 
+[:the_bremen_town_musicians].each do |slug|
+  exercise = Exercise.find_or_create_by_slug(slug: slug, title: "#{slug.to_s.capitalize} exercise", shuffled: false)
+  raise "Exercise not created: #{slug}: #{exercise.errors.messages.inspect}" unless exercise.valid?
+end
+
 require 'yaml'
 
 files = Dir[File.join(Rails.root, "db", "default", "*.yml")]

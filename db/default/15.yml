@@ -1,0 +1,35 @@
+# Die Bremer Stadtmusikanten
+- { german: "A certain man had a donkey, which had carried the corn-sacks to the mill indefatigably for many a long year.",
+    english: "Es war einmal ein Mann, der hatte einen Esel, welcher schon lange Jahre unverdrossen die Säcke in die Mühle getragen hatte.",
+    russian: "У одного человека был осел, который перевозил мешки с кукурузой на мельницу неустанно в течение многих лет.",
+    exercise: 'the_bremen_town_musicians' }
+
+- { german: "Nun aber gingen die Kräfte des Esels zu Ende, so daß er zur Arbeit nicht mehr taugte.",
+    english: "But his strength was going, and he was growing more and more unfit for work.",
+    russian: "Но его сила уходила и он становился все более и более непригодным для работы.",
+    exercise: 'the_bremen_town_musicians' }
+
+- { german: "Da dachte der Herr daran, ihn wegzugehen.",
+    english: "Then his master began to consider how he might best save his keep.",
+    russian: "Тогда его хозяин начал размышлять, как ему лучше избавиться от его содержания",
+    exercise: 'the_bremen_town_musicians' }
+
+- { german: "Aber der Esel merkte, daß sein Herr etwas Böses im Sinn hatte, lief fort und machte sich auf den Weg nach Bremen.",
+    english: "But the donkey, seeing that no good wind was blowing, ran away and set out on the road to Bremen.",
+    russian: "Но осел, видя что подул нехороший ветер, убежал и отправился в путь по дороге в Бремен",
+    exercise: 'the_bremen_town_musicians' }
+
+- { english: "Dort, so meinte er, könnte er ja Stadtmusikant werden.",
+    german: "There, he thought, I can surely be a town-musician.",
+    russian: "Там, он думал, я безусловно смогу быть городским музыкантом",
+    exercise: 'the_bremen_town_musicians' }
+
+- { english: "Als er schon eine Weile gegangen war, fand er einen Jagdhund am Wege liegen, der jämmerlich heulte.",
+    german: "When he had walked some distance, he found a hound lying on the road, gasping like one who had run till he was tired.",
+    russian: "Когда он прошел некоторое расстояние, он обнаружил собаку, лежащую на дороге, задыхающуюся, как будто бежала пока не устала",
+    exercise: 'the_bremen_town_musicians' }
+
+- { english: '"Warum heulst du denn so, Packan?" fragte der Esel.',
+    german: "What are you gasping so for, you big fellow, asked the donkey.",
+    russian: '"Почему ты так тяжело дышишь, большой пес?", - спросил осел',
+    exercise: 'the_bremen_town_musicians' }
