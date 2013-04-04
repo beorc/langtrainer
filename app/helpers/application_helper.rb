@@ -134,7 +134,7 @@ module ApplicationHelper
   end
 
   def guess_locale
-    available = %w{ru en}
+    available = %w{ru en de}
     locale = http_accept_language.preferred_language_from(available)
     return locale.to_sym if locale.present?
 
