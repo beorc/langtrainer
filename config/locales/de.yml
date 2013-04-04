@@ -370,6 +370,7 @@ de:
       exercise:
         title: Titel
         slug: Permalink
+        shuffled: Gemischt
       feedback:
         message: Nachricht
         email: E-Mail

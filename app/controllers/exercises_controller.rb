@@ -5,8 +5,9 @@ class ExercisesController < ApplicationController
     @language = Language.find params[:language_id]
     @sentences = Sentence.for_exercise(@exercise).
                           with_language(@language).
-                          with_language(native_language).
-                          training_order
+                          with_language(native_language)
+
+    @sentences = @exercise.shuffled? ? @sentences.shuffled : @sentences.ordered
 
     gon.increment_pass_counter_path = increment_pass_counter_path
   end

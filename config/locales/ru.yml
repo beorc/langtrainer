@@ -377,6 +377,7 @@ ru:
       exercise:
         title: Название
         slug: Идентификатор
+        shuffled: В случайном порядке
       feedback:
         message: Сообщение
         email: E-mail

@@ -2,7 +2,7 @@ class Exercise < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  attr_accessible :title, :slug
+  attr_accessible :title, :slug, :shuffled
 
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
   has_many :sentences

@@ -377,6 +377,7 @@ en:
       exercise:
         title: Title
         slug: Slug
+        shuffled: Shuffled
       feedback:
         message: Message
         email: E-mail

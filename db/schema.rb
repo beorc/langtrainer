@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130401043353) do
+ActiveRecord::Schema.define(:version => 20130404170518) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -56,8 +56,9 @@ ActiveRecord::Schema.define(:version => 20130401043353) do
     t.string   "title"
     t.string   "slug"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.boolean  "shuffled",   :default => true
   end
 
   add_index "exercises", ["slug"], :name => "index_exercises_on_slug", :unique => true

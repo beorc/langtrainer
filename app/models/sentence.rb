@@ -20,8 +20,12 @@ class Sentence < ActiveRecord::Base
     where('user_id IS NULL OR user_id = ?', user.id) - joins(:corrections).where('corrections_sentences.user_id = ?', user.id)
   end
 
-  def self.training_order
+  def self.shuffled
     atoms + compound.sample(count)
+  end
+
+  def self.ordered
+    atoms + compound
   end
 
   def correction_by(user)
