@@ -1,9 +1,12 @@
 .user-profile.dashboard {
 }
 
-.user-profile.sentences.index {
-  td.translation textarea {
-    width: 90%;
-    height: 120px;
+.user-profile.sentences {
+  .index {
+    td.translation textarea {
+      width: 90%;
+      height: 120px;
+    }
   }
+  form textarea { height: 100px }
 }
