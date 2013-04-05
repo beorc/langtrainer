@@ -55,14 +55,17 @@ ns.init = () ->
     input = $(@)
     answer = input.val().toLowerCase()
     rightAnswer = ns.currentSentence.data('translation').toLowerCase()
-    if rightAnswer.indexOf(answer) >= 0
-      input.css color:'green'
+    if answer.length is 0
+      input.removeClass('wrong').removeClass('right')
+    else if rightAnswer.indexOf(answer) >= 0
+      input.removeClass('wrong').addClass('right')
     else
-      input.css color:'red'
+      input.removeClass('right').addClass('wrong')
     true
 
   $('.look').click ->
     rightAnswer = ns.currentSentence.data('translation')
+    $('textarea#answer').removeClass('wrong').removeClass('right')
     $('.answer').val(rightAnswer)
     false
 

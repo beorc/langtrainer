@@ -1,6 +1,12 @@
 .workspace {
   .answer {
-    width: 300px;
+    width: 400px;
+    height: 100px;
+    textarea#answer {
+      font-weight: bold;
+      &.right { color: green }
+      &.wrong { color: red }
+    }
   }
 
   .actions {
