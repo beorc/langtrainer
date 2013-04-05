@@ -2,11 +2,11 @@
 }
 
 .user-profile.sentences {
-  .index {
+  &.index {
     td.translation textarea {
       width: 90%;
       height: 120px;
     }
   }
-  form textarea { height: 100px }
+  form textarea { height: 120px }
 }
