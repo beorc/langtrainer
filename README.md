@@ -1,2 +1,4 @@
-langtrainer
+Langtrainer
 ===========
+
+Simple foreign languages trainer.
