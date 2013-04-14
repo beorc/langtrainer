@@ -17,7 +17,7 @@ Rails.application.config.sorcery.configure do |config|
 
   config.google.key = oauth_providers['google']['key']
   config.google.secret = oauth_providers['google']['secret']
-  config.google.callback_url = "/oauth/callback?provider=google"
+  config.google.callback_url = "http://langtrainer.com/oauth/callback?provider=google"
   config.google.user_info_mapping = {:username => "name"}
 
   config.user_config do |user|

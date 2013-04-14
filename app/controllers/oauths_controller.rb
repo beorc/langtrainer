@@ -4,26 +4,26 @@ class OauthsController < ApplicationController
 
   # sends the user on a trip to the provider,
   # and after authorizing there back to the callback url.
-  def login_at(provider_name, args = {})
-    provider = Config.send(provider_name)
+  #def login_at(provider_name, args = {})
+    #provider = Config.send(provider_name)
 
-    uri = URI.parse(request.url.gsub(/\?.*$/,''))
-    uri.path = ''
-    uri.query = nil
-    uri.scheme = 'https' if(request.env['HTTP_X_FORWARDED_PROTO'] == 'https')
-    if provider_name.to_s == 'google'
-      host = 'http://langtrainer.com'
-    else
-      host = uri.to_s
-    end
-    provider.callback_url = "#{host}/oauth/callback?provider=#{provider_name}"
+    #uri = URI.parse(request.url.gsub(/\?.*$/,''))
+    #uri.path = ''
+    #uri.query = nil
+    #uri.scheme = 'https' if(request.env['HTTP_X_FORWARDED_PROTO'] == 'https')
+    #if provider_name.to_s == 'google'
+      #host = 'http://langtrainer.com'
+    #else
+      #host = uri.to_s
+    #end
+    #provider.callback_url = "#{host}/oauth/callback?provider=#{provider_name}"
 
-    if provider.has_callback?
-      redirect_to provider.login_url(params,session)
-    else
-      #provider.login(args)
-    end
-  end
+    #if provider.has_callback?
+      #redirect_to provider.login_url(params,session)
+    #else
+      ##provider.login(args)
+    #end
+  #end
 
   def oauth
     login_at(params[:provider])

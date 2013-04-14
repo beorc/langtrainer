@@ -10,7 +10,7 @@ group :assets do
   gem 'asset_sync'
 end
 gem 'jquery-rails'
-gem 'sorcery'
+gem 'sorcery', git: 'git@github.com:beorc/sorcery.git', branch: 'master'
 gem 'cancan', '>= 1.6.8'
 gem 'rolify', '>= 3.2.0'
 gem 'simple_form', '>= 2.0.4'

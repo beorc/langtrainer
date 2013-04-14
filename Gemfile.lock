@@ -12,6 +12,16 @@ GIT
       capistrano
 
 GIT
+  remote: git@github.com:beorc/sorcery.git
+  revision: bacf0c16b82f85604ee019a45ef7728408f190d1
+  branch: master
+  specs:
+    sorcery (0.8.1)
+      bcrypt-ruby (~> 3.0.0)
+      oauth (~> 0.4.4)
+      oauth2 (~> 0.8.0)
+
+GIT
   remote: git@github.com:beorc/talky.git
   revision: 07e0f23718c5ecefd1b732ae3e9105109b24bf77
   branch: master
@@ -273,10 +283,6 @@ GEM
       activesupport (>= 3.0, < 4.1)
       railties (>= 3.0, < 4.1)
       slim (~> 1.3)
-    sorcery (0.8.1)
-      bcrypt-ruby (~> 3.0.0)
-      oauth (~> 0.4.4)
-      oauth2 (~> 0.8.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -354,7 +360,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   simple_form (>= 2.0.4)
   slim-rails
-  sorcery
+  sorcery!
   talky!
   uglifier (>= 1.0.3)
   unicode
