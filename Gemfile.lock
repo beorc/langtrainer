@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: git@github.com:beorc/sorcery.git
-  revision: 796f35e1ba343903039cf14ed70147c1cb673f68
+  revision: 29a78c7fe5adef2375cf603050614fbbc5f8eed4
   branch: master
   specs:
     sorcery (0.8.1)

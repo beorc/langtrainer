@@ -57,7 +57,7 @@ ns.init = () ->
     rightAnswer = ns.currentSentence.data('translation').toLowerCase()
     if answer.length is 0
       input.removeClass('wrong').removeClass('right')
-    else if rightAnswer.indexOf(answer) >= 0
+    else if rightAnswer.match("^#{answer}")
       input.removeClass('wrong').addClass('right')
     else
       input.removeClass('right').addClass('wrong')
