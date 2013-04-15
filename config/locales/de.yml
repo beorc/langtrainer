@@ -237,6 +237,7 @@ de:
   exercises:
     show:
       next: Neben
+      next_word: Zeigen Sie ein Wort
       look: Siehe richtige Antwort
       answer: Geben Übersetzung
       hint: Hilfe

@@ -33,12 +33,15 @@ ns.rollSentence = () ->
   unless ns.currentSentence.data('atom')
     ns.hideSkipAtoms()
 
-  $('.answer').val ''
+  ns.answerInput().val ''
 
   ns.incPassCounter()
 
 ns.hideSkipAtoms = ->
   $('.actions a.skip-atoms').addClass('hide')
+
+ns.answerInput = ->
+  $('textarea#answer')
 
 ns.init = () ->
   ns.currentSentence = $('.sentences .sentence:first')
@@ -47,17 +50,17 @@ ns.init = () ->
     ns.rollSentence()
     false
 
-  $('.answer').keyup (e) ->
+  ns.answerInput().keyup (e) ->
     if e.which == 13
       ns.rollSentence()
       return false
 
     input = $(@)
-    answer = input.val().toLowerCase()
-    rightAnswer = ns.currentSentence.data('translation').toLowerCase()
+    answer = input.val()
+    rightAnswer = ns.currentSentence.data('translation')
     if answer.length is 0
       input.removeClass('wrong').removeClass('right')
-    else if rightAnswer.match("^#{answer}")
+    else if rightAnswer.match("^#{answer}", 'i')
       input.removeClass('wrong').addClass('right')
     else
       input.removeClass('right').addClass('wrong')
@@ -66,7 +69,7 @@ ns.init = () ->
   $('.look').click ->
     rightAnswer = ns.currentSentence.data('translation')
     $('textarea#answer').removeClass('wrong').removeClass('right')
-    $('.answer').val(rightAnswer)
+    ns.answerInput().val(rightAnswer)
     false
 
   $('.show-hint').click ->
@@ -76,6 +79,25 @@ ns.init = () ->
     else
       hints.addClass('hide')
 
+    false
+
+  $('.show-next-word').click ->
+    rightAnswer = ns.currentSentence.data('translation')
+    answer = ns.answerInput().val()
+    answerRegexp = new RegExp("^#{answer}(\\w*)\\s*(\\w*)", 'i')
+    matches = answerRegexp.exec rightAnswer
+
+    return false if matches is null
+
+    ending = matches[1]
+
+    if ending.length > 0
+      ns.answerInput().val("#{answer}#{ending}")
+      return false
+
+    nextWord = matches[2]
+
+    ns.answerInput().val("#{answer} #{nextWord}")
     false
 
   $('.correct').click ->

@@ -26,15 +26,21 @@
         = text_area_tag :answer, nil, class: :answer, id: :answer, placeholder: t('.answer')
 
       .container.actions
-        = link_to '#', class: 'next', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next') do
-          i.icon-refresh.icon-border
-
-        '&nbsp
         - if @sentences.first.atom?
           = link_to '#', class: 'skip-atoms', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.skip_atoms') do
             i.icon-forward.icon-border
 
           '&nbsp
+
+        = link_to '#', class: 'next', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next') do
+          i.icon-refresh.icon-border
+
+        '&nbsp
+
+        = link_to '#', class: 'show-next-word', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.next_word') do
+          i.icon-question-sign.icon-border
+
+        '&nbsp
 
         = link_to '#', class: 'look', data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.look') do
           i.icon-key.icon-border

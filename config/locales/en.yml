@@ -244,6 +244,7 @@ en:
 
     show:
       next: Next
+      next_word: Show one word
       look: See right answer
       answer: Enter translation
       hint: Help
