@@ -53,11 +53,9 @@ class OauthsController < ApplicationController
       end
     end
     rescue ::OAuth2::Error => e
-      p e
-      puts e.code
-      puts e.description
-      puts e.message
-      puts e.backtrace
+      logger.error "==Oauth Error== #{e.message}"
+      logger.error e.backtrace.join("\n")
+      redirect_to root_path, :alert => t('flash.oauths.error', provider: provider.titleize)
     end
   end
 end
