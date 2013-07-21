@@ -1,5 +1,5 @@
 class Sentence < ActiveRecord::Base
-  attr_accessible :ru, :en, :de, :exercise_id, :atom
+  attr_accessible :ru, :en, :de, :es, :exercise_id, :atom
 
   after_create :assign_position, unless: 'position?'
 

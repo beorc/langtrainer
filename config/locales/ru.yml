@@ -18,6 +18,7 @@ ru:
   english: английский
   russian: русский
   german: немецкий
+  spanish: испанский
 
   number:
     human:
@@ -368,6 +369,7 @@ ru:
         en: Английский
         ru: Русский
         de: Немецкий
+        es: Испанский
         atom: Базовая конструкция
         exercise_id: Упражнение
         user_id: Пользователь
@@ -391,6 +393,7 @@ ru:
         en_counter: Фразы на нглийском
         ru_counter: Фразы на русском
         de_counter: Фразы на немецком
+        es_counter: Фразы на испанском
 
     errors:
       messages:

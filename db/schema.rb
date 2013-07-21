@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404170518) do
+ActiveRecord::Schema.define(:version => 20130714133015) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -122,6 +122,7 @@ ActiveRecord::Schema.define(:version => 20130404170518) do
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
     t.string   "de"
+    t.string   "es"
   end
 
   add_index "sentences", ["atom"], :name => "index_sentences_on_atom"
@@ -168,6 +169,7 @@ ActiveRecord::Schema.define(:version => 20130404170518) do
     t.integer  "ru_counter",           :default => 0
     t.integer  "de_counter",           :default => 0
     t.string   "nickname"
+    t.integer  "es_counter",           :default => 0
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true

@@ -6,6 +6,7 @@ class Language
   English = 0
   Russian = 1
   German = 2
+  Spanish = 3
 
   def self.english
     find(English)
@@ -19,6 +20,10 @@ class Language
     find(German)
   end
 
+  def self.spanish
+    find(Spanish)
+  end
+
   def russian?
     slug == :ru
   end
@@ -29,6 +34,10 @@ class Language
 
   def german?
     slug == :de
+  end
+
+  def spanish?
+    slug == :es
   end
 
   def self.except(language)
@@ -79,7 +88,8 @@ class Language
     @languages ||= [
       Language.send(:new, id: English, slug: :en, title: 'English'),
       Language.send(:new, id: Russian, slug: :ru, title: 'Russian'),
-      Language.send(:new, id: German, slug: :de, title: 'German')
+      Language.send(:new, id: German, slug: :de, title: 'German'),
+      Language.send(:new, id: Spanish, slug: :es, title: 'Spanish')
     ]
   end
 
