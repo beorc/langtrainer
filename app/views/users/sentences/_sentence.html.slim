@@ -6,6 +6,8 @@ tr.sentence data-id=sentence.id data-url=url_options[:url] data-method=url_optio
     = text_area_tag "ru-#{sentence.id}", sentence.ru
   td.translation data-lang='de'
     = text_area_tag "de-#{sentence.id}", sentence.de
+  td.translation data-lang='es'
+    = text_area_tag "es-#{sentence.id}", sentence.es
   td
     = link_to '#', title: t(:save), class: 'save-sentence hidden',
                    data: { toggle: 'tooltip', placement: 'left' } do
