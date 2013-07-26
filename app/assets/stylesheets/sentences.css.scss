@@ -1,3 +1,4 @@
-.user-profile.sentences.edit {
-  .alphabet-container { max-width: 500px }
+.user-profile.sentences {
+  &.edit .alphabet-container { max-width: 500px }
+  &.index .alphabet-container { width: 200px }
 }

@@ -1,6 +1,8 @@
-- load_controller_script 'lib.sentences'
+- load_controller_script
 - content_for :subtitle do
   = t('.subtitle')
+
+= render partial: 'shared/alphabets', locals: { per: 4 }
 
 .row-fluid
   .span12

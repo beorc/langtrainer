@@ -12,3 +12,11 @@ ns.init = ->
     lang = controlContainer.data('lang')
     $(".alphabet-container[data-lang=#{lang}]").removeClass('hide').appendTo controlContainer
 
+  $('body').on 'click', '.with-alphabet .alphabet a.btn', ->
+    controlContainer = $(@).closest('.with-alphabet')
+    char = $(@).text()
+    input = controlContainer.find('textarea')
+    answer = input.val()
+
+    input.val("#{answer}#{char}")
+    false

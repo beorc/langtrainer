@@ -1,13 +1,13 @@
 - url_options = url_options_for_sentence(sentence)
 tr.sentence data-id=sentence.id data-url=url_options[:url] data-method=url_options[:method]
   td.translation data-lang='en'
-    = text_area_tag "en-#{sentence.id}", sentence.en
+    .with-alphabet[data-lang='en']: .input = text_area_tag "en-#{sentence.id}", sentence.en
   td.translation data-lang='ru'
-    = text_area_tag "ru-#{sentence.id}", sentence.ru
+    .with-alphabet[data-lang='ru']: .input = text_area_tag "ru-#{sentence.id}", sentence.ru
   td.translation data-lang='de'
-    = text_area_tag "de-#{sentence.id}", sentence.de
+    .with-alphabet[data-lang='de']: .input = text_area_tag "de-#{sentence.id}", sentence.de
   td.translation data-lang='es'
-    = text_area_tag "es-#{sentence.id}", sentence.es
+    .with-alphabet[data-lang='es']: .input = text_area_tag "es-#{sentence.id}", sentence.es
   td
     = link_to '#', title: t(:save), class: 'save-sentence hidden',
                    data: { toggle: 'tooltip', placement: 'left' } do
