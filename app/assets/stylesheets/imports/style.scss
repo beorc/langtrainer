@@ -126,7 +126,10 @@ span.feedback { margin-right: 30px; }
   max-height: 16px;
 }
 
-table.alphabet td {
-  border: none !important;
+table.alphabet {
+  td, tr {
+    border: none !important;
+  }
+
   a.btn { min-width: 20px; }
 }
