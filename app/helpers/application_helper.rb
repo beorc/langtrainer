@@ -147,4 +147,8 @@ module ApplicationHelper
     return fallback if object.new_record?
     object.title
   end
+
+  def render_alphabet(language, per=10)
+    render partial: 'shared/alphabet', locals: { language: language.to_s, per: per }
+  end
 end

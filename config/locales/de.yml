@@ -30,6 +30,7 @@ de:
   english: Englisch
   russian: Russisch
   german: Deutsch
+  spanish: Spanish
 
   titles:
     language:
@@ -246,6 +247,7 @@ de:
       create: Erstellen neuer Satz
       skip_atoms: Zu Beginn der Übung werden Sie lernen, die Wörter, die in der Konstruktion von Sätzen verwendet werden. Diese Schaltfläche überspringt diesen Teil der Klasse.
       no_sentences: Diese Übung ist nicht auf die ausgewählte Sprache noch übersetzt
+      alphabet: Alphabet
     help:
       hint: Hilfe
 

@@ -30,6 +30,7 @@ en:
   english: English
   russian: Russian
   german: German
+  spanish: Spanish
 
   titles:
     language:
@@ -253,6 +254,7 @@ en:
       create: Add new sentence
       skip_atoms: At the start of the exercise you learn the words that will be used in the construction of sentences. This button skips this part of the class.
       no_sentences: This exercise is not translated to selected language yet
+      alphabet: Alphabet
     help:
       hint: Help
 

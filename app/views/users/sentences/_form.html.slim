@@ -1,10 +1,13 @@
+= render partial: 'shared/alphabets', locals: { per: 7 }
+
 .module
   .module_header = Sentence.model_name.human.mb_chars.capitalize
   .module_body
     = simple_form_for [:users, resource], html: { class: 'form-horizontal' } do |f|
       fieldset
         - Language.all.each do |lang|
-          = f.input lang.slug, as: :text, input_html: { class: 'span8' }
+          .with-alphabet[data-lang=lang.slug]
+            .input = f.input lang.slug, as: :text, input_html: { class: 'span8' }
         = f.input :exercise_id, collection: Exercise.for_user(current_user)
         = f.input :atom, as: :boolean, hint: t('.atom.hint')
       .module_footer

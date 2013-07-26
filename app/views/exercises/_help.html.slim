@@ -1,7 +1,6 @@
 .hints
   .mission
     .inner
-      h3
-        = t('.hint')
+      h3 = t('.hint')
   .accordion#help-accordion
     = render partial: 'exercise', collection: Exercise.not_empty.public

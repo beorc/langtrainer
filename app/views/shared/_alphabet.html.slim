@@ -1,0 +1,5 @@
+table.table.table-condensed.alphabet
+  - $alphabets[language].each_slice(per) do |row|
+    tr
+      - row.each do |char|
+        td = link_to char, '#', class: 'btn'

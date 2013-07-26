@@ -1,0 +1,3 @@
+.alphabets-container.hide
+  - $alphabets.each_key do |slug|
+    .container.alphabet-container[data-lang=slug] = render_alphabet(slug, per)

@@ -50,12 +50,8 @@ ns.init = () ->
     ns.rollSentence()
     false
 
-  ns.answerInput().keyup (e) ->
-    if e.which == 13
-      ns.rollSentence()
-      return false
-
-    input = $(@)
+  verifyAnswer = ->
+    input = ns.answerInput()
     answer = input.val()
     rightAnswer = ns.currentSentence.data('translation')
     if answer.length is 0
@@ -64,6 +60,13 @@ ns.init = () ->
       input.removeClass('wrong').addClass('right')
     else
       input.removeClass('right').addClass('wrong')
+
+  ns.answerInput().keyup (e) ->
+    if e.which == 13
+      ns.rollSentence()
+      return false
+
+    verifyAnswer()
     true
 
   $('.look').click ->
@@ -121,6 +124,14 @@ ns.init = () ->
   $('a.accordion-toggle').click ->
     targetId = $(@).attr('href')
     $(targetId).collapse('toggle')
+    false
+
+  $('.alphabet a.btn').click ->
+    char = $(@).text()
+    answer = ns.answerInput().val()
+
+    ns.answerInput().val("#{answer}#{char}")
+    verifyAnswer()
     false
 
 
