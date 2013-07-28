@@ -1,11 +1,13 @@
 ns = initNamespace('LANGTRAINER.lib.embedded_alphabets')
 
+ns.removeKeyboard = (controlContainer) ->
+  controlContainer.find('.alphabet-container').addClass('hide')
+  false
+
 ns.init = ->
   $('.with-alphabet textarea').keyup (e) ->
-    if e.which == 27
-      controlContainer = $(@).closest('.with-alphabet')
-      controlContainer.find('.alphabet-container').addClass('hide')
-    true
+    ns.removeKeyboard($(@).closest('.with-alphabet')) if e.which == 27
+    false
 
   $('.with-alphabet textarea').focus ->
     controlContainer = $(@).closest('.with-alphabet')

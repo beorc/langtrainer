@@ -45,6 +45,7 @@ ns.init = ->
       element: input
 
     sendCorrection(cfg)
+    LANGTRAINER.lib.embedded_alphabets.removeKeyboard(input.closest('.with-alphabet'))
 
   $('textarea').keypress (e) ->
     input = $(@)
