@@ -21,4 +21,5 @@ ns.init = ->
     answer = input.val()
 
     input.val("#{answer}#{char}")
+    input.focus()
     false
