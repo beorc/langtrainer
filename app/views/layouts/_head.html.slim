@@ -1,7 +1,8 @@
-meta name="viewport" content="width=device-width, initial-scale=1.0"
-= stylesheet_link_tag "application", :media => "all"
-= javascript_include_tag "application"
+meta name='viewport' content='width=device-width, initial-scale=1.0'
+= stylesheet_link_tag 'application', :media => 'all'
+= javascript_include_tag 'application'
 link rel='shortcut icon' href=asset_path('imports/favicon.ico')
+link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet'
 = yield :load_controller_javascript
 = include_gon init: true
 = display_meta_tags separator: '–', reverse: true
