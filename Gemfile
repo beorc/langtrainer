@@ -6,10 +6,11 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass', '>= 2.2.2.0'
   gem 'uglifier', '>= 1.0.3'
+  gem 'font-awesome-sass-rails'
   gem 'asset_sync'
 end
 gem 'jquery-rails'
-gem 'sorcery', git: 'git@github.com:beorc/sorcery.git', branch: 'master'
+gem 'sorcery'
 gem 'cancan', '>= 1.6.8'
 gem 'rolify', '>= 3.2.0'
 gem 'simple_form', '>= 2.0.4'
