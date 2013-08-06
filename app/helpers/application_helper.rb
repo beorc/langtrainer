@@ -138,8 +138,6 @@ module ApplicationHelper
     locale = http_accept_language.preferred_language_from(available)
     return locale.to_sym if locale.present?
 
-    zone = request.host.split('.').last
-    return :ru if zone == 'ru'
     :en
   end
 
