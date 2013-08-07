@@ -126,11 +126,16 @@ ns.init = () ->
     $(targetId).collapse('toggle')
     false
 
+  $('body').on 'click', '.alphabet button.shift', ->
+    alphabet = $(@).closest('.alphabet')
+    alphabet.find('a.btn').each (i, button) ->
+      $(button).changeCase()
+
   $('.alphabet a.btn').click ->
     char = $(@).text()
     answer = ns.answerInput().val()
 
-    ns.answerInput().val("#{answer}#{char}")
+    ns.answerInput().insertAtCaret(char)
     verifyAnswer()
     false
 

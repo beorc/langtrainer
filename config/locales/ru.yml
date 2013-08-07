@@ -391,7 +391,7 @@ ru:
         username: Ник
         language_id: Язык
         created_at: Дата регистрации
-        en_counter: Фразы на нглийском
+        en_counter: Фразы на английском
         ru_counter: Фразы на русском
         de_counter: Фразы на немецком
         es_counter: Фразы на испанском

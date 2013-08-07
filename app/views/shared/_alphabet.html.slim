@@ -3,3 +3,8 @@ table.table.table-condensed.alphabet
     tr
       - row.each do |char|
         td = link_to char, '#', class: 'btn btn-small'
+  tr
+    td = button_tag '#', class: 'btn btn-small shift', data: { toggle: 'button' },
+                                                       type: 'button',
+                                                       autocomplete: 'off'  do
+      i.icon-arrow-up

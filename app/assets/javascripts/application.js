@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery.insert_at_caret
 //= require_tree ./common
 //= require_tree ./lib
 //= require_tree .
