@@ -1,4 +1,13 @@
 $.fn.extend({
+    changeCase: function() {
+      var symbol = this.text();
+      if (symbol == symbol.toLowerCase()) {
+        this.text(symbol.toUpperCase());
+      } else {
+        this.text(symbol.toLowerCase());
+      }
+    },
+
     insertAtCaret: function(myValue) {
         input = this.get(0)
         if (document.selection) {
