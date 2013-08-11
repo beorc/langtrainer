@@ -1,7 +1,4 @@
 class Exercise < ActiveRecord::Base
-  extend FriendlyId
-  friendly_id :title, use: :slugged
-
   attr_accessible :title, :slug, :shuffled
 
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
@@ -19,6 +16,7 @@ class Exercise < ActiveRecord::Base
   end
 
   def title
-    I18n.t(['titles', self.class.model_name.downcase, slug].join('.'))
+    return super if slug.blank?
+    I18n.t(['titles', self.class.model_name.downcase, slug].join('.'), default: super)
   end
 end

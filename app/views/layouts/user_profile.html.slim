@@ -5,6 +5,7 @@ html
   body class="user-profile #{controller_name.dasherize} #{action_name.dasherize} has-navbar-fixed-top has-highlighted"
     #page
       = render 'layouts/topbar'
+      = render_language_selector_modal
       #highlighted
         .container
           .row-fluid.header

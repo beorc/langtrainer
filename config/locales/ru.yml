@@ -260,6 +260,8 @@ ru:
   shared:
     omniauth_buttons:
       title: Войти через социальные сети
+    language_dialog:
+      title: Выберите свой родной язык
   views:
     pagination:
       truncate: ...

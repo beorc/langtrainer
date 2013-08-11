@@ -1,0 +1,14 @@
+.modal.language-selector-modal.hidden.fade
+  .modal-header
+    h3 = t('.title')
+  .modal-body
+    - Language.all.each_slice(4) do |row|
+      .row-fluid
+        - row.each do |language|
+          .span3
+            .container
+              = link_to set_native_language_path(language.id),
+                        method: :put,
+                        data: { dismiss: 'modal' },
+                        class: 'language-flag' do
+                = image_tag "flags/#{language.slug}.ico"

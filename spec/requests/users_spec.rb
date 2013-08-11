@@ -6,6 +6,21 @@ describe 'Users' do
     FactoryGirl.create_list :exercise, 3
   end
 
+  context 'when does not have language selected' do
+    it 'should see language selection dialog', js: true do
+      visit root_path
+      find('.modal.language-selector-modal', visible: true)
+    end
+  end
+
+  context 'when has language selected' do
+    it 'should not see language selection dialog', js: true do
+      visit root_path
+      first('.modal.language-selector-modal a.language-flag', visible: true).click
+      all('.modal.language-selector-modal', visible: true).should be_empty
+    end
+  end
+
   it 'can enter by email' do
     user = sign_in_by_email
     page.should have_content user.email

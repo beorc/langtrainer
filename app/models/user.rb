@@ -29,7 +29,6 @@ class User < ActiveRecord::Base
                        uniqueness: true,
                        if: :have_bound_auth?
 
-  after_create :assign_default_languages
   after_create :assign_default_role
   before_save :ensure_authentication_token
 
@@ -52,8 +51,12 @@ class User < ActiveRecord::Base
     nickname || username || email.split('@').first
   end
 
+  def has_assigned_language?
+    language_id.present?
+  end
+
   def language
-    assign_default_languages if language_id.nil?
+    return Language.russian if language_id.nil?
     Language.find(language_id)
   end
 
@@ -87,11 +90,6 @@ class User < ActiveRecord::Base
   end
 
   private
-
-  def assign_default_languages
-    self.language_id = Language.russian
-    save(:validate => false)
-  end
 
   def email_required?
     providers.empty?

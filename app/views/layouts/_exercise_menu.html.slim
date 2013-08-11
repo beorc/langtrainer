@@ -1,7 +1,8 @@
 ul.unstyled.exercise-menu.dropdown-menu
-  - Language.except(native_language).each do |language|
-    li
-      = link_to language_exercise_path(language, Exercise.first) do
-        span.language-flag = image_tag "flags/#{language.slug}.ico"
-        '&nbsp;
-        span.language-title = title_for(language)
+  - if Exercise.any?
+    - Language.except(native_language).each do |language|
+      li
+        = link_to language_exercise_path(language, Exercise.first) do
+          span.language-flag = image_tag "flags/#{language.slug}.ico"
+          '&nbsp;
+          span.language-title = title_for(language)

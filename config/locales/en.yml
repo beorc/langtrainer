@@ -261,6 +261,8 @@ en:
   shared:
     omniauth_buttons:
       title: Enter with social networks
+    language_dialog:
+      title: Select your native language
   views:
     pagination:
       truncate: ...

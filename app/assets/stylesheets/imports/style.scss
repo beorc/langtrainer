@@ -121,11 +121,6 @@ span.feedback { margin-right: 30px; }
   }
 }
 
-.language-flag img {
-  max-width: 16px;
-  max-height: 16px;
-}
-
 table.alphabet {
   td, tr {
     border: none !important;
@@ -133,3 +128,19 @@ table.alphabet {
 
   a.btn { min-width: 20px; }
 }
+
+.nav .language-flag img {
+  width: 20px;
+  height: 20px;
+}
+
+.languages.block .language-flag img {
+  width: 25px;
+  height: 25px;
+}
+
+.modal.language-selector-modal {
+  //a.language-flag { margin: 0 10px 0 10px }
+  .container { width: 48px }
+}
+

@@ -1,9 +1,9 @@
 
 FactoryGirl.define do
-  sequence(:title) {|n| "Exercise #{n}" }
+  sequence(:slug) {|n| "exercise-#{n}" }
 
   factory :exercise do
-    title
+    slug
 
     ignore do
       sentences_count 2

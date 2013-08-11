@@ -8,6 +8,7 @@ FactoryGirl.define do
   factory :user do |user|
     sequence(:username) {|n| "User_#{n}" }
     sequence(:email) {|n| "beorc_#{n}@gmail.com" }
+    language_id Language.first.id
   end
 
   factory :user_with_email, class: :User do |user|
@@ -16,6 +17,10 @@ FactoryGirl.define do
 
   factory :user_without_email, class: :User do |user|
     username 'user'
+  end
+
+  factory :user_without_language, class: :User do |user|
+    username 'without language'
   end
 
   factory :admin, class: :User do

@@ -4,22 +4,23 @@
       h1 = t(:app_name)
       p = t('.description')
 
-.languages.block
-  h2.block-title
-    span = t('.languages_block_title')
-    small = t('.languages_block_subtitle')
-  .row-fluid
-    - Language.except(native_language).each do |language|
-      li.span3
-        .module
-          .module_header
-            span.language-flag = image_tag "flags/#{language.slug}.ico"
-            '&nbsp;
-            span = title_for(language)
-          .module_body
-            = link_to t('.exercises_link_title'),
-                      language_exercise_path(language, Exercise.first),
-                      class: 'btn btn-primary btn-large'
+- if Exercise.any?
+  .languages.block
+    h2.block-title
+      span = t('.languages_block_title')
+      small = t('.languages_block_subtitle')
+    .row-fluid
+      - Language.except(native_language).each do |language|
+        .span3
+          .module
+            .module_header
+              span.language-flag = image_tag "flags/#{language.slug}.ico"
+              '&nbsp;
+              span = title_for(language)
+            .module_body
+              = link_to t('.exercises_link_title'),
+                        language_exercise_path(language, Exercise.first),
+                        class: 'btn btn-primary btn-large'
 
 .block.why.nargin-top-large
   h2.block-title
