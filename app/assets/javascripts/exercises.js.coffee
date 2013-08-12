@@ -87,7 +87,10 @@ ns.init = () ->
   $('.show-next-word').click ->
     rightAnswer = ns.currentSentence.data('translation')
     answer = ns.answerInput().val()
-    answerRegexp = new RegExp("^#{answer}(\\w*)\\s*(\\w*)", 'i')
+
+    return false if answer.indexOf(rightAnswer) >= 0
+
+    answerRegexp = XRegExp("^#{answer}([\\p{L}\\p{P}]*)\\s*([\\p{L}\\p{P}]*)")
     matches = answerRegexp.exec rightAnswer
 
     return false if matches is null
@@ -101,6 +104,7 @@ ns.init = () ->
     nextWord = matches[2]
 
     ns.answerInput().val("#{answer} #{nextWord}")
+    verifyAnswer()
     false
 
   $('.correct').click ->

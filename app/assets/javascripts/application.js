@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require jquery.insert_at_caret
+//= require xregexp.js
+//= require unicode-base
+//= require unicode-categories
 //= require_tree ./common
 //= require_tree ./lib
 //= require_tree .
