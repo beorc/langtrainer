@@ -4,7 +4,10 @@ meta name='viewport' content='width=device-width, initial-scale=1.0'
 link rel='shortcut icon' href=asset_path('imports/favicon.ico')
 = yield :load_controller_javascript
 = include_gon init: true
-= display_meta_tags separator: '–', reverse: true
+- if %W(main_page).include? controller_name
+  = display_meta_tags site: t(:app_name), separator: '–', reverse: false
+- else
+  = display_meta_tags site: t(:app_name), separator: '–', reverse: true
 = csrf_meta_tags
 = yield(:head)
 
