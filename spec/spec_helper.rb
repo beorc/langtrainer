@@ -87,8 +87,9 @@ RSpec.configure do |config|
 end
 
 def sign_in_by_email(email = 'beorc@httplab.ru')
-  visit new_user_session_path
+  visit root_path
   first('.modal.language-selector-modal a.language-flag', visible: true).click
+  visit new_user_session_path
   fill_in('user[email]', with: email)
   click_on 'send_token_button'
   user = User.find_by_email email
