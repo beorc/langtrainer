@@ -1,56 +1,61 @@
-.workspace {
-  .answer {
-    width: 400px;
-    height: 100px;
-    textarea#answer {
-      font-weight: bold;
-      &.right { color: green }
-      &.wrong { color: red }
+.exercises.show {
+  .workspace {
+    .answer {
+      width: 400px;
+      height: 100px;
+      textarea#answer {
+        font-weight: bold;
+        &.right { color: green }
+        &.wrong { color: red }
+      }
+    }
+
+    .actions {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      i { font-size: 1.5em }
+      a {
+        margin-left: 30px;
+        text-decoration: none;
+      }
+    }
+    .question {
+      font-size: 20px;
+      font-weight: 200;
+      width: 400px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    ul.hints {
+      list-style-type: none;
+      li { margin-top: 20px; }
     }
   }
 
-  .actions {
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-    i { font-size: 1.5em }
-    a {
-      margin-left: 30px;
-      text-decoration: none;
-    }
+  .hints td.column {
+    width: 30%;
   }
-  .question {
-    font-size: 20px;
-    font-weight: 200;
-    width: 400px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  ul.hints {
-    list-style-type: none;
-    li { margin-top: 20px; }
-  }
-}
 
-.hints td.column {
-  width: 30%;
-}
-
-.table th,
-.table td {
-  vertical-align: middle;
-  text-align: center;
-
-  .block {
+  .table th,
+  .table td {
     vertical-align: middle;
     text-align: center;
+
+    .block {
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+
+  .hints { margin-top: 30px }
+  .hints td {
+    p { margin: 0 }
+  }
+
+  .alphabet {
+    width: 370px;
   }
 }
-
-.hints { margin-top: 30px; }
-.hints td {
-  p { margin: 0 }
-}
-

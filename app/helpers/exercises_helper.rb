@@ -15,4 +15,12 @@ module ExercisesHelper
     return 'true' if sentence.atom
     'false'
   end
+
+  def hint_present?(exercise)
+    Rails.root.join('app/views', "exercises/#{@language.slug}/#{native_language.slug}/_hint_#{exercise.slug}.html.slim")
+  end
+
+  def hint_partial(exercise)
+    "exercises/#{@language.slug}/#{native_language.slug}/hint_#{exercise.slug}"
+  end
 end

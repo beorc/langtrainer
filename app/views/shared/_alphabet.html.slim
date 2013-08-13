@@ -1,10 +1,13 @@
-table.table.table-condensed.alphabet
-  - $alphabets[language].each_slice(per) do |row|
-    tr
-      - row.each do |char|
-        td = link_to char, '#', class: 'btn btn-small'
-  tr
-    td = button_tag '#', class: 'btn btn-small shift', data: { toggle: 'button' },
-                                                       type: 'button',
-                                                       autocomplete: 'off'  do
-      i.icon-arrow-up
+- if $alphabets[language].present?
+  .container.alphabet
+    - $alphabets[language].each_slice(per) do |row|
+      ul.inline
+        - row.each do |char|
+          li = link_to char, '#', class: 'btn btn-small'
+    ul.inline
+      li = button_tag '#',
+                      class: 'btn btn-small btn-primary shift',
+                      data: { toggle: 'button' },
+                      type: 'button',
+                      autocomplete: 'off'  do
+         i.icon-arrow-up

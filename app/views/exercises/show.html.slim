@@ -61,17 +61,6 @@
           i.icon-plus.icon-border
 
 
-    .row-fluid
-      .offset3.span6
-        /.mission: .inner
-          h3 = t('.alphabet')
-        = render_alphabet(@language.slug, 10)
+    = render_alphabet(@language.slug, 7)
 
     = render 'help'
-    /- if @hint.present?
-      .hints
-        .mission
-          .inner
-            h3
-              = t('.hint')
-        = render @hint
