@@ -17,10 +17,10 @@ module ExercisesHelper
   end
 
   def hint_present?(exercise)
-    Rails.root.join('app/views', "exercises/#{@language.slug}/#{native_language.slug}/_hint_#{exercise.slug}.html.slim")
+    File.exists? Rails.root.join('app/views', "exercises/hints/#{exercise.id}/#{@language.slug}/_#{native_language.slug}.html.slim")
   end
 
   def hint_partial(exercise)
-    "exercises/#{@language.slug}/#{native_language.slug}/hint_#{exercise.slug}"
+    "exercises/hints/#{exercise.id}/#{@language.slug}/#{native_language.slug}"
   end
 end

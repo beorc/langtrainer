@@ -1,4 +1,4 @@
-- if File.exists?(hint_present?(exercise))
+- if hint_present?(exercise)
   .accordion-group
     .accordion-heading
       = link_to "##{exercise.slug}", data: { parent: '#help-accordion' }, class: 'accordion-toggle btn btn-primary' do
