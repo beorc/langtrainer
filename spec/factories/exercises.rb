@@ -1,8 +1,7 @@
-EXERCISES_NUMBER = 14
+EXERCISES_NUMBER = 15
 
 FactoryGirl.define do
-  sequence(:id) {|n| n % EXERCISES_NUMBER }
-  sequence(:slug) {|n| "exercise-#{n}" }
+  sequence(:slug) {|n| (n % EXERCISES_NUMBER).to_s }
 
   factory :exercise do
     slug

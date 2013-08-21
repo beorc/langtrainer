@@ -7,4 +7,4 @@
         = title_for(exercise)
     .accordion-body.collapse id="exercise-#{exercise.id}" class=accordion_body_class(exercise)
       .accordion-inner
-        = render(partial: exercise_partial(exercise, 'template'), locals: { exercise: exercise }) rescue nil
+        = render(partial: hint_partial(exercise), locals: { exercise: exercise })

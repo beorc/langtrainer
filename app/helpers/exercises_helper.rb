@@ -25,7 +25,7 @@ module ExercisesHelper
   end
 
   def lang_hint_partial(exercise, partial)
-    File.join(hints_path(exercise), partial)
+    File.join(hints_path(exercise), partial.to_s)
   end
 
   def hints_path(exercise)
