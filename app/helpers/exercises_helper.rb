@@ -16,11 +16,37 @@ module ExercisesHelper
     'false'
   end
 
+  def exercise_path(exercise)
+    File.join('exercises/hints', exercise.id.to_s)
+  end
+
+  def exercise_partial(exercise, partial)
+    File.join(exercise_path(exercise), partial.to_s)
+  end
+
+  def lang_hint_partial(exercise, partial)
+    File.join(hints_path(exercise), partial)
+  end
+
+  def hints_path(exercise)
+    exercise_partial(exercise, @language.slug)
+  end
+
   def hint_present?(exercise)
-    File.exists? Rails.root.join('app/views', "exercises/hints/#{exercise.id}/#{@language.slug}/_#{native_language.slug}.html.slim")
+    File.exists? Rails.root.join('app/views', hints_path(exercise), "_#{native_language.slug}.html.slim")
   end
 
   def hint_partial(exercise)
-    "exercises/hints/#{exercise.id}/#{@language.slug}/#{native_language.slug}"
+    lang_hint_partial(exercise, native_language.slug)
+  end
+
+  def t(key, options = {})
+    return super if I18n.locale == native_language.slug
+
+    current_locale = I18n.locale
+    I18n.locale = native_language.slug
+    result = I18n.t(key, options)
+    I18n.locale = current_locale
+    result
   end
 end
