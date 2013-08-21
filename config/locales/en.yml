@@ -39,21 +39,21 @@ en:
       de: Deutsch
       es: Español
     exercise:
-      first: First exercise
-      second: Second exercise
-      third: Third exercise
-      fourth: Fourth exercise
-      fifth: Fifth exercise
-      sixth: Sixth exercise
-      seventh: Seventh exercise
-      eighth: Eighth exercise
-      ninth: Ninth exercise
-      tenth: Tenth exercise
-      eleventh: Eleventh exercise
-      twelfth: Twelfth exercise
-      thirteenth: Thirteenth exercise
-      fourteenth: Fourteenth exercise
-      the_bremen_town_musicians: The Bremen Town Musicians
+      '1': First exercise
+      '2': Second exercise
+      '3': Third exercise
+      '4': Fourth exercise
+      '5': Fifth exercise
+      '6': Sixth exercise
+      '7': Seventh exercise
+      '8': Eighth exercise
+      '9': Ninth exercise
+      '10': Tenth exercise
+      '11': Eleventh exercise
+      '12': Twelfth exercise
+      '13': Thirteenth exercise
+      '14': Fourteenth exercise
+      '15': The Bremen Town Musicians
 
   time:
     formats:

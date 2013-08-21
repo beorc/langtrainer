@@ -1,7 +1,7 @@
 module ExercisesHelper
   def render_exercises_select
     options = exercises_list_options(include_all: false) do |exercise|
-      language_exercise_path(@language.slug, id: exercise.id)
+      language_exercise_path(@language.slug, id: exercise.slug)
     end
     select_tag 'exercises', options
   end
@@ -17,7 +17,7 @@ module ExercisesHelper
   end
 
   def exercise_path(exercise)
-    File.join('exercises/hints', exercise.id.to_s)
+    File.join('exercises/hints', exercise.slug.to_s)
   end
 
   def exercise_partial(exercise, partial)
