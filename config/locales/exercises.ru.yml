@@ -1,3 +1,18 @@
 ru:
+  interrogation: Вопрос
+  declaration: Утверждение
+  negotiation: Отрицание
+  infinitive: Неопределенная форма
+
   tenses:
+    future: Будущее время
     present: Настоящее время
+    past: Прошедшее время
+
+  exercises:
+    hints:
+      '1':
+        template:
+          simple_tenses: Времена группы INDEFINITE (неопределенное)
+          conjugations: Формы глаголов
+
