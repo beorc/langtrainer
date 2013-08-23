@@ -1,35 +1,35 @@
 .container.big
-  h4.centered-text = t('.simple_tenses')
+  h4.centered-text = t('.simple_tenses', hint: true)
   table.table.table-bordered.table-condensed
     thead
       tr
         th
         th.column
-          strong = t('interrogation')
+          strong = t('interrogation', hint: true)
         th.column
-          strong = t('declaration')
+          strong = t('declaration', hint: true)
         th.column
-          strong = t('negotiation')
+          strong = t('negotiation', hint: true)
     tbody
       tr.will
         td
-          strong = t('tenses.future')
+          strong = t('tenses.future', hint: true)
         = content_for :future_interrogative
         = content_for :future_declarative
         = content_for :future_negative
       tr.do
         td
-          strong = t('tenses.present')
+          strong = t('tenses.present', hint: true)
         = content_for :present_interrogative
         = content_for :present_declarative
         = content_for :present_negative
       tr.did
         td
-          strong = t('tenses.past')
+          strong = t('tenses.past', hint: true)
         = content_for :past_interrogative
         = content_for :past_declarative
         = content_for :past_negative
 
-  h4.centered-text = t('.conjugations')
+  h4.centered-text = t('.conjugations', hint: true)
   = content_for :conjugations
 

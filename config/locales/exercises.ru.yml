@@ -8,6 +8,8 @@ ru:
     future: Будущее время
     present: Настоящее время
     past: Прошедшее время
+    past_simple: Прошедшее простое время
+    past_participle: Причастие в прошедшем времени
 
   exercises:
     hints:

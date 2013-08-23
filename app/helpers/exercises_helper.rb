@@ -41,7 +41,7 @@ module ExercisesHelper
   end
 
   def t(key, options = {})
-    return super if I18n.locale == native_language.slug
+    return super if I18n.locale == native_language.slug || !options[:hint]
 
     current_locale = I18n.locale
     I18n.locale = native_language.slug
