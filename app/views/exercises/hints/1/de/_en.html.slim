@@ -1,0 +1,311 @@
+/*= render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }*/
+
+/*- content_for :conjugations do*/
+  /*= render partial: lang_hint_partial(exercise, 'conjugations/table'), locals: { exercise: exercise }*/
+
+/*= render partial: exercise_partial(exercise, 'template'), locals: { exercise: exercise }*/
+
+h4.centered-text Indefinite tense
+.row-fluid
+  .span12
+    table.table.table-bordered.table-condensed
+      thead
+        tr
+          th
+          th.column
+            strong Interrogative
+          th.column
+            strong Declarative
+          th.column
+            strong Negative
+      tr.will
+        td
+          strong Future Indefininte
+        td
+          table.table: tr
+            td
+              table.table
+                tr
+                  td Werde
+                  td ich
+                tr
+                  td Wirst
+                  td du
+                tr
+                  td Wird
+                  td
+                    p er / sie / es
+                tr
+                  td Werden
+                  td
+                    p wir
+                    p sie
+            td.left-bordered lieben?
+        td
+          table.table: tr
+            td
+              table.table
+                tr
+                  td Ich
+                  td werde
+                tr
+                  td Du
+                  td wirst
+                tr
+                  td
+                    p Er / Sie / Es
+                  td wird
+                tr
+                  td
+                    p Wir
+                    p Sie
+                  td werden
+            td.left-bordered lieben
+        td
+          table.table: tr
+            td
+              table.table
+                tr
+                  td Ich
+                  td werde
+                tr
+                  td Du
+                  td wirst
+                tr
+                  td
+                    p Er / Sie / Es
+                  td wird
+                tr
+                  td
+                    p Wir
+                    p Sie
+                  td werden
+            td.left-bordered nicht lieben
+      tr.do
+        td
+          strong Present Indefinite
+        td
+          table.table
+            tr
+              td Liebe
+              td ich?
+            tr
+              td Liebst
+              td du?
+            tr
+              td Liebt
+              td
+                p er? / sie? / es?
+            tr
+              td Lieben
+              td
+                p wir?
+                p sie?
+        td
+          table.table
+            tr
+              td Ich
+              td liebe
+            tr
+              td Du
+              td liebst
+            tr
+              td
+                p Er / Sie / Es
+              td liebt
+            tr
+              td
+                p Wir
+                p Sie
+              td lieben
+        td
+          table.table: tr
+            td
+              table.table
+                tr
+                  td Ich
+                  td liebe
+                tr
+                  td Du
+                  td liebst
+                tr
+                  td
+                    p Er / Sie / Es
+                  td liebt
+                tr
+                  td
+                    p Wir
+                    p Sie
+                  td lieben
+            td.left-bordered nicht
+      tr.did
+        td
+          strong Past Indefinite
+        td
+          table.table
+            tr
+              td Liebtest
+              td du?
+            tr
+              td Liebte
+              td
+                p ich
+                p er? / sie? / es?
+            tr
+              td Liebten
+              td
+                p wir?
+                p sie?
+        td
+          table.table
+            tr
+              td Du
+              td liebtest
+            tr
+              td
+                p Ich
+                p Er / Sie / Es
+              td liebte
+            tr
+              td
+                p Wir
+                p Sie
+              td liebten
+        td
+          table.table
+            tr
+              td
+                table.table
+                  tr
+                    td Du
+                    td liebtest
+                  tr
+                    td
+                      p Ich
+                      p Er / Sie / Es
+                    td liebte
+                  tr
+                    td
+                      p Wir
+                      p Sie
+                    td liebten
+              td.left-bordered nicht
+
+.row-fluid
+  h5.centered-text Main forms of irregular verbs
+  .offset2.span8
+    table.table.table-bordered.table-condensed.table-hover
+      thead
+        th Infinitive
+        th Past simple
+        th Past participle
+      tr
+        td <strong>lieben</strong> (love)
+        td <strong>liebte</strong> (loved)
+        td <strong>geliebt</strong> (loved)
+      tr
+        td <strong>gefallen</strong> (like)
+        td <strong>gefiel</strong> (liked)
+        td <strong>gefallen</strong> (liked)
+      tr
+        td <strong>denken</strong> (think)
+        td <strong>dachte</strong> (thought)
+        td <strong>gedacht</strong> (thought)
+      tr
+        td <strong>kommen</strong> (come)
+        td <strong>kam</strong> (came)
+        td <strong>gekommen</strong> (come)
+      tr
+        td <strong>arbiten</strong> (work)
+        td <strong>arbeitete</strong> (worked)
+        td <strong>gearbeitet</strong> (worked)
+      tr
+        td <strong>kennen</strong> (know)
+        td <strong>kannte</strong> (knew)
+        td <strong>gekannt</strong> (known)
+
+      tr
+        td <strong>gehen</strong> (go)
+        td <strong>ging</strong> (went)
+        td <strong>gegangen</strong> (gone)
+      tr
+        td <strong>sehen</strong> (see)
+        td <strong>sahen</strong> (saw)
+        td <strong>gesehen</strong> (seen)
+      tr
+        td <strong>hören</strong> (hear)
+        td <strong>hörte</strong> (heard)
+        td <strong>gehören</strong> (heard)
+      tr
+        td <strong>weisen</strong> (show)
+        td <strong>wies</strong> (showed)
+        td <strong>gewiesen</strong> (shown)
+      tr
+        td <strong>schreiben</strong> (write)
+        td <strong>schrieb</strong> (wrote)
+        td <strong>geschrieben</strong> (written)
+      tr
+        td <strong>lesen</strong> (read)
+        td <strong>las</strong> (red)
+        td <strong>gelesen</strong> (red)
+      tr
+        td <strong>tun</strong> (do)
+        td <strong>tat</strong> (did)
+        td <strong>getan</strong> (done)
+      tr
+        td <strong>machen</strong> (make)
+        td <strong>machte</strong> (made)
+        td <strong>gemacht</strong> (made)
+      tr
+        td <strong>nehmen</strong> (take)
+        td <strong>nahm</strong> (took)
+        td <strong>genommen</strong> (taken)
+      tr
+        td <strong>haben</strong> (have)
+        td <strong>hatte</strong> (had)
+        td <strong>gehabt</strong> (had)
+      tr
+        td <strong>sein</strong> (be)
+        td <strong>war</strong> (was)
+        td <strong>gewesen</strong> (been)
+      tr
+        td <strong>treffen</strong> (meet)
+        td <strong>traf</strong> (met)
+        td <strong>getroffen</strong> (met)
+      tr
+        td <strong>beginnen</strong> (begin)
+        td <strong>begann</strong> (began)
+        td <strong>begonnen</strong> (begun)
+      tr
+        td <strong>geben</strong> (give)
+        td <strong>gab</strong> (gave)
+        td <strong>gegeben</strong> (given)
+      tr
+        td <strong>berichten</strong> (tell)
+        td <strong>berichtete</strong> (told)
+        td <strong>berichtet</strong> (told)
+      tr
+        td <strong>sagen</strong> (say)
+        td <strong>sagte</strong> (said)
+        td <strong>gesagt</strong> (said)
+      tr
+        td <strong>sprechen</strong> (speak)
+        td <strong>sprach</strong> (spoke)
+        td <strong>gesprochen</strong> (spoken)
+      tr
+        td <strong>kaufen</strong> (buy)
+        td <strong>kaufte</strong> (bought)
+        td <strong>gekauft</strong> (bought)
+      tr
+        td <strong>bauen</strong> (build)
+        td <strong>baute</strong> (built)
+        td <strong>gebaut</strong> (built)
+      tr
+        td <strong>verbringen</strong> (spend)
+        td <strong>verbrachte</strong> (spent)
+        td <strong>verbracht</strong> (spent)
+      tr
+        td <strong>verlassen</strong> (leave)
+        td <strong>verließ</strong> (left)
+        td <strong>verlassen</strong> (left)
+
