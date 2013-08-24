@@ -18,3 +18,56 @@ ru:
           simple_tenses: Времена группы INDEFINITE (неопределенное)
           conjugations: Формы глаголов
 
+  verbs:
+    love: любить
+    drink: пить
+    live: жить
+    have: иметь
+    come: приходить
+    think: думать
+    go: идти
+    see: видеть
+    know: знать
+    do: делать
+    give: давать
+    can: мочь, уметь
+    bring: приносить
+    take: брать
+    be: быть
+    like: нравиться
+
+    ser: быть - по сути
+    conocer: знать, быть знакомым
+    estar: быть - в качестве свойства предмета
+    querer: хотеть, любить
+    poner: ставить, надевать
+
+    past:
+      simple:
+        love: любил
+        drink: пил
+        have: имел
+        come: приходил
+        think: думал
+        go: шел
+        see: видел
+        know: знал
+        do: делал
+        give: давал
+        bring: приносил
+        take: брал
+        be: был
+      participle:
+        love: любимый
+        drink: напившийся
+        have: имевший
+        come: пришедший
+        think: подумавший
+        go: ушедший
+        see: увиденный
+        know: известный
+        do: сделанный
+        give: данный
+        bring: принесенный
+        take: взятый
+        be: бывший

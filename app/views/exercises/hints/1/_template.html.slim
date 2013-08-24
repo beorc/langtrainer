@@ -1,5 +1,5 @@
 .container.big
-  h4.centered-text = t('.simple_tenses', hint: true)
+  h4.centered-text = t('exercises.hints.1.template.simple_tenses', hint: true)
   table.table.table-bordered.table-condensed
     thead
       tr
@@ -30,6 +30,5 @@
         = content_for :past_declarative
         = content_for :past_negative
 
-  h4.centered-text = t('.conjugations', hint: true)
+  h4.centered-text = t('exercises.hints.1.template.conjugations', hint: true)
   = content_for :conjugations
-

@@ -1,0 +1,73 @@
+de:
+  interrogation: Interrogativ
+  declaration: Deklarative
+  negotiation: Negativ
+  infinitive: Infinitiv
+
+  tenses:
+    future: Futur
+    present: Präsens
+    past: Präteritum
+    past_simple: Präteritum
+    past_participle: Partizip II
+
+  exercises:
+    hints:
+      '1':
+        template:
+          simple_tenses: Einfache angespannt
+          conjugations: Unregelmäßige Verben
+
+  verbs:
+    love: lieben
+    drink: trinken
+    live: leben
+    have: haben
+    come: kommen
+    think: denken
+    go: gehen
+    see: sehen
+    know: kennen
+    do: machen
+    give: geben
+    can: können
+    bring: bringen
+    take: nehmen
+    be: sein
+    like: mögen
+
+    ser: sein, im wesentlichen
+    conocer: kennen
+    estar: sein, als Eigenschaften des Objekts
+    querer: mögen
+    poner: setzen
+
+    past:
+      simple:
+        love: liebte
+        drink: trank
+        have: hatte
+        come: kam
+        think: dachte
+        go: ging
+        see: sah
+        know: kannte
+        do: machte
+        give: gab
+        bring: brachte
+        take: nahm
+        be: war
+      participle:
+        love: geliebt
+        drink: getrunken
+        have: gehabt
+        come: gekommen
+        think: gedacht
+        go: gegangen
+        see: gesehen
+        know: gekannt
+        do: gemacht
+        give: gegeben
+        bring: gebracht
+        take: genommen
+        be: gewesen
