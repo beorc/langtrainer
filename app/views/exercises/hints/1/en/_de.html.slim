@@ -1,7 +1,2 @@
-= render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
-
-- content_for :conjugations do
-  = render partial: lang_hint_partial(exercise, 'conjugations/table'), locals: { exercise: exercise }
-
 = render partial: exercise_partial(exercise, 'template'), locals: { exercise: exercise }
 

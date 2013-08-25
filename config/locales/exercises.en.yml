@@ -1,0 +1,73 @@
+en:
+  interrogation: Interrogative
+  declaration: Declarative
+  negotiation: Negative
+  infinitive: Infinitive
+
+  tenses:
+    future: Future
+    present: Present
+    past: Past
+    past_simple: Past simple
+    past_participle: Past participle
+
+  exercises:
+    hints:
+      '1':
+        template:
+          simple_tenses: Simple tenses
+          conjugations: Verbs conjugations
+
+  verbs:
+    love: to love
+    drink: to drink
+    live: to live
+    have: to have
+    come: to come
+    think: to think
+    go: to go
+    see: to see
+    know: to know
+    do: to do
+    give: to give
+    can: to can
+    bring: to bring
+    take: to take
+    be: to be
+    like: to like
+
+    ser: be, essentially
+    conocer: know, recognize
+    estar: be, as property
+    querer: want, like
+    poner: put
+
+    past:
+      simple:
+        love: loved
+        drink: drank
+        have: had
+        come: came
+        think: thought
+        go: went
+        see: saw
+        know: knew
+        do: did
+        give: gave
+        bring: brought
+        take: took
+        be: was, were
+      participle:
+        love: loved
+        drink: drunk
+        have: had
+        come: come
+        think: thought
+        go: gone
+        see: seen
+        know: known
+        do: done
+        give: given
+        bring: brought
+        take: taken
+        be: been
