@@ -47,11 +47,11 @@ module Langtrainer
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
 
-      g.test_framework :rspec, fixture: true
+      g.test_framework :rspec, fixture: false
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
 
 
-      g.view_specs false
+      g.view_specs true
       g.helper_specs false
     end
 
@@ -78,6 +78,7 @@ module Langtrainer
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :ru
+    config.i18n.available_locales = [:ru, :en, :de, :es]
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -108,7 +109,7 @@ module Langtrainer
     config.easy_sign_in_mode = true
     config.token_authentication_key = :auth_token
 
-    config.host = Rails.env.production? ? 'langtrainer.ru' : 'langtrainer.dev'
+    config.host = Rails.env.production? ? 'langtrainer.com' : 'langtrainer.dev'
 
     config.action_controller.include_all_helpers = false
 

@@ -1,8 +1,5 @@
 = render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
 
-- content_for :conjugations do
-  = render partial: lang_hint_partial(exercise, 'conjugations/table'), locals: { exercise: exercise }
-
 .container.big
   h4.centered-text = t('exercises.hints.1.template.simple_tenses', hint: true)
   table.table.table-bordered.table-condensed
@@ -36,4 +33,4 @@
         = content_for :past_negative
 
   h4.centered-text = t('exercises.hints.1.template.conjugations', hint: true)
-  = content_for :conjugations
+  = render partial: lang_hint_partial(exercise, 'conjugations/table'), locals: { exercise: exercise }
