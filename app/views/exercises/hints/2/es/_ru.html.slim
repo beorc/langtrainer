@@ -1,5 +1,198 @@
-h4.centered-text Местоимения
-.container.middle
+- content_for :each_other do
+  tr
+    td cada uno sobre
+    td друг друга
+
+- content_for :one_another do
+  tr
+    td uno al otro
+    td один другого
+
+- content_for :this do
+  tr
+    td 1 лицо: este, esta, esto
+    td этот, эта, это (здесь)
+
+- content_for :that do
+  tr
+    td 2 лицо: ese, esa, eso
+    td этот, эта, это (там)
+
+- content_for :aquiel do
+  tr
+    td 3 лицо: aquel, aquella, aquello
+    td тот, та, то
+
+- content_for :here do
+  tr
+    td aquí
+    td здесь, сюда
+
+- content_for :there do
+  tr
+    td allí
+    td там, туда
+
+- content_for :these do
+  tr
+    td estos
+    td эти
+
+- content_for :those do
+  tr
+    td aquellos
+    td те
+
+- content_for :such do
+  tr
+    td tan
+    td такой, такие
+
+- content_for :same do
+  tr
+    td lo mismo
+    td тот же самый, такой же
+
+- content_for :who do
+  tr
+    td quién (a quién)
+    td кто (кого)
+
+- content_for :whose do
+  tr
+    td cuyo
+    td чей
+
+- content_for :what do
+  tr
+    td qué
+    td что, какой, каков, кто
+
+- content_for :which do
+  tr
+    td cual
+    td который, какой
+
+- content_for :that_which do
+  tr
+    td que
+    td который
+
+- content_for :some do
+  tr
+    td algunos
+    td какой-то, некоторые, немного
+
+- content_for :any do
+  tr
+    td algún
+    td какой-нибудь, некоторые, любой
+
+- content_for :one do
+  tr
+    td uno
+    td некто, некий
+
+- content_for :all do
+  tr
+    td todo
+    td все, весь, вся, все
+
+- content_for :each do
+  tr
+    td cada
+    td каждый
+
+/*- content_for :every do*/
+
+- content_for :other do
+  tr
+    td otro
+    td другой, иначе
+
+/*- content_for :another do*/
+
+- content_for :both do
+  tr
+    td ambos
+    td оба
+
+- content_for :many do
+  tr
+    td muchos
+    td много, многие (исчисляемые)
+- content_for :much do
+  tr
+    td mucho
+    td много (неисчисляемые)
+- content_for :very do
+  tr
+    td muy
+    td очень
+- content_for :few do
+  tr
+    td poco
+    td мало (исчисляемые)
+- content_for :a_few do
+  tr
+    td un poco
+    td немного
+- content_for :little do
+  tr
+    td número pequeño
+    td мало (неисчисляемые)
+- content_for :either do
+  tr
+    td cualquiera de los dos
+    td любой (из двух)
+- content_for :no do
+  tr
+    td ninguno
+    td никакой, ни один, нет
+/*- content_for :none do*/
+/*- content_for :neither do*/
+- content_for :someone do
+  tr
+    td alguien
+    td кто-то
+- content_for :no_one do
+  tr
+    td nadie
+    td никакой, ни один
+
+- content_for :what_q do
+  tr
+    td qué?
+    td что? какой?
+- content_for :who_q do
+  tr
+    td quén?
+    td кто?
+- content_for :where_q do
+  tr
+    td donde?
+    td где? куда?
+- content_for :when_q do
+  tr
+    td cuando?
+    td когда?
+- content_for :why_q do
+  tr
+    td por qué?
+    td почему? зачем?
+- content_for :how_q do
+  tr
+    td cómo?
+    td как? каким образом?
+- content_for :how_many_q do
+  tr
+    td cuanto?
+    td сколько?
+
+= render partial: exercise_partial(exercise, 'template'), locals: { exercise: exercise }
+
+/h4.centered-text Местоимения
+/.container.middle
   table.table.table-bordered.table-hover
     thead
       tr

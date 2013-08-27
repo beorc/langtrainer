@@ -1,0 +1,175 @@
+- content_for :system_head do
+  th
+    strong = t('exercises.hints.2.template.nominative_who')
+  th
+    strong = t('exercises.hints.2.template.accusative_whom')
+  th
+    strong = t('exercises.hints.2.template.dative_whom')
+  th
+    strong = t('exercises.hints.2.template.reflexive')
+  th
+    strong = t('exercises.hints.2.template.adjective_whose')
+
+= render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
+
+h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
+.container.big
+  table.table.table-bordered.table-hover
+    thead
+      tr
+        = content_for :system_head
+    tbody
+      = content_for :yo
+      = content_for :tu
+      = content_for :el
+      = content_for :ella
+      = content_for :ello
+      = content_for :usted
+      = content_for :nosotros
+      = content_for :vosotros
+      = content_for :ellos
+
+  table.table.table-bordered.table-hover
+    tbody
+      = content_for :each_other
+      = content_for :one_another
+      = content_for :this
+      = content_for :ese
+      = content_for :that
+      = content_for :aquiel
+      = content_for :here
+      = content_for :there
+      = content_for :these
+      = content_for :those
+      = content_for :such
+      = content_for :same
+
+  table.table.table-bordered.table-hover
+    tbody
+      = content_for :who
+      = content_for :whose
+      = content_for :what
+      = content_for :which
+      = content_for :that_which
+      = content_for :some
+      = content_for :any
+      = content_for :one
+
+  table.table.table-bordered.table-hover
+    tbody
+      = content_for :all
+      = content_for :each
+      = content_for :every
+      = content_for :other
+      = content_for :another
+      = content_for :both
+
+  table.table.table-bordered.table-hover
+    tbody
+      = content_for :many
+      = content_for :much
+      = content_for :very
+      = content_for :few
+      = content_for :a_few
+      = content_for :little
+      = content_for :either
+      = content_for :no
+      = content_for :none
+      = content_for :neither
+      = content_for :someone
+      = content_for :no_one
+
+  table.table.table-bordered.table-hover
+    tbody
+      = content_for :what_q
+      = content_for :who_q
+      = content_for :where_q
+      = content_for :when_q
+      = content_for :why_q
+      = content_for :how_q
+      = content_for :how_many_q
+
+  table.table.table-bordered.table-hover
+    tr
+      td todo (всë)
+      td todos (все)
+      td siempre (всегда)
+      td en todas partes (везде)
+    tr
+      td algo (что-нибудь, кое-что)
+      td alguien (кто-нибудь)
+      td aveces (иногда)
+      td en alguna parte (где-то)
+    tr
+      td nada (ничего)
+      td nadie (никто)
+      td jamás, nunca (никогда)
+      td en ninguna parte (нигде)
+
+  .centered-text
+    h5 Modo Imperativo (повелительное наклонение)
+
+  table.table.table-bordered.table-hover
+    thead
+      tr
+        th
+        th hablar (говорить)
+        th leer (читать)
+        th vivir (жить)
+    tbody
+      tr
+        td tú
+        td
+          span habl
+          strong a
+        td
+          span le
+          strong e
+        td
+          span viv
+          strong e
+      tr
+        td Usted
+        td
+          span habl
+          strong e
+        td
+          span le
+          strong a
+        td
+          span viv
+          strong a
+      tr
+        td nosotros
+        td
+          span habl
+          strong emos
+        td
+          span le
+          strong amos
+        td
+          span viv
+          strong amos
+      tr
+        td vosotros
+        td
+          span habl
+          strong ad
+        td
+          span le
+          strong ed
+        td
+          span viv
+          strong id
+      tr
+        td Ustedes
+        td
+          span habl
+          strong en
+        td
+          span le
+          strong an
+        td
+          span viv
+          strong an
+

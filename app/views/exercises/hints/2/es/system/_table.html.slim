@@ -1,0 +1,33 @@
+- content_for :system_head do
+  th
+    strong = t('exercises.hints.2.template.noun_whose')
+  th
+    strong = t('exercises.hints.2.template.accented')
+
+- content_for :yo do
+  = render partial: lang_hint_partial(exercise, 'system/yo')
+
+- content_for :tu do
+  = render partial: lang_hint_partial(exercise, 'system/tu')
+
+- content_for :el do
+  = render partial: lang_hint_partial(exercise, 'system/el')
+
+- content_for :ella do
+  = render partial: lang_hint_partial(exercise, 'system/ella')
+
+- content_for :ello do
+  = render partial: lang_hint_partial(exercise, 'system/ello')
+
+- content_for :usted do
+  = render partial: lang_hint_partial(exercise, 'system/usted')
+
+- content_for :nosotros do
+  = render partial: lang_hint_partial(exercise, 'system/nosotros')
+
+- content_for :vosotros do
+  = render partial: lang_hint_partial(exercise, 'system/vosotros')
+
+- content_for :ellos do
+  = render partial: lang_hint_partial(exercise, 'system/ellos')
+
