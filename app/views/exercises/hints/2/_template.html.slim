@@ -12,8 +12,8 @@
 
 = render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
 
-h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
 .container.big
+  h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
   table.table.table-bordered.table-hover
     thead
       tr
@@ -50,14 +50,14 @@ h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
       = content_for :whose
       = content_for :what
       = content_for :which
-      = content_for :that_which
+      = content_for :that_pronoun
       = content_for :some
       = content_for :any
       = content_for :one
 
   table.table.table-bordered.table-hover
     tbody
-      = content_for :all
+      = content_for :all_adj
       = content_for :each
       = content_for :every
       = content_for :other
@@ -73,7 +73,7 @@ h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
       = content_for :a_few
       = content_for :little
       = content_for :either
-      = content_for :no
+      = content_for :no_adj
       = content_for :none
       = content_for :neither
       = content_for :someone
@@ -88,88 +88,29 @@ h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
       = content_for :why_q
       = content_for :how_q
       = content_for :how_many_q
+      = content_for :how_much_q
 
   table.table.table-bordered.table-hover
-    tr
-      td todo (всë)
-      td todos (все)
-      td siempre (всегда)
-      td en todas partes (везде)
-    tr
-      td algo (что-нибудь, кое-что)
-      td alguien (кто-нибудь)
-      td aveces (иногда)
-      td en alguna parte (где-то)
-    tr
-      td nada (ничего)
-      td nadie (никто)
-      td jamás, nunca (никогда)
-      td en ninguna parte (нигде)
+    = content_for :all_adverbs
+    = content_for :something_adverbs
+    = content_for :nothing_adverbs
 
-  .centered-text
-    h5 Modo Imperativo (повелительное наклонение)
+  h4.centered-text = t('exercises.hints.2.template.imperative', hint: true)
 
-  table.table.table-bordered.table-hover
+  - content_for :imperative_head do
     thead
       tr
         th
-        th hablar (говорить)
-        th leer (читать)
-        th vivir (жить)
+        th hablar (#{t('verbs.speak')})
+        th leer (#{t('verbs.read')})
+        th vivir (#{t('verbs.live')})
+
+  table.table.table-bordered.table-hover
+    = content_for :imperative_head
     tbody
-      tr
-        td tú
-        td
-          span habl
-          strong a
-        td
-          span le
-          strong e
-        td
-          span viv
-          strong e
-      tr
-        td Usted
-        td
-          span habl
-          strong e
-        td
-          span le
-          strong a
-        td
-          span viv
-          strong a
-      tr
-        td nosotros
-        td
-          span habl
-          strong emos
-        td
-          span le
-          strong amos
-        td
-          span viv
-          strong amos
-      tr
-        td vosotros
-        td
-          span habl
-          strong ad
-        td
-          span le
-          strong ed
-        td
-          span viv
-          strong id
-      tr
-        td Ustedes
-        td
-          span habl
-          strong en
-        td
-          span le
-          strong an
-        td
-          span viv
-          strong an
+      = content_for :imperative_tu
+      = content_for :imperative_you
+      = content_for :imperative_we
+      = content_for :imperative_vosotros
+      = content_for :imperative_ustedes
 

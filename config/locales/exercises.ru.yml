@@ -20,6 +20,7 @@ ru:
       '2':
         template:
           pronouns: Местоимения
+          imperative: Повелительное наклонение
           nominative_who: кто?
           accusative_whom: кого?
           dative_whom: кому?
@@ -28,7 +29,69 @@ ru:
           reflexive: возвратное
           accented: ударное с предлогом
 
+        each_other: друг друга
+        one_another: один другого
+        this: этот, эта, это (здесь)
+        that: этот, эта, это (там)
+        aquiel: тот, та, то
+        here: здесь, сюда
+        there: там, туда
+        these: эти
+        those: те
+        such: такой, такие
+        same: тот же самый, такой же
+        who: кто (кого)
+        whose: чей
+        what: что, какой, каков, кто
+        which: который, какой
+        that_pronoun: который
+        some: какой-то, некоторые, немного
+        any: какой-нибудь, некоторые, любой
+        one: некто, некий
+        all_adj: все, весь, вся, все
+        each: каждый
+        every: каждый
+        other: другой, иначе
+        another: другой, ещë один
+        both: оба
+        many: много, многие (исчисляемые)
+        much: много (неисчисляемые)
+        very: очень
+        few: мало (исчисляемые)
+        a_few: немного
+        little: мало (неисчисляемые)
+        either: любой (из двух)
+        no_adj: никакой, ни один, нет
+        none: ни один, вовсе не
+        neither: ни один, тоже не
+        someone: кто-то
+        no_one: никакой, ни один, никто
+        what_q: что? какой?
+        who_q: кто?
+        where_q: где? куда?
+        when_q: когда?
+        why_q: почему? зачем?
+        how_q: как? каким образом?
+        how_many_q: сколько? (исчисляемое)
+        how_much_q: сколько? (неисчисляемое)
+
+        everything: всë
+        everyone: все
+        forever: всегда
+        everywhere: везде
+
+        something: что-нибудь, кое-что
+        someone: кто-нибудь
+        sometimes: иногда
+        somewhere: где-то
+
+        nothing: ничего
+        nobody: никто
+        never: никогда
+        nowhere: нигде
+
   verbs:
+    #1
     love: любить
     drink: пить
     live: жить
@@ -51,6 +114,11 @@ ru:
     estar: быть - в качестве свойства предмета
     querer: хотеть, любить
     poner: ставить, надевать
+
+    #2
+    speak: говорить
+    read: читать
+
 
     past:
       simple:
