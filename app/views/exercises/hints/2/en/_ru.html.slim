@@ -1,244 +1,225 @@
-h4.centered-text Местоимения
-.row-fluid
-  .span6
-    table.table.table-bordered.table-hover
-      thead
-        tr
-          th
-            strong Кто? (Именит.)
-          th
-            strong Кого? (Родит.)
-          th
-            strong Кому? (Дат.)
-          th
-            strong Чей? (Местоимение)
-          th
-      tbody
-        tr
-          td I
-          td me
-          td my
-          td mine
-          td я, меня, мне, мое
-        tr
-          td you
-          td you
-          td your
-          td yours
-          td ты, тебя, тебе, твое (неофициально, единственное число)
-        tr
-          td he
-          td him
-          td his
-          td his
-          td он, его, ему, его
-        tr
-          td she
-          td her
-          td her
-          td hers
-          td она, ее, ей, ее
-        tr
-          td it
-          td it
-          td it
-          td its
-          td оно
-        tr
-          td we
-          td us
-          td our
-          td ours
-          td мы, нас, нам, наш
-        tr
-          td you
-          td you
-          td your
-          td yours
-          td вы, вас, вам, ваше (неофициально, множественное число)
-        tr
-          td you
-          td you
-          td your
-          td yours
-          td вы, вас, вам, ваше (официально, единственное или множественное число)
-        tr
-          td they
-          td them
-          td their
-          td theirs
-          td они, их, им, их
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td myself
-          td (я) себя, сам (-а)
-        tr
-          td yourself
-          td (ты, Вы) себя, сам (-и)
-        tr
-          td himself
-          td (он) себя, сам
-        tr
-          td herself
-          td (она) себя, сама
-        tr
-          td itself
-          td (оно) себя, само
-        tr
-          td ourselves
-          td (мы) себя, сами
-        tr
-          td yourselves
-          td (вы) себя, сами
-        tr
-          td themselves
-          td (они) себя, сами
+- content_for :each_other do
+  tr
+    td each other
+    td = t('exercises.hints.2.each_other', hint: true)
 
-.row-fluid
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td each other
-          td друг друга
-        tr
-          td one another
-          td один другого
-        tr
-          td this
-          td этот, эта, это
-        tr
-          td these
-          td эти
-        tr
-          td there
-          td туда
-        tr
-          td that
-          td тот, та, то
-        tr
-          td those
-          td те
-        tr
-          td such
-          td такой, такие
-        tr
-          td the same
-          td тот же самый, такой же
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td who (whom)
-          td кто (кого)
-        tr
-          td whose
-          td чей
-        tr
-          td what
-          td что, какой, каков, кто
-        tr
-          td which
-          td который, какой, кто, что
-        tr
-          td that
-          td который
-        tr
-          td some
-          td какой-то, некоторые, немного
-        tr
-          td any
-          td какой-нибудь, некоторые, любой
-        tr
-          td one
-          td некто, некий
+- content_for :one_another do
+  tr
+    td one another
+    td = t('exercises.hints.2.one_another', hint: true)
 
-.row-fluid
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td all
-          td все, весь, вся, все
-        tr
-          td each
-          td каждый
-        tr
-          td every
-          td всякий, каждый
-        tr
-          td other
-          td другой, иначе (-не)
-        tr
-          td another
-          td другой (-я)
-        tr
-          td both
-          td оба
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td many
-          td много, многие (исчисляемые)
-        tr
-          td much
-          td много (неисчисляемые)
-        tr
-          td very
-          td очень
-        tr
-          td few
-          td мало (исчисляемые)
-        tr
-          td a few
-          td несколько
-        tr
-          td little
-          td мало (неисчисляемые)
-        tr
-          td a little
-          td немного
-        tr
-          td either
-          td любой (из двух)
-        tr
-          td no
-          td никакой, ни один, нет
-        tr
-          td none
-          td никто, ничто
-        tr
-          td neither
-          td ни тот, ни другой, никто, ничто
-        tr
-          td someone
-          td кто-то
-        tr
-          td no one
-          td никакой, ни один
+- content_for :this do
+  tr
+    td this
+    td = t('exercises.hints.2.this', hint: true)
 
-.row-fluid
-  .span6
-    table.table.table-bordered.table-hover
-      tbody
-        tr
-          td What?
-          td Что? Какой?
-        tr
-          td Who?
-          td Кто?
-        tr
-          td Where?
-          td Где? Куда?
-        tr
-          td When?
-          td Когда?
-        tr
-          td Why?
-          td Почему? Зачем?
-        tr
-          td How?
-          td Как? Каким образом?
+- content_for :that do
+  tr
+    td that
+    td = t('exercises.hints.2.that', hint: true)
+
+
+- content_for :here do
+  tr
+    td here
+    td = t('exercises.hints.2.here', hint: true)
+
+- content_for :there do
+  tr
+    td there
+    td = t('exercises.hints.2.there', hint: true)
+
+- content_for :these do
+  tr
+    td these
+    td = t('exercises.hints.2.these', hint: true)
+
+- content_for :those do
+  tr
+    td those
+    td = t('exercises.hints.2.those', hint: true)
+
+- content_for :such do
+  tr
+    td such
+    td = t('exercises.hints.2.such', hint: true)
+
+- content_for :same do
+  tr
+    td same
+    td = t('exercises.hints.2.same', hint: true)
+
+- content_for :who do
+  tr
+    td who
+    td = t('exercises.hints.2.who', hint: true)
+
+- content_for :whose do
+  tr
+    td whose
+    td = t('exercises.hints.2.whose', hint: true)
+
+- content_for :what do
+  tr
+    td what
+    td = t('exercises.hints.2.what', hint: true)
+
+- content_for :which do
+  tr
+    td which
+    td = t('exercises.hints.2.which', hint: true)
+
+- content_for :that_which do
+  tr
+    td that
+    td = t('exercises.hints.2.that_which', hint: true)
+
+- content_for :some do
+  tr
+    td some
+    td = t('exercises.hints.2.some', hint: true)
+
+- content_for :any do
+  tr
+    td any
+    td = t('exercises.hints.2.any', hint: true)
+
+- content_for :one do
+  tr
+    td one
+    td = t('exercises.hints.2.one', hint: true)
+
+
+- content_for :all_adj do
+  tr
+    td all
+    td = t('exercises.hints.2.all_adj', hint: true)
+
+- content_for :each do
+  tr
+    td each
+    td = t('exercises.hints.2.each', hint: true)
+
+- content_for :every do
+  tr
+    td every
+    td = t('exercises.hints.2.every', hint: true)
+
+- content_for :other do
+  tr
+    td other
+    td = t('exercises.hints.2.other', hint: true)
+
+- content_for :another do
+  tr
+    td another
+    td = t('exercises.hints.2.another', hint: true)
+
+- content_for :both do
+  tr
+    td both
+    td = t('exercises.hints.2.both', hint: true)
+
+- content_for :many do
+  tr
+    td many
+    td = t('exercises.hints.2.many', hint: true)
+- content_for :much do
+  tr
+    td much
+    td = t('exercises.hints.2.much', hint: true)
+- content_for :very do
+  tr
+    td very
+    td = t('exercises.hints.2.very', hint: true)
+- content_for :few do
+  tr
+    td few
+    td = t('exercises.hints.2.few', hint: true)
+- content_for :a_few do
+  tr
+    td a few
+    td = t('exercises.hints.2.a_few', hint: true)
+- content_for :little do
+  tr
+    td little
+    td = t('exercises.hints.2.little', hint: true)
+- content_for :either do
+  tr
+    td either
+    td = t('exercises.hints.2.either', hint: true)
+- content_for :no_adj do
+  tr
+    td no
+    td = t('exercises.hints.2.no_adj', hint: true)
+- content_for :none do
+  tr
+    td none
+    td = t('exercises.hints.2.none', hint: true)
+- content_for :neither do
+  tr
+    td neither
+    td = t('exercises.hints.2.neither', hint: true)
+- content_for :someone do
+  tr
+    td someone
+    td = t('exercises.hints.2.someone', hint: true)
+- content_for :no_one do
+  tr
+    td no one
+    td = t('exercises.hints.2.no_one', hint: true)
+
+- content_for :what_q do
+  tr
+    td what?
+    td = t('exercises.hints.2.what_q', hint: true)
+- content_for :who_q do
+  tr
+    td who?
+    td = t('exercises.hints.2.who_q', hint: true)
+- content_for :where_q do
+  tr
+    td where?
+    td = t('exercises.hints.2.where_q', hint: true)
+- content_for :when_q do
+  tr
+    td when?
+    td = t('exercises.hints.2.when_q', hint: true)
+- content_for :why_q do
+  tr
+    td why?
+    td = t('exercises.hints.2.why_q', hint: true)
+- content_for :how_q do
+  tr
+    td how?
+    td = t('exercises.hints.2.how_q', hint: true)
+- content_for :how_many_q do
+  tr
+    td how many?
+    td = t('exercises.hints.2.how_many_q', hint: true)
+- content_for :how_much_q do
+  tr
+    td how much?
+    td = t('exercises.hints.2.how_much_q', hint: true)
+
+- content_for :all_adverbs do
+  tr
+    td <strong>everything</strong> (#{t('exercises.hints.2.everything')})
+    td <strong>everyone</strong> (#{t('exercises.hints.2.everyone')})
+    td <strong>forever</strong> (#{t('exercises.hints.2.forever')})
+    td <strong>everyone</strong> (#{t('exercises.hints.2.everywhere')})
+- content_for :something_adverbs do
+  tr
+    td <strong>something</strong> (#{t('exercises.hints.2.something')})
+    td <strong>someone</strong> (#{t('exercises.hints.2.someone')})
+    td <strong>sometimes</strong> (#{t('exercises.hints.2.sometimes')})
+    td <strong>somewhere</strong> (#{t('exercises.hints.2.somewhere')})
+- content_for :nothing_adverbs do
+  tr
+    td <strong>nothing</strong> (#{t('exercises.hints.2.nothing')})
+    td <strong>nobody</strong> (#{t('exercises.hints.2.nobody')})
+    td <strong>never</strong> (#{t('exercises.hints.2.never')})
+    td <strong>nowhere</strong> (#{t('exercises.hints.2.nowhere')})
+
+= render partial: exercise_partial(exercise, 'template'), locals: { exercise: exercise }
+

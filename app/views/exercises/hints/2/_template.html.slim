@@ -19,15 +19,15 @@
       tr
         = content_for :system_head
     tbody
-      = content_for :yo
+      = content_for :i
       = content_for :tu
-      = content_for :el
-      = content_for :ella
-      = content_for :ello
-      = content_for :usted
-      = content_for :nosotros
+      = content_for :he
+      = content_for :she
+      = content_for :it
+      = content_for :you
+      = content_for :we
       = content_for :vosotros
-      = content_for :ellos
+      = content_for :they
 
   table.table.table-bordered.table-hover
     tbody
@@ -50,7 +50,7 @@
       = content_for :whose
       = content_for :what
       = content_for :which
-      = content_for :that_pronoun
+      = content_for :that_which
       = content_for :some
       = content_for :any
       = content_for :one
@@ -97,20 +97,5 @@
 
   h4.centered-text = t('exercises.hints.2.template.imperative', hint: true)
 
-  - content_for :imperative_head do
-    thead
-      tr
-        th
-        th hablar (#{t('verbs.speak')})
-        th leer (#{t('verbs.read')})
-        th vivir (#{t('verbs.live')})
-
-  table.table.table-bordered.table-hover
-    = content_for :imperative_head
-    tbody
-      = content_for :imperative_tu
-      = content_for :imperative_you
-      = content_for :imperative_we
-      = content_for :imperative_vosotros
-      = content_for :imperative_ustedes
+  = content_for :imperative_mood
 
