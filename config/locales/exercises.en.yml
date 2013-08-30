@@ -27,13 +27,13 @@ en:
           adjective_whose: whose? (adjective)
           noun_whose: whose? (noun)
           reflexive: reflexive
-          #accented: ударное с предлогом
+          accented: accented with preposition
 
         each_other: each other
         one_another: one another
         this: this
         that: that
-        #aquiel: тот, та, то
+        aquel: that
         here: here
         there: there
         these: these
@@ -152,67 +152,72 @@ en:
     yo:
       nom: I
       acc: me
-      dat: мне
-      ref: себя, сам
-      adj: моë
-      nou: мой / моя
-      acnt: для меня
+      dat: me
+      ref: myself
+      adj: my
+      nou: my
+      acnt: for me
     tu:
-      nom: ты
-      acc: тебя
-      dat: тебе
-      ref: себя, сам
-      adj: твоë
-      nou: твой / твоя
-      acnt: для тебя
+      nom: you
+      acc: you
+      dat: you
+      ref: yourself
+      adj: your
+      nou: your
+      acnt: for you
     el:
-      nom: он
-      acc: его
-      dat: ему
-      ref: себя, сам
-      adj: его
-      nou: его
-      acnt: для него
+      nom: he
+      acc: him
+      dat: him
+      ref: himself
+      adj: his
+      nou: his
+      acnt: for him
     ella:
-      nom: она
-      acc: еë
-      dat: ей
-      ref: себя, сама
-      adj: еë
-      nou: еë
-      acnt: для неë
+      nom: she
+      acc: her
+      dat: her
+      ref: herself
+      adj: hers
+      nou: her
+      acnt: for her
     ello:
-      nom: оно
-      ref: себя, сама
+      nom: it
+      acc: it
+      dat: it
+      ref: itself
+      adj: its
+      nou: its
+      acnt: for it
     usted:
-      nom: Вы
-      acc: Вас
-      dat: Вам
-      ref: себя, сами
-      adj: Ваше
-      nou: Ваше
-      acnt: для Вас
+      nom: you
+      acc: you
+      dat: you
+      ref: yourselves
+      adj: yours
+      nou: yours
+      acnt: for you
     nosotros:
-      nom: мы
-      acc: нас
-      dat: нам
-      ref: себя, сами
-      adj: наш / наша
-      nou: наше / наша
-      acnt: для нас
+      nom: we
+      acc: us
+      dat: us
+      ref: ourselves
+      adj: ours
+      nou: ours
+      acnt: for us
     vosotros:
-      nom: вы
-      acc: вас
-      dat: вам
-      ref: себя, сами
-      adj: ваш / ваша
-      nou: ваше / ваша
-      acnt: для вас
+      nom: you
+      acc: you
+      dat: you
+      ref: yourselves
+      adj: yours
+      nou: yours
+      acnt: for you
     ellos:
-      nom: они
-      acc: их
-      dat: им
-      ref: себя, сами
-      adj: их
-      nou: их
-      acnt: для них
+      nom: they
+      acc: them
+      dat: them
+      ref: themselves
+      adj: theirs
+      nou: theirs
+      acnt: for them

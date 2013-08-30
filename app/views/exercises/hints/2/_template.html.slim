@@ -1,14 +1,14 @@
 - content_for :system_head do
   th
-    strong = t('exercises.hints.2.template.nominative_who')
+    strong = t('exercises.hints.2.template.nominative_who', hint: true)
   th
-    strong = t('exercises.hints.2.template.accusative_whom')
+    strong = t('exercises.hints.2.template.accusative_whom', hint: true)
   th
-    strong = t('exercises.hints.2.template.dative_whom')
+    strong = t('exercises.hints.2.template.dative_whom', hint: true)
   th
-    strong = t('exercises.hints.2.template.reflexive')
+    strong = t('exercises.hints.2.template.reflexive', hint: true)
   th
-    strong = t('exercises.hints.2.template.adjective_whose')
+    strong = t('exercises.hints.2.template.adjective_whose', hint: true)
 
 = render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
 = render lang_hint_partial(exercise, 'tables')
@@ -37,7 +37,7 @@
       = content_for :this
       = content_for :ese
       = content_for :that
-      = content_for :aquiel
+      = content_for :aquel
       = content_for :here
       = content_for :there
       = content_for :these

@@ -19,10 +19,10 @@
     td = t('exercises.hints.2.that', hint: true)
 
 
-- content_for :aquiel do
+- content_for :aquel do
   tr
     td aquel, aquella, aquello
-    td = t('exercises.hints.2.aquiel', hint: true)
+    td = t('exercises.hints.2.aquel', hint: true)
 
 - content_for :here do
   tr
@@ -197,22 +197,22 @@
 
 - content_for :all_adverbs do
   tr
-    td <strong>todo</strong> (#{t('exercises.hints.2.everything')})
-    td <strong>todos</strong> (#{t('exercises.hints.2.everyone')})
-    td <strong>siempre</strong> (#{t('exercises.hints.2.forever')})
-    td <strong>en todas partes</strong> (#{t('exercises.hints.2.everywhere')})
+    td <strong>todo</strong> (#{t('exercises.hints.2.everything', hint: true)})
+    td <strong>todos</strong> (#{t('exercises.hints.2.everyone', hint: true)})
+    td <strong>siempre</strong> (#{t('exercises.hints.2.forever', hint: true)})
+    td <strong>en todas partes</strong> (#{t('exercises.hints.2.everywhere', hint: true)})
 - content_for :something_adverbs do
   tr
-    td <strong>algo</strong> (#{t('exercises.hints.2.something')})
-    td <strong>alguien</strong> (#{t('exercises.hints.2.someone')})
-    td <strong>aveces</strong> (#{t('exercises.hints.2.sometimes')})
-    td <strong>en alguna parte</strong> (#{t('exercises.hints.2.somewhere')})
+    td <strong>algo</strong> (#{t('exercises.hints.2.something', hint: true)})
+    td <strong>alguien</strong> (#{t('exercises.hints.2.someone', hint: true)})
+    td <strong>aveces</strong> (#{t('exercises.hints.2.sometimes', hint: true)})
+    td <strong>en alguna parte</strong> (#{t('exercises.hints.2.somewhere', hint: true)})
 - content_for :nothing_adverbs do
   tr
-    td <strong>nada</strong> (#{t('exercises.hints.2.nothing')})
-    td <strong>nadie</strong> (#{t('exercises.hints.2.nobody')})
-    td <strong>jamás, nunca</strong> (#{t('exercises.hints.2.never')})
-    td <strong>en ninguna parte</strong> (#{t('exercises.hints.2.nowhere')})
+    td <strong>nada</strong> (#{t('exercises.hints.2.nothing', hint: true)})
+    td <strong>nadie</strong> (#{t('exercises.hints.2.nobody', hint: true)})
+    td <strong>jamás, nunca</strong> (#{t('exercises.hints.2.never', hint: true)})
+    td <strong>en ninguna parte</strong> (#{t('exercises.hints.2.nowhere', hint: true)})
 
 - content_for :imperative_mood do
   h4.centered-text = t('exercises.hints.2.template.imperative', hint: true)
@@ -221,9 +221,9 @@
     thead
       tr
         th
-        th hablar (#{t('verbs.speak')})
-        th leer (#{t('verbs.read')})
-        th vivir (#{t('verbs.live')})
+        th hablar (#{t('verbs.speak', hint: true)})
+        th leer (#{t('verbs.read', hint: true)})
+        th vivir (#{t('verbs.live', hint: true)})
     tbody
       tr
         td tú

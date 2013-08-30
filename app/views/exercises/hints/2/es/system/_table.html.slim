@@ -1,8 +1,8 @@
 - content_for :system_head do
   th
-    strong = t('exercises.hints.2.template.noun_whose')
+    strong = t('exercises.hints.2.template.noun_whose', hint: true)
   th
-    strong = t('exercises.hints.2.template.accented')
+    strong = t('exercises.hints.2.template.accented', hint: true)
 
 - content_for :i do
   = render partial: lang_hint_partial(exercise, 'system/i')
