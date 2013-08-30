@@ -4,11 +4,7 @@
       h1 = t(:app_name)
       p = t('.description')
 
-- if native_language.russian?
-  .block.info
-    h2.block-title
-      span = t('.info_block_title')
-    = render 'info'
+= render 'main_page/blocks/info'
 
 - if Exercise.any?
   .languages.block
