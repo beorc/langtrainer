@@ -10,8 +10,8 @@
   th
     strong = t('exercises.hints.2.template.adjective_whose', hint: true)
 
-= render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
-= render lang_hint_partial(exercise, 'tables')
+= render partial: exercise_partial(exercise, 'system/table'), locals: { exercise: exercise }
+= render exercise_partial(exercise, 'tables')
 
 .container.big
   h4.centered-text = t('exercises.hints.2.template.pronouns', hint: true)
