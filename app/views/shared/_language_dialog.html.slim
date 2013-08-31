@@ -7,7 +7,7 @@
         - row.each do |language|
           .span3
             .container
-              = link_to set_native_language_path(language.id),
+              = link_to set_native_language_path(language),
                         method: :put,
                         data: { dismiss: 'modal' },
                         class: 'language-flag' do
