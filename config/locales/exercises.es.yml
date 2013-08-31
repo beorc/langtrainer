@@ -18,6 +18,152 @@ es:
           simple_tenses: Tiempos simples
           conjugations: Verbos conjugaciones
 
+      '2':
+        template:
+          pronouns: Pronouns
+          imperative: Imperative Mood
+          nominative_who: who?
+          accusative_whom: whom?
+          dative_whom: to whom?
+          adjective_whose: whose? (adjective)
+          noun_whose: whose? (noun)
+          reflexive: reflexive
+          accented: accented with preposition
+
+        pronouns:
+          yo:
+            nom: yo
+            acc: me
+            dat: me
+            ref: yo mismo
+            adj: mi
+            nou: (el) mío / (la) mía
+            acnt: para mí
+          tu:
+            nom: tú
+            acc: te
+            dat: te
+            ref: tú mismo
+            adj: tu
+            nou: (el) tuyo / (la) tuya
+            acnt: para ti
+          el:
+            nom: él
+            acc: lo
+            dat: le
+            ref: sí mismo
+            adj: su
+            nou: (el) suyo / (la) tuya
+            acnt: para él
+          ella:
+            nom: ella
+            acc: la
+            dat: le
+            ref: ella misma
+            adj: su
+            nou: (la) suya
+            acnt: para ella
+          ello:
+            nom: ello
+            acc: lo
+            dat: le
+            ref: ello mismo
+            adj: '-'
+            nou: '-'
+            acnt: '-'
+          usted:
+            nom: Usted
+            acc: lo
+            dat: le
+            ref: Usted mismo
+            adj: suyo
+            nou: suya
+            acnt: para Usted
+          nosotros:
+            nom: nosotros / nosotras
+            acc: nos
+            dat: nos
+            ref: nosotros mismos
+            adj: nuestro / nuestra
+            nou: (el) nuestro / (la) nuestra
+            acnt: para nosotros / para nosotras
+          vosotros:
+            nom: vosotros / vosotras
+            acc: os
+            dat: os
+            ref: vosotros mismos
+            adj: vuestro / vuestra
+            nou: (el) vuestro / (la) vuestra
+            acnt: para vosotros / para vosotras
+          ellos:
+            nom: ellos /ellas
+            acc: los / las
+            dat: les
+            ref: ellos mismo / ellas mismo
+            adj: su
+            nou: (el) suyo / (la) suya
+            acnt: para ellos / para ellas
+        each_other: cada uno sobre
+        one_another: uno al otro
+        this: este, esta, esto
+        that: ese, esa, eso
+        aquel: aquel, aquella, aquello
+        here: aquí
+        there: allí
+        these: estos
+        those: aquellos
+        such: tun
+        same: lo mismo
+        who: quién (a quién)
+        whose: cuyo
+        what: qué
+        which: cual
+        that_which: que
+        some: algunos
+        any: algún
+        one: uno
+        all_adj: todo
+        each: cada
+        every: cada
+        other: otro
+        another: otro
+        both: ambos
+        many: muchos
+        much: mucho
+        very: muy
+        few: poco
+        a_few: un poco
+        little: número pequeño
+        either: cualquiera de los dos
+        no_adj: ninguno
+        none: ninguno
+        neither: ninguno
+        someone: alguien
+        no_one: nadie
+        what_q: qué?
+        who_q: quén?
+        where_q: donde?
+        when_q: cuando?
+        why_q: por qué?
+        how_q: cómo?
+        how_many_q: cuantos?
+        how_much_q: cuanto?
+
+        everything: todo
+        everyone: todos
+        forever: siempre
+        everywhere: en todas partes
+
+        something: algo
+        someone: alguien
+        sometimes: aveces
+        somewhere: en alguna parte
+
+        nothing: nada
+        nobody: nadie
+        never: jamás, nunca
+        nowhere: en ninguna parte
+
   verbs:
     love: amar
     drink: beber
@@ -35,6 +181,10 @@ es:
     take: coger
     be: ser
     like: querer
+
+    #2
+    speak: hablar
+    read: leer
 
     past:
       simple:

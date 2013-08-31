@@ -29,6 +29,79 @@ ru:
           reflexive: возвратное
           accented: ударное с предлогом
 
+        pronouns:
+          yo:
+            nom: я
+            acc: меня
+            dat: мне
+            ref: себя, сам
+            adj: моë
+            nou: мой / моя
+            acnt: для меня
+          tu:
+            nom: ты
+            acc: тебя
+            dat: тебе
+            ref: себя, сам
+            adj: твоë
+            nou: твой / твоя
+            acnt: для тебя
+          el:
+            nom: он
+            acc: его
+            dat: ему
+            ref: себя, сам
+            adj: его
+            nou: его
+            acnt: для него
+          ella:
+            nom: она
+            acc: еë
+            dat: ей
+            ref: себя, сама
+            adj: еë
+            nou: еë
+            acnt: для неë
+          ello:
+            nom: оно
+            ref: себя, сама
+            acc: '-'
+            dat: '-'
+            adj: '-'
+            nou: '-'
+            acnt: '-'
+          usted:
+            nom: Вы
+            acc: Вас
+            dat: Вам
+            ref: себя, сами
+            adj: Ваше
+            nou: Ваше
+            acnt: для Вас
+          nosotros:
+            nom: мы
+            acc: нас
+            dat: нам
+            ref: себя, сами
+            adj: наш / наша
+            nou: наше / наша
+            acnt: для нас
+          vosotros:
+            nom: вы
+            acc: вас
+            dat: вам
+            ref: себя, сами
+            adj: ваш / ваша
+            nou: ваше / ваша
+            acnt: для вас
+          ellos:
+            nom: они
+            acc: их
+            dat: им
+            ref: себя, сами
+            adj: их
+            nou: их
+            acnt: для них
         each_other: друг друга
         one_another: один другого
         this: этот, эта, это (здесь)
@@ -150,71 +223,3 @@ ru:
         take: взятый
         be: бывший
 
-  pronouns:
-    yo:
-      nom: я
-      acc: меня
-      dat: мне
-      ref: себя, сам
-      adj: моë
-      nou: мой / моя
-      acnt: для меня
-    tu:
-      nom: ты
-      acc: тебя
-      dat: тебе
-      ref: себя, сам
-      adj: твоë
-      nou: твой / твоя
-      acnt: для тебя
-    el:
-      nom: он
-      acc: его
-      dat: ему
-      ref: себя, сам
-      adj: его
-      nou: его
-      acnt: для него
-    ella:
-      nom: она
-      acc: еë
-      dat: ей
-      ref: себя, сама
-      adj: еë
-      nou: еë
-      acnt: для неë
-    ello:
-      nom: оно
-      ref: себя, сама
-    usted:
-      nom: Вы
-      acc: Вас
-      dat: Вам
-      ref: себя, сами
-      adj: Ваше
-      nou: Ваше
-      acnt: для Вас
-    nosotros:
-      nom: мы
-      acc: нас
-      dat: нам
-      ref: себя, сами
-      adj: наш / наша
-      nou: наше / наша
-      acnt: для нас
-    vosotros:
-      nom: вы
-      acc: вас
-      dat: вам
-      ref: себя, сами
-      adj: ваш / ваша
-      nou: ваше / ваша
-      acnt: для вас
-    ellos:
-      nom: они
-      acc: их
-      dat: им
-      ref: себя, сами
-      adj: их
-      nou: их
-      acnt: для них

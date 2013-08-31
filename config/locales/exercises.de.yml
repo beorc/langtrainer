@@ -29,6 +29,79 @@ de:
           reflexive: reflexiv
           accented: akzentuiert mit Präposition
 
+        pronouns:
+          yo:
+            nom: ich
+            acc: mich
+            dat: mir
+            ref: mich selbst
+            adj: mein
+            nou: mein
+            acnt: für mich
+          tu:
+            nom: du
+            acc: dich
+            dat: dir
+            ref: du selbst/ dir selbst/ dich selbst
+            adj: dein
+            nou: dein
+            acnt: für dich
+          el:
+            nom: er
+            acc: ihn
+            dat: ihm
+            ref: ihn selbst
+            adj: sein
+            nou: sein
+            acnt: für dich
+          ella:
+            nom: sie
+            acc: sie
+            dat: ihr
+            ref: sie selbst
+            adj: ihrer
+            nou: ihrer
+            acnt: für sie
+          ello:
+            nom: es
+            acc: es
+            dat: ihm
+            ref: selbst
+            adj: sein
+            nou: sein
+            acnt: für es
+          usted:
+            nom: Sie
+            acc: Sie
+            dat: Ihnen
+            ref: Ihnen selbst
+            adj: Ihr
+            nou: Ihr
+            acnt: für Sie
+          nosotros:
+            nom: wir
+            acc: uns
+            dat: uns
+            ref: uns selbst
+            adj: unser
+            nou: unser
+            acnt: für uns
+          vosotros:
+            nom: ihr
+            acc: euch
+            dat: euch
+            ref: euch selbst
+            adj: euer
+            nou: euer
+            acnt: für euch
+          ellos:
+            nom: sie
+            acc: sie
+            dat: ihnen
+            ref: ihnen selbst
+            adj: ihr
+            nou: ihr
+            acnt: für sie
         each_other: einander
         one_another: ein anderer, einander
         this: dieser / diese / dieses
@@ -148,76 +221,3 @@ de:
         take: genommen
         be: gewesen
 
-  pronouns:
-    yo:
-      nom: ich
-      acc: mich
-      dat: mir
-      ref: mich selbst
-      adj: mein
-      nou: mein
-      acnt: für mich
-    tu:
-      nom: du
-      acc: dich
-      dat: dir
-      ref: du selbst/ dir selbst/ dich selbst
-      adj: dein
-      nou: dein
-      acnt: für dich
-    el:
-      nom: er
-      acc: ihn
-      dat: ihm
-      ref: ihn selbst
-      adj: sein
-      nou: sein
-      acnt: für dich
-    ella:
-      nom: sie
-      acc: sie
-      dat: ihr
-      ref: sie selbst
-      adj: ihrer
-      nou: ihrer
-      acnt: für sie
-    ello:
-      nom: es
-      acc: es
-      dat: ihm
-      ref: selbst
-      adj: sein
-      nou: sein
-      acnt: für es
-    usted:
-      nom: Sie
-      acc: Sie
-      dat: Ihnen
-      ref: Ihnen selbst
-      adj: Ihr
-      nou: Ihr
-      acnt: für Sie
-    nosotros:
-      nom: wir
-      acc: uns
-      dat: uns
-      ref: uns selbst
-      adj: unser
-      nou: unser
-      acnt: für uns
-    vosotros:
-      nom: ihr
-      acc: euch
-      dat: euch
-      ref: euch selbst
-      adj: euer
-      nou: euer
-      acnt: für euch
-    ellos:
-      nom: sie
-      acc: sie
-      dat: ihnen
-      ref: ihnen selbst
-      adj: ihr
-      nou: ihr
-      acnt: für sie

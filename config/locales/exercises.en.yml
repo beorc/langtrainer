@@ -29,6 +29,80 @@ en:
           reflexive: reflexive
           accented: accented with preposition
 
+        pronouns:
+          yo:
+            nom: I
+            acc: me
+            dat: me
+            ref: myself
+            adj: my
+            nou: my
+            acnt: for me
+          tu:
+            nom: you
+            acc: you
+            dat: you
+            ref: yourself
+            adj: your
+            nou: your
+            acnt: for you
+          el:
+            nom: he
+            acc: him
+            dat: him
+            ref: himself
+            adj: his
+            nou: his
+            acnt: for him
+          ella:
+            nom: she
+            acc: her
+            dat: her
+            ref: herself
+            adj: hers
+            nou: her
+            acnt: for her
+          ello:
+            nom: it
+            acc: it
+            dat: it
+            ref: itself
+            adj: its
+            nou: its
+            acnt: for it
+          usted:
+            nom: you
+            acc: you
+            dat: you
+            ref: yourselves
+            adj: yours
+            nou: yours
+            acnt: for you
+          nosotros:
+            nom: we
+            acc: us
+            dat: us
+            ref: ourselves
+            adj: ours
+            nou: ours
+            acnt: for us
+          vosotros:
+            nom: you
+            acc: you
+            dat: you
+            ref: yourselves
+            adj: yours
+            nou: yours
+            acnt: for you
+          ellos:
+            nom: they
+            acc: them
+            dat: them
+            ref: themselves
+            adj: theirs
+            nou: theirs
+            acnt: for them
+
         each_other: each other
         one_another: one another
         this: this
@@ -148,76 +222,3 @@ en:
         take: taken
         be: been
 
-  pronouns:
-    yo:
-      nom: I
-      acc: me
-      dat: me
-      ref: myself
-      adj: my
-      nou: my
-      acnt: for me
-    tu:
-      nom: you
-      acc: you
-      dat: you
-      ref: yourself
-      adj: your
-      nou: your
-      acnt: for you
-    el:
-      nom: he
-      acc: him
-      dat: him
-      ref: himself
-      adj: his
-      nou: his
-      acnt: for him
-    ella:
-      nom: she
-      acc: her
-      dat: her
-      ref: herself
-      adj: hers
-      nou: her
-      acnt: for her
-    ello:
-      nom: it
-      acc: it
-      dat: it
-      ref: itself
-      adj: its
-      nou: its
-      acnt: for it
-    usted:
-      nom: you
-      acc: you
-      dat: you
-      ref: yourselves
-      adj: yours
-      nou: yours
-      acnt: for you
-    nosotros:
-      nom: we
-      acc: us
-      dat: us
-      ref: ourselves
-      adj: ours
-      nou: ours
-      acnt: for us
-    vosotros:
-      nom: you
-      acc: you
-      dat: you
-      ref: yourselves
-      adj: yours
-      nou: yours
-      acnt: for you
-    ellos:
-      nom: they
-      acc: them
-      dat: them
-      ref: themselves
-      adj: theirs
-      nou: theirs
-      acnt: for them
