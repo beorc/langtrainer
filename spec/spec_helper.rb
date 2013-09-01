@@ -60,6 +60,7 @@ RSpec.configure do |config|
 
   config.include Capybara::DSL
   Capybara.current_driver = :selenium
+  Capybara.default_wait_time = 6
 
   config.before(:all) do
     DatabaseCleaner.strategy = :transaction
@@ -87,8 +88,9 @@ RSpec.configure do |config|
 end
 
 def sign_in_by_email(email = 'beorc@httplab.ru')
-  visit root_path
-  first('.modal.language-selector-modal a.language-flag', visible: true).click
+  ApplicationController.any_instance.stub(:has_native_language?).and_return(true)
+  ApplicationController.any_instance.stub(:native_language).and_return(Language.russian)
+
   visit new_user_session_path
   fill_in('user[email]', with: email)
   click_on 'send_token_button'

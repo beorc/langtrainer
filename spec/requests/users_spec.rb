@@ -8,6 +8,7 @@ describe 'Users' do
 
   context 'when does not have language selected' do
     it 'should see language selection dialog', js: true do
+      ApplicationController.any_instance.stub(:has_native_language?).and_return(false)
       visit root_path
       find('.modal.language-selector-modal', visible: true)
     end
@@ -15,8 +16,12 @@ describe 'Users' do
 
   context 'when has language selected' do
     it 'should not see language selection dialog', js: true do
+      ApplicationController.any_instance.stub(:has_native_language?).and_return(false)
       visit root_path
-      first('.modal.language-selector-modal a.language-flag', visible: true).click
+      page.has_selector?('.modal.language-selector-modal')
+      first('.modal.language-selector-modal a.language-flag:first', visible: true).click
+      all('.modal.language-selector-modal', visible: true).should be_empty
+      visit root_path
       all('.modal.language-selector-modal', visible: true).should be_empty
     end
   end

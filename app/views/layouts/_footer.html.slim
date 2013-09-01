@@ -4,9 +4,9 @@ footer#footer
     .row
       .span12
         span.copyright.pull-right &copy; #{Date.today.year}, Langtrainer
-        /- if Rails.env.production?
-        span.social.pull-right = render 'layouts/social_likes'
-        span.pull-right
-          iframe src="http://ghbtns.com/github-btn.html?user=beorc&repo=langtrainer&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"
+        - if Rails.env.production?
+          span.social.pull-right = render 'layouts/social_likes'
+          span.pull-right
+            iframe src="http://ghbtns.com/github-btn.html?user=beorc&repo=langtrainer&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"
         span.feedback.pull-right
           = link_to Feedback.model_name.human.mb_chars.capitalize, new_feedback_path

@@ -34,8 +34,7 @@ class UserRegistration
     self.attributes = attributes
     @email_confirmation.new_email = email
     @email_confirmation.save
-    attributes.delete :email
-    @user.update_attributes attributes
+    @user.update_attributes attributes.except(:email)
     save
   end
 
