@@ -162,6 +162,9 @@ de:
         nobody: niemand
         never: niemals
         nowhere: nirgends
+      '3':
+        template:
+          title: 'Verb "zu sein"'
 
   verbs:
     love: lieben

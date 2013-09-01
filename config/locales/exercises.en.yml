@@ -163,6 +163,9 @@ en:
         nobody: nobody
         never: never
         nowhere: nowhere
+      '3':
+        template:
+          title: 'Verb "to be"'
 
   verbs:
     love: to love

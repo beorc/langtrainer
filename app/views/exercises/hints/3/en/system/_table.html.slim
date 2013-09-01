@@ -1,0 +1,32 @@
+/ table 1
+
+/ future
+- @future_interrogative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/future_interrogative')
+
+- @future_declarative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/future_declarative')
+
+- @future_negative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/future_negative')
+
+/ present
+- @present_interrogative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/present_interrogative')
+
+- @present_declarative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/present_declarative')
+
+- @present_negative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/present_negative')
+
+/ past
+- @past_interrogative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/past_interrogative')
+
+- @past_declarative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/past_declarative')
+
+- @past_negative = capture do
+  = render partial: lang_hint_partial(exercise, 'system/past_negative')
+

@@ -162,6 +162,9 @@ ru:
         nobody: никто
         never: никогда
         nowhere: нигде
+      '3':
+        template:
+          title: 'Глагол "быть"'
 
   verbs:
     #1

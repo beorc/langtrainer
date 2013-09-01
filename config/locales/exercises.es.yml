@@ -163,6 +163,9 @@ es:
         nobody: nadie
         never: jamás, nunca
         nowhere: en ninguna parte
+      '3':
+        template:
+          title: 'Verbo "ser / estar"'
 
   verbs:
     love: amar

@@ -1,0 +1,34 @@
+= render partial: lang_hint_partial(exercise, 'system/table'), locals: { exercise: exercise }
+
+.container.big
+  h4.centered-text = t('exercises.hints.3.template.title', hint: true)
+  table.table.table-bordered.table-condensed
+    thead
+        tr
+          th
+          th.column
+            strong = t('interrogation', hint: true)
+          th.column
+            strong = t('declaration', hint: true)
+          th.column
+            strong = t('negotiation', hint: true)
+    tbody
+      tr.will
+        td
+          strong = t('tenses.future', hint: true)
+        = @future_interrogative
+        = @future_declarative
+        = @future_negative
+      tr.do
+        td
+          strong = t('tenses.present', hint: true)
+        = @present_interrogative
+        = @present_declarative
+        = @present_negative
+      tr.did
+        td
+          strong = t('tenses.past', hint: true)
+        = @past_interrogative
+        = @past_declarative
+        = @past_negative
+
