@@ -104,47 +104,6 @@ module ApplicationHelper
     I18n.t(['titles', slugged.class.model_name.downcase, slugged.slug].join('.'), default: slugged.title)
   end
 
-  def has_native_language?
-    session[:selected_language_id] ||= current_user.language.id if logged_in? and current_user.has_assigned_language?
-    session[:selected_language_id].present?
-  end
-
-  def native_language
-    Language.find(session[:language_id] || build_native_language)
-  end
-
-  def build_native_language
-    session[:language_id] = session[:selected_language_id]
-    session[:language_id] ||= logged_in? ? current_user.language.id : Language.find(guess_locale).id
-    change_locale
-    session[:language_id]
-  end
-
-  def change_native_language(language)
-    session[:selected_language_id] = session[:language_id] = language.id
-    if logged_in?
-      current_user.update_attribute 'language_id', language.id
-    end
-    change_locale
-    Language.find(session[:language_id])
-  end
-
-  def change_locale
-    if native_language.russian?
-      I18n.locale = :ru
-    else
-      I18n.locale = :en
-    end
-  end
-
-  def guess_locale
-    available = %w{ru en}
-    locale = http_accept_language.compatible_language_from(available)
-    return locale.to_sym if locale.present?
-
-    :en
-  end
-
   def friendly_title(object, fallback)
     return fallback if object.new_record?
     object.title

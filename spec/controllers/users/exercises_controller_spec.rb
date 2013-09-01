@@ -92,7 +92,7 @@ describe Users::ExercisesController do
     end
 
     it 'allows to update own exercise' do
-      own_exercise = FactoryGirl.create :exercise, owner: @user
+      own_exercise = FactoryGirl.create :exercise, owner: @user, slug: 'new'
       login_user(@user)
       title = 'New exercise title'
       put :update, id: own_exercise.id, exercise: { title: title }
