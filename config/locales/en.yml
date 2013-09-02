@@ -160,10 +160,10 @@ en:
           content: Each exercise starts with learning new words
         correction:
           title: Real-time validation
-          content: Validation is performed immediately while you entering the text
+          content: Validation performs immediately while you entering the text
         changes:
           title: You can to change
-          content: If you notice a mistake or want to use alter version, simply change the text of sentence
+          content: If you notice a mistake or want to use alter version, just change the text of sentence
         extensions:
           title: You can to extend
           content: You can add new exercises and sentences for training to make it more interesting
