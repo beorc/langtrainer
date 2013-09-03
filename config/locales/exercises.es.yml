@@ -22,13 +22,13 @@ es:
         template:
           pronouns: Pronouns
           imperative: Imperative Mood
-          nominative_who: who?
-          accusative_whom: whom?
-          dative_whom: to whom?
-          adjective_whose: whose? (adjective)
-          noun_whose: whose? (noun)
-          reflexive: reflexive
-          accented: accented with preposition
+          nominative_who: quién? (nominativo)
+          accusative_whom: quién? (acusativo)
+          dative_whom: a quién?
+          adjective_whose: cuyo? (adjectivo)
+          noun_whose: cuyo? (sustantivo)
+          reflexive: reflexivo
+          accented: enfatizado con preposición
 
         pronouns:
           yo:
@@ -182,8 +182,8 @@ es:
     can: poder
     bring: traer
     take: coger
-    be: ser
-    like: querer
+    be: ser, estar
+    like: gustar
 
     #2
     speak: hablar
@@ -191,30 +191,32 @@ es:
 
     past:
       simple:
-        love: loved
-        drink: drank
-        have: had
-        come: came
-        think: thought
-        go: went
-        see: saw
-        know: knew
-        do: did
-        give: gave
-        bring: brought
-        take: took
-        be: was, were
+        love: amé
+        drink: bebí
+        have: tuve
+        come: vine
+        think: pensé
+        go: fui
+        see: vi
+        know: supe
+        do: hice
+        give: di
+        poder: pude
+        bring: traje
+        take: cogí
+        be: fui, etuve
       participle:
-        love: loved
-        drink: drunk
-        have: had
-        come: come
-        think: thought
-        go: gone
-        see: seen
-        know: known
-        do: done
-        give: given
-        bring: brought
-        take: taken
-        be: been
+        love: amado
+        drink: bebido
+        have: tenido
+        come: venido
+        think: pensado
+        go: ido
+        see: visto
+        know: sabido
+        do: hecho
+        give: dado
+        poder: podido
+        bring: traído
+        take: cogido
+        be: sido, estado
