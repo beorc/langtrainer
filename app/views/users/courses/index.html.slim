@@ -1,23 +1,24 @@
-h1 Listing users_courses
+- content_for :subtitle do
+  = t('.subtitle')
 
-table
-  tr
-    th Slug
-    th Title
-    th Description
-    th
-    th
-    th
+.row-fluid
+  .offset3.span6
+    - unless current_user.admin?
+      .warning = t('.max_message', number: Langtrainer.courses[:max])
+      .warning = t('.created_number_message', number: current_user.courses.count)
 
-  - @users_courses.each do |users_course|
-    tr
-      td = users_course.slug
-      td = users_course.title
-      td = users_course.description
-      td = link_to 'Show', users_course
-      td = link_to 'Edit', edit_users_course_path(users_course)
-      td = link_to 'Destroy', users_course, :confirm => 'Are you sure?', :method => :delete
+    - if can? :create, Course
+      .btn-group.sepH_a_line
+        = link_to new_users_course_path, class: 'btn' do
+          i.icon-plus
+          '&nbsp
+          = t('helpers.actions.course.create')
 
-br
+    table.table.table-bordered.table-striped.table-condensed
+      thead
+        tr
+          th = collection.human_attribute_name(:title)
+          th = t(:actions)
+      tbody
+        = render collection
 
-= link_to 'New Course', new_users_course_path

@@ -32,7 +32,7 @@ class Users::CoursesController < Users::UserProfileController
   end
 
   def collection
-    return @course unless @course.nil?
-    @course = apply_scopes(Course.for_user(current_user))
+    return @courses unless @courses.nil?
+    @courses = apply_scopes(Course.for_user(current_user))
   end
 end

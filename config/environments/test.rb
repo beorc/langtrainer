@@ -41,6 +41,7 @@ Langtrainer::Application.configure do
   config.action_mailer.default_url_options = { :host => 'example.com' }
 
   config.langtrainer = {}
+  config.langtrainer[:courses] = { max: 1 }
   config.langtrainer[:exercises] = { max: 1 }
   config.langtrainer[:sentences] = { max: 3 }
 end

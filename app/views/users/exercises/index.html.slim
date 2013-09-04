@@ -3,8 +3,10 @@
 
 .row-fluid
   .offset3.span6
-    .warning = t('.max_message', number: Langtrainer.exercises[:max])
-    .warning = t('.created_number_message', number: current_user.exercises.count)
+    - unless current_user.admin?
+      .warning = t('.max_message', number: Langtrainer.exercises[:max])
+      .warning = t('.created_number_message', number: current_user.exercises.count)
+
     - if can? :create, Exercise
       .btn-group.sepH_a_line
         = link_to new_users_exercise_path, class: 'btn' do

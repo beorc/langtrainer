@@ -191,6 +191,15 @@ ru:
         exercises: 'Упражнений:'
         sentences: 'Предложений:'
         passed: Пройдено
+    courses:
+      index:
+        subtitle: Ваши курсы
+        max_message: 'Максимальное число собственных упражнений: %{number}'
+        created_number_message: 'Создано на данный момент: %{number}'
+      new:
+        subtitle: Новый курс
+      edit:
+        subtitle: Изменение курса
     exercises:
       index:
         subtitle: Ваши упражнения
@@ -282,6 +291,12 @@ ru:
 
   helpers:
     actions:
+      course:
+        create: Создать курс
+        update: Сохранить
+        edit: Изменить курс
+        destroy: Удалить курс
+        edit_sentences: Редактировать упражнения
     submit:
       sentence:
         new: Новое предложение
@@ -356,6 +371,10 @@ ru:
         few: предложения
         many: предложения
       user_registration: профиль пользователя
+      course:
+        one: курс
+        few: курсы
+        many: курсы
       exercise:
         one: упражнение
         few: упражнения
@@ -381,6 +400,10 @@ ru:
       user_registration:
         nickname: Имя пользователя
         email: E-mail
+      course:
+        title: Название
+        slug: Идентификатор
+        description: Описание
       exercise:
         title: Название
         slug: Идентификатор

@@ -54,6 +54,7 @@ Langtrainer::Application.configure do
   config.assets.debug = true
 
   config.langtrainer = {}
+  config.langtrainer[:courses] = { max: 3 }
   config.langtrainer[:exercises] = { max: 3 }
   config.langtrainer[:sentences] = { max: 30 }
 end
