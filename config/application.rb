@@ -108,6 +108,24 @@ module Langtrainer
 
     config.action_controller.include_all_helpers = false
 
+    config.admin_sidebar = {
+      management: {
+        title: 'admin.sidebar.management.title',
+        icon: 'icon-edit',
+        position: 1,
+        items: [
+          {
+            title: 'activerecord.models.user.few',
+            url_helper: 'admin_users_path'
+          },
+          {
+             title: 'activerecord.models.feedback',
+             url_helper: 'admin_feedbacks_path'
+          }
+        ]
+      }
+    }
+
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'application.yml')
       YAML.load(File.open(env_file)).each do |key, value|

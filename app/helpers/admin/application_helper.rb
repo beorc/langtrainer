@@ -8,8 +8,8 @@ module Admin::ApplicationHelper
   end
 
   def sidebar_groups_active_class(group)
-    group['items'].each do |link|
-      return 'in' if modules_nav_active_class(eval(link['url_helper'])).present?
+    group[:items].each do |link|
+      return 'in' if modules_nav_active_class(eval(link[:url_helper])).present?
     end
     ''
   end
