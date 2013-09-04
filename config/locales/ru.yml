@@ -133,8 +133,9 @@ ru:
     user_profile:
       title: Личный кабинет
       credentials: Профиль пользователя
-      sentences: Ваши предложения
-      exercises: Ваши упражнения
+      courses: Курсы
+      sentences: Предложения
+      exercises: Упражнения
       dashboard: Общие данные
     user_menu:
       credentials: Профиль пользователя

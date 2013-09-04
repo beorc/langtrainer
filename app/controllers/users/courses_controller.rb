@@ -1,38 +1,38 @@
-class Users::CoursesController < ApplicationController
-  def index
-    @users_courses = Users::Course.all
-    respond_with(@users_courses)
-  end
+class Users::CoursesController < Users::UserProfileController
+  respond_to :html
+  responders :flash
 
-  def show
-    @course = Users::Course.find(params[:id])
-    respond_with(@course)
-  end
+  helper_method :collection
+  helper_method :resource
 
-  def new
-    @course = Users::Course.new
-    respond_with(@course)
-  end
-
-  def edit
-    @course = Users::Course.find(params[:id])
-  end
+  before_filter :authorize_resource
 
   def create
-    @course = Users::Course.new(params[:course])
-    @users_course.save
+    resource.owner = current_user unless current_user.admin?
+    resource.save
     respond_with(@course)
   end
 
   def update
-    @course = Users::Course.find(params[:id])
-    @users_course.update_attributes(params[:course])
-    respond_with(@course)
+    resource.update_attributes(params[:course])
+    respond_with(resource)
   end
 
   def destroy
-    @course = Users::Course.find(params[:id])
-    @users_course.destroy
-    respond_with(@course)
+    resource.destroy
+    respond_with(resource)
+  end
+
+  private
+
+  def resource
+    course_id = params[:id]
+    return @course ||= Course.find(course_id) if course_id.present?
+    @course ||= Course.new(params[:course])
+  end
+
+  def collection
+    return @course unless @course.nil?
+    @course = apply_scopes(Course.for_user(current_user))
   end
 end

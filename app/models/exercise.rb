@@ -2,10 +2,12 @@ class Exercise < ActiveRecord::Base
   attr_accessible :title, :slug, :shuffled
 
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
+  belongs_to :course
   has_many :sentences
   has_many :corrections
 
-  #validates :title, presence: true, uniqueness: { scope: :user_id }
+  validates :title, uniqueness: { scope: [:user_id, :course_id] }
+  validates :slug, uniqueness: { scope: [:user_id, :course_id] }
 
   scope :for_user, ->(user) { user.present? ? where('exercises.user_id IS NULL OR exercises.user_id = ?', user.id) : scoped }
   scope :not_empty, -> { joins(:sentences).where('sentences.id IS NOT NULL').group('exercises.id') }

@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   has_many :providers, :class_name => 'UserProvider', :dependent => :destroy
   has_many :sentences
   has_many :corrections
+  has_many :courses
   has_many :exercises
   has_many :feedbacks
   has_one :email_confirmation, validate: true

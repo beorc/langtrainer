@@ -16,6 +16,8 @@ html
             ul.nav.nav-pills
               li*{class: menu_class(edit_user_registration_path)}
                 = link_to t('.credentials'), edit_user_registration_path
+              li*{class: menu_class(users_courses_path)}
+                = link_to t('.courses'), users_courses_path
               li*{class: menu_class(users_exercises_path)}
                 = link_to t('.exercises'), users_exercises_path
               li*{class: menu_class(users_sentences_path)}

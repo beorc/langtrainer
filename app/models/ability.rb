@@ -8,11 +8,20 @@ class Ability
       can [:show, :edit, :update, :destroy], Sentence
       can :create, Sentence, sentence_id: nil, type: nil
       can :view, :all
+
+      # talky
       can :manage, Category
       can :manage, Forum
       can :manage, Topic
       can :manage, Post
+
+      can :manage, Course
     elsif user.has_role? :member
+      can [:show, :edit, :update, :destroy], Course, user_id: user.id
+      if user.courses.count < Langtrainer.courses[:max]
+        can [:new, :create], Course
+      end
+
       can [:show, :edit, :update, :destroy], Exercise, user_id: user.id
       if user.exercises.count < Langtrainer.exercises[:max]
         can [:new, :create], Exercise

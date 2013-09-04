@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130714133015) do
+ActiveRecord::Schema.define(:version => 20130904145719) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(:version => 20130714133015) do
   end
 
   add_index "categories", ["slug"], :name => "index_categories_on_slug", :unique => true
+
+  create_table "courses", :force => true do |t|
+    t.string   "slug"
+    t.string   "title"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "courses", ["slug", "user_id"], :name => "index_courses_on_slug_and_user_id", :unique => true
+  add_index "courses", ["title", "user_id"], :name => "index_courses_on_title_and_user_id", :unique => true
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -59,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20130714133015) do
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
     t.boolean  "shuffled",   :default => true
+    t.integer  "course_id"
   end
 
   add_index "exercises", ["slug"], :name => "index_exercises_on_slug", :unique => true
