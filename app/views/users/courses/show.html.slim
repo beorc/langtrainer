@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Slug:
+  = @users_course.slug
+p
+  strong Title:
+  = @users_course.title
+p
+  strong Description:
+  = @users_course.description
+
+= link_to 'Edit', edit_users_course_path(@users_course)
+'|
+= link_to 'Back', users_courses_path

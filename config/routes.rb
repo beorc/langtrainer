@@ -31,6 +31,7 @@ Langtrainer::Application.routes.draw do
     resources :exercises, except: :show
     resources :sentences, except: :show
     resources :corrections, only: [:create, :update, :destroy], format: :json, constraints: { format: :json }
+    resources :courses, except: :show
   end
 
   resources :languages, only: [], path: '' do

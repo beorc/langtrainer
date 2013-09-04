@@ -1,0 +1,23 @@
+h1 Listing users_courses
+
+table
+  tr
+    th Slug
+    th Title
+    th Description
+    th
+    th
+    th
+
+  - @users_courses.each do |users_course|
+    tr
+      td = users_course.slug
+      td = users_course.title
+      td = users_course.description
+      td = link_to 'Show', users_course
+      td = link_to 'Edit', edit_users_course_path(users_course)
+      td = link_to 'Destroy', users_course, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Course', new_users_course_path
