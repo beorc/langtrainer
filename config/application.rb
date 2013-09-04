@@ -37,11 +37,6 @@ module Langtrainer
     config.langtrainer[:sentences]
   end
 
-  def self.localized_url
-    return ENV['HOST_DEV'] unless Rails.env.production?
-    config.localized_url[I18n.locale.to_s]
-  end
-
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
