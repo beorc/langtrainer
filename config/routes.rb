@@ -39,11 +39,11 @@ Langtrainer::Application.routes.draw do
   resources :languages, only: [], path: '' do
     put 'set_native', on: :member
 
-    resources :exercises, only: :show, path: ''
-
     resources :courses, only: [], path: '' do
       resources :exercises, only: :show, path: ''
     end
+
+    get '/:language_id/:id', to: redirect('/%{language_id}/original/%{id}')
   end
 
   put 'increment_pass_counter' => 'exercises#increment_pass_counter'

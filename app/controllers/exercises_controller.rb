@@ -1,7 +1,8 @@
 class ExercisesController < ApplicationController
 
   def show
-    @exercise = Exercise.find_by_slug(params[:id]) || Exercise.first
+    @course = Course.find(params[:course_id])
+    @exercise = @course.exercises.find_by_slug(params[:id])
     @language = Language.find params[:language_id]
     @sentences = Sentence.for_exercise(@exercise).
                           with_language(@language).

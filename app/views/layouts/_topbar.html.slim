@@ -10,11 +10,6 @@
             ul.nav.pull-right#main-menu
               li.user-profile = link_to t(:user_profile), users_dashboard_path
               li.forum = link_to Forum.model_name.human, forums_root_path
-              li.exercises.dropdown
-                = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
-                  span.prompt = t('.exercises')
-                  b.caret &nbsp;
-                = render 'layouts/exercise_menu'
               li.choose-another-language.dropdown
                 = link_to '#', class: 'dropdown-toggle', data: { toggle: :dropdown } do
                   span.prompt = t('.your_language')

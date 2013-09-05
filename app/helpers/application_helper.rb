@@ -85,7 +85,7 @@ module ApplicationHelper
     else
       options = ''
     end
-    Exercise.not_empty.for_user(current_user).each do |exercise|
+    @course.exercises.not_empty.for_user(current_user).each do |exercise|
       url_params = { exercise: exercise }
       url_params.merge!( @search_filter ) if @search_filter.present?
       parameters = { value: exercise.id, url: yield(exercise) }

@@ -21,7 +21,7 @@
               span = title_for(language)
             .module_body
               = link_to t('.exercises_link_title'),
-                        language_course_exercise_path(course, language, course.exercises.first),
+                        language_course_exercise_path(language, course, course.exercises.first),
                         class: 'btn btn-primary btn-large'
 
 .block.why.nargin-top-large
