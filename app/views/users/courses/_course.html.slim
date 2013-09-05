@@ -6,7 +6,7 @@ tr
       = link_to edit_users_course_path(course), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.actions.course.edit') do
         i.icon-pencil
       '&nbsp;
-    = link_to users_sentences_path(course: course), data: { toggle: 'tooltip', placement: 'bottom' }, title: t('helpers.actions.course.edit_sentences') do
+    = link_to users_course_exercises_path(course), data: { toggle: 'tooltip', placement: 'bottom' }, title: t('helpers.actions.course.edit_sentences') do
       i.icon-table
     - if can? :destroy, course
       '&nbsp;

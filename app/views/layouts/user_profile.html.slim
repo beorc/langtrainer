@@ -15,8 +15,8 @@ html
               small = content_for :subtitle
             ul.nav.nav-pills
               = active_link_to t('.credentials'), edit_user_registration_path, wrap_tag: :li
-              = active_link_to t('.courses'), users_courses_path, wrap_tag: :li
-              = active_link_to t('.exercises'), users_exercises_path, wrap_tag: :li
+              = active_link_to t('.courses'), users_courses_path, wrap_tag: :li, active: :exclusive
+              = active_link_to t('.exercises'), users_exercises_path, wrap_tag: :li, active: /exercises$/
               = active_link_to t('.sentences'), users_sentences_path, wrap_tag: :li
               = active_link_to t('.dashboard'), users_dashboard_path, wrap_tag: :li
 

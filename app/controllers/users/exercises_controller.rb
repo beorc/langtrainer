@@ -9,6 +9,7 @@ class Users::ExercisesController < Users::UserProfileController
                               default: true,
                               allow_blank: true,
                               only: :index
+  has_scope :for_course, as: :course_id, only: :index
 
   def create
     resource.owner = current_user unless current_user.admin?

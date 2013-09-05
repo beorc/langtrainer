@@ -7,7 +7,7 @@
         - if current_user.admin?
           = f.input :slug
         = f.input :shuffled
-        = f.association :course
+        = f.association :course, include_blank: false
       .module_footer
         = f.submit class: 'btn btn-small btn-primary'
         '&nbsp;

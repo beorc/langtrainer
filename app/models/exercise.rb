@@ -14,6 +14,7 @@ class Exercise < ActiveRecord::Base
   scope :not_empty, -> { joins(:sentences).where('sentences.id IS NOT NULL').group('exercises.id') }
   scope :public, -> { where(user_id: nil) }
   scope :order_by_course, -> { order('course_id') }
+  scope :for_course, ->(slug) { where(course_id: Course.find(slug).id) }
 
   def should_generate_new_friendly_id?
     new_record? && !slug
