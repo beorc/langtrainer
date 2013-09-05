@@ -1,15 +1,28 @@
-p#notice = notice
+- title t('.subtitle')
+- content_for :subtitle do
+  = t('.subtitle')
 
-p
-  strong Slug:
-  = @users_course.slug
-p
-  strong Title:
-  = @users_course.title
-p
-  strong Description:
-  = @users_course.description
+.row-fluid
+  .offset3.span6
+    = resource.title
+    '&nbsp;
+    .form-actions
 
-= link_to 'Edit', edit_users_course_path(@users_course)
-'|
-= link_to 'Back', users_courses_path
+      = link_to edit_users_exercise_path, class: 'btn btn-small' do
+        i.icon-pencil
+        ' &nbsp;
+        = t("helpers.submit.exercise.edit")
+      ' &nbsp;
+
+      = link_to users_sentences_path(exercise: resource), class: 'btn btn-small' do
+        i.icon-table
+        ' &nbsp;
+        = t('helpers.submit.exercise.edit_sentences')
+      ' &nbsp;
+
+      - if can? :destroy, resource
+        = link_to users_exercise_path, class: 'btn btn-small btn-danger',
+                  method: :delete, confirm: t(:delete_confirm) do
+          i.icon-trash
+          ' &nbsp;
+          = t("helpers.submit.exercise.destroy")

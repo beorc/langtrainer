@@ -1,8 +1,8 @@
-h1 Editing users_course
+- title t('.subtitle')
+- content_for :subtitle do
+  = t('.subtitle')
 
-== render 'form'
-
-= link_to 'Show', @users_course
-'|
-= link_to 'Back', users_courses_path
+.row-fluid
+  .offset3.span6
+    = render 'form'
 

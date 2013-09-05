@@ -20,6 +20,7 @@
       thead
         tr
           th = collection.human_attribute_name(:title)
+          th = Course.model_name.human.mb_chars.capitalize
           th = t(:actions)
       tbody
         = render collection

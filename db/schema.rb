@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130904145719) do
+ActiveRecord::Schema.define(:version => 20130904190211) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -33,8 +33,7 @@ ActiveRecord::Schema.define(:version => 20130904145719) do
     t.datetime "updated_at",  :null => false
   end
 
-  add_index "courses", ["slug", "user_id"], :name => "index_courses_on_slug_and_user_id", :unique => true
-  add_index "courses", ["title", "user_id"], :name => "index_courses_on_title_and_user_id", :unique => true
+  add_index "courses", ["slug"], :name => "index_courses_on_slug"
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -74,7 +73,8 @@ ActiveRecord::Schema.define(:version => 20130904145719) do
     t.integer  "course_id"
   end
 
-  add_index "exercises", ["slug"], :name => "index_exercises_on_slug", :unique => true
+  add_index "exercises", ["slug", "course_id"], :name => "index_exercises_on_slug_and_course_id"
+  add_index "exercises", ["slug"], :name => "index_exercises_on_slug"
   add_index "exercises", ["user_id"], :name => "index_exercises_on_user_id"
 
   create_table "feedbacks", :force => true do |t|

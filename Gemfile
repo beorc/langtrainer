@@ -29,6 +29,7 @@ gem 'compass-rails'
 gem 'virtus'
 gem 'validates_existence', '>= 0.4'
 gem 'friendly_id', '~> 4.0.9'
+gem 'active_link_to'
 gem 'http_accept_language', git: 'git://github.com/DouweM/http_accept_language.git', branch: 'no-middleware-no-crash'
 gem 'talky', git: 'git@github.com:beorc/talky.git', branch: 'master'
 

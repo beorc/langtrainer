@@ -1,0 +1,16 @@
+tr
+  td
+    = course.title
+  td
+    - if can? :update, course
+      = link_to edit_users_course_path(course), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.actions.course.edit') do
+        i.icon-pencil
+      '&nbsp;
+    = link_to users_sentences_path(course: course), data: { toggle: 'tooltip', placement: 'bottom' }, title: t('helpers.actions.course.edit_sentences') do
+      i.icon-table
+    - if can? :destroy, course
+      '&nbsp;
+      = link_to users_course_path(course), method: :delete,
+                title: t('helpers.actions.course.destroy'),
+                data: { confirm: t(:delete_confirm), toggle: 'tooltip', placement: 'right'  } do
+        i.icon-trash

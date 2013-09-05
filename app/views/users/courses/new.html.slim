@@ -1,5 +1,8 @@
-h1 New users_course
+- title t('.subtitle')
+- content_for :subtitle do
+  = t('.subtitle')
 
-== render 'form'
+.row-fluid
+  .offset3.span6
+    = render 'form'
 
-= link_to 'Back', users_courses_path

@@ -10,17 +10,17 @@ class Users::CoursesController < Users::UserProfileController
   def create
     resource.owner = current_user unless current_user.admin?
     resource.save
-    respond_with(@course)
+    respond_with @course, location: users_courses_path
   end
 
   def update
     resource.update_attributes(params[:course])
-    respond_with(resource)
+    respond_with resource, location: users_courses_path
   end
 
   def destroy
     resource.destroy
-    respond_with(resource)
+    respond_with resource, location: users_courses_path
   end
 
   private

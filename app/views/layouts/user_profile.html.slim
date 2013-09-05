@@ -14,16 +14,11 @@ html
               '&nbsp
               small = content_for :subtitle
             ul.nav.nav-pills
-              li*{class: menu_class(edit_user_registration_path)}
-                = link_to t('.credentials'), edit_user_registration_path
-              li*{class: menu_class(users_courses_path)}
-                = link_to t('.courses'), users_courses_path
-              li*{class: menu_class(users_exercises_path)}
-                = link_to t('.exercises'), users_exercises_path
-              li*{class: menu_class(users_sentences_path)}
-                = link_to t('.sentences'), users_sentences_path
-              li*{class: menu_class(users_dashboard_path)}
-                = link_to t('.dashboard'), users_dashboard_path
+              = active_link_to t('.credentials'), edit_user_registration_path, wrap_tag: :li
+              = active_link_to t('.courses'), users_courses_path, wrap_tag: :li
+              = active_link_to t('.exercises'), users_exercises_path, wrap_tag: :li
+              = active_link_to t('.sentences'), users_sentences_path, wrap_tag: :li
+              = active_link_to t('.dashboard'), users_dashboard_path, wrap_tag: :li
 
       #content
         .container

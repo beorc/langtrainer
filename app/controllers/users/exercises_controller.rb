@@ -5,6 +5,10 @@ class Users::ExercisesController < Users::UserProfileController
   before_filter :authorize_resource, except: :index
 
   has_scope :page, default: 1
+  has_scope :order_by_course, type: :boolean,
+                              default: true,
+                              allow_blank: true,
+                              only: :index
 
   def create
     resource.owner = current_user unless current_user.admin?

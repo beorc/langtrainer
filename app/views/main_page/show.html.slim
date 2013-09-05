@@ -6,10 +6,10 @@
 
 = render 'main_page/blocks/info'
 
-- if Exercise.any?
+- Course.not_empty.each do |course|
   .languages.block
     h2.block-title
-      span = t('.languages_block_title')
+      span = course.title
       small = t('.languages_block_subtitle')
     .row-fluid
       - Language.except(native_language).each do |language|
@@ -21,7 +21,7 @@
               span = title_for(language)
             .module_body
               = link_to t('.exercises_link_title'),
-                        language_exercise_path(language, Exercise.first),
+                        language_course_exercise_path(course, language, course.exercises.first),
                         class: 'btn btn-primary btn-large'
 
 .block.why.nargin-top-large

@@ -42,6 +42,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_link_to (1.0.1)
+      actionpack
     activemodel (3.2.13)
       activesupport (= 3.2.13)
       builder (~> 3.0.0)
@@ -314,6 +316,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_link_to
   asset_sync
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)

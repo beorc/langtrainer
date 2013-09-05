@@ -2,15 +2,17 @@ tr
   td
     = exercise.title
   td
+    = exercise.course.title
+  td
     - if can? :update, exercise
-      = link_to edit_users_exercise_path(exercise), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.submit.exercise.edit') do
+      = link_to edit_users_course_exercise_path(exercise.course, exercise), data: { toggle: 'tooltip', placement: 'left' }, title: t('helpers.submit.exercise.edit') do
         i.icon-pencil
       '&nbsp;
-    = link_to users_sentences_path(exercise: exercise), data: { toggle: 'tooltip', placement: 'bottom' }, title: t('helpers.submit.exercise.edit_sentences') do
+    = link_to users_sentences_path(course: exercise.course, exercise: exercise), data: { toggle: 'tooltip', placement: 'bottom' }, title: t('helpers.submit.exercise.edit_sentences') do
       i.icon-table
     - if can? :destroy, exercise
       '&nbsp;
-      = link_to users_exercise_path(exercise), method: :delete,
+      = link_to users_course_exercise_path(exercise.course, exercise), method: :delete,
                 title: t('helpers.submit.exercise.destroy'),
                 data: { confirm: t(:delete_confirm), toggle: 'tooltip', placement: 'right'  } do
         i.icon-trash

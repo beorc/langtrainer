@@ -9,7 +9,6 @@ class CreateUsersCourses < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :courses, [:slug, :user_id], unique: true
-    add_index :courses, [:title, :user_id], unique: true
+    add_index :courses, :slug
   end
 end
