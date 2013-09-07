@@ -56,7 +56,7 @@ ns.init = () ->
     rightAnswer = ns.currentSentence.data('translation')
     if answer.length is 0
       input.removeClass('wrong').removeClass('right')
-    else if rightAnswer.match("^#{answer}", 'i')
+    else if RegExp("^#{answer.trim()}", 'i').exec(rightAnswer)
       input.removeClass('wrong').addClass('right')
     else
       input.removeClass('right').addClass('wrong')
