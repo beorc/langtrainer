@@ -12,7 +12,7 @@ describe UserMailer do
 
     it "should generate proper message" do
       @email.should have_subject(I18n.t('mailer.token_authentication.subject'))
-      url = root_url(auth_token: @user.authentication_token, host: 'langtrainer.dev', locale: I18n.locale)
+      url = root_url(auth_token: @user.authentication_token, locale: I18n.locale)
       @email.should have_body_text(url)
     end
 
@@ -38,7 +38,7 @@ describe UserMailer do
 
     it "should generate proper message" do
       @email.should have_subject(I18n.t('mailer.email_confirmation.subject'))
-      url = confirm_email_url(email_token: @email_confirmation.token, host: 'langtrainer.dev', locale: I18n.locale)
+      url = confirm_email_url(email_token: @email_confirmation.token, locale: I18n.locale)
       @email.should have_body_text(url)
     end
 
